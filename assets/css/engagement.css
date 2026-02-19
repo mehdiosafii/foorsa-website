@@ -1,0 +1,213 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+.engagment-page .padding-section {
+    padding: 100px 190px 0;
+}
+
+.section-engagement .heading-page{
+    width: 700px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.heading-page h1{
+    font-family: 'Marcher';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 36.8px;
+    color: #000000;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.heading-page p{
+    margin: 0;
+    font-family: 'Inter';
+    font-size: 13px;
+    color: #00000066;
+}
+
+.heading-section h2{
+    font-family: 'Marcher';
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.info-engagement{
+    margin-top:115px;
+}
+
+.info-engagement .item{
+    width: 70%;
+    text-align: center;
+    display: block;
+    margin: 0 auto 90px auto;
+}
+
+.info-engagement .content h3{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 8px;
+}
+
+.info-engagement .content .text p{
+    margin: 0;
+    font-family: 'Inter';
+    font-size: 16px;
+    color: #727272;
+    font-weight: 500;
+}
+
+.info-engagement .content .text b{
+    color: #041228;
+}
+
+.info-engagement .content .text{
+    margin-top: 8px;
+}
+
+.info-engagement .heading-section{
+    margin-bottom: 30px;
+}
+
+
+.card-context .description {
+    color: #FFFF;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+.card-context {
+    background-color: #041228;
+    border-radius: 80px 0px 80px 0px;
+    padding: 60px 100px;
+    position: relative;
+    width: 100%;
+}
+
+.card-context .description p {
+    margin: 0;
+}
+
+
+.card-context{
+    background-image: url('../../assets/img/bgtimeline.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.card-context .heading-page h2{
+    font-family: 'Marcher';
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFF;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.card-context .description p{
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Inter';
+}
+
+.card-context .btn-details {
+    padding: 10px 20px;
+    background-color: #041228;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 15px;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.card-context .show-details{
+    margin-top: 25px;
+}
+
+.card-context .btn-details:hover{
+    background-color: #FFFF;
+    color: #041228;
+    border: 1px solid #041228;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+
+
+
+@media(max-width:500px){
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .engagment-page .padding-section{
+        padding: 117px 20px 50px;
+    }
+
+    .section-engagement .heading-page{
+        width: 100%;
+    }
+    
+    .heading-page h1{
+        font-size: 30px;
+    }
+
+    .heading-page p{
+        font-size: 15px;
+    }
+
+    .heading-section h2{
+        font-size: 20px;
+    }
+
+    .info-engagement .content .text p{
+        font-size: 15px;
+    }
+
+    .info-engagement .item {
+        width: 100%;
+        margin: 0 auto 30px auto;
+    }
+
+    .info-engagement .item .icon img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .card-context{
+        padding: 15px;
+    }
+
+    .card-context .heading-page h2{
+        font-size: 15px;
+    }
+
+    .card-context{
+        margin-top: 25px;
+    }
+
+    
+
+    
+
+
+}

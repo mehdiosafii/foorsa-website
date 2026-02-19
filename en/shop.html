@@ -1,0 +1,1752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0JT7KY4DKQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0JT7KY4DKQ');
+</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Apply - Foorsa</title>
+<meta name="description" content="Apply to study in China with Foorsa. Complete your application for university admission with our comprehensive support services.">
+<link rel="preload" href="../assets/css/style.css" as="style">
+<link rel="preload" href="../assets/fonts/Marcher-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/Marcher-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link href="../assets/bootstrap/css/bootstrap.css" id="bootstrap-css-css" media="all" rel="stylesheet">
+<link href="../assets/css/style.css" id="style-css-css" media="all" rel="stylesheet"/>
+<link href="../assets/css/responsive.css" id="responsive-css-css" media="all" rel="stylesheet"/>
+<link href="../assets/libs/swiper-bundle.min.css" id="swiper-css-css" media="all" rel="stylesheet"/>
+<link href="../assets/libs/fancybox.css" id="fancybox-css-css" media="all" rel="stylesheet"/>
+<script src="https://js.stripe.com/v3/"></script>
+<script id="jquery-core-js" src="../assets/vendor/jquery.min.js"></script>
+<script id="jquery-migrate-js" src="../assets/vendor/jquery-migrate.min.js" defer></script>
+<script src="/js/language-handler.js" defer></script>
+<style>
+.apply-page {
+    padding: 120px 0 60px;
+    background: #f5f7fa;
+    min-height: 100vh;
+}
+
+.apply-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+@media (max-width: 992px) {
+    .apply-container {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .apply-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px;
+    }
+    
+    .form-section {
+        order: -1;
+    }
+}
+
+.apply-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.apply-header h1 {
+    font-family: 'Marcher', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #041228;
+    margin: 0;
+}
+
+.fees-section {
+    background: linear-gradient(135deg, #041228 0%, #0a2540 100%);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(4, 18, 40, 0.3);
+}
+
+.fees-section h3 {
+    font-family: 'Marcher', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.step-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.step-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid rgba(76, 175, 80, 0.2);
+    transition: all 0.3s ease;
+}
+
+.step-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(5px);
+    border-color: rgba(76, 175, 80, 0.4);
+}
+
+.step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #4CAF50;
+    color: #fff;
+    border-radius: 50%;
+    font-family: 'Marcher', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #4CAF50;
+    margin-bottom: 4px;
+}
+
+.step-desc {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.4;
+}
+
+.step-value {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: #ff6b6b;
+    text-decoration: line-through;
+    margin-left: 10px;
+    opacity: 0.9;
+}
+
+.step-free {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    color: #4CAF50;
+    font-weight: 600;
+    margin-left: 8px;
+    text-transform: uppercase;
+}
+
+.step-card.highlight {
+    background: rgba(76, 175, 80, 0.15);
+    border: 2px solid #4CAF50;
+}
+
+.step-card.highlight .step-title {
+    font-size: 20px;
+}
+
+.step-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.step-features span {
+    font-size: 11px;
+    color: #4CAF50;
+    background: rgba(76, 175, 80, 0.15);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.view-full-journey {
+    display: inline-block;
+    margin-top: 20px;
+    color: #4CAF50;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.view-full-journey:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.fees-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fees-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eef2f6;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: #041228;
+    line-height: 1.6;
+}
+
+.fees-list li:last-child {
+    border-bottom: none;
+}
+
+.fees-list li::before {
+    content: "✓";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: #EACA91;
+    color: #041228;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.fees-list li strong {
+    font-weight: 600;
+}
+
+.form-section {
+    background: #fff;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.form-section h3 {
+    font-family: 'Marcher', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #041228;
+    margin: 0 0 8px 0;
+}
+
+.form-subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #041228;
+    margin-bottom: 8px;
+}
+
+.form-group label .required {
+    color: #dc2626;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: #041228;
+    background: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.form-group input::placeholder {
+    color: #9ca3af;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper select {
+    appearance: none;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+.select-arrow {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #6b7280;
+}
+
+.phone-input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.country-select {
+    flex-shrink: 0;
+}
+
+.country-select select {
+    width: 90px;
+    padding: 14px 10px;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    color: #041228;
+    background: #fff;
+    cursor: pointer;
+}
+
+.phone-input-group input {
+    flex: 1;
+}
+
+.price-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #0d1b2a 0%, #1b2838 100%);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 20px 0 15px 0;
+}
+
+.price-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.price-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.price-value {
+    display: flex;
+    align-items: baseline;
+    gap: 3px;
+}
+
+.price-value .currency {
+    font-size: 20px;
+    color: #C9A84C;
+    font-weight: 600;
+}
+
+.price-value .amount {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Marcher', sans-serif;
+}
+
+.price-value .usd {
+    font-size: 14px;
+    color: #9ca3af;
+    margin-left: 4px;
+}
+
+.price-right {
+    text-align: right;
+}
+
+.guarantee {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: #22c55e;
+}
+
+.service-fee-note {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: #6b7280;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.service-fee-note strong {
+    color: #041228;
+}
+
+.checkbox-wrapper {
+    margin-bottom: 12px;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.5;
+}
+
+.custom-checkbox input {
+    display: none;
+}
+
+.custom-checkbox .checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #d1d5db;
+    border-radius: 5px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.custom-checkbox input:checked + .checkmark {
+    background: #2563eb;
+    border-color: #2563eb;
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.custom-checkbox .checkbox-text a {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+.payment-section-simple {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.payment-header-simple {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.payment-title-simple {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #041228;
+}
+
+.payment-secure-simple {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    color: #22c55e;
+    font-weight: 500;
+}
+
+.card-field {
+    margin-bottom: 16px;
+}
+
+.card-field label {
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #041228;
+    margin-bottom: 8px;
+}
+
+.card-input {
+    background: #fff;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 14px 16px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.card-input:focus-within {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.card-field-row {
+    display: flex;
+    gap: 16px;
+}
+
+.card-field.half {
+    flex: 1;
+}
+
+.card-error-msg {
+    color: #dc2626;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    margin-top: 10px;
+    min-height: 20px;
+}
+
+.card-row {
+    display: flex;
+    gap: 16px;
+}
+
+.card-input-group.half {
+    flex: 1;
+}
+
+.card-errors {
+    color: #ef4444;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    margin-top: 10px;
+    min-height: 20px;
+}
+
+.stripe-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #374151;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 16px 24px;
+    margin-top: 20px;
+    background: #f5f5f0;
+    border: 2px solid #e8e8e0;
+    border-radius: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #041228;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    border-color: #2563eb;
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.15);
+}
+
+.btn-price {
+    font-weight: 700;
+    color: #041228;
+}
+
+.btn-guarantee {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #22c55e;
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+.spinner-hidden {
+    display: none;
+}
+
+.submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.submit-btn:disabled #btn-text {
+    display: none;
+}
+
+.submit-btn:disabled #btn-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.spinner-icon {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.success-message {
+    display: none;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.success-message.show {
+    display: block;
+}
+
+.success-icon {
+    margin-bottom: 20px;
+}
+
+.success-message h2 {
+    font-family: 'Marcher', sans-serif;
+    font-size: 24px;
+    color: #041228;
+    margin: 0 0 10px 0;
+}
+
+.success-message p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: #6b7280;
+    margin: 0;
+}
+    margin-bottom: 15px;
+}
+
+.card-input-container label {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#card-element {
+    background: transparent;
+    padding: 12px 0;
+}
+
+#card-errors {
+    color: #ff6b6b;
+    font-size: 13px;
+    margin-top: 10px;
+    min-height: 20px;
+}
+
+.payment-security {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #4CAF50;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.payment-security svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+.submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.fee-note {
+    background: #f5f7fa;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: #041228;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.fee-note strong {
+    color: #cf2e2e;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    accent-color: #EACA91;
+}
+
+.checkbox-group label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: #041228;
+    line-height: 1.5;
+    margin: 0;
+    cursor: pointer;
+}
+
+.checkbox-group label a {
+    color: #EACA91;
+    text-decoration: underline;
+}
+
+
+/* Program and Promo Row */
+.program-promo-row {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+@media (max-width: 600px) {
+    .program-promo-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+.promo-input-inline {
+    display: flex;
+    gap: 8px;
+}
+
+.promo-input-inline input {
+    flex: 1;
+    padding: 14px 16px;
+    border: 1px solid #d0d7df;
+    border-radius: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.promo-input-inline input:focus {
+    outline: none;
+    border-color: #C9A84C;
+}
+
+.promo-apply-btn {
+    padding: 14px 20px;
+    background: #041228;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.promo-apply-btn:hover {
+    background: #0a2540;
+}
+
+.promo-apply-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.promo-message {
+    font-size: 12px;
+    margin-top: 5px;
+    min-height: 18px;
+}
+
+.promo-message.success {
+    color: #4CAF50;
+}
+
+.promo-message.error {
+    color: #ff6b6b;
+}
+
+.price-display .original-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.price-display {
+    text-align: center;
+    margin: 25px 0;
+    padding: 20px;
+    background: #041228;
+    border-radius: 15px;
+}
+
+.price-display .currency-symbol {
+    font-family: 'Marcher', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #EACA91;
+    margin-right: 2px;
+}
+
+.price-display .amount {
+    font-family: 'Marcher', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #EACA91;
+}
+
+.price-display .currency {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.guarantee-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4CAF50;
+}
+
+.success-message {
+    display: none;
+    text-align: center;
+    padding: 40px;
+}
+
+.success-message h2 {
+    font-family: 'Marcher', sans-serif;
+    font-size: 28px;
+    color: #041228;
+    margin-bottom: 15px;
+}
+
+.success-message p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .apply-page {
+        padding: 100px 0 40px;
+    }
+    
+    .apply-header h1 {
+        font-size: 28px;
+    }
+    
+    .apply-header {
+        margin-bottom: 20px;
+    }
+    
+    .fees-section,
+    .form-section {
+        padding: 15px;
+    }
+    
+    .fees-section h3,
+    .form-section h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .phone-input {
+        flex-direction: column;
+    }
+    
+    .phone-input select {
+        width: 100%;
+    }
+    
+    .step-card {
+        padding: 10px;
+        gap: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .step-number {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+        margin: 0 auto;
+    }
+    
+    .step-title {
+        font-size: 13px;
+    }
+    
+    .step-desc {
+        font-size: 11px;
+        display: none;
+    }
+    
+    .step-features {
+        display: none;
+    }
+    
+    .view-full-journey {
+        font-size: 12px;
+    }
+    
+    .form-group label {
+        font-size: 13px;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .btn-submit {
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    .price-display {
+        padding: 12px;
+        margin: 15px 0;
+    }
+    
+    .price-display .amount {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .apply-header h1 {
+        font-size: 24px;
+    }
+    
+    .fees-section,
+    .form-section {
+        padding: 12px;
+    }
+    
+    .step-cards {
+        gap: 10px;
+    }
+    
+    .step-card {
+        padding: 8px;
+    }
+    
+    .step-number {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    .step-title {
+        font-size: 11px;
+    }
+}
+</style>
+</head>
+<body class="page wp-theme-foorsa">
+<div class="header header-desktop sticky">
+<div class="logo-menu active">
+<div class="logo"><a href="../"><img alt="logo" src="../assets/img/logo-bl.png"/></a></div>
+<nav class="main-menu active">
+<ul class="menu">
+<li class="menu-item menu-item-has-children">
+<a href="#">Foorsa <span class="dropdown-arrow">▼</span></a>
+<ul class="sub-menu">
+<li><a href="./about-us.html">About Us</a></li>
+<li><a href="./about-us.html#mission">Mission &amp; Values</a></li>
+<li><a href="./about-us.html#engagement">Engagement</a></li>
+<li><a href="./about-us.html#careers">Recruitment</a></li>
+<li><a href="./partner-with-us.html">Partner With Us</a></li>
+<li><a href="./contact.html">Contact us</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children">
+<a href="#">China <span class="dropdown-arrow">▼</span></a>
+<ul class="sub-menu">
+<li><a href="./majors.html">Majors</a></li>
+<li><a href="./scholarship.html">Scholarship</a></li>
+<li><a href="./fees.html">Fees &amp; Financing</a></li>
+<li><a href="./step-by-step.html">Step by step</a></li>
+<li><a href="./documents.html">Documents</a></li>
+<li><a href="./frequently-asked-questions.html">FAQ</a></li>
+</ul>
+</li>
+<li class="menu-item"><a href="./blog.html">Blog</a></li>
+</ul>
+</nav>
+<a class="btn-apply-navbar" href="./shop.html">APPLY</a>
+</div>
+</div>
+<!-- Mobile Header -->
+<div class="header header-mobile">
+<div class="logo-top"><a href="../"><img alt="logo" src="../assets/img/logo-bl.png"/></a></div>
+<a class="btn-apply-navbar" href="./shop.html">APPLY</a>
+<nav role="navigation">
+<div id="menuToggle">
+<input type="checkbox"/>
+<span></span>
+<span></span>
+<div id="menu">
+<div class="menu-mobile-menu-container"><ul class="menu" id="menu-mobile-menu">
+<li class="menu-item"><a href="../">Home</a></li>
+<li class="menu-item"><a href="./about-us.html">About Us</a></li>
+<li class="menu-item"><a href="./majors.html">Majors</a></li>
+<li class="menu-item"><a href="./scholarship.html">Scholarship</a></li>
+<li class="menu-item"><a href="./fees.html">Fees &amp; Financing</a></li>
+<li class="menu-item"><a href="./step-by-step.html">Step by Step</a></li>
+<li class="menu-item"><a href="./documents.html">Documents</a></li>
+<li class="menu-item"><a href="./quiz.html">Quiz</a></li>
+<li class="menu-item"><a href="./frequently-asked-questions.html">FAQ</a></li>
+<li class="menu-item"><a href="./contact.html">Contact Us</a></li>
+</ul></div>
+<hr/>
+<div class="menu-footer">
+<div class="logo"><a href="../"><img alt="logo" src="../assets/img/logo-bl.png"/></a></div>
+<div class="social-media">
+<a href="https://www.facebook.com/foorsa" target="_blank"><img alt="facebook" src="../assets/img/facebook-white.png"/></a>
+<a href="https://www.instagram.com/foorsa.ma/" target="_blank"><img alt="instagram" src="../assets/img/instagram-white.png"/></a>
+<a href="https://www.linkedin.com/company/foorsa" target="_blank"><img alt="linkedin" src="../assets/img/linkedin-white.png"/></a>
+<a href="https://www.tiktok.com/@foorsa.ma" target="_blank"><img alt="tiktok" src="../assets/img/tiktok-white.png"/></a>
+<a href="https://www.youtube.com/@foorsa" target="_blank"><img alt="youtube" src="../assets/img/youtube-white.png"/></a>
+<a href="https://wa.me/+212537911271" target="_blank"><img alt="whatsapp" src="../assets/img/whatsapp-white.png"/></a>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<div class="dropdown language-switcher">
+  <div class="dropup">
+    <button class="dropbtn" id="current-lang-btn">
+      <div class="flag-icon"><img id="current-flag" alt="lang" src="https://flagcdn.com/w40/gb.png"/></div>
+      <span id="current-lang-text">EN</span>
+      <span class="arrow">▲</span>
+    </button>
+    <div class="dropup-content">
+      <a href="#" onclick="switchLanguage('en'); return false;" class="lang-option" data-lang="en">
+        <img src="https://flagcdn.com/w40/gb.png" alt="EN"/> EN
+      </a>
+      <a href="#" onclick="switchLanguage('fr'); return false;" class="lang-option" data-lang="fr">
+        <img src="https://flagcdn.com/w40/fr.png" alt="FR"/> FR
+      </a>
+      <a href="#" onclick="switchLanguage('ar'); return false;" class="lang-option" data-lang="ar">
+        <img src="https://flagcdn.com/w40/ma.png" alt="AR"/> AR
+      </a>
+    </div>
+  </div>
+</div>
+
+<main class="apply-page">
+    <div class="apply-header">
+        <h1>Apply</h1>
+    </div>
+    
+    <div class="apply-container">
+        <!-- Left Column: Application Fees Info -->
+        <div class="fees-section">
+            <h3>What happens next:</h3>
+            <div class="step-cards">
+                <div class="step-card highlight">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <div class="step-title">Free Consultation</div>
+                        <div class="step-desc">We call you within 24h to discuss your goals, budget, and recommend the best programs.</div>
+                        <div class="step-features">
+                            <span>✓ Program advice</span>
+                            <span>✓ Budget planning</span>
+                            <span>✓ No obligation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <div class="step-title">Submit Application</div>
+                        <div class="step-desc">We collect your documents, translate them, and submit to your chosen universities.</div>
+                        <div class="step-features">
+                            <span>✓ Free translation</span>
+                            <span>✓ Document review</span>
+                            <span>✓ Scholarship search</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <div class="step-title">Get Accepted</div>
+                        <div class="step-desc">Once accepted, we review your offer letter and guide you through visa application.</div>
+                        <div class="step-features">
+                            <span>✓ Offer review</span>
+                            <span>✓ Visa guidance</span>
+                            <span>✓ Document prep</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <div class="step-title">Prepare to Travel</div>
+                        <div class="step-desc">Attend our pre-departure orientation, book flights, and get ready for your adventure.</div>
+                        <div class="step-features">
+                            <span>✓ Orientation session</span>
+                            <span>✓ Flight help</span>
+                            <span>✓ Packing tips</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <div class="step-title">Welcome to China!</div>
+                        <div class="step-desc">Our rep picks you up at the airport and helps with university registration.</div>
+                        <div class="step-features">
+                            <span>✓ Airport pickup</span>
+                            <span>✓ Registration help</span>
+                            <span>✓ 24/7 support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="./step-by-step.html" class="view-full-journey">View Full Journey Guide →</a>
+        </div>
+        
+        <!-- Right Column: Application Form -->
+        <div class="form-section">
+            <div class="form-header">
+                <h3>Start Your Application</h3>
+                <p class="form-subtitle">Complete the form below to begin your journey to China</p>
+            </div>
+            
+            <form id="application-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name-input">Full Name <span class="required">*</span></label>
+                    <input type="text" id="name-input" name="name" required autocomplete="name" placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email-input">Email Address <span class="required">*</span></label>
+                    <input type="email" id="email-input" name="email" required autocomplete="email" placeholder="your@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone-input">Phone Number <span class="required">*</span></label>
+                    <div class="phone-input-group">
+                        <div class="country-select">
+                            <select name="country_code" id="country-code">
+                                <option value="+212">+212</option>
+                                <option value="+1">+1</option>
+                                <option value="+33">+33</option>
+                                <option value="+44">+44</option>
+                                <option value="+86">+86</option>
+                                <option value="+213">+213</option>
+                                <option value="+216">+216</option>
+                                <option value="+966">+966</option>
+                                <option value="+971">+971</option>
+                            </select>
+                        </div>
+                        <input type="tel" id="phone-input" name="phone" required autocomplete="tel" placeholder="600 000 000">
+                    </div>
+                </div>
+                
+                <div class="form-row program-promo-row">
+                    <div class="form-group" style="flex: 1;">
+                        <label>Program Type <span class="required">*</span></label>
+                        <div class="select-wrapper">
+                            <select name="program_type" id="program-type-input" required onchange="updatePrice()">
+                                <option value="language_bachelor" data-price="279">Language Year / Bachelor</option>
+                                <option value="master_phd" data-price="349">Master / PhD</option>
+                            </select>
+                            <span class="select-arrow">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label>Promo Code <span style="color: #999; font-weight: 400;">(optional)</span></label>
+                        <div class="promo-input-inline">
+                            <input type="text" id="promo-code-input" placeholder="Enter code" maxlength="20">
+                            <button type="button" class="promo-apply-btn" id="promo-apply-btn" onclick="applyPromoCode()">Apply</button>
+                        </div>
+                        <div class="promo-message" id="promo-message"></div>
+                    </div>
+                </div>
+                
+                <p class="service-fee-note">
+                    After pre-admission, a service fee of <strong>$900 USD</strong> applies.
+                </p>
+                
+                <div class="checkbox-wrapper">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" id="bac_status" name="bac_status">
+                        <span class="checkmark"></span>
+                        <span class="checkbox-text">I hold a Baccalaureate or am in my final year of high school</span>
+                    </label>
+                </div>
+                
+                <div class="checkbox-wrapper">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <span class="checkmark"></span>
+                        <span class="checkbox-text">I accept the <a href="./terms-of-service.html" target="_blank">Terms of Service</a> <span class="required">*</span></span>
+                    </label>
+                </div>
+                
+                
+                <div class="payment-section-simple" id="payment-section" style="display: none;">
+                    <div class="payment-header-simple">
+                        <span class="payment-title-simple">Payment Details</span>
+                        <span class="payment-secure-simple">Secure</span>
+                    </div>
+                    
+                    <div class="card-field">
+                        <label>Card Number</label>
+                        <div id="card-number" class="card-input"></div>
+                    </div>
+                    
+                    <div class="card-field-row">
+                        <div class="card-field half">
+                            <label>Expiry</label>
+                            <div id="card-expiry" class="card-input"></div>
+                        </div>
+                        <div class="card-field half">
+                            <label>CVC</label>
+                            <div id="card-cvc" class="card-input"></div>
+                        </div>
+                    </div>
+                    
+                    <div id="card-errors" class="card-error-msg" role="alert"></div>
+                </div>
+                
+                <button type="submit" class="submit-btn" id="submit-btn">
+                    <span id="btn-text">Start My Application - <span class="btn-price">$<span id="btn-price-amount">279</span></span></span>
+                    <span class="btn-guarantee">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                        Full refund if not admitted
+                    </span>
+                    <span id="btn-spinner" class="spinner-hidden">
+                        <svg class="spinner-icon" width="20" height="20" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none" stroke-dasharray="32" stroke-dashoffset="12"/>
+                        </svg>
+                        Processing...
+                    </span>
+                </button>
+            </form>
+            
+            <div class="success-message" id="success-message">
+                <div class="success-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M9 12l2 2 4-4"/>
+                    </svg>
+                </div>
+                <h2>Application Received!</h2>
+                <p>Thank you! Our team will contact you within 24-48 hours.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="section" id="sectionFooter">
+<div class="footer">
+<div class="firstFooter">
+<div class="container">
+<div class="firstFooter-inner">
+<div class="content">
+<h1>Ready to Transform Your Future?</h1>
+<p>Join hundreds of Moroccan students who chose Foorsa to study in China.</p>
+</div>
+<div class="actions">
+<button class="cartoon-btn" onclick="window.location.href='./shop.html'">Start Your Application</button>
+<button class="cartoon-btn white" onclick="window.location.href='./contact.html'">Get Free Consultation</button>
+</div>
+</div>
+</div>
+<div class="secondFooter">
+<div class="container">
+<div class="menuFooter">
+<div class="items-menu">
+<div class="item-menu">
+<label>China</label>
+<div class="menu">
+<div class="menu-china-footer-container"><ul class="menu" id="menu-china-footer"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2136" id="menu-item-2136"><a href="/universities-in-china/">Universities</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2137" id="menu-item-2137"><a href="/scholarships/">Scholarships</a></li>
+</ul></div> </div>
+</div>
+<div class="item-menu">
+<label>Foorsa</label>
+<div class="menu">
+<div class="menu-foorsa-footer-container"><ul class="menu" id="menu-foorsa-footer"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2138" id="menu-item-2138"><a href="./about-us.html">About Us</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2139" id="menu-item-2139"><a href="./about-us.html#careers">Careers</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2140" id="menu-item-2140"><a href="./contact.html">Contact</a></li>
+</ul></div> </div>
+</div>
+<div class="item-menu">
+<label>Articles</label>
+<div class="menu">
+<div class="menu-articles-footer-container"><ul class="menu" id="menu-articles-footer">
+<li class="menu-item"><a href="./blog.html">All Articles</a></li>
+<li class="menu-item"><a href="./blog.html?category=scholarships">Scholarships</a></li>
+<li class="menu-item"><a href="./blog.html?category=student-life">Student Life</a></li>
+<li class="menu-item"><a href="./blog.html?category=tips">Tips &amp; Advice</a></li>
+</ul></div> </div>
+</div>
+
+<div class="item-menu">
+<label>Langage</label>
+<div class="menu">
+<div class="menu-langage-footer-container"><ul class="menu" id="menu-langage-footer"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2141" id="menu-item-2141"><a href="/">English</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2142" id="menu-item-2142"><a href="#" onclick="alert('La version française arrive bientôt! / French version coming soon!'); return false;">Français</a></li>
+</ul></div> </div>
+</div>
+</div>
+<div class="socialMedia">
+<a href="https://www.facebook.com/Foorsaconsulting/?ref=page_internal&amp;_rdc=1&amp;_rdr" target="_blank">
+<img alt="facebook" src="../assets/img/facebook-white.png"/>
+</a>
+<a href="http://www.instagram.com/foorsa.ma/" target="_blank">
+<img alt="instagram" src="../assets/img/instagram-white.png"/>
+</a>
+<a href="https://www.linkedin.com/company/fooorsa-consulting" target="_blank">
+<img alt="linkedin" src="../assets/img/linkedin-white.png"/>
+</a>
+<a href="http://www.tiktok.com/@foorsa.ma" target="_blank">
+<img alt="tiktok" src="../assets/img/tiktok-white.png"/>
+</a>
+<a href="https://www.youtube.com/channel/UCGQpcJCswqd81o_Aq7W1ArQ" target="_blank">
+<img alt="youtube" src="../assets/img/youtube-white.png"/>
+</a>
+<a href="https://wa.me/+2120537911291" target="_blank">
+<img alt="whatsapp" src="../assets/img/whatsapp-white.png"/>
+</a>
+</div>
+</div>
+<hr>
+<div class="copyRight">
+<p>© 2026 Foorsa. All rights reserved</p>
+
+<div class="conditions">
+<a href="./terms-of-service.html">Terms of Service</a>
+<a href="./privacy-policy.html">Privacy Policy</a>
+</div>
+</div>
+</hr></div>
+
+</div>
+</div>
+</footer>
+<script id="foorsa-navigation-js" src="../assets/js/navigation.js"></script>
+<script id="bootstrap-bundle-js" src="../assets/bootstrap/js/bootstrap.bundle.js"></script>
+<script id="swiper-js" src="../assets/libs/swiper-bundle.min.js"></script>
+<script id="global-js-js" src="../assets/js/global.js"></script>
+<script id="gsap-js" src="../assets/libs/gsap.min.js"></script>
+<script id="scrolltrigger-js" src="../assets/libs/ScrollTrigger.min.js"></script>
+<script id="main-js-js" src="../assets/js/main.js"></script>
+<script>
+// Program pricing
+const programPrices = {
+    'language_bachelor': 279,
+    'master_phd': 349
+};
+
+// Promo code state
+let appliedPromo = null;
+let originalPrice = 279;
+
+// Update price when program changes
+function updatePrice() {
+    const select = document.getElementById('program-type-input');
+    const selectedOption = select.options[select.selectedIndex];
+    const price = parseInt(selectedOption.dataset.price) || 279;
+    originalPrice = price;
+    
+    if (window.appliedPromo) {
+        applyPromoDiscount(window.appliedPromo);
+    } else {
+        document.getElementById('btn-price-amount').textContent = price;
+    }
+}
+
+async function applyPromoCode() {
+    const codeInput = document.getElementById('promo-code-input');
+    const code = codeInput.value.trim().toUpperCase();
+    const message = document.getElementById('promo-message');
+    const applyBtn = document.getElementById('promo-apply-btn');
+    
+    if (!code) {
+        message.textContent = 'Please enter a promo code';
+        message.className = 'promo-message error';
+        return;
+    }
+    
+    applyBtn.disabled = true;
+    applyBtn.textContent = 'Checking...';
+    
+    try {
+        const response = await fetch('/api/validate-promo', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ code: code })
+        });
+        
+        const result = await response.json();
+        
+        if (result.valid) {
+            const select = document.getElementById('program-type-input');
+            const selectedOption = select.options[select.selectedIndex];
+            const currentPrice = parseInt(selectedOption.dataset.price);
+            const minPurchase = parseFloat(result.min_purchase || 0);
+            
+            if (currentPrice < minPurchase) {
+                message.textContent = `Minimum purchase of $${minPurchase} required for this code`;
+                message.className = 'promo-message error';
+                return;
+            }
+            
+            window.appliedPromo = {
+                code: code,
+                discount_type: result.discount_type,
+                discount_value: result.discount_value,
+                min_purchase: minPurchase
+            };
+            
+            codeInput.disabled = true;
+            applyBtn.style.display = 'none';
+            
+            applyPromoDiscount(window.appliedPromo);
+            
+            message.textContent = `✓ ${code} applied!`;
+            message.className = 'promo-message success';
+        } else {
+            message.textContent = result.error || 'Invalid promo code';
+            message.className = 'promo-message error';
+        }
+    } catch (err) {
+        message.textContent = 'Error validating code. Please try again.';
+        message.className = 'promo-message error';
+    } finally {
+        applyBtn.disabled = false;
+        applyBtn.textContent = 'Apply';
+    }
+}
+
+function applyPromoDiscount(promo) {
+    const select = document.getElementById('program-type-input');
+    const selectedOption = select.options[select.selectedIndex];
+    originalPrice = parseInt(selectedOption.dataset.price);
+    
+    let discountAmount = 0;
+    let finalPrice = originalPrice;
+    
+    if (promo.discount_type === 'percentage') {
+        discountAmount = Math.round(originalPrice * (promo.discount_value / 100));
+        finalPrice = originalPrice - discountAmount;
+    } else if (promo.discount_type === 'fixed') {
+        discountAmount = promo.discount_value;
+        finalPrice = Math.max(0, originalPrice - discountAmount);
+    }
+    
+    document.getElementById('btn-price-amount').innerHTML = '<span class="original-price">$' + originalPrice + '</span> $' + finalPrice;
+    
+    window.finalPrice = finalPrice;
+    window.discountAmount = discountAmount;
+}
+
+function removePromoCode() {
+    window.appliedPromo = null;
+    window.finalPrice = null;
+    window.discountAmount = null;
+    
+    const codeInput = document.getElementById('promo-code-input');
+    const applyBtn = document.getElementById('promo-apply-btn');
+    
+    codeInput.disabled = false;
+    codeInput.value = '';
+    applyBtn.style.display = 'block';
+    document.getElementById('promo-message').textContent = '';
+    
+    const select = document.getElementById('program-type-input');
+    const selectedOption = select.options[select.selectedIndex];
+    const price = selectedOption.dataset.price;
+    document.getElementById('btn-price-amount').textContent = price;
+}
+
+// Stripe integration
+let stripe;
+let elements;
+let cardNumberElement;
+let cardExpiryElement;
+let cardCvcElement;
+
+function checkFormCompletion() {
+    const name = document.getElementById('name-input').value.trim();
+    const email = document.getElementById('email-input').value.trim();
+    const phone = document.getElementById('phone-input').value.trim();
+    const paymentSection = document.getElementById('payment-section');
+    
+    if (name && email && phone) {
+        paymentSection.style.display = 'block';
+    } else {
+        paymentSection.style.display = 'none';
+    }
+}
+
+document.getElementById('name-input').addEventListener('input', checkFormCompletion);
+document.getElementById('email-input').addEventListener('input', checkFormCompletion);
+document.getElementById('phone-input').addEventListener('input', checkFormCompletion);
+
+// Auto-save partial form data
+let partialSubmissionId = localStorage.getItem('partial_submission_id') || 'partial_' + Date.now();
+localStorage.setItem('partial_submission_id', partialSubmissionId);
+
+async function savePartialSubmission() {
+    const formData = {
+        submission_id: partialSubmissionId,
+        name: document.querySelector('input[name="name"]')?.value || '',
+        email: document.querySelector('input[name="email"]')?.value || '',
+        phone: (document.querySelector('select[name="country_code"]')?.value || '') + (document.querySelector('input[name="phone"]')?.value || ''),
+        program_type: document.getElementById('program-type-input')?.value || '',
+        bac_status: document.getElementById('bac_status')?.checked || false,
+        terms_accepted: document.getElementById('terms')?.checked || false,
+        status: 'partial',
+        last_updated: new Date().toISOString(),
+        page_url: window.location.href,
+        user_agent: navigator.userAgent
+    };
+    
+    if (formData.name || formData.email || formData.phone) {
+        try {
+            await fetch('/api/save-partial-submission', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            });
+        } catch (err) {
+            console.log('Auto-save failed:', err);
+        }
+    }
+}
+
+const formFields = document.querySelectorAll('#application-form input, #application-form select');
+formFields.forEach(field => {
+    field.addEventListener('blur', savePartialSubmission);
+    field.addEventListener('change', savePartialSubmission);
+});
+
+async function initStripe() {
+    try {
+        const response = await fetch('/api/stripe-key');
+        const { publishableKey } = await response.json();
+        
+        stripe = Stripe(publishableKey);
+        elements = stripe.elements();
+        
+        const fieldStyle = {
+            base: {
+                color: '#041228',
+                fontFamily: '"DM Sans", sans-serif',
+                fontSize: '16px',
+                '::placeholder': { color: '#9ca3af' }
+            },
+            invalid: { color: '#dc2626' }
+        };
+        
+        cardNumberElement = elements.create('cardNumber', { style: fieldStyle });
+        cardExpiryElement = elements.create('cardExpiry', { style: fieldStyle });
+        cardCvcElement = elements.create('cardCvc', { style: fieldStyle });
+        
+        cardNumberElement.mount('#card-number');
+        cardExpiryElement.mount('#card-expiry');
+        cardCvcElement.mount('#card-cvc');
+        
+        [cardNumberElement, cardExpiryElement, cardCvcElement].forEach(element => {
+            element.on('change', function(event) {
+                const displayError = document.getElementById('card-errors');
+                if (event.error) {
+                    displayError.textContent = event.error.message;
+                } else {
+                    displayError.textContent = '';
+                }
+            });
+        });
+    } catch (error) {
+        console.error('Error initializing Stripe:', error);
+    }
+}
+
+initStripe();
+
+document.getElementById('application-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const name = document.querySelector('input[name="name"]').value;
+    const email = document.querySelector('input[name="email"]').value;
+    const countryCode = document.querySelector('select[name="country_code"]').value;
+    const phone = document.querySelector('input[name="phone"]').value;
+    const programType = document.getElementById('program-type-input').value;
+    const termsChecked = document.getElementById('terms').checked;
+    
+    if (!name || !email || !phone) {
+        alert('Please fill in all required fields.');
+        return;
+    }
+    
+    if (!termsChecked) {
+        alert('Please accept the Terms of Service to continue.');
+        return;
+    }
+    
+    const submitBtn = document.getElementById('submit-btn');
+    const btnText = document.getElementById('btn-text');
+    const btnSpinner = document.getElementById('btn-spinner');
+    
+    submitBtn.disabled = true;
+    btnText.style.display = 'none';
+    btnSpinner.style.display = 'inline';
+    
+    try {
+        const response = await fetch('/api/create-payment-intent', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                name: name,
+                email: email,
+                phone: countryCode + phone,
+                program_type: programType,
+                country_code: countryCode
+            })
+        });
+        
+        const { clientSecret, error: serverError } = await response.json();
+        
+        if (serverError) {
+            throw new Error(serverError);
+        }
+        
+        const { paymentIntent, error } = await stripe.confirmCardPayment(clientSecret, {
+            payment_method: {
+                card: cardNumberElement,
+                billing_details: {
+                    name: name,
+                    email: email,
+                    phone: countryCode + phone
+                }
+            }
+        });
+        
+        if (error) {
+            document.getElementById('card-errors').textContent = error.message;
+            submitBtn.disabled = false;
+            btnText.style.display = 'inline';
+            btnSpinner.style.display = 'none';
+        } else if (paymentIntent.status === 'succeeded') {
+            localStorage.removeItem('partial_submission_id');
+            fetch('/api/update-submission-status', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ submission_id: partialSubmissionId, status: 'paid' })
+            });
+            window.location.href = './payment-confirmation.html?payment_id=' + paymentIntent.id;
+        }
+    } catch (err) {
+        document.getElementById('card-errors').textContent = 'Payment failed. Please try again.';
+        submitBtn.disabled = false;
+        btnText.style.display = 'inline';
+        btnSpinner.style.display = 'none';
+        console.error('Payment error:', err);
+    }
+});
+</script>
+</body>
+</html>

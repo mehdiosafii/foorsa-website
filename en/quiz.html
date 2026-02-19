@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0JT7KY4DKQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0JT7KY4DKQ');
+</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Study Destination Quiz - Foorsa</title>
+<meta content="max-image-preview:large" name="robots">
+<link rel="preload" href="../assets/css/style.css" as="style">
+<link rel="preload" href="../assets/fonts/Marcher-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/Marcher-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link href="../assets/bootstrap/css/bootstrap.css" id="bootstrap-css-css" media="all" rel="stylesheet">
+<link href="../assets/css/style.css" id="style-css-css" media="all" rel="stylesheet"/>
+<link href="../assets/css/responsive.css" id="responsive-css-css" media="all" rel="stylesheet"/>
+<link href="../assets/libs/swiper-bundle.min.css" id="swiper-css-css" media="all" rel="stylesheet"/>
+<link href="../assets/libs/fancybox.css" id="fancybox-css-css" media="all" rel="stylesheet"/>
+<script id="jquery-core-js" src="../assets/vendor/jquery.min.js"></script>
+<script id="jquery-migrate-js" src="../assets/vendor/jquery-migrate.min.js" defer></script>
+<script src="/js/language-handler.js" defer></script>
+<style>
+.quiz-hero {
+    background: #041228;
+    padding: 120px 0 80px;
+    text-align: center;
+}
+.quiz-hero h1 {
+    font-family: 'Marcher';
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.quiz-hero p {
+    font-size: 18px;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.quiz-content {
+    background: #fff;
+    padding: 60px 0;
+}
+.quiz-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.question-block {
+    margin-bottom: 50px;
+}
+.question-block:last-of-type {
+    margin-bottom: 30px;
+}
+.question-title {
+    font-family: 'Marcher';
+    font-size: 20px;
+    font-weight: 700;
+    color: #041228;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.options-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.option-item {
+    position: relative;
+}
+.option-item input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+}
+.option-label {
+    display: block;
+    padding: 18px 25px;
+    background: #f5f7fa;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #041228;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.option-item input[type="radio"]:hover + .option-label {
+    background: #e8ecf2;
+    border-color: #041228;
+}
+.option-item input[type="radio"]:checked + .option-label {
+    background: #041228;
+    color: #fff;
+    border-color: #041228;
+}
+.quiz-submit {
+    text-align: center;
+    margin-top: 40px;
+}
+.btn-submit {
+    display: inline-block;
+    padding: 18px 60px;
+    background: #041228;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Marcher';
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.btn-submit:hover {
+    background: #7696C4;
+    transform: translateY(-2px);
+}
+.error-text {
+    color: #dc3545;
+    font-size: 14px;
+    margin-bottom: 15px;
+    display: none;
+}
+.error-text.show {
+    display: block;
+}
+.results-hero {
+    display: none;
+    background: #041228;
+    padding: 80px 0;
+    text-align: center;
+}
+.results-hero.show {
+    display: block;
+}
+.results-hero .subtitle {
+    font-size: 16px;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.results-hero h2 {
+    font-family: 'Marcher';
+    font-size: 56px;
+    font-weight: 700;
+    color: #7696C4;
+    margin-bottom: 30px;
+}
+.results-hero .description {
+    font-size: 18px;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 20px;
+}
+.results-hero .match-text {
+    font-size: 16px;
+    color: rgba(255,255,255,0.7);
+    font-style: italic;
+    margin-bottom: 40px;
+}
+.results-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.results-actions .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 35px;
+    border-radius: 50px;
+    font-family: 'Marcher';
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.results-actions .btn-light {
+    background: #fff;
+    color: #041228;
+}
+.results-actions .btn-light:hover {
+    background: #7696C4;
+    color: #fff;
+}
+.results-actions .btn-outline {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.results-actions .btn-outline:hover {
+    background: #fff;
+    color: #041228;
+}
+.btn-retake {
+    background: transparent;
+    border: none;
+    color: #7696C4;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.btn-retake:hover {
+    color: #fff;
+}
+.encouragement {
+    background: #f5f7fa;
+    padding: 40px;
+    text-align: center;
+    display: none;
+}
+.encouragement.show {
+    display: block;
+}
+.encouragement p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+    .quiz-hero {
+        padding: 100px 20px 50px;
+    }
+    .quiz-hero h1 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+    .quiz-hero p {
+        font-size: 15px;
+    }
+    .quiz-content {
+        padding: 30px 0;
+    }
+    .quiz-container {
+        padding: 0 15px;
+    }
+    .quiz-card {
+        padding: 25px 20px;
+    }
+    .question-text {
+        font-size: 18px;
+    }
+    .option-btn {
+        padding: 15px;
+        font-size: 14px;
+    }
+    .results-hero {
+        padding: 60px 20px;
+    }
+    .results-hero h2 {
+        font-size: 28px;
+    }
+    .results-hero h3 {
+        font-size: 24px;
+    }
+    .results-actions {
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 15px;
+    }
+    .results-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    .encouragement {
+        padding: 30px 20px;
+    }
+    .encouragement p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+    .quiz-hero h1 {
+        font-size: 24px;
+    }
+    .quiz-card {
+        padding: 20px 15px;
+    }
+    .question-text {
+        font-size: 16px;
+    }
+    .option-btn {
+        padding: 12px;
+        font-size: 13px;
+    }
+    .results-hero h2 {
+        font-size: 24px;
+    }
+}
+</style>
+</meta></link></head>
+<body class="quiz-page">
+<div class="header header-desktop sticky">
+<div class="logo-menu active">
+<div class="logo"><a href="../"><img alt="logo" src="../assets/img/logo-bl.png"/></a></div>
+<nav class="main-menu active">
+<ul class="menu">
+<li class="menu-item menu-item-has-children">
+<a href="#">Foorsa <span class="dropdown-arrow">▼</span></a>
+<ul class="sub-menu">
+<li><a href="./about-us.html">About Us</a></li>
+<li><a href="./mission-values.html">Mission &amp; Values</a></li>
+<li><a href="./engagement.html">Engagement</a></li>
+<li><a href="./recruitment.html">Recruitment</a></li>
+<li><a href="./partner-with-us.html">Partner With Us</a></li>
+<li><a href="./contact.html">Contact us</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children">
+<a href="#">China <span class="dropdown-arrow">▼</span></a>
+<ul class="sub-menu">
+<li><a href="./majors.html">Majors</a></li>
+<li><a href="./scholarship.html">Scholarship</a></li>
+<li><a href="./fees.html">Fees &amp; Financing</a></li>
+<li><a href="./step-by-step.html">Step by step</a></li>
+<li><a href="./documents.html">Documents</a></li>
+<li><a href="./frequently-asked-questions.html">FAQ</a></li>
+</ul>
+</li>
+<li class="menu-item"><a href="./blog.html">Blog</a></li>
+</ul>
+</nav>
+<a class="btn-apply-navbar" href="./shop.html">APPLY</a>
+</div>
+</div>
+<!-- Mobile Header -->
+<div class="header header-mobile">
+<div class="logo-top"><a href="../"><img alt="logo" src="../assets/img/logo-bl.png"/></a></div>
+<a class="btn-apply-navbar" href="./shop.html">APPLY</a>
+<nav role="navigation">
+<div id="menuToggle">
+<input type="checkbox"/>
+<span></span>
+<span></span>
+<div id="menu">
+<div class="menu-mobile-menu-container">
+<ul class="menu" id="menu-mobile-menu">
+<li class="menu-item"><a href="../">Home</a></li>
+<li class="menu-item"><a href="./about-us.html">About Us</a></li>
+<li class="menu-item"><a href="./majors.html">Majors</a></li>
+<li class="menu-item"><a href="./scholarship.html">Scholarship</a></li>
+<li class="menu-item"><a href="./fees.html">Fees &amp; Financing</a></li>
+<li class="menu-item"><a href="./step-by-step.html">Step by Step</a></li>
+<li class="menu-item"><a href="./documents.html">Documents</a></li>
+<li class="menu-item"><a href="./quiz.html">Quiz</a></li>
+<li class="menu-item"><a href="./frequently-asked-questions.html">FAQ</a></li>
+<li class="menu-item"><a href="./contact.html">Contact Us</a></li>
+</ul>
+</div>
+<hr/>
+<div class="menu-footer">
+<div class="logo"><a href="../"><img alt="logo" src="../assets/img/logo-bl.png"/></a></div>
+<div class="social-media">
+<a href="https://www.facebook.com/foorsa" target="_blank"><img alt="facebook" src="../assets/img/facebook-white.png"/></a>
+<a href="https://www.instagram.com/foorsa.ma/" target="_blank"><img alt="instagram" src="../assets/img/instagram-white.png"/></a>
+<a href="https://www.linkedin.com/company/foorsa" target="_blank"><img alt="linkedin" src="../assets/img/linkedin-white.png"/></a>
+<a href="https://www.tiktok.com/@foorsa.ma" target="_blank"><img alt="tiktok" src="../assets/img/tiktok-white.png"/></a>
+<a href="https://www.youtube.com/@foorsa" target="_blank"><img alt="youtube" src="../assets/img/youtube-white.png"/></a>
+<a href="https://wa.me/+212600000000" target="_blank"><img alt="whatsapp" src="../assets/img/whatsapp-white.png"/></a>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<div class="dropdown language-switcher">
+  <div class="dropup">
+    <button class="dropbtn" id="current-lang-btn">
+      <div class="flag-icon"><img id="current-flag" alt="lang" src="https://flagcdn.com/w40/gb.png"/></div>
+      <span id="current-lang-text">EN</span>
+      <span class="arrow">▲</span>
+    </button>
+    <div class="dropup-content">
+      <a href="#" onclick="switchLanguage('en'); return false;" class="lang-option" data-lang="en">
+        <img src="https://flagcdn.com/w40/gb.png" alt="EN"/> EN
+      </a>
+      <a href="#" onclick="switchLanguage('fr'); return false;" class="lang-option" data-lang="fr">
+        <img src="https://flagcdn.com/w40/fr.png" alt="FR"/> FR
+      </a>
+      <a href="#" onclick="switchLanguage('ar'); return false;" class="lang-option" data-lang="ar">
+        <img src="https://flagcdn.com/w40/ma.png" alt="AR"/> AR
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<main class="page-quiz">
+    <section class="quiz-hero" id="quizHero">
+        <div class="container">
+            <h1>Find your ideal and affordable study destination in China!</h1>
+            <p>Answer each question truthfully. Your responses will help us suggest the best Chinese city or province for your studies based on your preferences and goals.</p>
+        </div>
+    </section>
+
+    <section class="quiz-content" id="quizContent">
+        <div class="quiz-container">
+            <div class="question-block">
+                <h3 class="question-title">WHAT ARE YOU LOOKING TO STUDY?</h3>
+                <div class="options-grid">
+                    <div class="option-item">
+                        <input type="radio" name="study" value="arts" id="study-arts">
+                        <label class="option-label" for="study-arts">Arts and Humanities (e.g., Chinese language, history, culture)</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="study" value="business" id="study-business">
+                        <label class="option-label" for="study-business">Business and Economics (e.g., international business, economics)</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="study" value="stem" id="study-stem">
+                        <label class="option-label" for="study-stem">STEM (Science, Technology, Engineering, Mathematics)</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="study" value="medicine" id="study-medicine">
+                        <label class="option-label" for="study-medicine">Medicine and Health Sciences</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="study" value="environment" id="study-environment">
+                        <label class="option-label" for="study-environment">Environmental Studies and Agriculture</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="study" value="undecided" id="study-undecided">
+                        <label class="option-label" for="study-undecided">I'm undecided and open to exploring different fields.</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <h3 class="question-title">WHAT'S YOUR PREFERRED CLIMATE?</h3>
+                <div class="options-grid">
+                    <div class="option-item">
+                        <input type="radio" name="climate" value="warm" id="climate-warm">
+                        <label class="option-label" for="climate-warm">Warm and humid</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="climate" value="cold" id="climate-cold">
+                        <label class="option-label" for="climate-cold">Cold with four distinct seasons</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="climate" value="mild" id="climate-mild">
+                        <label class="option-label" for="climate-mild">Mild and temperate</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="climate" value="no_preference" id="climate-none">
+                        <label class="option-label" for="climate-none">I have no preference</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <h3 class="question-title">WHAT CITY SIZE DO YOU PREFER?</h3>
+                <div class="options-grid">
+                    <div class="option-item">
+                        <input type="radio" name="city" value="large" id="city-large">
+                        <label class="option-label" for="city-large">Large metropolitan city</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="city" value="medium" id="city-medium">
+                        <label class="option-label" for="city-medium">Medium-sized city</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="city" value="small" id="city-small">
+                        <label class="option-label" for="city-small">Smaller city or town</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="city" value="no_preference" id="city-none">
+                        <label class="option-label" for="city-none">No preference</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <h3 class="question-title">HOW IMPORTANT IS COST OF LIVING?</h3>
+                <div class="options-grid">
+                    <div class="option-item">
+                        <input type="radio" name="cost" value="very" id="cost-very">
+                        <label class="option-label" for="cost-very">Very important - budget is limited</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="cost" value="somewhat" id="cost-somewhat">
+                        <label class="option-label" for="cost-somewhat">Somewhat important</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="cost" value="not" id="cost-not">
+                        <label class="option-label" for="cost-not">Not a priority</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <h3 class="question-title">WHAT'S YOUR CHINESE LANGUAGE LEVEL?</h3>
+                <div class="options-grid">
+                    <div class="option-item">
+                        <input type="radio" name="language" value="beginner" id="lang-beginner">
+                        <label class="option-label" for="lang-beginner">Beginner</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="language" value="intermediate" id="lang-intermediate">
+                        <label class="option-label" for="lang-intermediate">Intermediate</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="language" value="advanced" id="lang-advanced">
+                        <label class="option-label" for="lang-advanced">Advanced</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="language" value="native" id="lang-native">
+                        <label class="option-label" for="lang-native">Native speaker</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz-submit">
+                <p class="error-text" id="errorText">Please answer all questions before submitting.</p>
+                <button type="button" class="btn-submit" id="submitBtn">Find My Destination</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="results-hero" id="resultsHero">
+        <div class="container">
+            <p class="subtitle">Based on your answers</p>
+            <h2 id="resultCity"></h2>
+            <p class="description" id="resultDesc"></p>
+            <p class="match-text">This province is an ideal match for you, offering a fulfilling academic experience tailored to your preferences and interests.</p>
+            <div class="results-actions">
+                <a href="./majors.html" class="btn btn-light">
+                    Explore the major sections
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                        <path d="M13.9991 1.61725L1.65625 13.9564" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.9997 13.6715V1.61719H1.94531" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="../" class="btn btn-outline">
+                    Home
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                        <path d="M13.9991 1.61725L1.65625 13.9564" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.9997 13.6715V1.61719H1.94531" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+            <button class="btn-retake" id="retakeBtn">Take the quiz again</button>
+        </div>
+    </section>
+
+    <div class="encouragement" id="encouragement">
+        <p>Remember, this quiz is a starting point for your journey. We encourage you to research further based on your quiz suggestions to make the most informed decision for your studies in China.</p>
+    </div>
+</main>
+
+<footer class="section" id="sectionFooter">
+<div class="footer">
+<div class="firstFooter">
+<div class="container">
+<div class="firstFooter-inner">
+<div class="content">
+<h1>Ready to Transform Your Future?</h1>
+<p>Join hundreds of Moroccan students who chose Foorsa to study in China.</p>
+</div>
+<div class="actions">
+<button class="cartoon-btn" onclick="window.location.href='./shop.html'">Start Your Application</button>
+<button class="cartoon-btn white" onclick="window.location.href='./contact.html'">Get Free Consultation</button>
+</div>
+</div>
+</div>
+<div class="secondFooter">
+<div class="container">
+<div class="menuFooter">
+<div class="items-menu">
+<div class="item-menu">
+<label>China</label>
+<div class="menu">
+<div class="menu-china-footer-container"><ul class="menu" id="menu-china-footer"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2136" id="menu-item-2136"><a href="/universities-in-china/">Universities</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2137" id="menu-item-2137"><a href="/scholarships/">Scholarships</a></li>
+</ul></div> </div>
+</div>
+<div class="item-menu">
+<label>Foorsa</label>
+<div class="menu">
+<div class="menu-foorsa-footer-container"><ul class="menu" id="menu-foorsa-footer"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2138" id="menu-item-2138"><a href="./about-us.html">About Us</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2139" id="menu-item-2139"><a href="./about-us.html#careers">Careers</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2140" id="menu-item-2140"><a href="./contact.html">Contact</a></li>
+</ul></div> </div>
+</div>
+<div class="item-menu">
+<label>Articles</label>
+<div class="menu">
+<div class="menu-articles-footer-container"><ul class="menu" id="menu-articles-footer">
+<li class="menu-item"><a href="./blog.html">All Articles</a></li>
+<li class="menu-item"><a href="./blog.html?category=scholarships">Scholarships</a></li>
+<li class="menu-item"><a href="./blog.html?category=student-life">Student Life</a></li>
+<li class="menu-item"><a href="./blog.html?category=tips">Tips &amp; Advice</a></li>
+</ul></div> </div>
+</div>
+
+<div class="item-menu">
+<label>Langage</label>
+<div class="menu">
+<div class="menu-langage-footer-container"><ul class="menu" id="menu-langage-footer"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2141" id="menu-item-2141"><a href="/">English</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2142" id="menu-item-2142"><a href="#" onclick="alert('La version française arrive bientôt! / French version coming soon!'); return false;">Français</a></li>
+</ul></div> </div>
+</div>
+</div>
+<div class="socialMedia">
+<a href="https://www.facebook.com/Foorsaconsulting/?ref=page_internal&amp;_rdc=1&amp;_rdr" target="_blank">
+<img alt="facebook" src="../assets/img/facebook-white.png"/>
+</a>
+<a href="http://www.instagram.com/foorsa.ma/" target="_blank">
+<img alt="instagram" src="../assets/img/instagram-white.png"/>
+</a>
+<a href="https://www.linkedin.com/company/fooorsa-consulting" target="_blank">
+<img alt="linkedin" src="../assets/img/linkedin-white.png"/>
+</a>
+<a href="http://www.tiktok.com/@foorsa.ma" target="_blank">
+<img alt="tiktok" src="../assets/img/tiktok-white.png"/>
+</a>
+<a href="https://www.youtube.com/channel/UCGQpcJCswqd81o_Aq7W1ArQ" target="_blank">
+<img alt="youtube" src="../assets/img/youtube-white.png"/>
+</a>
+<a href="https://wa.me/+2120537911291" target="_blank">
+<img alt="whatsapp" src="../assets/img/whatsapp-white.png"/>
+</a>
+</div>
+</div>
+<hr>
+<div class="copyRight">
+<p>© 2026 Foorsa. All rights reserved</p>
+
+<div class="conditions">
+<a href="./terms-of-service.html">Terms of Service</a>
+<a href="./privacy-policy.html">Privacy Policy</a>
+</div>
+</div>
+</hr></div>
+
+</div>
+</div>
+</footer>
+
+<script src="../assets/libs/gsap.min.js" defer></script>
+<script src="../assets/libs/ScrollTrigger.min.js" defer></script>
+<script src="../assets/libs/MotionPathPlugin.min.js" defer></script>
+<script src="../assets/libs/swiper-bundle.min.js" defer></script>
+<script src="../assets/libs/fancybox.umd.js" defer></script>
+<script src="../assets/js/navigation.js" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const destinations = {
+        beijing: {
+            name: 'Beijing',
+            desc: 'China\'s capital is perfect for you! Beijing offers world-class universities for STEM and business, rich cultural heritage, and excellent opportunities for students who want to experience traditional Chinese culture alongside modern innovation.'
+        },
+        shanghai: {
+            name: 'Shanghai',
+            desc: 'The most international city in China awaits you! Shanghai is ideal for business and economics students, with a cosmopolitan atmosphere, English-friendly environment, and endless networking opportunities in Asia\'s financial hub.'
+        },
+        guangzhou: {
+            name: 'Guangzhou',
+            desc: 'Welcome to South China\'s vibrant metropolis! Guangzhou offers warm subtropical weather, excellent business programs, and a dynamic mix of Cantonese culture and modern commerce. Perfect for those who love warm climates.'
+        },
+        wuhan: {
+            name: 'Wuhan',
+            desc: 'Central China\'s educational powerhouse is calling! Wuhan offers top-tier medical and engineering programs at affordable costs. The city provides authentic Chinese experiences with a lower cost of living than coastal cities.'
+        },
+        chengdu: {
+            name: 'Chengdu',
+            desc: 'Discover the laid-back charm of Chengdu! Known for its mild climate, affordable living, and rich cultural scene, Chengdu is perfect for students who want a balanced lifestyle while exploring diverse academic fields.'
+        },
+        xian: {
+            name: 'Xi\'an',
+            desc: 'Step into history in Xi\'an! As the ancient capital of China, Xi\'an is the ideal destination for arts and humanities students who want to immerse themselves in Chinese history, culture, and archaeological wonders.'
+        },
+        hangzhou: {
+            name: 'Hangzhou',
+            desc: 'Experience the beauty of Hangzhou! This tech hub near Shanghai offers excellent programs in technology and environmental studies, stunning natural scenery, and a temperate climate. Home to Alibaba and surrounded by tea plantations.'
+        }
+    };
+
+    function getResult(answers) {
+        const { study, climate, city, cost, language } = answers;
+        
+        if (study === 'arts') return 'xian';
+        if (study === 'medicine') return 'wuhan';
+        if (study === 'environment') return 'hangzhou';
+        
+        if (study === 'business') {
+            if (city === 'large' && cost !== 'very') return 'shanghai';
+            if (climate === 'warm') return 'guangzhou';
+            return 'beijing';
+        }
+        
+        if (study === 'stem') {
+            if (climate === 'mild') return 'hangzhou';
+            if (cost === 'very') return 'wuhan';
+            return 'beijing';
+        }
+        
+        if (cost === 'very') {
+            if (climate === 'mild') return 'chengdu';
+            return 'wuhan';
+        }
+        
+        if (climate === 'warm') return 'guangzhou';
+        if (climate === 'mild') return 'hangzhou';
+        if (city === 'large') return 'shanghai';
+        
+        return 'chengdu';
+    }
+
+    const submitBtn = document.getElementById('submitBtn');
+    const retakeBtn = document.getElementById('retakeBtn');
+    const errorText = document.getElementById('errorText');
+    const quizHero = document.getElementById('quizHero');
+    const quizContent = document.getElementById('quizContent');
+    const resultsHero = document.getElementById('resultsHero');
+    const encouragement = document.getElementById('encouragement');
+    const resultCity = document.getElementById('resultCity');
+    const resultDesc = document.getElementById('resultDesc');
+
+    submitBtn.addEventListener('click', function() {
+        const study = document.querySelector('input[name="study"]:checked');
+        const climate = document.querySelector('input[name="climate"]:checked');
+        const city = document.querySelector('input[name="city"]:checked');
+        const cost = document.querySelector('input[name="cost"]:checked');
+        const language = document.querySelector('input[name="language"]:checked');
+
+        if (!study || !climate || !city || !cost || !language) {
+            errorText.classList.add('show');
+            return;
+        }
+
+        errorText.classList.remove('show');
+
+        const answers = {
+            study: study.value,
+            climate: climate.value,
+            city: city.value,
+            cost: cost.value,
+            language: language.value
+        };
+
+        const resultKey = getResult(answers);
+        const result = destinations[resultKey];
+
+        resultCity.textContent = result.name;
+        resultDesc.textContent = result.desc;
+
+        quizHero.style.display = 'none';
+        quizContent.style.display = 'none';
+        resultsHero.classList.add('show');
+        encouragement.classList.add('show');
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    retakeBtn.addEventListener('click', function() {
+        document.querySelectorAll('input[type="radio"]').forEach(r => r.checked = false);
+        
+        quizHero.style.display = 'block';
+        quizContent.style.display = 'block';
+        resultsHero.classList.remove('show');
+        encouragement.classList.remove('show');
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
+</script>
+<script src="../assets/js/global.js" defer></script>
+<script>
+(function() {
+    const FORM_TYPE = 'quiz';
+    let submissionId = sessionStorage.getItem('quiz_submission_id') || 'quiz_' + Date.now();
+    sessionStorage.setItem('quiz_submission_id', submissionId);
+    
+    function getFormData() {
+        const answers = {};
+        document.querySelectorAll('input[type="radio"]:checked, input[type="checkbox"]:checked, select').forEach((el, i) => {
+            answers[el.name || 'q' + i] = el.value;
+        });
+        return {
+            submission_id: submissionId,
+            form_type: FORM_TYPE,
+            form_page: window.location.pathname,
+            name: document.querySelector('input[name="name"], #name')?.value || '',
+            email: document.querySelector('input[name="email"], input[type="email"], #email')?.value || '',
+            phone: document.querySelector('input[name="phone"], input[type="tel"], #phone')?.value || '',
+            quiz_answers: answers,
+            questions_answered: Object.keys(answers).length,
+            status: 'partial',
+            language: document.documentElement.lang || 'en'
+        };
+    }
+    
+    function trackForm() {
+        const data = getFormData();
+        if (data.name || data.email || data.questions_answered > 0) {
+            fetch('/api/track-form', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) }).catch(err => console.log('Track failed:', err));
+        }
+    }
+    
+    document.querySelectorAll('form input, form textarea, form select').forEach(field => { field.addEventListener('change', trackForm); });
+})();
+</script>
+</body>
+</html>

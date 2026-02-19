@@ -1,0 +1,2122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0JT7KY4DKQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0JT7KY4DKQ');
+</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Majors - Study in China | Foorsa</title>
+<meta name="description" content="Explore diverse study majors in China - Business, Engineering, Medical Sciences, IT & Computer Science, Arts & Humanities. Find your perfect career path with Foorsa.">
+<meta content="max-image-preview:large" name="robots">
+<link rel="preload" href="../assets/css/style.css" as="style">
+<link rel="preload" href="../assets/fonts/Marcher-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/Marcher-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link href="../assets/bootstrap/css/bootstrap.css" id="bootstrap-css-css" media="all" rel="stylesheet">
+<link href="../assets/css/style.css" id="style-css-css" media="all" rel="stylesheet"/>
+<link href="../assets/css/responsive.css" id="responsive-css-css" media="all" rel="stylesheet"/>
+<link href="../assets/libs/swiper-bundle.min.css" id="swiper-css-css" media="all" rel="stylesheet"/>
+<link href="../assets/libs/fancybox.css" id="fancybox-css-css" media="all" rel="stylesheet"/>
+<script id="jquery-core-js" src="../assets/vendor/jquery.min.js"></script>
+<script id="jquery-migrate-js" src="../assets/vendor/jquery-migrate.min.js" defer></script>
+<script src="/js/language-handler.js" defer></script>
+<style>
+section.majors-hero {
+    background: linear-gradient(135deg, #041228 0%, #0a2545 50%, #0d3060 100%) !important;
+    padding: 140px 0 100px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+section.majors-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+}
+section.majors-hero .container {
+    position: relative;
+    z-index: 1;
+}
+section.majors-hero h1 {
+    font-family: 'Marcher';
+    font-size: 52px;
+    font-weight: 700;
+    color: #fff !important;
+    margin-bottom: 20px;
+}
+section.majors-hero > .container > p {
+    font-size: 18px;
+    color: rgba(255,255,255,0.85) !important;
+    max-width: 650px;
+    margin: 0 auto 35px;
+    line-height: 1.7;
+}
+section.majors-hero .hero-badges {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+section.majors-hero .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+section.majors-hero .hero-badge svg {
+    width: 18px;
+    height: 18px;
+    stroke: #D4AF55;
+    fill: none;
+}
+
+/* Hero Label */
+.hero-label {
+    display: inline-block;
+    background: linear-gradient(135deg, #D4AF55 0%, #c9a44d 100%);
+    color: #041228;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    margin-bottom: 25px;
+}
+
+/* Search Bar Styles */
+.majors-search-container {
+    max-width: 650px;
+    margin: 40px auto 35px;
+    position: relative;
+}
+.search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 60px;
+    padding: 8px 25px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.search-wrapper:focus-within {
+    background: rgba(255,255,255,0.15);
+    border-color: #D4AF55;
+    transform: scale(1.02);
+    box-shadow: 0 20px 60px rgba(212, 175, 85, 0.2);
+}
+.search-icon {
+    width: 24px;
+    height: 24px;
+    stroke: rgba(255,255,255,0.6);
+    flex-shrink: 0;
+    transition: stroke 0.3s ease;
+}
+.search-wrapper:focus-within .search-icon {
+    stroke: #D4AF55;
+}
+.majors-search-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding: 15px 20px;
+}
+.majors-search-input::placeholder {
+    color: rgba(255,255,255,0.5);
+}
+.search-clear {
+    background: rgba(255,255,255,0.2);
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.search-clear:hover {
+    background: rgba(255,255,255,0.3);
+}
+.search-clear svg {
+    width: 16px;
+    height: 16px;
+    stroke: #fff;
+}
+
+/* Search Suggestions */
+.search-suggestions {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 100;
+    display: none;
+    animation: suggestionsSlide 0.3s ease;
+}
+.search-suggestions.active {
+    display: block;
+}
+@keyframes suggestionsSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.suggestion-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+.suggestion-item:hover {
+    background: linear-gradient(90deg, rgba(212, 175, 85, 0.1) 0%, transparent 100%);
+}
+.suggestion-icon {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #041228 0%, #0a2545 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.suggestion-icon svg {
+    width: 22px;
+    height: 22px;
+    stroke: #D4AF55;
+}
+.suggestion-content {
+    flex: 1;
+}
+.suggestion-name {
+    font-family: 'Marcher', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #041228;
+    margin: 0 0 4px;
+}
+.suggestion-category {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+}
+.suggestion-arrow {
+    width: 20px;
+    height: 20px;
+    stroke: #ccc;
+    transition: all 0.3s ease;
+}
+.suggestion-item:hover .suggestion-arrow {
+    stroke: #D4AF55;
+    transform: translateX(5px);
+}
+.no-results {
+    padding: 30px;
+    text-align: center;
+    color: #666;
+}
+.no-results svg {
+    width: 50px;
+    height: 50px;
+    stroke: #ccc;
+    margin-bottom: 15px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes slideUp {
+    from { 
+        opacity: 0; 
+        transform: translateY(30px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+@keyframes scaleIn {
+    from { 
+        opacity: 0; 
+        transform: scale(0.9); 
+    }
+    to { 
+        opacity: 1; 
+        transform: scale(1); 
+    }
+}
+.animate-fade-in {
+    animation: fadeIn 0.8s ease forwards;
+}
+.animate-slide-up {
+    animation: slideUp 0.8s ease forwards;
+}
+.animate-scale-in {
+    animation: scaleIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+.delay-1 { animation-delay: 0.15s; opacity: 0; }
+.delay-2 { animation-delay: 0.3s; opacity: 0; }
+.delay-3 { animation-delay: 0.45s; opacity: 0; }
+.delay-4 { animation-delay: 0.6s; opacity: 0; }
+
+/* Category cards animation */
+.cardStudy {
+    opacity: 0;
+    animation: slideUp 0.6s ease forwards;
+}
+.swiper-slide:nth-child(1) .cardStudy { animation-delay: 0.1s; }
+.swiper-slide:nth-child(2) .cardStudy { animation-delay: 0.2s; }
+.swiper-slide:nth-child(3) .cardStudy { animation-delay: 0.3s; }
+.swiper-slide:nth-child(4) .cardStudy { animation-delay: 0.4s; }
+.swiper-slide:nth-child(5) .cardStudy { animation-delay: 0.5s; }
+.section-intro {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background: #fff;
+}
+.section-intro .section-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, #D4AF55 0%, #c9a44d 100%);
+    color: #041228;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+.section-intro h2 {
+    font-family: 'Marcher';
+    font-size: 36px;
+    font-weight: 700;
+    color: #041228;
+    margin-bottom: 15px;
+}
+.section-intro p {
+    font-size: 17px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.cardStudy {
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.cardStudy:hover {
+    transform: translateY(-10px);
+}
+/* Clickable header styles */
+.cardStudy .cardHeader {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 15px 20px;
+    margin: 0 -20px;
+    border-radius: 8px;
+}
+.cardStudy .cardHeader:hover {
+    background: rgba(4, 18, 40, 0.05);
+}
+.cardStudy .cardHeader h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.cardStudy .cardHeader h3 svg {
+    flex-shrink: 0;
+    stroke: #D4AF55;
+    transition: transform 0.3s ease;
+}
+.cardStudy .cardHeader:hover h3 svg {
+    transform: translateX(5px);
+}
+
+.major-modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    overflow-y: auto;
+    padding: 40px 20px;
+}
+.major-modal-overlay.active {
+    display: flex;
+    opacity: 1;
+    justify-content: center;
+    align-items: flex-start;
+}
+.major-modal {
+    background: #fff;
+    border-radius: 24px;
+    max-width: 1000px;
+    width: 100%;
+    max-height: none;
+    overflow: visible;
+    position: relative;
+    transform: scale(0.9) translateY(30px);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin: auto;
+}
+.major-modal-overlay.active .major-modal {
+    transform: scale(1) translateY(0);
+}
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    background: #f5f5f5;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+.modal-close:hover {
+    background: #041228;
+    transform: rotate(90deg);
+}
+.modal-close:hover svg {
+    stroke: #fff;
+}
+.modal-header {
+    background: linear-gradient(135deg, #041228 0%, #0a2540 100%);
+    padding: 50px 40px;
+    border-radius: 24px 24px 0 0;
+    position: relative;
+    overflow: hidden;
+}
+.modal-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 300px;
+    height: 300px;
+    background: rgba(118, 150, 196, 0.1);
+    border-radius: 50%;
+}
+.modal-header-content {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+    z-index: 1;
+}
+.modal-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.modal-icon svg {
+    width: 40px;
+    height: 40px;
+    stroke: #fff;
+}
+.modal-header h2 {
+    font-family: 'Marcher';
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 10px;
+}
+.modal-header p {
+    color: rgba(255,255,255,0.8);
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.6;
+}
+.modal-body {
+    padding: 40px;
+}
+.modal-section {
+    margin-bottom: 40px;
+}
+.modal-section:last-child {
+    margin-bottom: 0;
+}
+.modal-section h3 {
+    font-family: 'Marcher';
+    font-size: 24px;
+    font-weight: 700;
+    color: #041228;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.modal-section h3 svg {
+    width: 24px;
+    height: 24px;
+    stroke: #7696C4;
+}
+.modal-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.video-cta {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+.video-cta:hover {
+    border-color: #D4AF55;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+.video-cta-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #c41e3a 0%, #8b0000 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+.video-cta-icon svg {
+    width: 36px;
+    height: 36px;
+    fill: #fff;
+}
+.video-cta h4 {
+    font-family: 'Marcher';
+    font-size: 22px;
+    font-weight: 700;
+    color: #041228;
+    margin: 0 0 10px;
+}
+.video-cta p {
+    font-size: 15px;
+    color: #666;
+    margin: 0 0 25px;
+    line-height: 1.6;
+}
+.video-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #c41e3a 0%, #8b0000 100%);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-family: 'Marcher';
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(196,30,58,0.3);
+}
+.video-cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(196,30,58,0.4);
+    color: #fff;
+}
+.video-cta-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    transition: transform 0.3s ease;
+}
+.video-cta-btn:hover svg {
+    transform: translateX(3px);
+}
+
+.career-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.career-card {
+    background: #f8f9fa;
+    border-radius: 16px;
+    padding: 25px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+.career-card:hover {
+    background: #fff;
+    border-color: #7696C4;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.career-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #041228 0%, #0a2540 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    transition: transform 0.3s ease;
+}
+.career-card:hover .career-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+.career-icon svg {
+    width: 28px;
+    height: 28px;
+    stroke: #fff;
+}
+.career-card h4 {
+    font-family: 'Marcher';
+    font-size: 15px;
+    font-weight: 700;
+    color: #041228;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.why-china-box {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+.why-china-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #c41e3a 0%, #8b0000 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.why-china-icon svg {
+    width: 35px;
+    height: 35px;
+    stroke: #fff;
+}
+.why-china-content h4 {
+    font-family: 'Marcher';
+    font-size: 20px;
+    font-weight: 700;
+    color: #041228;
+    margin: 0 0 12px;
+}
+.why-china-content p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.7;
+    margin: 0;
+}
+.why-china-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+.why-china-tag {
+    background: #041228;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.modal-cta {
+    background: linear-gradient(135deg, #041228 0%, #0a2540 100%);
+    border-radius: 16px;
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.modal-cta h4 {
+    font-family: 'Marcher';
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+.modal-cta .btn-apply {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 30px;
+    background: #fff;
+    color: #041228;
+    border-radius: 50px;
+    font-family: 'Marcher';
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.modal-cta .btn-apply:hover {
+    background: #7696C4;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+@media (max-width: 992px) {
+    .video-cta {
+        padding: 30px 25px;
+    }
+    .video-cta-icon {
+        width: 70px;
+        height: 70px;
+    }
+    .video-cta h4 {
+        font-size: 20px;
+    }
+    .career-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .majors-hero {
+        padding: 120px 20px 60px;
+    }
+    .majors-hero h1 {
+        font-size: 36px;
+    }
+    .major-modal-overlay {
+        padding: 20px 15px;
+    }
+    .modal-header {
+        padding: 30px 25px;
+    }
+    .modal-header h2 {
+        font-size: 26px;
+    }
+    .modal-header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .modal-body {
+        padding: 25px;
+    }
+    .video-cta {
+        padding: 25px 20px;
+    }
+    .video-cta-icon {
+        width: 60px;
+        height: 60px;
+    }
+    .video-cta-icon svg {
+        width: 28px;
+        height: 28px;
+    }
+    .video-cta h4 {
+        font-size: 18px;
+    }
+    .video-cta p {
+        font-size: 14px;
+    }
+    .video-cta-btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+    .career-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .why-china-box {
+        flex-direction: column;
+        text-align: center;
+    }
+    .why-china-list {
+        justify-content: center;
+    }
+    .modal-cta {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 25px;
+    }
+    .modal-cta h4 {
+        font-size: 18px;
+    }
+}
+@media (max-width: 480px) {
+    .career-grid {
+        grid-template-columns: 1fr;
+    }
+    .career-card {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        text-align: left;
+        padding: 20px;
+    }
+    .career-icon {
+        margin: 0;
+        width: 50px;
+        height: 50px;
+        flex-shrink: 0;
+    }
+    .career-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+</style>
+</meta></head>
+<body class="majors-page">
+<div class="header header-desktop sticky">
+<div class="logo-menu active">
+<div class="logo"><a href="../"><img alt="logo" src="../assets/img/logo-bl.png"/></a></div>
+<nav class="main-menu active">
+<ul class="menu">
+<li class="menu-item menu-item-has-children">
+<a href="#">Foorsa <span class="dropdown-arrow">▼</span></a>
+<ul class="sub-menu">
+<li><a href="./about-us.html">About Us</a></li>
+<li><a href="./mission-values.html">Mission &amp; Values</a></li>
+<li><a href="./engagement.html">Engagement</a></li>
+<li><a href="./recruitment.html">Recruitment</a></li>
+<li><a href="./partner-with-us.html">Partner With Us</a></li>
+<li><a href="./contact.html">Contact us</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children">
+<a href="#">China <span class="dropdown-arrow">▼</span></a>
+<ul class="sub-menu">
+<li><a href="./majors.html">Majors</a></li>
+<li><a href="./scholarship.html">Scholarship</a></li>
+<li><a href="./fees.html">Fees &amp; Financing</a></li>
+<li><a href="./step-by-step.html">Step by step</a></li>
+<li><a href="./documents.html">Documents</a></li>
+<li><a href="./frequently-asked-questions.html">FAQ</a></li>
+</ul>
+</li>
+<li class="menu-item"><a href="./blog.html">Blog</a></li>
+</ul>
+</nav>
+<a class="btn-apply-navbar" href="./shop.html">APPLY</a>
+</div>
+</div>
+<div class="header header-mobile">
+<div class="logo-top"><a href="../"><img alt="logo" src="../assets/img/logo-bl.png"/></a></div>
+<a class="btn-apply-navbar" href="./shop.html">APPLY</a>
+<nav role="navigation">
+<div id="menuToggle">
+<input type="checkbox"/>
+<span></span>
+<span></span>
+<div id="menu">
+<div class="menu-mobile-menu-container">
+<ul class="menu" id="menu-mobile-menu">
+<li class="menu-item"><a href="../">Home</a></li>
+<li class="menu-item"><a href="./about-us.html">About Us</a></li>
+<li class="menu-item"><a href="./majors.html">Majors</a></li>
+<li class="menu-item"><a href="./scholarship.html">Scholarship</a></li>
+<li class="menu-item"><a href="./fees.html">Fees &amp; Financing</a></li>
+<li class="menu-item"><a href="./step-by-step.html">Step by Step</a></li>
+<li class="menu-item"><a href="./documents.html">Documents</a></li>
+<li class="menu-item"><a href="./quiz.html">Quiz</a></li>
+<li class="menu-item"><a href="./frequently-asked-questions.html">FAQ</a></li>
+<li class="menu-item"><a href="./contact.html">Contact Us</a></li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<div class="dropdown language-switcher">
+  <div class="dropup">
+    <button class="dropbtn" id="current-lang-btn">
+      <div class="flag-icon"><img id="current-flag" alt="lang" src="https://flagcdn.com/w40/gb.png"/></div>
+      <span id="current-lang-text">EN</span>
+      <span class="arrow">▲</span>
+    </button>
+    <div class="dropup-content">
+      <a href="#" onclick="switchLanguage('en'); return false;" class="lang-option" data-lang="en">
+        <img src="https://flagcdn.com/w40/gb.png" alt="EN"/> EN
+      </a>
+      <a href="#" onclick="switchLanguage('fr'); return false;" class="lang-option" data-lang="fr">
+        <img src="https://flagcdn.com/w40/fr.png" alt="FR"/> FR
+      </a>
+      <a href="#" onclick="switchLanguage('ar'); return false;" class="lang-option" data-lang="ar">
+        <img src="https://flagcdn.com/w40/ma.png" alt="AR"/> AR
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<main class="studies">
+    <section class="majors-hero">
+        <div class="container">
+            <span class="hero-label animate-fade-in">Discover Your Future</span>
+            <h1 class="animate-slide-up">Find the Major That Fits You</h1>
+            <p class="animate-slide-up delay-1">Explore diverse study programs in China and discover your path to a successful international career.</p>
+            
+            <div class="majors-search-container animate-scale-in delay-2">
+                <div class="search-wrapper">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                    <input type="text" id="majorsSearch" class="majors-search-input" placeholder="Search for a major (e.g., Computer Science, Medicine...)" autocomplete="off">
+                    <button class="search-clear" id="searchClear" style="display:none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                    </button>
+                </div>
+                <div class="search-suggestions" id="searchSuggestions"></div>
+            </div>
+            
+            <div class="hero-badges animate-fade-in delay-3">
+                <span class="hero-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    80+ Majors
+                </span>
+                <span class="hero-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    Video Guides
+                </span>
+                <span class="hero-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Career Paths
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-intro">
+        <span class="section-tag">Explore Programs</span>
+        <h2>Browse by Category</h2>
+        <p>Choose from 5 major categories to find the perfect program for your career goals.</p>
+    </div>
+
+    <section class="sectionStudySwiper">
+        <div class="swiperStudy swiper swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="cardStudy" data-major="engineering">
+                        <div class="cardIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#041228" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/><circle cx="12" cy="12" r="8" stroke-dasharray="4 2"/></svg>
+                        </div>
+                        <div class="cardHeader" onclick="openMajorModal('engineering')" style="cursor: pointer;">
+                            <h3>Engineering &amp; Technology <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></h3>
+                        </div>
+                        <div class="cardBody">
+                            <ul>
+                                <li><a href="#">Physics</a></li>
+                                <li><a href="#">Aeronautics</a></li>
+                                <li><a href="#">Mechanical Engineering</a></li>
+                                <li><a href="#">Materials Science</a></li>
+                                <li><a href="#">Industrial Engineering</a></li>
+                                <li><a href="#">Game Design</a></li>
+                                <li><a href="#">Energy Science</a></li>
+                                <li><a href="#">Electrical Engineering</a></li>
+                                <li><a href="#">Cyber Security</a></li>
+                                <li><a href="#">Computer Science</a></li>
+                                <li><a href="#">Civil Engineering</a></li>
+                                <li><a href="#">Chemical Engineering</a></li>
+                                <li><a href="#">Biomedical Engineering</a></li>
+                                <li><a href="#">Aviation</a></li>
+                                <li><a href="#">Astronomy</a></li>
+                                <li><a href="#">Applied Engineering Technology</a></li>
+                                <li><a href="#">Aerospace Engineering</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cardStudy" data-major="liberalarts">
+                        <div class="cardIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#041228" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                        </div>
+                        <div class="cardHeader" onclick="openMajorModal('liberalarts')" style="cursor: pointer;">
+                            <h3>Liberal Arts <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></h3>
+                        </div>
+                        <div class="cardBody">
+                            <ul>
+                                <li><a href="#">Family Science</a></li>
+                                <li><a href="#">Sociology</a></li>
+                                <li><a href="#">Women Studies</a></li>
+                                <li><a href="#">Psychology</a></li>
+                                <li><a href="#">Political Science</a></li>
+                                <li><a href="#">Philosophy</a></li>
+                                <li><a href="#">Peace &amp; Conflict Studies</a></li>
+                                <li><a href="#">Parks &amp; Recreation Management</a></li>
+                                <li><a href="#">Non-Profit Management</a></li>
+                                <li><a href="#">Mathematics</a></li>
+                                <li><a href="#">Journalism</a></li>
+                                <li><a href="#">Human Development</a></li>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Global Studies &amp; Language</a></li>
+                                <li><a href="#">Environmental Science</a></li>
+                                <li><a href="#">English &amp; Writing</a></li>
+                                <li><a href="#">Emergency Management</a></li>
+                                <li><a href="#">Education</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cardStudy" data-major="medical">
+                        <div class="cardIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#041228" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        </div>
+                        <div class="cardHeader" onclick="openMajorModal('medical')" style="cursor: pointer;">
+                            <h3>Medical &amp; Life Sciences <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></h3>
+                        </div>
+                        <div class="cardBody">
+                            <ul>
+                                <li><a href="#">Pre-Veterinary Medicine</a></li>
+                                <li><a href="#">Pre-Dental</a></li>
+                                <li><a href="#">Physical Therapy / Kinesiology</a></li>
+                                <li><a href="#">Forest &amp; Resource Management</a></li>
+                                <li><a href="#">Fisheries and Wildlife Science</a></li>
+                                <li><a href="#">Athletic Training</a></li>
+                                <li><a href="#">Organic / Urban Farming</a></li>
+                                <li><a href="#">Nursing (RN/BSN)</a></li>
+                                <li><a href="#">Marine Science</a></li>
+                                <li><a href="#">Food Science</a></li>
+                                <li><a href="#">Chemistry</a></li>
+                                <li><a href="#">Biology</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cardStudy" data-major="visualarts">
+                        <div class="cardIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#041228" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="1.5" fill="#041228"/><circle cx="17.5" cy="10.5" r="1.5" fill="#041228"/><circle cx="8.5" cy="7.5" r="1.5" fill="#041228"/><circle cx="6.5" cy="12.5" r="1.5" fill="#041228"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z"/></svg>
+                        </div>
+                        <div class="cardHeader" onclick="openMajorModal('visualarts')" style="cursor: pointer;">
+                            <h3>Visual &amp; Performance Arts <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></h3>
+                        </div>
+                        <div class="cardBody">
+                            <ul>
+                                <li><a href="#">Virtual Reality (VR)</a></li>
+                                <li><a href="#">Broadcast</a></li>
+                                <li><a href="#">Architecture</a></li>
+                                <li><a href="#">Digital Media</a></li>
+                                <li><a href="#">Web Design</a></li>
+                                <li><a href="#">Urban &amp; Regional Planning</a></li>
+                                <li><a href="#">Theatre (Drama + Musical)</a></li>
+                                <li><a href="#">Music (Instrumental)</a></li>
+                                <li><a href="#">Landscape Architecture</a></li>
+                                <li><a href="#">Interior Design</a></li>
+                                <li><a href="#">Industrial / Product Design</a></li>
+                                <li><a href="#">Fine &amp; Studio Art</a></li>
+                                <li><a href="#">Film</a></li>
+                                <li><a href="#">Fashion &amp; Apparel Design</a></li>
+                                <li><a href="#">Dance</a></li>
+                                <li><a href="#">Arts &amp; Museum Management</a></li>
+                                <li><a href="#">Graphic Design</a></li>
+                                <li><a href="#">Architecture</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cardStudy" data-major="business">
+                        <div class="cardIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#041228" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-7 7c0 2.4 1.2 4.5 3 5.7V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.3c1.8-1.2 3-3.3 3-5.7a7 7 0 0 0-7-7z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="10" y1="11" x2="14" y2="11"/></svg>
+                        </div>
+                        <div class="cardHeader" onclick="openMajorModal('business')" style="cursor: pointer;">
+                            <h3>Business <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></h3>
+                        </div>
+                        <div class="cardBody">
+                            <ul>
+                                <li><a href="#">Banking</a></li>
+                                <li><a href="#">Risk Management</a></li>
+                                <li><a href="#">Public Relations</a></li>
+                                <li><a href="#">Supply Chain (Logistics)</a></li>
+                                <li><a href="#">Sport Management</a></li>
+                                <li><a href="#">Public Health Administration</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Insurance</a></li>
+                                <li><a href="#">Management Information Systems</a></li>
+                                <li><a href="#">Human Resources Management</a></li>
+                                <li><a href="#">Hotel &amp; Resort Management</a></li>
+                                <li><a href="#">Finance</a></li>
+                                <li><a href="#">Economics (Global)</a></li>
+                                <li><a href="#">Data Science – Analytics</a></li>
+                                <li><a href="#">Construction Management</a></li>
+                                <li><a href="#">Business – General</a></li>
+                                <li><a href="#">Accounting</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-buttons">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sectionAction">
+        <div class="container">
+            <h1 class="title">Not sure which major is right for you?</h1>
+            <div class="actionquiz">
+                <a href="./quiz.html" class="btnquiz">Take Our Quiz</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Business Modal -->
+<div class="major-modal-overlay" id="modal-business">
+    <div class="major-modal">
+        <button class="modal-close" onclick="closeMajorModal('business')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#041228" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <div class="modal-header">
+            <div class="modal-header-content">
+                <div class="modal-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-7 7c0 2.4 1.2 4.5 3 5.7V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.3c1.8-1.2 3-3.3 3-5.7a7 7 0 0 0-7-7z"/></svg>
+                </div>
+                <div>
+                    <h2>Business Studies in China</h2>
+                    <p>Master the art of global commerce in the world's fastest-growing economy</p>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="modal-section">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    About Business Studies
+                </h3>
+                <p class="modal-description">China's business landscape offers unparalleled opportunities for international students seeking to understand global commerce. As the world's second-largest economy and a major hub for international trade, studying business in China provides hands-on exposure to emerging markets, innovative business models, and cross-cultural management practices. Our partner universities offer programs that combine Western business fundamentals with Eastern market insights, preparing graduates for leadership roles in multinational corporations, startups, and international organizations.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                    Video Resources
+                </h3>
+                <div class="video-cta">
+                    <div class="video-cta-icon">
+                        <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    </div>
+                    <h4>Explore Business Videos</h4>
+                    <p>Watch career guides, student experiences, and program overviews on YouTube to learn more about studying business in China.</p>
+                    <a href="https://www.youtube.com/results?search_query=business+degree+career+guide+china" target="_blank" class="video-cta-btn">
+                        Watch on YouTube
+                        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div></div>
+
+            <div class="modal-cta">
+                <h4>Ready to start your business career in China?</h4>
+                <a href="./shop.html" class="btn-apply">
+                    Apply Now
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Engineering Modal -->
+<div class="major-modal-overlay" id="modal-engineering">
+    <div class="major-modal">
+        <button class="modal-close" onclick="closeMajorModal('engineering')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#041228" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <div class="modal-header">
+            <div class="modal-header-content">
+                <div class="modal-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2"/></svg>
+                </div>
+                <div>
+                    <h2>Engineering &amp; Technology in China</h2>
+                    <p>Build the future with world-class engineering education</p>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="modal-section">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    About Engineering Studies
+                </h3>
+                <p class="modal-description">China has emerged as a global leader in engineering and technological innovation, from high-speed rail systems to space exploration. Chinese universities are consistently ranked among the world's top engineering institutions, offering cutting-edge facilities, research opportunities, and industry partnerships. Students benefit from hands-on experience with advanced technologies, access to state-of-the-art laboratories, and collaboration with leading researchers on projects that shape the future of infrastructure, energy, and manufacturing.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                    Video Resources
+                </h3>
+                <div class="video-cta">
+                    <div class="video-cta-icon">
+                        <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    </div>
+                    <h4>Explore Engineering Videos</h4>
+                    <p>Watch career guides, student experiences, and program overviews on YouTube to learn more about studying engineering in China.</p>
+                    <a href="https://www.youtube.com/results?search_query=engineering+degree+career+guide+china" target="_blank" class="video-cta-btn">
+                        Watch on YouTube
+                        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div></div>
+
+            <div class="modal-cta">
+                <h4>Ready to engineer your future in China?</h4>
+                <a href="./shop.html" class="btn-apply">
+                    Apply Now
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Medical Modal -->
+<div class="major-modal-overlay" id="modal-medical">
+    <div class="major-modal">
+        <button class="modal-close" onclick="closeMajorModal('medical')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#041228" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <div class="modal-header">
+            <div class="modal-header-content">
+                <div class="modal-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                </div>
+                <div>
+                    <h2>Medical &amp; Life Sciences in China</h2>
+                    <p>Train to save lives with internationally recognized medical degrees</p>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="modal-section">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    About Medical Studies
+                </h3>
+                <p class="modal-description">China offers world-class medical education with programs recognized by the World Health Organization (WHO) and listed in the World Directory of Medical Schools. Chinese medical universities provide comprehensive training combining modern Western medicine with Traditional Chinese Medicine, offering students a unique and holistic approach to healthcare. With state-of-the-art teaching hospitals, advanced simulation labs, and experienced faculty, students receive extensive clinical exposure from their early years of study.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                    Video Resources
+                </h3>
+                <div class="video-cta">
+                    <div class="video-cta-icon">
+                        <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    </div>
+                    <h4>Explore Liberal Arts Videos</h4>
+                    <p>Watch career guides, student experiences, and program overviews on YouTube to learn more about studying liberal arts in China.</p>
+                    <a href="https://www.youtube.com/results?search_query=liberal+arts+degree+career+guide" target="_blank" class="video-cta-btn">
+                        Watch on YouTube
+                        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div></div>
+
+            <div class="modal-cta">
+                <h4>Ready to start your medical career in China?</h4>
+                <a href="./shop.html" class="btn-apply">
+                    Apply Now
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Liberal Arts Modal -->
+<div class="major-modal-overlay" id="modal-liberalarts">
+    <div class="major-modal">
+        <button class="modal-close" onclick="closeMajorModal('liberalarts')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#041228" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <div class="modal-header">
+            <div class="modal-header-content">
+                <div class="modal-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                </div>
+                <div>
+                    <h2>Liberal Arts in China</h2>
+                    <p>Develop critical thinking and global perspectives</p>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="modal-section">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    About Liberal Arts
+                </h3>
+                <p class="modal-description">Liberal Arts education in China offers a unique blend of Eastern and Western perspectives, fostering critical thinking, cultural awareness, and interdisciplinary knowledge. Students explore diverse fields including psychology, sociology, philosophy, and political science while gaining valuable insights into Chinese society and global issues. Programs emphasize analytical skills, effective communication, and cross-cultural competence, preparing graduates for diverse careers in education, social services, journalism, and international organizations.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                    Video Resources
+                </h3>
+                <div class="video-cta">
+                    <div class="video-cta-icon">
+                        <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    </div>
+                    <h4>Explore Medical & Life Sciences Videos</h4>
+                    <p>Watch career guides, student experiences, and program overviews on YouTube to learn more about studying medical & life sciences in China.</p>
+                    <a href="https://www.youtube.com/results?search_query=medical+degree+career+guide+china" target="_blank" class="video-cta-btn">
+                        Watch on YouTube
+                        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div></div>
+
+            <div class="modal-cta">
+                <h4>Ready to explore Liberal Arts in China?</h4>
+                <a href="./shop.html" class="btn-apply">
+                    Apply Now
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Visual Arts Modal -->
+<div class="major-modal-overlay" id="modal-visualarts">
+    <div class="major-modal">
+        <button class="modal-close" onclick="closeMajorModal('visualarts')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#041228" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <div class="modal-header">
+            <div class="modal-header-content">
+                <div class="modal-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="1.5" fill="currentColor"/><circle cx="17.5" cy="10.5" r="1.5" fill="currentColor"/><circle cx="8.5" cy="7.5" r="1.5" fill="currentColor"/><circle cx="6.5" cy="12.5" r="1.5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z"/></svg>
+                </div>
+                <div>
+                    <h2>Visual &amp; Performance Arts in China</h2>
+                    <p>Express your creativity in the world's most dynamic arts scene</p>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="modal-section">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    About Visual &amp; Performance Arts
+                </h3>
+                <p class="modal-description">China offers world-class programs in visual and performance arts, combining traditional Chinese artistic heritage with cutting-edge contemporary techniques. From architecture and graphic design to film and theatre, students benefit from state-of-the-art facilities, renowned faculty, and unique opportunities to blend Eastern and Western artistic traditions. Universities in cities like Beijing, Shanghai, and Hangzhou provide access to vibrant arts scenes, museums, galleries, and performance venues that inspire creativity and innovation.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                    Video Resources
+                </h3>
+                <div class="video-cta">
+                    <div class="video-cta-icon">
+                        <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    </div>
+                    <h4>Explore Arts Videos</h4>
+                    <p>Watch career guides, student experiences, and program overviews on YouTube to learn more about studying arts in China.</p>
+                    <a href="https://www.youtube.com/results?search_query=arts+degree+career+guide" target="_blank" class="video-cta-btn">
+                        Watch on YouTube
+                        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div></div>
+
+            <div class="modal-cta">
+                <h4>Ready to explore Visual &amp; Performance Arts in China?</h4>
+                <a href="./shop.html" class="btn-apply">
+                    Apply Now
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="section" id="sectionFooter">
+<div class="footer">
+<div class="firstFooter">
+<div class="container">
+<div class="firstFooter-inner">
+<div class="content">
+<h1>Ready to Transform Your Future?</h1>
+<p>Join hundreds of Moroccan students who chose Foorsa to study in China.</p>
+</div>
+<div class="actions">
+<button class="cartoon-btn" onclick="window.location.href='./shop.html'">Start Your Application</button>
+<button class="cartoon-btn white" onclick="window.location.href='./contact.html'">Get Free Consultation</button>
+</div>
+</div>
+</div>
+</div>
+<div class="secondFooter">
+<div class="container">
+<div class="menuFooter">
+<div class="items-menu">
+<div class="item-menu">
+<label>China</label>
+<div class="menu">
+<div class="menu-china-footer-container"><ul class="menu" id="menu-china-footer"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2136" id="menu-item-2136"><a href="/universities-in-china/">Universities</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2137" id="menu-item-2137"><a href="/scholarships/">Scholarships</a></li>
+</ul></div> </div>
+</div>
+<div class="item-menu">
+<label>Foorsa</label>
+<div class="menu">
+<div class="menu-foorsa-footer-container"><ul class="menu" id="menu-foorsa-footer"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2138" id="menu-item-2138"><a href="./about-us.html">About Us</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2139" id="menu-item-2139"><a href="./about-us.html#careers">Careers</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2140" id="menu-item-2140"><a href="./contact.html">Contact</a></li>
+</ul></div> </div>
+</div>
+<div class="item-menu">
+<label>Articles</label>
+<div class="menu">
+<div class="menu-articles-footer-container"><ul class="menu" id="menu-articles-footer">
+<li class="menu-item"><a href="./blog.html">All Articles</a></li>
+<li class="menu-item"><a href="./blog.html?category=scholarships">Scholarships</a></li>
+<li class="menu-item"><a href="./blog.html?category=student-life">Student Life</a></li>
+<li class="menu-item"><a href="./blog.html?category=tips">Tips &amp; Advice</a></li>
+</ul></div> </div>
+</div>
+
+<div class="item-menu">
+<label>Langage</label>
+<div class="menu">
+<div class="menu-langage-footer-container"><ul class="menu" id="menu-langage-footer"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2141" id="menu-item-2141"><a href="/">English</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2142" id="menu-item-2142"><a href="#" onclick="alert('La version française arrive bientôt! / French version coming soon!'); return false;">Français</a></li>
+</ul></div> </div>
+</div>
+</div>
+<div class="socialMedia">
+<a href="https://www.facebook.com/Foorsaconsulting/?ref=page_internal&amp;_rdc=1&amp;_rdr" target="_blank">
+<img alt="facebook" src="../assets/img/facebook-white.png"/>
+</a>
+<a href="http://www.instagram.com/foorsa.ma/" target="_blank">
+<img alt="instagram" src="../assets/img/instagram-white.png"/>
+</a>
+<a href="https://www.linkedin.com/company/fooorsa-consulting" target="_blank">
+<img alt="linkedin" src="../assets/img/linkedin-white.png"/>
+</a>
+<a href="http://www.tiktok.com/@foorsa.ma" target="_blank">
+<img alt="tiktok" src="../assets/img/tiktok-white.png"/>
+</a>
+<a href="https://www.youtube.com/channel/UCGQpcJCswqd81o_Aq7W1ArQ" target="_blank">
+<img alt="youtube" src="../assets/img/youtube-white.png"/>
+</a>
+<a href="https://wa.me/+2120537911291" target="_blank">
+<img alt="whatsapp" src="../assets/img/whatsapp-white.png"/>
+</a>
+</div>
+</div>
+<hr>
+<div class="copyRight">
+<p>© 2026 Foorsa. All rights reserved</p>
+
+<div class="conditions">
+<a href="./terms-of-service.html">Terms of Service</a>
+<a href="./privacy-policy.html">Privacy Policy</a>
+</div>
+</div>
+</hr></div>
+
+</div>
+</div>
+</footer>
+
+<script src="../assets/vendor/jquery.min.js"></script>
+<script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/libs/gsap.min.js"></script>
+<script src="../assets/libs/ScrollTrigger.min.js"></script>
+<script src="../assets/libs/MotionPathPlugin.min.js"></script>
+<script src="../assets/libs/swiper-bundle.min.js"></script>
+<script src="../assets/libs/fancybox.umd.js"></script>
+<script src="../assets/js/majors-data.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/global.js"></script>
+<script src="../assets/js/navigation.js"></script>
+<script>
+(function() {
+    function initStudySwiper() {
+        if (typeof Swiper !== 'undefined' && document.querySelector('.swiperStudy')) {
+            new Swiper('.swiperStudy', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                centeredSlides: false,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1.2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 2.2,
+                        spaceBetween: 25,
+                    },
+                    1024: {
+                        slidesPerView: 3.2,
+                        spaceBetween: 30,
+                    },
+                    1440: {
+                        slidesPerView: 4,
+                        spaceBetween: 35,
+                    },
+                }
+            });
+        }
+    }
+    if (document.readyState === 'complete') {
+        initStudySwiper();
+    } else {
+        window.addEventListener('load', initStudySwiper);
+    }
+})();
+
+function openMajorModal(majorId) {
+    const modal = document.getElementById('modal-' + majorId);
+    if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeMajorModal(majorId) {
+    const modal = document.getElementById('modal-' + majorId);
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
+document.querySelectorAll('.major-modal-overlay').forEach(function(overlay) {
+    overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+});
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        document.querySelectorAll('.major-modal-overlay.active').forEach(function(modal) {
+            modal.classList.remove('active');
+        });
+        closeSingleMajorModal();
+        document.body.style.overflow = '';
+    }
+});
+
+function openSingleMajorModal(majorName) {
+    const key = majorName.toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/[&\/\\#,+()$~%.'":*?<>{}–—−]/g, '')
+        .replace(/--+/g, '-');
+    
+    const major = majorsData[key];
+    if (!major) {
+        console.log('Major not found:', key);
+        return;
+    }
+    
+    const modal = document.getElementById('singleMajorModal');
+    const content = document.getElementById('singleMajorContent');
+    
+    let careersHtml = major.careers.map(c => `
+        <div class="career-card">
+            <h4>${c.title}</h4>
+            <p class="career-desc">${c.description}</p>
+            <div class="salary-grid">
+                <div class="salary-item">
+                    <span class="salary-label">Morocco</span>
+                    <span class="salary-value">${c.salaryMorocco}</span>
+                </div>
+                <div class="salary-item">
+                    <span class="salary-label">Worldwide</span>
+                    <span class="salary-value">${c.salaryWorld}</span>
+                </div>
+            </div>
+        </div>
+    `).join('');
+    
+    content.innerHTML = `
+        <div class="major-modal-header">
+            <span class="major-category-badge">${major.category}</span>
+            <h2>${major.name}</h2>
+            <p class="major-tagline">${major.description}</p>
+        </div>
+        
+        <div class="major-modal-section">
+            <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg> About This Major</h3>
+            <p>${major.overview}</p>
+        </div>
+        
+        <div class="major-modal-section video-resources-section">
+            <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg> Learn More</h3>
+            <div class="video-search-box">
+                <div class="video-search-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="#FF0000"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                </div>
+                <p class="video-search-text">Discover videos about ${major.name} careers, courses, and student experiences</p>
+                <a href="https://www.youtube.com/results?search_query=${encodeURIComponent(major.name + ' degree career guide')}" target="_blank" rel="noopener" class="video-search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                    Search Videos on YouTube
+                </a>
+            </div>
+        </div>
+        
+        <div class="major-modal-section">
+            <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 4 6 4s6-2 6-4v-5"/></svg> Career Paths & Salaries</h3>
+            <div class="careers-grid">
+                ${careersHtml}
+            </div>
+        </div>
+        
+        <div class="major-modal-section why-china">
+            <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> Why Study ${major.name} in China?</h3>
+            <p>${major.whyChina}</p>
+        </div>
+        
+        <div class="major-modal-cta">
+            <a href="./shop.html" class="apply-btn">Apply Now</a>
+            <a href="./scholarship.html" class="scholarship-btn">View Scholarships</a>
+        </div>
+    `;
+    
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeSingleMajorModal() {
+    const modal = document.getElementById('singleMajorModal');
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.cardStudy .cardBody ul li a').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const majorName = this.textContent.trim();
+            openSingleMajorModal(majorName);
+        });
+    });
+    
+    const singleMajorModal = document.getElementById('singleMajorModal');
+    if (singleMajorModal) {
+        singleMajorModal.addEventListener('click', function(e) {
+            if (e.target === singleMajorModal) {
+                closeSingleMajorModal();
+            }
+        });
+    }
+});
+</script>
+
+<div id="singleMajorModal" class="single-major-modal-overlay">
+    <div class="single-major-modal">
+        <button class="modal-close-btn" onclick="closeSingleMajorModal()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <div id="singleMajorContent" class="single-major-content"></div>
+    </div>
+</div>
+
+<style>
+.single-major-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(4, 18, 40, 0.9);
+    z-index: 10000;
+    display: none;
+    overflow-y: auto;
+    padding: 40px 20px;
+}
+.single-major-modal-overlay.active {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.single-major-modal {
+    background: #fff;
+    border-radius: 20px;
+    max-width: 900px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 25px 80px rgba(0,0,0,0.4);
+    animation: modalSlideIn 0.3s ease;
+}
+@keyframes modalSlideIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.modal-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(4, 18, 40, 0.1);
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.modal-close-btn:hover {
+    background: rgba(4, 18, 40, 0.2);
+    transform: rotate(90deg);
+}
+.single-major-content {
+    padding: 0;
+}
+.major-modal-header {
+    background: linear-gradient(135deg, #041228 0%, #0a2540 100%);
+    padding: 50px 40px 40px;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+}
+.major-category-badge {
+    display: inline-block;
+    background: rgba(214, 174, 112, 0.2);
+    color: #D6AE70;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.major-modal-header h2 {
+    font-family: 'Marcher', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.major-tagline {
+    color: rgba(255,255,255,0.8);
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.major-modal-section {
+    padding: 35px 40px;
+    border-bottom: 1px solid #eee;
+}
+.major-modal-section:last-of-type {
+    border-bottom: none;
+}
+.major-modal-section h3 {
+    font-family: 'Marcher', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #041228;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.major-modal-section h3 svg {
+    color: #D6AE70;
+}
+.major-modal-section p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.8;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #000;
+    margin-bottom: 15px;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.video-title {
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+    margin: 0;
+}
+.video-search-box {
+    background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+    border: 2px solid #eee;
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.video-search-box:hover {
+    border-color: #D6AE70;
+    box-shadow: 0 8px 25px rgba(214, 174, 112, 0.15);
+}
+.video-search-icon {
+    margin-bottom: 15px;
+}
+.video-search-text {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.video-search-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #FF0000;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.video-search-btn:hover {
+    background: #cc0000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.3);
+    color: #fff;
+}
+.video-search-btn svg {
+    stroke: currentColor;
+}
+.careers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+.career-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+.career-card:hover {
+    border-color: #D6AE70;
+    box-shadow: 0 8px 25px rgba(214, 174, 112, 0.15);
+}
+.career-card h4 {
+    font-family: 'Marcher', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #041228;
+    margin-bottom: 10px;
+}
+.career-desc {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+.salary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.salary-item {
+    background: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+.salary-label {
+    display: block;
+    font-size: 11px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+.salary-value {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #041228;
+}
+.why-china {
+    background: linear-gradient(135deg, #fffbf5 0%, #fff8eb 100%);
+    border-radius: 0;
+}
+.why-china h3 {
+    color: #041228;
+}
+.why-china p {
+    color: #555;
+}
+.major-modal-cta {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 35px 40px;
+    background: #f8f9fa;
+    border-radius: 0 0 20px 20px;
+}
+.apply-btn {
+    background: #D6AE70;
+    color: #041228;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.apply-btn:hover {
+    background: #c49a5c;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(214, 174, 112, 0.4);
+}
+.scholarship-btn {
+    background: #041228;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.scholarship-btn:hover {
+    background: #0a2540;
+    transform: translateY(-2px);
+}
+.cardStudy .cardBody ul li a {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.cardStudy .cardBody ul li a:hover {
+    color: #D6AE70 !important;
+    padding-left: 5px;
+}
+@media (max-width: 768px) {
+    .single-major-modal-overlay {
+        padding: 20px 15px;
+    }
+    .major-modal-header {
+        padding: 40px 25px 30px;
+    }
+    .major-modal-header h2 {
+        font-size: 28px;
+    }
+    .major-modal-section {
+        padding: 25px;
+    }
+    .major-modal-section h3 {
+        font-size: 18px;
+    }
+    .careers-grid {
+        grid-template-columns: 1fr;
+    }
+    .major-modal-cta {
+        flex-direction: column;
+        padding: 25px;
+    }
+    .apply-btn, .scholarship-btn {
+        text-align: center;
+    }
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('majorsSearch');
+    const searchSuggestions = document.getElementById('searchSuggestions');
+    const searchClear = document.getElementById('searchClear');
+    
+    const allMajors = [];
+    if (typeof majorsData !== 'undefined') {
+        for (const key in majorsData) {
+            allMajors.push({
+                key: key,
+                name: majorsData[key].name,
+                category: majorsData[key].category
+            });
+        }
+    }
+    
+    const categoryIcons = {
+        'Engineering & Technology': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>',
+        'Liberal Arts': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>',
+        'Medical & Life Sciences': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>',
+        'Visual & Performance Arts': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z"/></svg>',
+        'Business': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>'
+    };
+    
+    function searchMajors(query) {
+        if (!query || query.length < 2) return [];
+        const lowerQuery = query.toLowerCase();
+        return allMajors.filter(major => 
+            major.name.toLowerCase().includes(lowerQuery) ||
+            major.category.toLowerCase().includes(lowerQuery)
+        ).slice(0, 8);
+    }
+    
+    function renderSuggestions(results) {
+        if (results.length === 0) {
+            searchSuggestions.innerHTML = `
+                <div class="no-results">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                    <p>No majors found. Try a different search term.</p>
+                </div>
+            `;
+            return;
+        }
+        
+        searchSuggestions.innerHTML = results.map((major, index) => `
+            <div class="suggestion-item" data-major="${major.key}" style="animation-delay: ${index * 0.05}s">
+                <div class="suggestion-icon">
+                    ${categoryIcons[major.category] || categoryIcons['Engineering & Technology']}
+                </div>
+                <div class="suggestion-content">
+                    <p class="suggestion-name">${major.name}</p>
+                    <p class="suggestion-category">${major.category}</p>
+                </div>
+                <svg class="suggestion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </div>
+        `).join('');
+        
+        document.querySelectorAll('.suggestion-item').forEach(item => {
+            item.addEventListener('click', function() {
+                const majorKey = this.dataset.major;
+                if (typeof openSingleMajorModal === 'function') {
+                    openSingleMajorModal(majorKey);
+                }
+                searchSuggestions.classList.remove('active');
+                searchInput.value = '';
+                searchClear.style.display = 'none';
+            });
+        });
+    }
+    
+    searchInput.addEventListener('input', function() {
+        const query = this.value.trim();
+        
+        if (query.length > 0) {
+            searchClear.style.display = 'flex';
+        } else {
+            searchClear.style.display = 'none';
+        }
+        
+        if (query.length >= 2) {
+            const results = searchMajors(query);
+            renderSuggestions(results);
+            searchSuggestions.classList.add('active');
+        } else {
+            searchSuggestions.classList.remove('active');
+        }
+    });
+    
+    searchInput.addEventListener('focus', function() {
+        const query = this.value.trim();
+        if (query.length >= 2) {
+            searchSuggestions.classList.add('active');
+        }
+    });
+    
+    searchClear.addEventListener('click', function() {
+        searchInput.value = '';
+        searchSuggestions.classList.remove('active');
+        this.style.display = 'none';
+        searchInput.focus();
+    });
+    
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.majors-search-container')) {
+            searchSuggestions.classList.remove('active');
+        }
+    });
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-visible');
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    document.querySelectorAll('.cardStudy, .section-intro, .sectionStudySwiper').forEach(el => {
+        observer.observe(el);
+    });
+});
+</script>
+</body>
+</html>
