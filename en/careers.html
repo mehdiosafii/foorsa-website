@@ -94,7 +94,7 @@
     </section>
     <section class="padding-section">
         <div class="form-careers">
-            <form action="https://formspree.io/f/xpwzgqbj" method="post" enctype="multipart/form-data">
+            <form action="javascript:void(0)" method="post" enctype="multipart/form-data">
                 <div class="block">
                     <div class="block-header">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
@@ -363,5 +363,35 @@
 <script src="../assets/js/global.js?v=20260124b" defer></script>
 <script src="../assets/js/navigation.js?v=20260123" defer></script>
 <script src="/js/tracker.js" defer></script>
+<script>
+(function(){
+  var form = document.querySelector(".form-careers form");
+  if(!form) return;
+  form.addEventListener("submit", async function(e){
+    e.preventDefault();
+    var btn = form.querySelector("[type=submit]");
+    var origVal = btn.value;
+    btn.value = "⏳ Uploading..."; btn.disabled = true;
+    var old = form.parentElement.querySelector(".foorsa-banner");
+    if(old) old.remove();
+    try {
+      var fd = new FormData(form);
+      fd.append("form_type", "careers");
+      var resp = await fetch("/api/submit-form", {method:"POST",body:fd});
+      var json = await resp.json();
+      if(json.success){
+        var b=document.createElement("div");b.className="foorsa-banner";
+        b.style.cssText="background:#22c55e;color:#fff;padding:12px 16px;border-radius:8px;margin:12px 0;text-align:center;font-weight:600";
+        b.textContent="\u2713 Your application has been received! We will contact you soon.";form.parentElement.insertBefore(b,form);form.reset();
+      } else { throw new Error(); }
+    } catch(err){
+      var b=document.createElement("div");b.className="foorsa-banner";
+      b.style.cssText="background:#ef4444;color:#fff;padding:12px 16px;border-radius:8px;margin:12px 0;text-align:center;font-weight:600";
+      b.textContent="\u2717 Something went wrong. Please try again.";form.parentElement.insertBefore(b,form);
+    }
+    btn.value=origVal;btn.disabled=false;
+  });
+})();
+</script>
 </body>
 </html>

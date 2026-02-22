@@ -221,7 +221,7 @@ A member of our team will reach out to you to discuss how we can embark on this 
                     <h6>Foorsa Partnership Inquiry</h6>
                     <p>Thank you for your interest in partnering with Foorsa! This quick survey will help us understand your organization and explore potential collaboration.</p>
                 </div>
-                <form action="https://formspree.io/f/xpwzgqbj" method="POST" class="wpcf7-form">
+                <form action="javascript:void(0)" method="POST" class="wpcf7-form">
                     <div class="form-group">
                         <p><label class="form-label">Who are you? <span>*</span></label><br>
                         <select class="wpcf7-form-control wpcf7-select" name="position" required>
@@ -399,5 +399,35 @@ A member of our team will reach out to you to discuss how we can embark on this 
 })();
 </script>
 <script src="/js/tracker.js" defer></script>
+<script>
+(function(){
+  var form = document.querySelector(".form-partner form");
+  if(!form) return;
+  form.addEventListener("submit", async function(e){
+    e.preventDefault();
+    var btn = form.querySelector("[type=submit]");
+    var origVal = btn.value;
+    btn.value = "⏳"; btn.disabled = true;
+    var old = form.parentElement.querySelector(".foorsa-banner");
+    if(old) old.remove();
+    try {
+      var data = Object.fromEntries(new FormData(form));
+      data.form_type = "partner";
+      var resp = await fetch("/api/submit-form", {method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)});
+      var json = await resp.json();
+      if(json.success){
+        var b=document.createElement("div");b.className="foorsa-banner";
+        b.style.cssText="background:#22c55e;color:#fff;padding:12px 16px;border-radius:8px;margin:12px 0;text-align:center;font-weight:600";
+        b.textContent="\u2713 Your submission has been received!";form.parentElement.insertBefore(b,form);form.reset();
+      } else { throw new Error(); }
+    } catch(err){
+      var b=document.createElement("div");b.className="foorsa-banner";
+      b.style.cssText="background:#ef4444;color:#fff;padding:12px 16px;border-radius:8px;margin:12px 0;text-align:center;font-weight:600";
+      b.textContent="\u2717 Something went wrong. Please try again.";form.parentElement.insertBefore(b,form);
+    }
+    btn.value=origVal;btn.disabled=false;
+  });
+})();
+</script>
 </body>
 </html>

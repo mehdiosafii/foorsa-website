@@ -153,11 +153,17 @@ async function loadAll(){
   }
 
   if(subs&&subs.submissions){
+    const badgeColors={contact:'#3b82f6',partner:'#8b5cf6',careers:'#22c55e',review:'#eab308'};
     document.getElementById('dSubs').innerHTML=subs.submissions.map(s=>{
       const d=typeof s.data==='string'?JSON.parse(s.data||'{}'):s.data||{};
+      const ft=s.form_type||'unknown';
+      const bc=badgeColors[ft]||'#6b7280';
+      const fields=Object.entries(d).map(([k,v])=>`<div><strong>${k}:</strong> ${String(v).substring(0,200)}</div>`).join('');
+      const atts=(s.attachments||[]).map(a=>`<a href="/api/admin/attachment?id=${a.id}&password=${encodeURIComponent(F.pw)}" target="_blank" style="display:inline-block;margin:4px 0;padding:4px 10px;background:#2563eb;color:#fff;border-radius:4px;text-decoration:none;font-size:13px">📎 ${a.filename} (${(a.file_size/1024).toFixed(0)}KB)</a>`).join(' ');
       return `<div class="sub-card" onclick="this.classList.toggle('open')">
-        <strong>${d.firstName||d.name||s.email||'Submission'} ${d.lastName||''}</strong> — ${new Date(s.created_at).toLocaleString()}
-        <div class="sub-detail">${JSON.stringify(d,null,2)}</div>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;background:${bc};color:#fff;font-size:12px;margin-right:8px">${ft}</span>
+        <strong>${d.name||d['full-name']||d.email||'Submission'}</strong> — ${new Date(s.created_at).toLocaleString()}
+        <div class="sub-detail">${fields}${atts?'<div style="margin-top:8px">'+atts+'</div>':''}</div>
       </div>`;
     }).join('')||'<p style="color:#888">No submissions yet</p>';
   }
