@@ -31,8 +31,7 @@ module.exports = async (req, res) => {
     }
 
     const submissions = r.rows.map(s => {
-      const d = typeof s.data === 'string' ? JSON.parse(s.data || '{}') : s.data || {};
-      return { ...s, form_type: d.form_type || 'unknown', attachments: attachMap[s.id] || [] };
+      return { ...s, form_type: s.form_type || 'unknown', attachments: attachMap[s.id] || [] };
     });
 
     res.json({ total: +c.rows[0].c, submissions });
