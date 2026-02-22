@@ -17,26 +17,60 @@
     {
       "source": "/assets/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/uploads/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/(.*)\\.html",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, stale-while-revalidate=86400"
+        }
       ]
     },
     {
       "source": "/sitemap.xml",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=86400" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/universities-in-china/en/:path*",
+      "destination": "/en/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/universities-in-china/ar/:path*",
+      "destination": "/ar/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/scholarships/en/:path*",
+      "destination": "/en/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/scholarships/ar/:path*",
+      "destination": "/ar/:path*",
+      "statusCode": 301
     }
   ]
 }
