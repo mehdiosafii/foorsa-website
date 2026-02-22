@@ -13,15 +13,14 @@
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Blog - Foorsa | Study in China Tips & Guides</title>
 <meta name="description" content="Tips, guides, and success stories about studying in China for Moroccan students. Get expert advice on scholarships, universities, and student life.">
-<link rel="preload" href="../assets/css/style.css" as="style">
+<link rel="preload" href="../assets/css/style.min.css?v=20260124d" as="style">
 <link rel="preload" href="../assets/fonts/Marcher-Bold.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../assets/fonts/Marcher-Light.woff2" as="font" type="font/woff2" crossorigin>
-<link href="../assets/bootstrap/css/bootstrap.css" media="all" rel="stylesheet">
-<link href="../assets/css/style.css" media="all" rel="stylesheet"/>
-<link href="../assets/css/responsive.css" media="all" rel="stylesheet"/>
-<script src="../assets/vendor/jquery.min.js"></script>
-<script src="../assets/vendor/jquery-migrate.min.js" defer></script>
-<script src="/js/language-handler.js" defer></script>
+<link href="../assets/bootstrap/css/bootstrap.min.css?v=20260123" media="all" rel="stylesheet">
+<link href="../assets/css/style.min.css?v=20260124d" media="all" rel="stylesheet"/>
+<link href="../assets/css/responsive.min.css?v=20260124b" media="all" rel="stylesheet"/>
+<script src="../assets/vendor/jquery.min.js?v=20260123"></script>
+<script src="/js/language-handler.js?v=20260123" defer></script>
 <style>
 .blog-page { 
     padding: 140px 0 80px; 
@@ -181,7 +180,7 @@
 <body class="blog-page-body">
 <div class="header header-desktop sticky">
 <div class="logo-menu active">
-<div class="logo"><a href="../"><img alt="logo" src="../assets/img/logo-bl.png"/></a></div>
+<div class="logo"><a href="../"><img alt="logo" loading="lazy" src="../assets/img/logo-bl.webp"/></a></div>
 <nav class="main-menu active">
 <ul class="menu">
 <li class="menu-item menu-item-has-children">
@@ -214,7 +213,7 @@
 </div>
 
 <div class="header header-mobile">
-<div class="logo-top"><a href="../"><img alt="logo" src="../assets/img/logo-bl.png"/></a></div>
+<div class="logo-top"><a href="../"><img alt="logo" loading="lazy" src="../assets/img/logo-bl.webp"/></a></div>
 <a class="btn-apply-navbar" href="./shop.html">APPLY</a>
 <nav role="navigation">
 <div id="menuToggle">
@@ -320,22 +319,22 @@
 </div>
 <div class="socialMedia">
 <a href="https://www.facebook.com/Foorsaconsulting/?ref=page_internal&amp;_rdc=1&amp;_rdr" target="_blank">
-<img alt="facebook" src="../assets/img/facebook-white.png"/>
+<img alt="facebook" loading="lazy" src="../assets/img/facebook-white.webp"/>
 </a>
 <a href="http://www.instagram.com/foorsa.ma/" target="_blank">
-<img alt="instagram" src="../assets/img/instagram-white.png"/>
+<img alt="instagram" loading="lazy" src="../assets/img/instagram-white.webp"/>
 </a>
 <a href="https://www.linkedin.com/company/fooorsa-consulting" target="_blank">
-<img alt="linkedin" src="../assets/img/linkedin-white.png"/>
+<img alt="linkedin" loading="lazy" src="../assets/img/linkedin-white.webp"/>
 </a>
 <a href="http://www.tiktok.com/@foorsa.ma" target="_blank">
-<img alt="tiktok" src="../assets/img/tiktok-white.png"/>
+<img alt="tiktok" loading="lazy" src="../assets/img/tiktok-white.webp"/>
 </a>
 <a href="https://www.youtube.com/channel/UCGQpcJCswqd81o_Aq7W1ArQ" target="_blank">
-<img alt="youtube" src="../assets/img/youtube-white.png"/>
+<img alt="youtube" loading="lazy" src="../assets/img/youtube-white.webp"/>
 </a>
 <a href="https://wa.me/+2120537911291" target="_blank">
-<img alt="whatsapp" src="../assets/img/whatsapp-white.png"/>
+<img alt="whatsapp" loading="lazy" src="../assets/img/whatsapp-white.webp"/>
 </a>
 </div>
 </div>
@@ -354,8 +353,8 @@
 </div>
 </footer>
 
-<script src="../assets/js/navigation.js" defer></script>
-<script src="../assets/js/global.js" defer></script>
+<script src="../assets/js/navigation.js?v=20260123" defer></script>
+<script src="../assets/js/global.js?v=20260124b" defer></script>
 
 <script>
 let allArticles = [];
@@ -420,7 +419,7 @@ function renderArticles() {
     grid.innerHTML = articles.map(article => `
         <article class="blog-card">
             <a href="./blog-article.html?slug=${article.slug}">
-                <img src="${article.featured_image || '../assets/img/blog-placeholder.jpg'}" alt="${article.title}" onerror="this.src='../assets/img/blog-placeholder.jpg'">
+                <img loading="lazy" src="${article.featured_image || '../assets/img/blog-placeholder.jpg'}" alt="${article.title}" onerror="this.src='../assets/img/blog-placeholder.jpg'">
             </a>
             <div class="blog-card-body">
                 <span class="blog-card-category">${formatCategory(article.category)}</span>

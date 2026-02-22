@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "dependencies": {
+    "pg": "^8.11.0",
+    "sharp": "^0.34.5",
+    "stripe": "^14.0.0"
+  }
+}

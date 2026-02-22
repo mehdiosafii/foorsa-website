@@ -1,0 +1,1013 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@font-face {
+    font-family: 'Janna LT';
+    src: url('../fonts/rtl/JannaLT-Regular.eot');
+    src: url('../fonts/rtl/JannaLT-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/rtl/JannaLT-Regular.woff2') format('woff2'),
+        url('../fonts/rtl/JannaLT-Regular.woff') format('woff'),
+        url('../fonts/rtl/JannaLT-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'VIP Hala';
+    src: url('../fonts/rtl/VIPHalaBold-VIPHalaBold.eot');
+    src: url('../fonts/rtl/VIPHalaBold-VIPHalaBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/rtl/VIPHalaBold-VIPHalaBold.woff2') format('woff2'),
+        url('../fonts/rtl/VIPHalaBold-VIPHalaBold.woff') format('woff'),
+        url('../fonts/rtl/VIPHalaBold-VIPHalaBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+html,
+body {
+    margin: 0 !important;
+}
+
+ul,
+ol {
+    margin: 0;
+}
+
+nav ul li a,
+.secondFooter .menu ul li a,
+.secondFooter .conditions a {
+    font-family: 'Janna LT';
+}
+
+body .swiper-rtl .swiper-button-prev {
+    right: -40px;
+    left: unset;
+}
+
+body .swiper-rtl .swiper-button-next {
+    left: unset;
+    right: 40px;
+}
+
+
+.checkout {
+    right: -55px;
+}
+
+.checkout a {
+    font-family: 'VIP Hala';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20.8px;
+}
+
+.blockHeader .title,
+#sectionJoinUs .blockHeader .title {
+    font-family: 'VIP Hala';
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+#sectionJoinUs{
+    padding-top: 12%;
+}
+
+.blockHeader .description,
+#sectionJoinUs .description {
+    font-family: 'Janna LT';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.94px;
+}
+
+
+
+.firstFooter .content h1 {
+    font-family: 'VIP Hala';
+    font-size: 73px;
+    font-weight: 400;
+    line-height: 91.98px;
+    text-align: right;
+
+}
+
+.firstFooter button.btn {
+    font-family: "Janna LT";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: right;
+
+}
+
+.firstFooter button.btn svg {
+    rotate: -90deg;
+}
+
+.language-switcher .dropbtn,
+.language-switcher .dropup-content a {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+
+}
+
+#sectionHero .firstBlock .title {
+    font-family: "VIP Hala";
+    font-size: 95px;
+    font-weight: 400;
+    line-height: 130px;
+}
+
+#sectionHero .firstBlock .subTitle {
+    font-family: 'VIP Hala';
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 100px;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+}
+
+.textEnter {
+    font-family: 'Janna LT';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.94px;
+}
+
+
+.titles .text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#sectionHero .secondBlock .firstContent .titles h2 {
+    font-family: 'VIP Hala';
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 100.8px;
+    text-align: center;
+    width: 100%;
+}
+
+
+#sectionEducation .card .cardTitle {
+    font-family: 'VIP Hala';
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 36.96px;
+    text-align: center;
+
+}
+
+#sectionEducation .card .cardContent,
+.cardSubCat .front .titleFront {
+    font-family: 'Janna LT';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.94px;
+    text-align: center;
+
+}
+
+#sectionEducation .card .cardContent {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+}
+
+#sectionEducation .card .cardContent p {
+    margin: 0;
+}
+
+#sectionEducation .card .link {
+    font-family: 'Janna LT';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.94px;
+    text-align: left;
+
+}
+
+.subCategory {
+    margin-right: 143px;
+    margin-left: 0;
+}
+
+.detailQuestion .number {
+    text-align: right;
+}
+
+.detailQuestion .tag {
+    font-family: 'Janna LT';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 84px;
+    text-align: right;
+
+}
+
+.detailQuestion .questionTitle {
+    font-family: 'VIP Hala';
+    font-size: 77px;
+    font-weight: 400;
+    line-height: 64.68px;
+    text-align: right;
+}
+
+
+.detailQuestion .questionDetail {
+    font-family: 'Janna LT';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.94px;
+    text-align: right;
+
+}
+
+button.btnBack {
+    font-family: 'Janna LT';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 13.44px;
+    text-align: right;
+
+}
+
+button.btnBack svg {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+.cardSubCat .back .titleBack {
+    font-family: 'Janna LT';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.94px;
+    text-align: right;
+
+}
+
+.cardSubCat .back .contentBack {
+    font-family: 'Janna LT';
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+
+}
+
+
+#sectionUniversities .blockHeader {
+    padding: 15px 0 0;
+}
+
+body.rtl .heading-page h1,
+.sectionMap .bolckDescription h1,
+.studies .title,
+.detailStudy .title {
+    font-family: 'VIP Hala';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+
+}
+
+body.rtl .heading-page p,
+.about-frais .content p,
+.content-join-us .description p,
+.about-frais .content ol {
+    font-family: 'Janna LT';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    text-align: right;
+}
+
+body.rtl .heading-page h2,
+body.rtl .sub-heading h2 {
+    font-family: 'VIP Hala';
+    font-size: 25px;
+}
+
+body.rtl .heading-page h4 {
+    font-family: 'VIP Hala';
+    font-size: 20px;
+    text-align: right;
+}
+
+body.rtl h3,
+.card-payment .content h3 {
+    font-family: 'Janna LT';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.2px;
+    text-align: right;
+}
+
+.card-scholarship .card .title {
+    font-family: 'VIP Hala';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+}
+
+.card-scholarship .card p {
+    font-family: 'Janna LT';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+}
+
+
+body.rtl .block-content li,
+.card-scholarship .sub-scription li {
+    font-family: 'Janna LT';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    text-align: right;
+}
+
+body.rtl .section-scholarship ul li {
+    color: #727272;
+}
+
+.form-contact form .header-form .title {
+    font-family: 'VIP Hala';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    text-align: center;
+}
+
+.form-contact form .header-form p {
+    font-family: 'Janna LT';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+}
+
+.form-contact form h4 {
+    text-align: right;
+    font-family: 'VIP Hala';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27.2px;
+}
+
+.section-contact .contact-content p {
+    font-family: 'Janna LT';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    text-align: right;
+
+}
+
+.section-contact .contact-content h1 {
+    text-align: right;
+    font-family: 'VIP Hala';
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.form-contact form label {
+    font-family: 'Janna LT';
+    font-weight: 400;
+}
+
+.form-contact form textarea,
+.form-contact form input {
+    font-family: 'Janna LT';
+    text-align: right;
+    font-weight: 400;
+}
+
+.form-contact form .btn-submit {
+    font-family: 'Janna LT';
+    background: transparent;
+    font-weight: 400;
+}
+
+.form-careers .block-content .form-label {
+    font-family: 'Janna LT';
+    font-weight: 400;
+}
+
+.form-careers .block-content input::-webkit-input-placeholder,
+.form-careers .block-content textarea::-webkit-input-placeholder {
+    text-align: right;
+    font-family: 'Janna LT';
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-careers .block-content input::-moz-placeholder,
+.form-careers .block-content textarea::-moz-placeholder {
+    text-align: right;
+    font-family: 'Janna LT';
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-careers .block-content input:-ms-input-placeholder,
+.form-careers .block-content textarea:-ms-input-placeholder {
+    text-align: right;
+    font-family: 'Janna LT';
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-careers .block-content input::-ms-input-placeholder,
+.form-careers .block-content textarea::-ms-input-placeholder {
+    text-align: right;
+    font-family: 'Janna LT';
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-careers .block-content input::-webkit-input-placeholder,
+.form-careers .block-content textarea::-webkit-input-placeholder {
+    text-align: right;
+    font-family: 'Janna LT';
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-careers .block-content input::-moz-placeholder,
+.form-careers .block-content textarea::-moz-placeholder {
+    text-align: right;
+    font-family: 'Janna LT';
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-careers .block-content input:-ms-input-placeholder,
+.form-careers .block-content textarea:-ms-input-placeholder {
+    text-align: right;
+    font-family: 'Janna LT';
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-careers .block-content input::-ms-input-placeholder,
+.form-careers .block-content textarea::-ms-input-placeholder {
+    text-align: right;
+    font-family: 'Janna LT';
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-careers .block-content input,
+.form-careers .block-content select,
+.form-careers .block-content input::placeholder,
+.form-careers .block-content textarea,
+.form-careers .block-content textarea::placeholder {
+    text-align: right;
+    font-family: 'Janna LT';
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-careers .block-content .form-group .form-text {
+    text-align: right;
+    font-family: 'Janna LT';
+    font-weight: 400;
+}
+
+.form-careers .btn-apply,
+.cardFrais button,
+.section-infos .card-context .btnContact {
+    font-family: 'Janna LT';
+    font-weight: 400;
+}
+
+.file-upload p,
+.file-info p {
+    font-family: 'Janna LT';
+}
+
+.section-slider {
+    padding-right: 190px;
+    padding-left: 0;
+}
+
+.cardFrais .subject {
+    font-family: 'Janna LT';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34.2px;
+    text-align: center;
+
+}
+
+.cardFrais .price h5,
+.cardFrais .price span {
+    font-family: 'Janna LT';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 29.76px;
+    text-align: right;
+
+}
+
+.cardFrais .content h6 {
+    font-family: 'Janna LT';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 29.76px;
+}
+
+.cardFrais .content {
+    font-family: 'Janna LT';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.36px;
+    text-align: center;
+
+}
+
+
+.section-cards .cards .card .content h4,
+.section-infos .blocks .block .title {
+    font-family: 'VIP Hala';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+.section-cards .cards .card .content p,
+.section-cards .sub-description,
+.section-infos .card-context .description p,
+.section-infos .blocks .block .description,
+.section-cards .sub-heading p,
+.section-infos .card-context .description p {
+    font-family: 'Janna LT';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.section-cards .cards .card .icon {
+    border-radius: 0px 0 0px 10px;
+}
+
+
+.card-journey .card .title {
+    font-family: 'VIP Hala';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35.52px;
+}
+
+.card-journey .card .sub-title {
+    font-family: 'VIP Hala';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22.2px;
+}
+
+.card-journey .card .content p,
+.card-journey .card .content li {
+    font-family: 'Janna LT';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+}
+
+.form-contact form label {
+    text-align: right;
+}
+
+.card-payment .content ul {
+    margin: 0;
+}
+
+.card-payment .content li {
+    text-align: right;
+    font-family: 'Janna LT';
+}
+
+.form-check-input[type=checkbox] {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.frais-foorsa .notice {
+    font-family: 'Janna LT';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+}
+
+.frais-foorsa .list-options li {
+    text-align: right;
+    font-family: 'Janna LT';
+}
+
+.payment .price {
+    right: 0;
+}
+
+.payment .price a {
+    font-family: 'VIP Hala';
+}
+
+.frais-foorsa .list-price li {
+    font-family: 'Janna LT';
+}
+
+body.rtl .info-engagement .content h3 {
+    font-family: 'Janna LT';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.2px;
+    text-align: center;
+}
+
+body.rtl .info-engagement .content .text p,
+body.rtl .about-mission .content p {
+    font-family: 'Janna LT';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+}
+
+body.rtl .card-context .description p,
+body.rtl .item .card-planet p {
+    font-family: 'Janna LT';
+    font-size: 16px;
+}
+
+.frais-foorsa p {
+    font-family: 'Janna LT';
+    font-size: 18px;
+}
+
+body.rtl .card-context .btn-details {
+    font-family: 'Janna LT';
+}
+
+body.rtl .item .card-planet h3 {
+    font-family: 'Janna LT';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.2px;
+    text-align: center;
+}
+
+body.rtl .hidden-rtl {
+    visibility: visible;
+}
+
+body.rtl .hidden-ltr {
+    visibility: hidden;
+}
+
+body.rtl .card-journey .cards {
+    gap: 162px;
+}
+
+
+.section-cashplus p,
+.section-cashplus .notice p,.section-cashplus .detail a {
+    font-family: 'Janna LT';
+    text-align: right;
+}
+
+.section-cashplus .detail a {
+    font-family: 'Janna LT';
+}
+
+.section-cashplus h2 {
+    font-family: 'VIP Hala';
+    text-align: right;
+}
+
+.firstFooter .content p {
+    font-family: 'Janna LT';
+    text-align: right;
+}
+
+.sectionStudy p {
+    font-family: 'Janna LT';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+}
+
+body.rtl .section-engagement .heading-page p {
+    text-align: center;
+}
+
+
+.content-join-us .title h1 {
+    font-family: 'VIP Hala';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: right;
+
+}
+
+.section-work-at-foorsa .card h2 {
+    font-family: 'JANNA LT';
+}
+
+.section-ready .content h2 {
+    font-family: 'VIP Hala';
+}
+
+.section-ready .card h3,
+.heading-section h2 {
+    font-family: 'VIP Hala' !important;
+}
+
+.section-ready .card p {
+    font-family: 'Janna LT';
+}
+
+.section-ready .btn-apply {
+    font-family: 'Janna LT';
+}
+
+.tt_sm ul li {
+    text-align: right !important;
+    font-family: 'Janna LT';
+    font-size: 15px;
+}
+
+.tt_sm ul p {
+    text-align: right !important;
+    font-family: 'Janna LT';
+    font-size: 14px;
+    line-height: inherit;
+}
+
+.section-billet .content,
+.btnquiz,
+.card-scholarship .sub-scription,
+.section-billet .block-content {
+    font-family: 'Janna LT';
+}
+
+#menu a,
+.sectionquiz .bolckDescription p,
+form#questionForm h2 {
+    font-family: 'Janna LT' !important;
+
+}
+
+.longDescription p {
+    font-family: 'Janna LT' !important;
+}
+
+.radio-container {
+    font-family: 'Janna LT' !important;
+    text-align: right;
+}
+
+.sectionquiz .bolckDescription h1 {
+    font-family: 'VIP Hala';
+}
+
+.section-journey ul,
+.section-journey ol {
+    font-family: 'Janna LT' !important;
+    text-align: right !important;
+}
+
+/* about us */
+
+.teams .member .name,
+.teams .member .role,
+.section-about .description p,
+.card-partner h4,
+.card-partner li,
+.form-partner h6,
+.form-partner select,
+.form-partner input,
+.form-partner .submit-partner {
+    font-family: 'Janna LT';
+}
+
+.wpcf7 input[type="url"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="tel"] {
+    direction: rtl;
+}
+
+.form-partner .form-group p {
+    text-align: right;
+}
+
+.sctions-partner-with-us .card-context h5 {
+    font-family: 'VIP Hala';
+}
+
+.form-partner p,
+.form-partner label,
+.sctions-partner-with-us {
+    font-family: 'Janna LT';
+}
+
+body.rtl .section-joinUs.section-partner {
+    margin-bottom: 35px;
+}
+
+
+/*page faq */
+
+body.rtl .faq-page .accordion-button::after {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.faq-page .accordion-body,
+.faq-page button.accordion-button,
+.faq-page .faq-questions .categories ul li a,
+.section-faq form input {
+    font-family: 'Janna LT';
+    text-align: right;
+
+}
+
+.section-faq a.search-button {
+    left: 19px;
+    right: auto;
+}
+
+
+/*page document*/
+
+body.rtl .page-document .heading-page p {
+    text-align: center;
+}
+
+.section-document .card-document ul {
+    padding-left: 0;
+    padding-right: 1rem;
+}
+
+.section-document .card-document h4,
+.section-document .card-document ul,
+.section-document .card-document ol {
+    font-family: 'Janna LT';
+}
+
+button.btnPromo {
+    font-family: 'Janna LT';
+}
+
+/*page study*/
+
+.cardStudy .cardHeader h3 {
+    font-family: 'VIP Hala';
+    font-size: 20px;
+}
+
+.cardStudy .cardBody li {
+    font-family: 'Janna LT';
+    text-align: right;
+}
+
+.detailStudy section.details,
+.detailStudy .cardContent p,
+.detailStudy .cardContent li,
+.detailStudy .cardContent h4,
+.detailStudy .cardContent a {
+    font-family: 'Janna LT';
+    text-align: right;
+}
+
+.detailStudy .cardContent div.progress span {
+    font-family: 'Janna LT';
+}
+
+.detailStudy .cardHeader h3 {
+    font-family: 'VIP Hala';
+    font-size: 16px;
+}
+
+/*page blog*/
+
+.article-img span.date {
+    font-family: 'Janna LT';
+}
+
+body.rtl .article-details h3 {
+    text-align: center;
+}
+
+.article-excerpt,
+.read-more .btn-send,
+.section-newsletter .newsletter p,
+.pagination .page-numbers {
+    font-family: 'Janna LT';
+}
+
+.section-newsletter .newsletter input {
+    font-family: 'Janna LT';
+}
+
+.section-newsletter .newsletter .btnSend {
+    left: 6px;
+    right: unset;
+}
+
+body.rtl .page-newsletter .heading-page p {
+    font-size: 20px;
+}
+
+body.rtl .card-review h3 {
+    text-align: center;
+}
+
+.card-review button {
+    font-family: 'Janna LT';
+}
+
+body.rtl .second-card .card-review h3,body.rtl .card-review p  {
+    text-align: right;
+    font-family: 'Janna LT';
+
+}
+
+body.rtl .card-review label {
+    font-family: 'Janna LT';
+    text-align: right;
+}
+
+.card-review input ,.card-review textarea {
+    font-family: 'Janna LT';
+}
+
+@media screen and (max-width: 500px) {
+    .subCategory {
+        margin-right: 20px;
+    }
+
+    .section-slider {
+        padding: 0;
+    }
+
+    .cardFrais button {
+        padding: 10px;
+    }
+
+    body.rtl .cardFrais .price h5 {
+        font-size: 15px;
+    }
+
+    .firstFooter {
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+
+    body.rtl #sectionHero .firstBlock .title,
+    body.rtl #sectionHero .firstBlock .subTitle {
+        line-height: 80px;
+    }
+
+    body.rtl .checkout {
+        right: -30px;
+    }
+
+    body.rtl #sectionEducation .swiper-buttons {
+        left: 50%;
+    }
+
+    body.rtl .map-mobile .accordion-button::after {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    body.rtl .frais-foorsa .list-price li {
+        padding: 11px 0;
+    }
+}

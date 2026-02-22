@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0JT7KY4DKQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0JT7KY4DKQ');
+</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Payment Confirmation - Foorsa</title>
+<meta name="description" content="Your payment has been successfully processed. Thank you for choosing Foorsa for your study abroad journey to China.">
+<link rel="preload" href="../assets/css/style.min.css?v=20260124d" as="style">
+<link rel="preload" href="../assets/fonts/Marcher-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/Marcher-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link href="../assets/bootstrap/css/bootstrap.min.css?v=20260123" id="bootstrap-css-css" media="all" rel="stylesheet">
+<link href="../assets/css/style.min.css?v=20260124d" id="style-css-css" media="all" rel="stylesheet"/>
+<link href="../assets/css/responsive.min.css?v=20260124b" id="responsive-css-css" media="all" rel="stylesheet"/>
+<script id="jquery-core-js" defer src="../assets/vendor/jquery.min.js?v=20260123"></script>
+<script src="/js/language-handler.js?v=20260123" defer></script>
+<script>
+const urlParams = new URLSearchParams(window.location.search);
+const paymentId = urlParams.get('payment_id');
+if (!paymentId) {
+    window.location.href = './shop.html';
+}
+</script>
+<style>
+.confirmation-page {
+    padding: 120px 0 80px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #041228 0%, #0a2040 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirmation-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.success-icon {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.success-icon svg {
+    width: 50px;
+    height: 50px;
+    stroke: white;
+    stroke-width: 3;
+}
+
+.confirmation-title {
+    font-family: 'Marcher', sans-serif;
+    font-size: 42px;
+    color: #C9A84C;
+    margin-bottom: 20px;
+}
+
+.confirmation-message {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.next-steps {
+    background: rgba(201, 168, 76, 0.1);
+    border: 1px solid #C9A84C;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.next-steps h3 {
+    color: #C9A84C;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.next-steps ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.next-steps li {
+    color: #ffffff;
+    padding: 10px 0;
+    padding-left: 25px;
+    position: relative;
+}
+
+.next-steps li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+}
+
+.btn-home {
+    display: inline-block;
+    padding: 16px 40px;
+    background: #C9A84C;
+    color: #041228;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-home:hover {
+    background: #d4b85d;
+    transform: translateY(-2px);
+}
+
+.payment-id {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .confirmation-title {
+        font-size: 32px;
+    }
+    
+    .confirmation-message {
+        font-size: 16px;
+    }
+}
+</style>
+</head>
+<body>
+<div class="header header-desktop sticky">
+<div class="logo-menu active">
+<div class="logo"><a href="../"><img alt="logo" loading="lazy" src="../assets/img/logo-bl.webp"/></a></div>
+<nav class="main-menu active">
+<ul class="menu">
+<li class="menu-item menu-item-has-children">
+<a href="#">Foorsa <span class="dropdown-arrow">▼</span></a>
+<ul class="sub-menu">
+<li><a href="./about-us.html">About Us</a></li>
+<li><a href="./about-us.html#mission">Mission &amp; Values</a></li>
+<li><a href="./about-us.html#engagement">Engagement</a></li>
+<li><a href="./about-us.html#careers">Recruitment</a></li>
+<li><a href="./partner-with-us.html">Partner With Us</a></li>
+<li><a href="./contact.html">Contact us</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children">
+<a href="#">China <span class="dropdown-arrow">▼</span></a>
+<ul class="sub-menu">
+<li><a href="./majors.html">Majors</a></li>
+<li><a href="./scholarship.html">Scholarship</a></li>
+<li><a href="./fees.html">Fees &amp; Financing</a></li>
+<li><a href="./step-by-step.html">Step by step</a></li>
+<li><a href="./documents.html">Documents</a></li>
+<li><a href="./frequently-asked-questions.html">FAQ</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children">
+<a href="#">Language <span class="dropdown-arrow">▼</span></a>
+<ul class="sub-menu">
+<li><a href="/">English</a></li>
+<li><a href="/fr/">Français</a></li>
+<li><a href="/ar/">العربية</a></li>
+</ul>
+</li>
+<li class="menu-item"><a href="./blog.html">Blog</a></li>
+</ul>
+</nav>
+<a class="btn-apply-navbar" href="./shop.html">APPLY</a>
+</div>
+</div>
+
+<div class="header header-mobile">
+<div class="logo-top"><a href="../"><img alt="logo" loading="lazy" src="../assets/img/logo-bl.webp"/></a></div>
+<a class="btn-apply-navbar" href="./shop.html">APPLY</a>
+<nav role="navigation">
+<div id="menuToggle">
+<input type="checkbox"/>
+<span></span>
+<span></span>
+<div id="menu">
+<div class="menu-mobile-menu-container">
+<ul class="menu" id="menu-mobile-menu">
+<li class="menu-item"><a href="../">Home</a></li>
+<li class="menu-item"><a href="./about-us.html">About Us</a></li>
+<li class="menu-item"><a href="./majors.html">Majors</a></li>
+<li class="menu-item"><a href="./scholarship.html">Scholarship</a></li>
+<li class="menu-item"><a href="./fees.html">Fees &amp; Financing</a></li>
+<li class="menu-item"><a href="./step-by-step.html">Step by Step</a></li>
+<li class="menu-item"><a href="./documents.html">Documents</a></li>
+<li class="menu-item"><a href="./frequently-asked-questions.html">FAQ</a></li>
+<li class="menu-item"><a href="./contact.html">Contact Us</a></li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+</div>
+
+<main class="confirmation-page">
+    <div class="confirmation-container">
+        <div class="success-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M20 6L9 17l-5-5"/>
+            </svg>
+        </div>
+        
+        <h1 class="confirmation-title">Payment Successful!</h1>
+        
+        <p class="confirmation-message">
+            Thank you for your application. Your payment has been processed successfully. 
+            Our team will contact you within 24-48 hours to begin your journey to studying in China.
+        </p>
+        
+        <div class="next-steps">
+            <h3>What Happens Next?</h3>
+            <ul>
+                <li>Our team will call you within 24 hours</li>
+                <li>We'll discuss your goals and recommend programs</li>
+                <li>You'll receive a list of required documents</li>
+                <li>We'll guide you through the entire application process</li>
+            </ul>
+        </div>
+        
+        <a href="../" class="btn-home">Return to Homepage</a>
+        
+        <div class="payment-id">
+            Payment Reference: <span id="payment-ref"></span>
+        </div>
+    </div>
+</main>
+
+<script src="../assets/js/global.js?v=20260124b"></script>
+<script>
+document.getElementById('payment-ref').textContent = new URLSearchParams(window.location.search).get('payment_id') || 'N/A';
+</script>
+</body>
+</html>

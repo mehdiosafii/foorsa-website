@@ -1,0 +1,33 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Ajouter votre code CSS ici.
+                     
+Par exemple:
+.exemple {
+    color: red;
+}
+
+Pour améliorer vos connaissances en CSS, visitez http://www.w3schools.com/css/css_syntax.asp
+
+Fin du commentaire */ 
+
+
+.payment .form-contact ul li {
+    color: initial !important;
+}
+
+.simpay-coupon-container .simpay-coupon-message {
+    color: #fff;
+}
+
+.Label,
+.p-FieldLabel,
+.p-FieldLabel.Label {
+    color: white !important;
+}
+.Label {
+    color: white !important;
+    opacity: 1 !important;
+}
+</style>
+<!-- end Simple Custom CSS and JS -->

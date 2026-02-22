@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0JT7KY4DKQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0JT7KY4DKQ');
+</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Quiz Destination d'Études - Foorsa</title>
+<meta content="max-image-preview:large" name="robots">
+<link rel="preload" href="../assets/css/style.min.css?v=20260124d" as="style">
+<link rel="preload" href="../assets/fonts/Marcher-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/Marcher-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link href="../assets/bootstrap/css/bootstrap.min.css?v=20260123" id="bootstrap-css-css" media="all" rel="stylesheet">
+<link href="../assets/css/style.min.css?v=20260124d" id="style-css-css" media="all" rel="stylesheet"/>
+<link href="../assets/css/responsive.min.css?v=20260124b" id="responsive-css-css" media="all" rel="stylesheet"/>
+<link href="../assets/libs/swiper-bundle.min.css?v=20260123" id="swiper-css-css" media="all" rel="stylesheet"/>
+<link href="../assets/libs/fancybox.css?v=20260123" id="fancybox-css-css" media="all" rel="stylesheet"/>
+<script id="jquery-core-js" defer src="../assets/vendor/jquery.min.js?v=20260123"></script>
+<script src="/js/language-handler.js?v=20260123" defer></script>
+<style>
+.quiz-hero {
+    background: #041228;
+    padding: 120px 0 80px;
+    text-align: center;
+}
+.quiz-hero h1 {
+    font-family: 'Marcher';
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.quiz-hero p {
+    font-size: 18px;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.quiz-content {
+    background: #fff;
+    padding: 60px 0;
+}
+.quiz-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.question-block {
+    margin-bottom: 50px;
+}
+.question-block:last-of-type {
+    margin-bottom: 30px;
+}
+.question-title {
+    font-family: 'Marcher';
+    font-size: 20px;
+    font-weight: 700;
+    color: #041228;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.options-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.option-item {
+    position: relative;
+}
+.option-item input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+}
+.option-label {
+    display: block;
+    padding: 18px 25px;
+    background: #f5f7fa;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #041228;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.option-item input[type="radio"]:hover + .option-label {
+    background: #e8ecf2;
+    border-color: #041228;
+}
+.option-item input[type="radio"]:checked + .option-label {
+    background: #041228;
+    color: #fff;
+    border-color: #041228;
+}
+.quiz-submit {
+    text-align: center;
+    margin-top: 40px;
+}
+.btn-submit {
+    display: inline-block;
+    padding: 18px 60px;
+    background: #041228;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Marcher';
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.btn-submit:hover {
+    background: #7696C4;
+    transform: translateY(-2px);
+}
+.error-text {
+    color: #dc3545;
+    font-size: 14px;
+    margin-bottom: 15px;
+    display: none;
+}
+.error-text.show {
+    display: block;
+}
+.results-hero {
+    display: none;
+    background: #041228;
+    padding: 80px 0;
+    text-align: center;
+}
+.results-hero.show {
+    display: block;
+}
+.results-hero .subtitle {
+    font-size: 16px;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.results-hero h2 {
+    font-family: 'Marcher';
+    font-size: 56px;
+    font-weight: 700;
+    color: #7696C4;
+    margin-bottom: 30px;
+}
+.results-hero .description {
+    font-size: 18px;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 20px;
+}
+.results-hero .match-text {
+    font-size: 16px;
+    color: rgba(255,255,255,0.7);
+    font-style: italic;
+    margin-bottom: 40px;
+}
+.results-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.results-actions .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 35px;
+    border-radius: 50px;
+    font-family: 'Marcher';
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.results-actions .btn-light {
+    background: #fff;
+    color: #041228;
+}
+.results-actions .btn-light:hover {
+    background: #7696C4;
+    color: #fff;
+}
+.results-actions .btn-outline {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.results-actions .btn-outline:hover {
+    background: #fff;
+    color: #041228;
+}
+.btn-retake {
+    background: transparent;
+    border: none;
+    color: #7696C4;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.btn-retake:hover {
+    color: #fff;
+}
+.encouragement {
+    background: #f5f7fa;
+    padding: 40px;
+    text-align: center;
+    display: none;
+}
+.encouragement.show {
+    display: block;
+}
+.encouragement p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+    .quiz-hero {
+        padding: 100px 20px 50px;
+    }
+    .quiz-hero h1 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+    .quiz-hero p {
+        font-size: 15px;
+    }
+    .quiz-content {
+        padding: 30px 0;
+    }
+    .quiz-container {
+        padding: 0 15px;
+    }
+    .quiz-card {
+        padding: 25px 20px;
+    }
+    .question-text {
+        font-size: 18px;
+    }
+    .option-btn {
+        padding: 15px;
+        font-size: 14px;
+    }
+    .results-hero {
+        padding: 60px 20px;
+    }
+    .results-hero h2 {
+        font-size: 28px;
+    }
+    .results-hero h3 {
+        font-size: 24px;
+    }
+    .results-actions {
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 15px;
+    }
+    .results-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    .encouragement {
+        padding: 30px 20px;
+    }
+    .encouragement p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+    .quiz-hero h1 {
+        font-size: 24px;
+    }
+    .quiz-card {
+        padding: 20px 15px;
+    }
+    .question-text {
+        font-size: 16px;
+    }
+    .option-btn {
+        padding: 12px;
+        font-size: 13px;
+    }
+    .results-hero h2 {
+        font-size: 24px;
+    }
+}
+</style>
+</meta></link></head>
+<body class="quiz-page">
+<div class="header header-desktop sticky">
+<div class="logo-menu active">
+<div class="logo"><a href="./"><img alt="logo" loading="lazy" src="../assets/img/logo-bl.webp"/></a></div>
+<nav class="main-menu active">
+<ul class="menu">
+<li class="menu-item menu-item-has-children">
+<a href="#">Foorsa <span class="dropdown-arrow">▼</span></a>
+<ul class="sub-menu">
+<li><a href="./about-us.html">À Propos</a></li>
+<li><a href="./mission-values.html">Mission &amp; Valeurs</a></li>
+<li><a href="./engagement.html">Engagement</a></li>
+<li><a href="./recruitment.html">Recrutement</a></li>
+<li><a href="./partner-with-us.html">Devenir Partenaire</a></li>
+<li><a href="./contact.html">Contactez-nous</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children">
+<a href="#">Chine <span class="dropdown-arrow">▼</span></a>
+<ul class="sub-menu">
+<li><a href="./majors.html">Spécialités</a></li>
+<li><a href="./scholarship.html">Bourses</a></li>
+<li><a href="./fees.html">Frais &amp; Financement</a></li>
+<li><a href="./step-by-step.html">Étape par étape</a></li>
+<li><a href="./documents.html">Documents</a></li>
+<li><a href="./frequently-asked-questions.html">FAQ</a></li>
+</ul>
+</li>
+<li class="menu-item"><a href="./blog.html">Blog</a></li>
+</ul>
+</nav>
+<a class="btn-apply-navbar" href="./shop.html">POSTULER</a>
+</div>
+</div>
+<!-- Mobile Header -->
+<div class="header header-mobile">
+<div class="logo-top"><a href="./"><img alt="logo" loading="lazy" src="../assets/img/logo-bl.webp"/></a></div>
+<a class="btn-apply-navbar" href="./shop.html">POSTULER</a>
+<nav role="navigation">
+<div id="menuToggle">
+<input type="checkbox"/>
+<span></span>
+<span></span>
+<div id="menu">
+<div class="menu-mobile-menu-container">
+<ul class="menu" id="menu-mobile-menu">
+<li class="menu-item"><a href="./">Accueil</a></li>
+<li class="menu-item"><a href="./about-us.html">À Propos</a></li>
+<li class="menu-item"><a href="./majors.html">Spécialités</a></li>
+<li class="menu-item"><a href="./scholarship.html">Bourses</a></li>
+<li class="menu-item"><a href="./fees.html">Frais &amp; Financement</a></li>
+<li class="menu-item"><a href="./step-by-step.html">Étape par Étape</a></li>
+<li class="menu-item"><a href="./documents.html">Documents</a></li>
+<li class="menu-item"><a href="./quiz.html">Quiz</a></li>
+<li class="menu-item"><a href="./frequently-asked-questions.html">FAQ</a></li>
+<li class="menu-item"><a href="./contact.html">Contactez-nous</a></li>
+</ul>
+</div>
+<hr/>
+<div class="menu-footer">
+<div class="logo"><a href="./"><img alt="logo" loading="lazy" src="../assets/img/logo-bl.webp"/></a></div>
+<div class="social-media">
+<a href="https://www.facebook.com/foorsa" target="_blank"><img alt="facebook" loading="lazy" src="../assets/img/facebook-white.webp"/></a>
+<a href="https://www.instagram.com/foorsa.ma/" target="_blank"><img alt="instagram" loading="lazy" src="../assets/img/instagram-white.webp"/></a>
+<a href="https://www.linkedin.com/company/foorsa" target="_blank"><img alt="linkedin" loading="lazy" src="../assets/img/linkedin-white.webp"/></a>
+<a href="https://www.tiktok.com/@foorsa.ma" target="_blank"><img alt="tiktok" loading="lazy" src="../assets/img/tiktok-white.webp"/></a>
+<a href="https://www.youtube.com/@foorsa" target="_blank"><img alt="youtube" loading="lazy" src="../assets/img/youtube-white.webp"/></a>
+<a href="https://wa.me/+212600000000" target="_blank"><img alt="whatsapp" loading="lazy" src="../assets/img/whatsapp-white.webp"/></a>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<div class="dropdown language-switcher">
+  <div class="dropup">
+    <button class="dropbtn" id="current-lang-btn">
+      <div class="flag-icon"><img id="current-flag" alt="lang" loading="lazy" src="https://flagcdn.com/w40/fr.png"/></div>
+      <span id="current-lang-text">FR</span>
+      <span class="arrow">▲</span>
+    </button>
+    <div class="dropup-content">
+      <a href="#" onclick="switchLanguage('en'); return false;" class="lang-option" data-lang="en">
+        <img loading="lazy" src="https://flagcdn.com/w40/gb.png" alt="EN"/> EN
+      </a>
+      <a href="#" onclick="switchLanguage('fr'); return false;" class="lang-option" data-lang="fr">
+        <img loading="lazy" src="https://flagcdn.com/w40/fr.png" alt="FR"/> FR
+      </a>
+      <a href="#" onclick="switchLanguage('ar'); return false;" class="lang-option" data-lang="ar">
+        <img loading="lazy" src="https://flagcdn.com/w40/ma.png" alt="AR"/> AR
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<main class="page-quiz">
+    <section class="quiz-hero" id="quizHero">
+        <div class="container">
+            <h1>Trouvez Votre Destination d'Études Idéale et Abordable en Chine!</h1>
+            <p>Répondez honnêtement à chaque question. Vos réponses nous aideront à vous suggérer la meilleure ville ou province chinoise pour vos études en fonction de vos préférences et objectifs.</p>
+        </div>
+    </section>
+
+    <section class="quiz-content" id="quizContent">
+        <div class="quiz-container">
+            <div class="question-block">
+                <h3 class="question-title">QUE SOUHAITEZ-VOUS ÉTUDIER?</h3>
+                <div class="options-grid">
+                    <div class="option-item">
+                        <input type="radio" name="study" value="arts" id="study-arts">
+                        <label class="option-label" for="study-arts">Arts et Sciences Humaines (ex: langue chinoise, histoire, culture)</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="study" value="business" id="study-business">
+                        <label class="option-label" for="study-business">Commerce et Économie (ex: commerce international, économie)</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="study" value="stem" id="study-stem">
+                        <label class="option-label" for="study-stem">STEM (Sciences, Technologie, Ingénierie, Mathématiques)</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="study" value="medicine" id="study-medicine">
+                        <label class="option-label" for="study-medicine">Médecine et Sciences de la Santé</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="study" value="environment" id="study-environment">
+                        <label class="option-label" for="study-environment">Études Environnementales et Agriculture</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="study" value="undecided" id="study-undecided">
+                        <label class="option-label" for="study-undecided">Je suis indécis(e) et ouvert(e) à explorer différents domaines.</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <h3 class="question-title">QUEL CLIMAT PRÉFÉREZ-VOUS?</h3>
+                <div class="options-grid">
+                    <div class="option-item">
+                        <input type="radio" name="climate" value="warm" id="climate-warm">
+                        <label class="option-label" for="climate-warm">Chaud et humide</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="climate" value="cold" id="climate-cold">
+                        <label class="option-label" for="climate-cold">Froid avec quatre saisons distinctes</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="climate" value="mild" id="climate-mild">
+                        <label class="option-label" for="climate-mild">Doux et tempéré</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="climate" value="no_preference" id="climate-none">
+                        <label class="option-label" for="climate-none">Je n'ai pas de préférence</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <h3 class="question-title">QUELLE TAILLE DE VILLE PRÉFÉREZ-VOUS?</h3>
+                <div class="options-grid">
+                    <div class="option-item">
+                        <input type="radio" name="city" value="large" id="city-large">
+                        <label class="option-label" for="city-large">Grande métropole</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="city" value="medium" id="city-medium">
+                        <label class="option-label" for="city-medium">Ville de taille moyenne</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="city" value="small" id="city-small">
+                        <label class="option-label" for="city-small">Petite ville ou village</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="city" value="no_preference" id="city-none">
+                        <label class="option-label" for="city-none">Pas de préférence</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <h3 class="question-title">QUELLE IMPORTANCE ACCORDEZ-VOUS AU COÛT DE LA VIE?</h3>
+                <div class="options-grid">
+                    <div class="option-item">
+                        <input type="radio" name="cost" value="very" id="cost-very">
+                        <label class="option-label" for="cost-very">Très important - budget limité</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="cost" value="somewhat" id="cost-somewhat">
+                        <label class="option-label" for="cost-somewhat">Assez important</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="cost" value="not" id="cost-not">
+                        <label class="option-label" for="cost-not">Pas une priorité</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <h3 class="question-title">QUEL EST VOTRE NIVEAU DE CHINOIS?</h3>
+                <div class="options-grid">
+                    <div class="option-item">
+                        <input type="radio" name="language" value="beginner" id="lang-beginner">
+                        <label class="option-label" for="lang-beginner">Débutant</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="language" value="intermediate" id="lang-intermediate">
+                        <label class="option-label" for="lang-intermediate">Intermédiaire</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="language" value="advanced" id="lang-advanced">
+                        <label class="option-label" for="lang-advanced">Avancé</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="language" value="native" id="lang-native">
+                        <label class="option-label" for="lang-native">Langue maternelle</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz-submit">
+                <p class="error-text" id="errorText">Veuillez répondre à toutes les questions avant de soumettre.</p>
+                <button type="button" class="btn-submit" id="submitBtn">Trouver Ma Destination</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="results-hero" id="resultsHero">
+        <div class="container">
+            <p class="subtitle">Votre Résultat</p>
+            <h2 id="resultCity"></h2>
+            <p class="description" id="resultDesc"></p>
+            <p class="match-text">Cette province est une correspondance idéale pour vous, offrant une expérience académique enrichissante adaptée à vos préférences et intérêts.</p>
+            <div class="results-actions">
+                <a href="./majors.html" class="btn btn-light">
+                    Explorer les spécialités
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                        <path d="M13.9991 1.61725L1.65625 13.9564" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.9997 13.6715V1.61719H1.94531" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="./" class="btn btn-outline">
+                    Accueil
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                        <path d="M13.9991 1.61725L1.65625 13.9564" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.9997 13.6715V1.61719H1.94531" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+            <button class="btn-retake" id="retakeBtn">Refaire le quiz</button>
+        </div>
+    </section>
+
+    <div class="encouragement" id="encouragement">
+        <p>N'oubliez pas que ce quiz est un point de départ pour votre parcours. Nous vous encourageons à approfondir vos recherches en fonction des suggestions du quiz pour prendre la décision la plus éclairée pour vos études en Chine.</p>
+    </div>
+</main>
+
+<footer class="section" id="sectionFooter">
+<div class="footer">
+<div class="firstFooter">
+<div class="container">
+<div class="firstFooter-inner">
+<div class="content">
+<h1>Prêt à Transformer Votre Avenir?</h1>
+<p>Rejoignez des centaines d'étudiants marocains qui ont choisi Foorsa pour étudier en Chine.</p>
+</div>
+<div class="actions">
+<button class="cartoon-btn" onclick="window.location.href='./shop.html'">Commencer Votre Candidature</button>
+<button class="cartoon-btn white" onclick="window.location.href='./contact.html'">Consultation Gratuite</button>
+</div>
+</div>
+</div>
+<div class="secondFooter">
+<div class="container">
+<div class="menuFooter">
+<div class="items-menu">
+<div class="item-menu">
+<label>Chine</label>
+<div class="menu">
+<div class="menu-china-footer-container"><ul class="menu" id="menu-china-footer"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2136" id="menu-item-2136"><a href="./majors.html">Universités</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2137" id="menu-item-2137"><a href="./scholarship.html">Bourses</a></li>
+</ul></div> </div>
+</div>
+<div class="item-menu">
+<label>Foorsa</label>
+<div class="menu">
+<div class="menu-foorsa-footer-container"><ul class="menu" id="menu-foorsa-footer"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2138" id="menu-item-2138"><a href="./about-us.html">À Propos</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2139" id="menu-item-2139"><a href="./about-us.html#careers">Carrières</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2140" id="menu-item-2140"><a href="./contact.html">Contact</a></li>
+</ul></div> </div>
+</div>
+<div class="item-menu">
+<label>Langue</label>
+<div class="menu">
+<div class="menu-langage-footer-container"><ul class="menu" id="menu-langage-footer"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2141" id="menu-item-2141"><a href="../en/">English</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2142" id="menu-item-2142"><a href="./">Français</a></li>
+</ul></div> </div>
+</div>
+</div>
+<div class="socialMedia">
+<a href="https://www.facebook.com/Foorsaconsulting/?ref=page_internal&amp;_rdc=1&amp;_rdr" target="_blank">
+<img alt="facebook" loading="lazy" src="../assets/img/facebook-white.webp"/>
+</a>
+<a href="http://www.instagram.com/foorsa.ma/" target="_blank">
+<img alt="instagram" loading="lazy" src="../assets/img/instagram-white.webp"/>
+</a>
+<a href="https://www.linkedin.com/company/fooorsa-consulting" target="_blank">
+<img alt="linkedin" loading="lazy" src="../assets/img/linkedin-white.webp"/>
+</a>
+<a href="http://www.tiktok.com/@foorsa.ma" target="_blank">
+<img alt="tiktok" loading="lazy" src="../assets/img/tiktok-white.webp"/>
+</a>
+<a href="https://www.youtube.com/channel/UCGQpcJCswqd81o_Aq7W1ArQ" target="_blank">
+<img alt="youtube" loading="lazy" src="../assets/img/youtube-white.webp"/>
+</a>
+<a href="https://wa.me/+2120537911291" target="_blank">
+<img alt="whatsapp" loading="lazy" src="../assets/img/whatsapp-white.webp"/>
+</a>
+</div>
+</div>
+<hr>
+<div class="copyRight">
+<p>© 2026 Foorsa. Tous droits réservés</p>
+
+<div class="conditions">
+<a href="./terms-of-service.html">Conditions d'utilisation</a>
+<a href="./privacy-policy.html">Politique de confidentialité</a>
+</div>
+</div>
+</hr></div>
+
+</div>
+</div>
+</footer>
+
+<script id="foorsa-navigation-js" src="../assets/js/navigation.js?v=20260123"></script>
+<script id="bootstrap-bundle-js" src="../assets/bootstrap/js/bootstrap.bundle.js?v=20260123"></script>
+<script id="swiper-js" src="../assets/libs/swiper-bundle.min.js?v=20260123"></script>
+<script id="global-js-js" src="../assets/js/global.js?v=20260124b"></script>
+
+<script>
+const destinations = {
+    beijing: {
+        name: 'Pékin',
+        description: 'En tant que capitale de la Chine, Pékin offre des universités de classe mondiale, une culture riche et d\'excellentes opportunités pour les étudiants internationaux. La ville combine parfaitement tradition et modernité, avec ses sites historiques et ses industries technologiques de pointe.'
+    },
+    shanghai: {
+        name: 'Shanghai',
+        description: 'Shanghai est le centre financier de la Chine et offre des institutions commerciales et économiques de premier plan. Cette métropole cosmopolite propose un environnement dynamique et diversifié, idéal pour les étudiants en commerce et en économie.'
+    },
+    guangzhou: {
+        name: 'Guangzhou',
+        description: 'Située dans le sud de la Chine, Guangzhou bénéficie d\'un climat subtropical et d\'une économie florissante. La ville est connue pour ses excellents programmes de médecine et de commerce international.'
+    },
+    hangzhou: {
+        name: 'Hangzhou',
+        description: 'Hangzhou est célèbre pour sa beauté naturelle et son industrie technologique en pleine croissance. C\'est une ville idéale pour les étudiants en technologie et en environnement, avec un coût de la vie raisonnable.'
+    },
+    nanjing: {
+        name: 'Nanjing',
+        description: 'Nanjing, ancienne capitale, est réputée pour ses universités prestigieuses et son riche patrimoine culturel. La ville offre un excellent équilibre entre tradition académique et modernité.'
+    },
+    chengdu: {
+        name: 'Chengdu',
+        description: 'Chengdu est connue pour son style de vie détendu et son coût de la vie abordable. La ville offre d\'excellents programmes dans diverses disciplines, avec une communauté internationale croissante.'
+    },
+    xian: {
+        name: 'Xi\'an',
+        description: 'Xi\'an, point de départ de la Route de la Soie, est parfaite pour les étudiants intéressés par l\'histoire et la culture chinoises. La ville offre un coût de la vie très abordable et des universités de qualité.'
+    },
+    wuhan: {
+        name: 'Wuhan',
+        description: 'Wuhan est un important centre éducatif avec de nombreuses universités de premier plan. La ville offre d\'excellents programmes en ingénierie et en médecine à des coûts raisonnables.'
+    }
+};
+
+function calculateResult() {
+    const study = document.querySelector('input[name="study"]:checked');
+    const climate = document.querySelector('input[name="climate"]:checked');
+    const city = document.querySelector('input[name="city"]:checked');
+    const cost = document.querySelector('input[name="cost"]:checked');
+    const language = document.querySelector('input[name="language"]:checked');
+
+    if (!study || !climate || !city || !cost || !language) {
+        document.getElementById('errorText').classList.add('show');
+        return null;
+    }
+
+    document.getElementById('errorText').classList.remove('show');
+
+    const scores = {
+        beijing: 0,
+        shanghai: 0,
+        guangzhou: 0,
+        hangzhou: 0,
+        nanjing: 0,
+        chengdu: 0,
+        xian: 0,
+        wuhan: 0
+    };
+
+    // Study preference scoring
+    switch(study.value) {
+        case 'arts':
+            scores.beijing += 3;
+            scores.xian += 3;
+            scores.nanjing += 2;
+            break;
+        case 'business':
+            scores.shanghai += 3;
+            scores.guangzhou += 2;
+            scores.beijing += 2;
+            break;
+        case 'stem':
+            scores.beijing += 3;
+            scores.shanghai += 2;
+            scores.hangzhou += 3;
+            scores.wuhan += 2;
+            break;
+        case 'medicine':
+            scores.shanghai += 2;
+            scores.guangzhou += 3;
+            scores.wuhan += 3;
+            break;
+        case 'environment':
+            scores.hangzhou += 3;
+            scores.chengdu += 2;
+            break;
+        case 'undecided':
+            scores.beijing += 2;
+            scores.shanghai += 2;
+            scores.nanjing += 2;
+            break;
+    }
+
+    // Climate preference scoring
+    switch(climate.value) {
+        case 'warm':
+            scores.guangzhou += 3;
+            scores.hangzhou += 1;
+            break;
+        case 'cold':
+            scores.beijing += 2;
+            scores.xian += 1;
+            scores.wuhan += 1;
+            break;
+        case 'mild':
+            scores.hangzhou += 2;
+            scores.nanjing += 2;
+            scores.chengdu += 2;
+            break;
+    }
+
+    // City size preference scoring
+    switch(city.value) {
+        case 'large':
+            scores.beijing += 3;
+            scores.shanghai += 3;
+            scores.guangzhou += 2;
+            break;
+        case 'medium':
+            scores.hangzhou += 2;
+            scores.nanjing += 2;
+            scores.wuhan += 2;
+            break;
+        case 'small':
+            scores.chengdu += 2;
+            scores.xian += 2;
+            break;
+    }
+
+    // Cost preference scoring
+    switch(cost.value) {
+        case 'very':
+            scores.chengdu += 3;
+            scores.xian += 3;
+            scores.wuhan += 2;
+            break;
+        case 'somewhat':
+            scores.hangzhou += 2;
+            scores.nanjing += 2;
+            break;
+        case 'not':
+            scores.shanghai += 2;
+            scores.beijing += 2;
+            break;
+    }
+
+    // Language level scoring
+    switch(language.value) {
+        case 'beginner':
+            scores.shanghai += 2;
+            scores.beijing += 2;
+            break;
+        case 'intermediate':
+            scores.nanjing += 1;
+            scores.hangzhou += 1;
+            break;
+        case 'advanced':
+        case 'native':
+            scores.xian += 1;
+            scores.chengdu += 1;
+            break;
+    }
+
+    let maxScore = 0;
+    let result = 'beijing';
+    for (const [city, score] of Object.entries(scores)) {
+        if (score > maxScore) {
+            maxScore = score;
+            result = city;
+        }
+    }
+
+    return result;
+}
+
+function showResults(cityKey) {
+    const destination = destinations[cityKey];
+    document.getElementById('resultCity').textContent = destination.name;
+    document.getElementById('resultDesc').textContent = destination.description;
+    
+    document.getElementById('quizHero').style.display = 'none';
+    document.getElementById('quizContent').style.display = 'none';
+    document.getElementById('resultsHero').classList.add('show');
+    document.getElementById('encouragement').classList.add('show');
+    
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function resetQuiz() {
+    document.querySelectorAll('input[type="radio"]').forEach(radio => {
+        radio.checked = false;
+    });
+    
+    document.getElementById('errorText').classList.remove('show');
+    document.getElementById('resultsHero').classList.remove('show');
+    document.getElementById('encouragement').classList.remove('show');
+    document.getElementById('quizHero').style.display = 'block';
+    document.getElementById('quizContent').style.display = 'block';
+    
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+document.getElementById('submitBtn').addEventListener('click', function() {
+    const result = calculateResult();
+    if (result) {
+        showResults(result);
+    }
+});
+
+document.getElementById('retakeBtn').addEventListener('click', resetQuiz);
+</script>
+<script>
+(function() {
+    const FORM_TYPE = 'quiz';
+    let submissionId = sessionStorage.getItem('quiz_submission_id') || 'quiz_' + Date.now();
+    sessionStorage.setItem('quiz_submission_id', submissionId);
+    
+    function getFormData() {
+        const answers = {};
+        document.querySelectorAll('input[type="radio"]:checked, input[type="checkbox"]:checked, select').forEach((el, i) => {
+            answers[el.name || 'q' + i] = el.value;
+        });
+        return {
+            submission_id: submissionId,
+            form_type: FORM_TYPE,
+            form_page: window.location.pathname,
+            name: document.querySelector('input[name="name"], #name')?.value || '',
+            email: document.querySelector('input[name="email"], input[type="email"], #email')?.value || '',
+            phone: document.querySelector('input[name="phone"], input[type="tel"], #phone')?.value || '',
+            quiz_answers: answers,
+            questions_answered: Object.keys(answers).length,
+            status: 'partial',
+            language: document.documentElement.lang || 'en'
+        };
+    }
+    
+    function trackForm() {
+        const data = getFormData();
+        if (data.name || data.email || data.questions_answered > 0) {
+            fetch('/api/track-form', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) }).catch(err => console.log('Track failed:', err));
+        }
+    }
+    
+    document.querySelectorAll('form input, form textarea, form select').forEach(field => { field.addEventListener('change', trackForm); });
+})();
+</script>
+</body>
+</html>

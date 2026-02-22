@@ -1,0 +1,254 @@
+@media(max-width:500px){
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .section-journey{
+        padding: 117px 20px 0 20px;
+    }
+
+    .card-journey .card .title{
+        font-size: 20px;
+    }
+
+    .card-journey .card .sub-title{
+        font-size: 20px;
+    }
+    
+    .card-journey .card .content p{
+        font-size: 13px;
+    }
+
+    .padding-section{
+        padding: 40px 20px;
+    }
+
+    .card-journey .cards{
+        display: block;
+    }
+
+    .card-journey .card:nth-child(2){
+        margin-top: auto;
+    }
+
+    .card-journey .card:first-child{
+        width: auto;
+    }
+
+    .card-journey .card{
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 15px;
+    }
+
+    .card-journey .card:last-child{
+        width: 100%;
+    }
+
+    .card-journey .card .content li{
+        font-size: 15px;
+    }
+
+    .card-journey .card .content p{
+        font-size: 15px;
+    }
+
+    .card-journey .pathBg{
+        display: none;
+    }
+
+    .section-journey .heading-page h1{
+        font-size: 30px;
+    }
+
+    .section-infos .card-context{
+        padding: 15px;
+    }
+
+    .section-infos .card-context .description p{
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+
+    .padding-section.section-infos.info-contact {
+        padding: 0 20px;
+    }
+
+    /* Page frais */
+
+    .section-frais .heading-page h1{
+        font-size: 30px;
+    }
+
+    .about-frais .heading-page h2{
+        font-size: 20px;
+    }
+
+    .about-frais .heading-page h4{
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .about-frais .content p{
+        font-size: 15px;
+    }
+
+    .section-slider{
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .swiperFrais .swiper-buttons {
+        margin-top: 50px;
+    }
+
+    .cardFrais .content{
+        font-size: 15px;
+    }
+
+    .cardFrais .price h5{
+        font-size: 20px;
+    }
+
+    .cardFrais{
+        padding: 30px 15px;
+    }
+
+    .section-infos .blocks{
+        display: block;
+    }
+
+    .section-infos .card-context h2{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .section-infos .blocks .block{
+        margin-bottom: 30px;
+    }
+
+    .section-cards .sub-heading {
+        width: 100%;
+        margin: 0 auto 40px;
+    }
+
+    .section-cards .cards{
+        display: block;
+    }
+
+    .section-cards .cards .card{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .section-cards .cards .card .content p{
+        font-size: 15px;
+    }
+
+    .section-cards .sub-description{
+        font-size: 15px;
+        width: 100%;
+    }
+
+    /* Page scolarship */
+    .padding-navbar{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .section-scholarship .heading-page h1{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .section-scholarship .heading-page{
+        width: 100%;
+    }
+
+    .card-scholarship .card{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .card-scholarship .card .title{
+        font-size: 20px;
+    }
+
+    .card-scholarship .card p{
+        font-size: 15px;
+    }
+
+    .card-scholarship .sub-scription {
+        width: 100%;
+    }
+
+    .section-billet .content{
+        width: 100%;
+    }
+
+    body.scholarship-page .pathBg{
+        display: none;
+    }
+
+    .card-scholarship .sub-scription li{
+        font-size: 15px;
+    }
+
+
+    /* Page frais foorsa */
+    .payment .price{
+        position: relative;
+        width: 100%;
+        padding: 15px 0;
+        font-size: 20px;
+        height: 75px;
+    }
+
+    .card-payment{
+        transform: translateY(-17px);
+        display: block;
+        padding: 30px 20px;
+    }
+
+    .card-payment .content h3{
+        font-size: 20px;
+    }
+
+    .card-payment .content p{
+        font-size: 15px;
+    }
+
+    .frais-foorsa .notice{
+        font-size: 15px;
+    }
+
+    .frais-foorsa .list-options li:not(:last-child) {
+        padding-bottom: 25px;
+    }
+
+    .frais-foorsa .list-options li {
+        font-size: 14px;
+        line-height: 19.78px;
+    }
+
+    .frais-foorsa .list-options{
+        padding: 20px 25px;
+        flex-basis: 60%;
+    }
+
+    .frais-foorsa .list-price li{
+        padding: 15px 0;
+        font-size: 14px;
+    }
+
+    .section-payment.section-scholarship .heading-page h1{
+        margin: 0;
+    }
+
+    #sectionEtudiant .cardEdudiant img{
+        height: 280px;
+    }
+
+    
+
+}
