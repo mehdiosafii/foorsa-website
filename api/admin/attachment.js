@@ -1,5 +1,9 @@
 const { Pool } = require('pg');
-const pool = new Pool({ connectionString: process.env.DATABASE_URL, ssl: { rejectUnauthorized: false } });
+let pool;
+function getPool() {
+  if (!pool) pool = new Pool({ connectionString: process.env.DATABASE_URL, max: 2 });
+  return pool;
+}
 
 module.exports = async (req, res) => {
   const p = (req.query || {}).password || '';
@@ -8,7 +12,7 @@ module.exports = async (req, res) => {
   if (!id) return res.status(400).json({ error: 'Missing id' });
 
   try {
-    const r = await pool.query('SELECT * FROM website_attachments WHERE id = $1', [id]);
+    const r = await getPool().query('SELECT * FROM website_attachments WHERE id = $1', [id]);
     if (r.rows.length === 0) return res.status(404).json({ error: 'Not found' });
     const att = r.rows[0];
     const buf = Buffer.from(att.file_data, 'base64');

@@ -156,7 +156,7 @@ async function loadAll(){
     const badgeColors={contact:'#3b82f6',partner:'#8b5cf6',careers:'#22c55e',review:'#eab308'};
     document.getElementById('dSubs').innerHTML=subs.submissions.map(s=>{
       const d=typeof s.data==='string'?JSON.parse(s.data||'{}'):s.data||{};
-      const ft=s.form_type||'unknown';
+      const ft=d.form_type||s.form_type||'unknown';
       const bc=badgeColors[ft]||'#6b7280';
       const fields=Object.entries(d).map(([k,v])=>`<div><strong>${k}:</strong> ${String(v).substring(0,200)}</div>`).join('');
       const atts=(s.attachments||[]).map(a=>`<a href="/api/admin/attachment?id=${a.id}&password=${encodeURIComponent(F.pw)}" target="_blank" style="display:inline-block;margin:4px 0;padding:4px 10px;background:#2563eb;color:#fff;border-radius:4px;text-decoration:none;font-size:13px">📎 ${a.filename} (${(a.file_size/1024).toFixed(0)}KB)</a>`).join(' ');

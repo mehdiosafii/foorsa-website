@@ -1,54 +1,34 @@
 const { Pool } = require('pg');
-const pool = new Pool({ connectionString: process.env.DATABASE_URL, ssl: { rejectUnauthorized: false } });
+const Busboy = require('busboy');
 
-const ALLOWED_MIME = ['application/pdf','application/msword','application/vnd.openxmlformats-officedocument.wordprocessingml.document','image/jpeg','image/png'];
-const MAX_FILE_SIZE = 5 * 1024 * 1024;
-
-async function ensureAttachmentsTable() {
-  await pool.query(`CREATE TABLE IF NOT EXISTS website_attachments (
-    id SERIAL PRIMARY KEY,
-    submission_id INT REFERENCES website_submissions(id),
-    filename VARCHAR(500),
-    mime_type VARCHAR(100),
-    file_size INT,
-    file_data TEXT,
-    created_at TIMESTAMPTZ DEFAULT NOW()
-  )`);
-}
-
-let tableReady = false;
-
-function collectBody(req) {
-  return new Promise((resolve, reject) => {
-    const chunks = [];
-    req.on('data', c => chunks.push(c));
-    req.on('end', () => resolve(Buffer.concat(chunks)));
-    req.on('error', reject);
-  });
-}
+const pool = new Pool({ connectionString: process.env.DATABASE_URL, max: 3 });
 
 function parseMultipart(req) {
   return new Promise((resolve, reject) => {
-    const Busboy = require('busboy');
-    const bb = Busboy({ headers: req.headers, limits: { fileSize: MAX_FILE_SIZE } });
     const fields = {};
     const files = [];
-    bb.on('field', (name, val) => { fields[name] = val; });
-    bb.on('file', (name, stream, info) => {
-      const { filename, mimeType } = info;
+    const busboy = Busboy({ headers: req.headers, limits: { fileSize: 5 * 1024 * 1024 } });
+
+    busboy.on('field', (name, val) => { fields[name] = val; });
+    busboy.on('file', (name, stream, info) => {
       const chunks = [];
-      let size = 0;
-      let truncated = false;
-      stream.on('data', d => { size += d.length; chunks.push(d); });
-      stream.on('limit', () => { truncated = true; });
+      stream.on('data', d => chunks.push(d));
       stream.on('end', () => {
-        if (truncated || !ALLOWED_MIME.includes(mimeType)) return;
-        files.push({ fieldName: name, filename, mimeType, size, data: Buffer.concat(chunks).toString('base64') });
+        const buf = Buffer.concat(chunks);
+        if (buf.length > 0) {
+          files.push({
+            fieldname: name,
+            filename: info.filename,
+            mimeType: info.mimeType,
+            size: buf.length,
+            data: buf.toString('base64')
+          });
+        }
       });
     });
-    bb.on('finish', () => resolve({ fields, files }));
-    bb.on('error', reject);
-    req.pipe(bb);
+    busboy.on('finish', () => resolve({ fields, files }));
+    busboy.on('error', reject);
+    req.pipe(busboy);
   });
 }
 
@@ -60,48 +40,45 @@ module.exports = async (req, res) => {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
   try {
-    if (!tableReady) { await ensureAttachmentsTable(); tableReady = true; }
+    let formData, files = [];
 
-    let formType, data, files = [];
     const ct = req.headers['content-type'] || '';
-
     if (ct.includes('multipart/form-data')) {
       const parsed = await parseMultipart(req);
-      formType = parsed.fields.form_type || 'unknown';
-      delete parsed.fields.form_type;
-      data = parsed.fields;
+      formData = parsed.fields;
       files = parsed.files;
     } else {
-      // For JSON: Vercel with bodyParser:false gives raw body as Buffer or stream
-      let body;
-      if (req.body) {
-        body = typeof req.body === 'string' ? JSON.parse(req.body) : (Buffer.isBuffer(req.body) ? JSON.parse(req.body.toString()) : req.body);
-      } else {
-        const raw = await collectBody(req);
-        body = JSON.parse(raw.toString());
-      }
-      formType = body.form_type || 'unknown';
-      delete body.form_type;
-      data = body;
+      // JSON body
+      formData = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
     }
 
+    const formType = formData.form_type || 'unknown';
+    delete formData.form_type;
+
+    // Insert submission
     const result = await pool.query(
-      'INSERT INTO website_submissions (form_type, data, status, created_at) VALUES ($1, $2, $3, NOW()) RETURNING id',
-      [formType, JSON.stringify(data), 'new']
+      'INSERT INTO website_submissions (submission_id, form_type, data, status, created_at) VALUES ($1, $2, $3, $4, NOW()) RETURNING id',
+      [
+        'WEB-' + Date.now(),
+        formType,
+        JSON.stringify(formData),
+        'new'
+      ]
     );
     const submissionId = result.rows[0].id;
 
-    for (const f of files) {
+    // Insert attachments
+    for (const file of files) {
       await pool.query(
-        'INSERT INTO website_attachments (submission_id, filename, mime_type, file_size, file_data) VALUES ($1, $2, $3, $4, $5)',
-        [submissionId, f.filename, f.mimeType, f.size, f.data]
+        'INSERT INTO website_attachments (submission_id, filename, mime_type, file_size, file_data, created_at) VALUES ($1, $2, $3, $4, $5, NOW())',
+        [submissionId, file.filename, file.mimeType, file.size, file.data]
       );
     }
 
-    res.json({ success: true, id: submissionId });
-  } catch(e) {
-    console.error('submit-form error:', e);
-    res.status(500).json({ error: 'Server error' });
+    res.status(200).json({ success: true, id: submissionId });
+  } catch (err) {
+    console.error('submit-form error:', err);
+    res.status(500).json({ error: 'Submission failed' });
   }
 };
 
