@@ -1,4 +1,18 @@
+# Robots.txt for foorsa.ma
 User-agent: *
 Allow: /
+Disallow: /admin.html
+Disallow: /api/
+Disallow: /*/cart.html
+Disallow: /*/checkout.html
+Disallow: /*/payment-confirmation.html
+Disallow: /*/payment-failed.html
+Disallow: /*/newsletter.html
+Disallow: /*/engagement.html
+Disallow: /*/recruitment.html
 
+# Sitemap location
 Sitemap: https://foorsa.ma/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1

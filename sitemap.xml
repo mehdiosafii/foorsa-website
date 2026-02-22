@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Root Homepage (redirects to /fr/) -->
   <url>
     <loc>https://foorsa.ma/</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  
+  <!-- Homepage - All Languages -->
   <url>
     <loc>https://foorsa.ma/en/index.html</loc>
     <lastmod>2026-02-22</lastmod>
@@ -37,11 +41,13 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/index.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/index.html" />
   </url>
+  
+  <!-- Shop / Apply - Priority 0.95 -->
   <url>
     <loc>https://foorsa.ma/en/shop.html</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/shop.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/shop.html" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/shop.html" />
@@ -51,7 +57,7 @@
     <loc>https://foorsa.ma/fr/shop.html</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/shop.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/shop.html" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/shop.html" />
@@ -61,12 +67,14 @@
     <loc>https://foorsa.ma/ar/shop.html</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/shop.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/shop.html" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/shop.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/shop.html" />
   </url>
+  
+  <!-- Scholarship Pages - Priority 0.9 -->
   <url>
     <loc>https://foorsa.ma/en/scholarship.html</loc>
     <lastmod>2026-02-22</lastmod>
@@ -97,11 +105,13 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/scholarship.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/scholarship.html" />
   </url>
+  
+  <!-- Majors Pages - Priority 0.85 -->
   <url>
     <loc>https://foorsa.ma/en/majors.html</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/majors.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/majors.html" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/majors.html" />
@@ -111,7 +121,7 @@
     <loc>https://foorsa.ma/fr/majors.html</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/majors.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/majors.html" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/majors.html" />
@@ -121,12 +131,14 @@
     <loc>https://foorsa.ma/ar/majors.html</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/majors.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/majors.html" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/majors.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/majors.html" />
   </url>
+  
+  <!-- Fees Pages - Priority 0.8 -->
   <url>
     <loc>https://foorsa.ma/en/fees.html</loc>
     <lastmod>2026-02-22</lastmod>
@@ -157,41 +169,13 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/fees.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/fees.html" />
   </url>
-  <url>
-    <loc>https://foorsa.ma/en/about-us.html</loc>
-    <lastmod>2026-02-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/about-us.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/about-us.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/about-us.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/about-us.html" />
-  </url>
-  <url>
-    <loc>https://foorsa.ma/fr/about-us.html</loc>
-    <lastmod>2026-02-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/about-us.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/about-us.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/about-us.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/about-us.html" />
-  </url>
-  <url>
-    <loc>https://foorsa.ma/ar/about-us.html</loc>
-    <lastmod>2026-02-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/about-us.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/about-us.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/about-us.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/about-us.html" />
-  </url>
+  
+  <!-- Step-by-Step Pages - Priority 0.75 -->
   <url>
     <loc>https://foorsa.ma/en/step-by-step.html</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/step-by-step.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/step-by-step.html" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/step-by-step.html" />
@@ -201,7 +185,7 @@
     <loc>https://foorsa.ma/fr/step-by-step.html</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/step-by-step.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/step-by-step.html" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/step-by-step.html" />
@@ -211,17 +195,19 @@
     <loc>https://foorsa.ma/ar/step-by-step.html</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/step-by-step.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/step-by-step.html" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/step-by-step.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/step-by-step.html" />
   </url>
+  
+  <!-- Documents Pages - Priority 0.75 -->
   <url>
     <loc>https://foorsa.ma/en/documents.html</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/documents.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/documents.html" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/documents.html" />
@@ -231,7 +217,7 @@
     <loc>https://foorsa.ma/fr/documents.html</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/documents.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/documents.html" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/documents.html" />
@@ -241,12 +227,14 @@
     <loc>https://foorsa.ma/ar/documents.html</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/documents.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/documents.html" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/documents.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/documents.html" />
   </url>
+  
+  <!-- FAQ Pages - Priority 0.7 -->
   <url>
     <loc>https://foorsa.ma/en/frequently-asked-questions.html</loc>
     <lastmod>2026-02-22</lastmod>
@@ -277,6 +265,72 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/frequently-asked-questions.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/frequently-asked-questions.html" />
   </url>
+  
+  <!-- About Us Pages - Priority 0.7 -->
+  <url>
+    <loc>https://foorsa.ma/en/about-us.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/about-us.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/about-us.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/about-us.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/about-us.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/fr/about-us.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/about-us.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/about-us.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/about-us.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/about-us.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/ar/about-us.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/about-us.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/about-us.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/about-us.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/about-us.html" />
+  </url>
+  
+  <!-- Mission & Values Pages - Priority 0.65 -->
+  <url>
+    <loc>https://foorsa.ma/en/mission-values.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/mission-values.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/mission-values.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/mission-values.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/mission-values.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/fr/mission-values.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/mission-values.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/mission-values.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/mission-values.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/mission-values.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/ar/mission-values.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/mission-values.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/mission-values.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/mission-values.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/mission-values.html" />
+  </url>
+  
+  <!-- Blog Pages - Priority 0.6 -->
   <url>
     <loc>https://foorsa.ma/en/blog.html</loc>
     <lastmod>2026-02-22</lastmod>
@@ -307,6 +361,8 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/blog.html" />
   </url>
+  
+  <!-- Contact Pages - Priority 0.6 -->
   <url>
     <loc>https://foorsa.ma/en/contact.html</loc>
     <lastmod>2026-02-22</lastmod>
@@ -337,101 +393,45 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/contact.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/contact.html" />
   </url>
+  
+  <!-- Reviews Pages - Priority 0.6 -->
   <url>
-    <loc>https://foorsa.ma/en/mission-values.html</loc>
+    <loc>https://foorsa.ma/en/reviews.html</loc>
     <lastmod>2026-02-22</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/mission-values.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/mission-values.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/mission-values.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/mission-values.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/reviews.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/reviews.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/reviews.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/reviews.html" />
   </url>
   <url>
-    <loc>https://foorsa.ma/fr/mission-values.html</loc>
+    <loc>https://foorsa.ma/fr/reviews.html</loc>
     <lastmod>2026-02-22</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/mission-values.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/mission-values.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/mission-values.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/mission-values.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/reviews.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/reviews.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/reviews.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/reviews.html" />
   </url>
   <url>
-    <loc>https://foorsa.ma/ar/mission-values.html</loc>
+    <loc>https://foorsa.ma/ar/reviews.html</loc>
     <lastmod>2026-02-22</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/mission-values.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/mission-values.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/mission-values.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/mission-values.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/reviews.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/reviews.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/reviews.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/reviews.html" />
   </url>
-  <url>
-    <loc>https://foorsa.ma/en/engagement.html</loc>
-    <lastmod>2026-02-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/engagement.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/engagement.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/engagement.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/engagement.html" />
-  </url>
-  <url>
-    <loc>https://foorsa.ma/fr/engagement.html</loc>
-    <lastmod>2026-02-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/engagement.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/engagement.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/engagement.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/engagement.html" />
-  </url>
-  <url>
-    <loc>https://foorsa.ma/ar/engagement.html</loc>
-    <lastmod>2026-02-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/engagement.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/engagement.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/engagement.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/engagement.html" />
-  </url>
-  <url>
-    <loc>https://foorsa.ma/en/recruitment.html</loc>
-    <lastmod>2026-02-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/recruitment.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/recruitment.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/recruitment.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/recruitment.html" />
-  </url>
-  <url>
-    <loc>https://foorsa.ma/fr/recruitment.html</loc>
-    <lastmod>2026-02-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/recruitment.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/recruitment.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/recruitment.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/recruitment.html" />
-  </url>
-  <url>
-    <loc>https://foorsa.ma/ar/recruitment.html</loc>
-    <lastmod>2026-02-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/recruitment.html" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/recruitment.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/recruitment.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/recruitment.html" />
-  </url>
+  
+  <!-- Partner Pages - Priority 0.55 -->
   <url>
     <loc>https://foorsa.ma/en/partner-with-us.html</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.55</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/partner-with-us.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/partner-with-us.html" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/partner-with-us.html" />
@@ -441,7 +441,7 @@
     <loc>https://foorsa.ma/fr/partner-with-us.html</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.55</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/partner-with-us.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/partner-with-us.html" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/partner-with-us.html" />
@@ -451,10 +451,139 @@
     <loc>https://foorsa.ma/ar/partner-with-us.html</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.55</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/partner-with-us.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/partner-with-us.html" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/partner-with-us.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/partner-with-us.html" />
   </url>
+  
+  <!-- Careers Pages - Priority 0.55 -->
+  <url>
+    <loc>https://foorsa.ma/en/careers.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.55</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/careers.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/careers.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/careers.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/careers.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/fr/careers.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.55</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/careers.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/careers.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/careers.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/careers.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/ar/careers.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.55</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/careers.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/careers.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/careers.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/careers.html" />
+  </url>
+  
+  <!-- Quiz Pages - Priority 0.5 -->
+  <url>
+    <loc>https://foorsa.ma/en/quiz.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/quiz.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/quiz.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/quiz.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/quiz.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/fr/quiz.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/quiz.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/quiz.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/quiz.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/quiz.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/ar/quiz.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/quiz.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/quiz.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/quiz.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/quiz.html" />
+  </url>
+  
+  <!-- Privacy Policy Pages - Priority 0.3 -->
+  <url>
+    <loc>https://foorsa.ma/en/privacy-policy.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/privacy-policy.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/fr/privacy-policy.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/privacy-policy.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/ar/privacy-policy.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/privacy-policy.html" />
+  </url>
+  
+  <!-- Terms of Service Pages - Priority 0.3 -->
+  <url>
+    <loc>https://foorsa.ma/en/terms-of-service.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/terms-of-service.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/terms-of-service.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/terms-of-service.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/terms-of-service.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/fr/terms-of-service.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/terms-of-service.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/terms-of-service.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/terms-of-service.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/terms-of-service.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/ar/terms-of-service.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/terms-of-service.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/terms-of-service.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/terms-of-service.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/terms-of-service.html" />
+  </url>
+  
 </urlset>
