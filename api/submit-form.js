@@ -18,6 +18,15 @@ async function ensureAttachmentsTable() {
 
 let tableReady = false;
 
+function collectBody(req) {
+  return new Promise((resolve, reject) => {
+    const chunks = [];
+    req.on('data', c => chunks.push(c));
+    req.on('end', () => resolve(Buffer.concat(chunks)));
+    req.on('error', reject);
+  });
+}
+
 function parseMultipart(req) {
   return new Promise((resolve, reject) => {
     const Busboy = require('busboy');
@@ -33,26 +42,13 @@ function parseMultipart(req) {
       stream.on('data', d => { size += d.length; chunks.push(d); });
       stream.on('limit', () => { truncated = true; });
       stream.on('end', () => {
-        if (truncated) return; // skip oversized
-        if (!ALLOWED_MIME.includes(mimeType)) return; // skip disallowed
+        if (truncated || !ALLOWED_MIME.includes(mimeType)) return;
         files.push({ fieldName: name, filename, mimeType, size, data: Buffer.concat(chunks).toString('base64') });
       });
     });
     bb.on('finish', () => resolve({ fields, files }));
     bb.on('error', reject);
     req.pipe(bb);
-  });
-}
-
-function readJSON(req) {
-  return new Promise((resolve, reject) => {
-    const chunks = [];
-    req.on('data', c => chunks.push(c));
-    req.on('end', () => {
-      try { resolve(JSON.parse(Buffer.concat(chunks).toString())); }
-      catch(e) { reject(e); }
-    });
-    req.on('error', reject);
   });
 }
 
@@ -76,7 +72,14 @@ module.exports = async (req, res) => {
       data = parsed.fields;
       files = parsed.files;
     } else {
-      const body = await readJSON(req);
+      // For JSON: Vercel with bodyParser:false gives raw body as Buffer or stream
+      let body;
+      if (req.body) {
+        body = typeof req.body === 'string' ? JSON.parse(req.body) : (Buffer.isBuffer(req.body) ? JSON.parse(req.body.toString()) : req.body);
+      } else {
+        const raw = await collectBody(req);
+        body = JSON.parse(raw.toString());
+      }
       formType = body.form_type || 'unknown';
       delete body.form_type;
       data = body;
