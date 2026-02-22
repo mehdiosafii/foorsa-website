@@ -7818,27 +7818,13 @@ footer .container {
 }
 
 
-/* Titles section - bigger and bolder */
+/* Hide 3D animated titles that overlap with hero headline */
 #sectionHero .secondBlock .firstContent .titles,
 #sectionHero .secondBlock .firstContent .titles .title,
 #sectionHero .secondBlock .titles,
 .titles {
-  display: flex !important;
-  visibility: visible !important;
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  overflow: hidden !important;
 }
-#sectionHero .secondBlock .firstContent .titles h2 {
-  font-size: clamp(80px, 12vw, 160px) !important;
-  font-weight: 900 !important;
-  letter-spacing: 3px !important;
-  -webkit-text-stroke: 3px rgba(255,255,255,1) !important;
-}
-#sectionHero .secondBlock .firstContent .titles h2.bg-text {
-  color: #fff !important;
-  text-shadow: 0 4px 40px rgba(0,0,0,.6) !important;
-}
-#sectionHero .secondBlock .firstContent .titles h2.front-text {
-  color: rgba(255,255,255,.6) !important;
-  visibility: visible !important;
-  font-weight: 900 !important;
-}
-

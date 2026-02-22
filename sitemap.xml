@@ -586,4 +586,35 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://foorsa.ma/en/terms-of-service.html" />
   </url>
   
+
+  <!-- New English Blog Articles (Feb 2026) -->
+  <url>
+    <loc>https://foorsa.ma/en/blog/how-to-apply-chinese-universities.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/blog/student-life-china-morocco.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- New French Blog Article (Feb 2026) -->
+  <url>
+    <loc>https://foorsa.ma/fr/blog/meilleures-universites-chinoises-maroc.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- New Arabic Blog Article (Feb 2026) -->
+  <url>
+    <loc>https://foorsa.ma/ar/blog/guide-application-chinese-universities.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

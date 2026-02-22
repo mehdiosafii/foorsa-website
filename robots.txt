@@ -13,6 +13,7 @@ Disallow: /*/recruitment.html
 
 # Sitemap location
 Sitemap: https://foorsa.ma/sitemap.xml
+Sitemap: https://foorsa.ma/video-sitemap.xml
 
 # Crawl delay (optional)
 Crawl-delay: 1

@@ -1,0 +1,102 @@
+================================================================================
+SEO AUDIT REPORT - foorsa.ma
+================================================================================
+
+SUMMARY STATISTICS
+--------------------------------------------------------------------------------
+broken_links......................................   258
+duplicate_titles..................................    35
+heading_hierarchy_issues..........................    10
+missing_alt_text..................................   175
+missing_canonical.................................     0
+missing_hreflang..................................     0
+missing_lang_attr.................................     0
+missing_meta_descriptions.........................     0
+missing_titles....................................     0
+multiple_h1.......................................     0
+no_h1.............................................     2
+total_html_files..................................   102
+
+DETAILED ISSUES
+--------------------------------------------------------------------------------
+
+BROKEN LINKS (258)
+----------------------------------------
+  - en/home.html: ./about-us.html#mission
+  - en/home.html: ./about-us.html#engagement
+  - en/home.html: ./about-us.html#careers
+  - en/home.html: /uploads/2024/06/Copie-de-fahd.png
+  - en/home.html: /uploads/2024/06/Copie-de-lina-min.png
+  - en/home.html: /uploads/2024/06/Copie-de-walid-min.png
+  - en/home.html: /uploads/2024/06/Copie-de-salma-min.png
+  - en/home.html: /uploads/2024/07/Copie-de-fahd-thumbnails-1.png
+  - en/home.html: /uploads/2024/07/website-oumaima.png
+  - en/home.html: /uploads/2024/07/website-nzha.png
+  - en/home.html: /uploads/2024/07/website-yasser.png
+  - en/blog.html: ./about-us.html#careers
+  - en/blog.html: ./blog.html?category=scholarships
+  - en/blog.html: ./blog.html?category=student-life
+  - en/blog.html: ./blog.html?category=tips
+  - en/fees.html: ./about-us.html#careers
+  - en/fees.html: ./blog.html?category=scholarships
+  - en/fees.html: ./blog.html?category=student-life
+  - en/fees.html: ./blog.html?category=tips
+  - en/privacy-policy.html: ./about-us.html#mission
+  ... and 238 more
+
+DUPLICATE TITLES (12)
+----------------------------------------
+  - Foorsa - Home: ['en/home.html', 'fr/home.html', 'ar/home.html']
+  - Foorsa - Newsletter: ['en/newsletter.html', 'fr/newsletter.html', 'ar/newsletter.html']
+  - Foorsa - Cart: ['en/cart.html', 'fr/cart.html', 'ar/cart.html']
+  - Foorsa - Terms Of Sale: ['en/terms-of-sale.html', 'fr/terms-of-sale.html', 'ar/terms-of-sale.html']
+  - Foorsa - Blog2: ['en/blog2.html', 'fr/blog2.html', 'ar/blog2.html']
+  - Foorsa - Checkout: ['en/checkout.html', 'fr/checkout.html', 'ar/checkout.html']
+  - Foorsa - Refund Policy: ['en/refund-policy.html', 'fr/refund-policy.html', 'ar/refund-policy.html']
+  - Foorsa - Engagement: ['en/engagement.html', 'fr/engagement.html', 'ar/engagement.html']
+  - Foorsa - Payment Confirmation: ['en/payment-confirmation.html', 'fr/payment-confirmation.html', 'ar/payment-confirmation.html']
+  - Foorsa - Payment Failed: ['en/payment-failed.html', 'fr/payment-failed.html', 'ar/payment-failed.html']
+  - Foorsa - Recruitment: ['en/recruitment.html', 'fr/recruitment.html', 'ar/recruitment.html']
+  - Études en Chine pour Étudiants Marocains | Bourses & Admissions - Foorsa: ['fr/index.html', 'index.html']
+
+HEADING HIERARCHY ISSUES (10)
+----------------------------------------
+  - en/partner-with-us.html: h2 → h4 (skip)
+  - en/scholarship.html: h2 → h4 (skip)
+  - en/payment-confirmation.html: h1 → h3 (skip)
+  - en/reviews.html: h1 → h3 (skip)
+  - fr/partner-with-us.html: h2 → h4 (skip)
+  - fr/scholarship.html: h2 → h4 (skip)
+  - fr/payment-confirmation.html: h1 → h3 (skip)
+  - ar/partner-with-us.html: h2 → h4 (skip)
+  - ar/scholarship.html: h2 → h4 (skip)
+  - ar/payment-confirmation.html: h1 → h3 (skip)
+
+MISSING ALT TEXT (175)
+----------------------------------------
+  - en/home.html: ./assets/img/building-bg.webp
+  - en/home.html: ./assets/img/2M.webp
+  - en/home.html: ./assets/img/medi1.webp
+  - en/home.html: ./assets/img/opinion.webp
+  - en/home.html: ./assets/img/hesp.webp
+  - en/home.html: ./assets/img/opinion.webp
+  - en/home.html: ./assets/img/medi1.webp
+  - en/home.html: ./assets/img/opinion.webp
+  - en/home.html: ./assets/img/hesp.webp
+  - en/home.html: ./uploads/2024/06/beijing-1.webp
+  - en/home.html: ./uploads/2024/06/ch-1.webp
+  - en/home.html: ./uploads/2024/06/linyi-1.webp
+  - en/home.html: ./uploads/2024/06/nanjing-1.webp
+  - en/home.html: ./uploads/2024/06/ningbo-1.webp
+  - en/home.html: ./uploads/2024/06/perto-1.webp
+  - en/home.html: ./uploads/2024/06/sand-1.webp
+  - en/home.html: ./uploads/2024/06/shandong-1.webp
+  - en/home.html: ./uploads/2024/06/Copie-de-fahd.webp
+  - en/home.html: ./uploads/2024/06/Copie-de-lina-min.webp
+  - en/home.html: ./uploads/2024/06/Copie-de-walid-min.webp
+  ... and 155 more
+
+NO H1 (2)
+----------------------------------------
+  - en/home.html
+  - en/blog-article.html

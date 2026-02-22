@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+  <url>
+    <loc>https://foorsa.ma/en/index.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/E19L-c8oUKE/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Study in China for Moroccan Students - Foorsa Student Experience</video:title>
+      <video:description>Discover the experience of Moroccan students studying in China with Foorsa. Real testimonials about university life, scholarships, and opportunities.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/E19L-c8oUKE</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/JUv1f7PUy7Y/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Studying in China - Moroccan Student Testimonial</video:title>
+      <video:description>A Moroccan student shares their journey studying in China through Foorsa. Learn about admissions, campus life, and tips for future students.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/JUv1f7PUy7Y</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/LqFaTbwb22k/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Life as a Moroccan Student in China</video:title>
+      <video:description>Explore what it's like to be a Moroccan student in China. University campus tours, daily life, food, and cultural experiences shared by Foorsa students.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/LqFaTbwb22k</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/Xi7RW40eX_0/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Morocco to China - Student Journey with Foorsa</video:title>
+      <video:description>Follow the journey of a Moroccan student from Morocco to China. Visa process, arrival, university registration, and settling in.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/Xi7RW40eX_0</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/ZAX4Aw_oOOI/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Why Study in China? Moroccan Student Perspective</video:title>
+      <video:description>Why choose China for your studies? A Moroccan student explains the benefits: affordable tuition, world-class universities, scholarships, and career opportunities.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/ZAX4Aw_oOOI</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/_vNcPCv1h9o/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Foorsa Student in China - Campus Life</video:title>
+      <video:description>A day in the life of a Foorsa student at a Chinese university. Classes, dormitory, food, sports facilities, and social activities.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/_vNcPCv1h9o</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/qqiHkEnSnuY/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Scholarship Experience in China - Foorsa Student</video:title>
+      <video:description>Learn about scholarship opportunities in China from a real Foorsa student. CSC scholarship, university grants, and how to apply successfully.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/qqiHkEnSnuY</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/qx6t1deJIhk/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Studying in China After Bac - Moroccan Student Guide</video:title>
+      <video:description>Everything you need to know about studying in China after your Baccalaureate. Admissions process, language requirements, and student visa from Morocco.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/qx6t1deJIhk</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://foorsa.ma/fr/index.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/E19L-c8oUKE/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Étudier en Chine pour les Marocains - Témoignage Étudiant Foorsa</video:title>
+      <video:description>Découvrez l'expérience des étudiants marocains en Chine avec Foorsa. Témoignages réels sur la vie universitaire, les bourses et les opportunités.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/E19L-c8oUKE</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/JUv1f7PUy7Y/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Étudier en Chine - Témoignage d'un Étudiant Marocain</video:title>
+      <video:description>Un étudiant marocain partage son parcours d'études en Chine via Foorsa. Admissions, vie sur le campus et conseils pour les futurs étudiants.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/JUv1f7PUy7Y</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/LqFaTbwb22k/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>La Vie d'un Étudiant Marocain en Chine</video:title>
+      <video:description>Explorez la vie quotidienne d'un étudiant marocain en Chine. Visite du campus, vie quotidienne, nourriture et expériences culturelles.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/LqFaTbwb22k</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/Xi7RW40eX_0/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Du Maroc à la Chine - Parcours Étudiant avec Foorsa</video:title>
+      <video:description>Suivez le parcours d'un étudiant marocain du Maroc vers la Chine. Processus de visa, arrivée, inscription universitaire et installation.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/Xi7RW40eX_0</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/ZAX4Aw_oOOI/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Pourquoi Étudier en Chine ? Perspective d'un Étudiant Marocain</video:title>
+      <video:description>Pourquoi choisir la Chine ? Un étudiant marocain explique les avantages : frais abordables, universités de classe mondiale, bourses et opportunités de carrière.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/ZAX4Aw_oOOI</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/_vNcPCv1h9o/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Étudiant Foorsa en Chine - Vie sur le Campus</video:title>
+      <video:description>Une journée dans la vie d'un étudiant Foorsa dans une université chinoise. Cours, dortoir, restauration, installations sportives et activités sociales.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/_vNcPCv1h9o</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/qqiHkEnSnuY/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Expérience de Bourse en Chine - Étudiant Foorsa</video:title>
+      <video:description>Découvrez les opportunités de bourses en Chine avec un vrai étudiant Foorsa. Bourse CSC, aides universitaires et comment postuler avec succès.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/qqiHkEnSnuY</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/qx6t1deJIhk/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Étudier en Chine Après le Bac - Guide Étudiant Marocain</video:title>
+      <video:description>Tout ce que vous devez savoir pour étudier en Chine après le baccalauréat. Processus d'admission, exigences linguistiques et visa étudiant depuis le Maroc.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/qx6t1deJIhk</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+
+</urlset>
