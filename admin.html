@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Foorsa Analytics</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#041228;color:#fff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;min-height:100vh}
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-thumb{background:#eaca91;border-radius:3px}
+.login{display:flex;align-items:center;justify-content:center;height:100vh;flex-direction:column;gap:16px}
+.login h1{color:#eaca91;font-size:28px}
+.login input{padding:12px 20px;border-radius:8px;border:1px solid #eaca9155;background:#0a1e3d;color:#fff;font-size:16px;width:280px}
+.login button,.period-btn{padding:10px 24px;border-radius:8px;border:none;background:#eaca91;color:#041228;font-weight:700;cursor:pointer;font-size:14px}
+.login button:hover,.period-btn:hover,.period-btn.active{background:#d4a96a}
+.period-btn.active{background:#d4a96a;box-shadow:0 0 0 2px #eaca91}
+.hidden{display:none!important}
+.dash{max-width:1400px;margin:0 auto;padding:20px}
+header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:24px}
+header h1{color:#eaca91;font-size:24px}
+.periods{display:flex;gap:8px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:24px}
+.kpi{background:#0a1e3d;border-radius:12px;padding:20px;border:1px solid #eaca9122}
+.kpi .label{color:#eaca91aa;font-size:13px;text-transform:uppercase;letter-spacing:1px}
+.kpi .val{font-size:36px;font-weight:700;margin:8px 0 0;color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:16px;margin-bottom:24px}
+.card{background:#0a1e3d;border-radius:12px;padding:20px;border:1px solid #eaca9122}
+.card h2{color:#eaca91;font-size:16px;margin-bottom:16px}
+canvas{width:100%!important;height:250px!important}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;color:#eaca91aa;padding:8px 4px;border-bottom:1px solid #eaca9133}
+td{padding:8px 4px;border-bottom:1px solid #eaca9111}
+.bar-row{display:flex;align-items:center;gap:8px;margin:6px 0}
+.bar-label{width:80px;font-size:13px;color:#ccc}
+.bar-bg{flex:1;background:#0d2444;border-radius:4px;height:24px;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#eaca91,#d4a96a);border-radius:4px;display:flex;align-items:center;padding-left:8px;font-size:11px;font-weight:700;color:#041228;min-width:30px}
+.refresh{color:#eaca9166;font-size:12px;text-align:center;padding:20px}
+.sub-card{background:#0d2444;border-radius:8px;padding:12px;margin:8px 0;cursor:pointer;border:1px solid #eaca9111}
+.sub-card:hover{border-color:#eaca9144}
+.sub-detail{display:none;margin-top:8px;font-size:13px;color:#ccc;white-space:pre-wrap}
+.sub-card.open .sub-detail{display:block}
+@media(max-width:600px){.grid{grid-template-columns:1fr}.kpi .val{font-size:28px}header{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<div id="loginScreen" class="login">
+<h1>🔐 Foorsa Analytics</h1>
+<input type="password" id="pwInput" placeholder="Enter password" onkeydown="if(event.key==='Enter')doLogin()">
+<button onclick="doLogin()">Login</button>
+</div>
+<div id="dashboard" class="dash hidden">
+<header>
+<h1>📊 Foorsa Analytics</h1>
+<div class="periods">
+<button class="period-btn" data-p="today">Today</button>
+<button class="period-btn active" data-p="7d">7 Days</button>
+<button class="period-btn" data-p="30d">30 Days</button>
+<button class="period-btn" data-p="all">All Time</button>
+</div>
+</header>
+<div class="kpis">
+<div class="kpi"><div class="label">Total Visits</div><div class="val" id="kVisits">-</div></div>
+<div class="kpi"><div class="label">Unique Visitors</div><div class="val" id="kUnique">-</div></div>
+<div class="kpi"><div class="label">Form Submissions</div><div class="val" id="kSubs">-</div></div>
+<div class="kpi"><div class="label">CTA Clicks</div><div class="val" id="kClicks">-</div></div>
+</div>
+<div class="grid">
+<div class="card"><h2>📈 Visits Over Time</h2><canvas id="chartLine"></canvas></div>
+<div class="card"><h2>🌍 Traffic Sources</h2><canvas id="chartPie"></canvas></div>
+</div>
+<div class="grid">
+<div class="card"><h2>📄 Top Pages</h2><table id="tPages"><thead><tr><th>Page</th><th>Visits</th></tr></thead><tbody></tbody></table></div>
+<div class="card"><h2>🌐 Countries</h2><table id="tCountries"><thead><tr><th>Country</th><th>Visits</th></tr></thead><tbody></tbody></table></div>
+</div>
+<div class="grid">
+<div class="card"><h2>📱 Devices</h2><div id="dDevices"></div></div>
+<div class="card"><h2>🌐 Browsers</h2><div id="dBrowsers"></div></div>
+</div>
+<div class="grid">
+<div class="card"><h2>🖱️ Recent Clicks</h2><table id="tClicks"><thead><tr><th>Element</th><th>Page</th><th>Count</th></tr></thead><tbody></tbody></table></div>
+<div class="card"><h2>👥 Recent Visitors</h2><table id="tVisitors"><thead><tr><th>Country</th><th>Page</th><th>Device</th><th>Time</th></tr></thead><tbody></tbody></table></div>
+</div>
+<div class="card" style="margin-bottom:24px"><h2>📝 Form Submissions</h2><div id="dSubs"></div></div>
+<div class="refresh" id="refreshNote">Auto-refreshes every 60s</div>
+</div>
+<script>
+const F={
+  countryFlags:{"MA":"🇲🇦","FR":"🇫🇷","US":"🇺🇸","GB":"🇬🇧","DE":"🇩🇪","ES":"🇪🇸","CN":"🇨🇳","SA":"🇸🇦","AE":"🇦🇪","CA":"🇨🇦","NL":"🇳🇱","BE":"🇧🇪","IT":"🇮🇹","DZ":"🇩🇿","TN":"🇹🇳","EG":"🇪🇬","TR":"🇹🇷","IN":"🇮🇳","BR":"🇧🇷","JP":"🇯🇵","KR":"🇰🇷","PT":"🇵🇹","SE":"🇸🇪","PL":"🇵🇱","RU":"🇷🇺"},
+  fmt(n){return(n||0).toLocaleString()},
+  pw:'',period:'7d',timer:null,
+  colors:['#eaca91','#d4a96a','#b8884a','#8b6530','#5e4220','#3a2810','#c9a66b','#a07840','#6b5030','#4a3520']
+};
+
+function doLogin(){
+  F.pw=document.getElementById('pwInput').value;
+  sessionStorage.setItem('_fp',F.pw);
+  document.getElementById('loginScreen').classList.add('hidden');
+  document.getElementById('dashboard').classList.remove('hidden');
+  loadAll();
+}
+
+(function init(){
+  const sp=sessionStorage.getItem('_fp');
+  if(sp){F.pw=sp;document.getElementById('loginScreen').classList.add('hidden');document.getElementById('dashboard').classList.remove('hidden');loadAll()}
+  document.querySelectorAll('.period-btn').forEach(b=>b.onclick=function(){
+    document.querySelectorAll('.period-btn').forEach(x=>x.classList.remove('active'));
+    this.classList.add('active');F.period=this.dataset.p;loadAll();
+  });
+  F.timer=setInterval(loadAll,60000);
+})();
+
+async function api(path,params={}){
+  params.password=F.pw;
+  const q=new URLSearchParams(params).toString();
+  const r=await fetch('/api/admin/'+path+'?'+q);
+  if(r.status===401){sessionStorage.removeItem('_fp');location.reload();return null}
+  return r.json();
+}
+
+async function loadAll(){
+  const [stats,subs,visitors]=await Promise.all([
+    api('stats',{period:F.period}),
+    api('submissions',{limit:20}),
+    api('visitors',{period:F.period})
+  ]);
+  if(!stats)return;
+  document.getElementById('kVisits').textContent=F.fmt(stats.visits.total);
+  document.getElementById('kUnique').textContent=F.fmt(stats.visits.unique_sessions);
+  document.getElementById('kSubs').textContent=F.fmt(subs.total||0);
+  document.getElementById('kClicks').textContent=F.fmt(stats.clicks.total);
+
+  drawLine(stats.visits_by_day);
+  drawPie(stats.top_referrers);
+  fillTable('tPages',stats.top_pages,r=>`<td>${r.page_url}</td><td>${F.fmt(+r.count)}</td>`);
+  fillTable('tCountries',stats.countries,r=>`<td>${F.countryFlags[r.country]||'🏳️'} ${r.country}</td><td>${F.fmt(+r.count)}</td>`);
+  fillTable('tClicks',stats.clicks.top_elements,r=>`<td>${esc(r.element_text||'-')}</td><td>-</td><td>${F.fmt(+r.count)}</td>`);
+
+  const maxD=Math.max(...stats.devices.map(d=>+d.count),1);
+  document.getElementById('dDevices').innerHTML=stats.devices.map(d=>
+    `<div class="bar-row"><div class="bar-label">${d.device_type}</div><div class="bar-bg"><div class="bar-fill" style="width:${(+d.count/maxD*100)}%">${F.fmt(+d.count)}</div></div></div>`
+  ).join('');
+
+  const maxB=Math.max(...stats.browsers.map(d=>+d.count),1);
+  document.getElementById('dBrowsers').innerHTML=stats.browsers.map(d=>
+    `<div class="bar-row"><div class="bar-label">${d.browser}</div><div class="bar-bg"><div class="bar-fill" style="width:${(+d.count/maxB*100)}%">${F.fmt(+d.count)}</div></div></div>`
+  ).join('');
+
+  if(visitors&&visitors.visitors){
+    fillTable('tVisitors',visitors.visitors.slice(0,20),r=>
+      `<td>${F.countryFlags[r.country]||'🏳️'} ${r.country||'?'}</td><td>${r.page_url}</td><td>${r.device_type}</td><td>${new Date(r.created_at).toLocaleString()}</td>`
+    );
+  }
+
+  if(subs&&subs.submissions){
+    document.getElementById('dSubs').innerHTML=subs.submissions.map(s=>{
+      const d=typeof s.data==='string'?JSON.parse(s.data||'{}'):s.data||{};
+      return `<div class="sub-card" onclick="this.classList.toggle('open')">
+        <strong>${d.firstName||d.name||s.email||'Submission'} ${d.lastName||''}</strong> — ${new Date(s.created_at).toLocaleString()}
+        <div class="sub-detail">${JSON.stringify(d,null,2)}</div>
+      </div>`;
+    }).join('')||'<p style="color:#888">No submissions yet</p>';
+  }
+
+  document.getElementById('refreshNote').textContent='Last updated: '+new Date().toLocaleTimeString()+' · Auto-refreshes every 60s';
+}
+
+function fillTable(id,rows,fn){
+  document.querySelector('#'+id+' tbody').innerHTML=rows.map(r=>'<tr>'+fn(r)+'</tr>').join('');
+}
+
+function esc(s){return s.replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+
+function drawLine(data){
+  const c=document.getElementById('chartLine'),ctx=c.getContext('2d');
+  c.width=c.offsetWidth*2;c.height=500;
+  ctx.clearRect(0,0,c.width,c.height);
+  if(!data||!data.length)return;
+  const vals=data.map(d=>+d.count),max=Math.max(...vals,1);
+  const px=40,py=20,w=c.width-px*2,h=c.height-py*2;
+  ctx.strokeStyle='#eaca9133';ctx.lineWidth=1;
+  for(let i=0;i<=4;i++){
+    const y=py+h-h*(i/4);
+    ctx.beginPath();ctx.moveTo(px,y);ctx.lineTo(px+w,y);ctx.stroke();
+    ctx.fillStyle='#eaca9188';ctx.font='20px sans-serif';ctx.textAlign='right';
+    ctx.fillText(Math.round(max*i/4),px-6,y+6);
+  }
+  ctx.strokeStyle='#eaca91';ctx.lineWidth=3;ctx.beginPath();
+  vals.forEach((v,i)=>{
+    const x=px+w*i/(vals.length-1||1),y=py+h-h*(v/max);
+    i===0?ctx.moveTo(x,y):ctx.lineTo(x,y);
+  });
+  ctx.stroke();
+  ctx.fillStyle='#eaca9166';ctx.font='18px sans-serif';ctx.textAlign='center';
+  data.forEach((d,i)=>{
+    if(data.length>14&&i%Math.ceil(data.length/7)!==0)return;
+    const x=px+w*i/(data.length-1||1);
+    ctx.fillText(d.date.slice(5),x,c.height-2);
+  });
+}
+
+function drawPie(data){
+  const c=document.getElementById('chartPie'),ctx=c.getContext('2d');
+  c.width=c.offsetWidth*2;c.height=500;
+  ctx.clearRect(0,0,c.width,c.height);
+  if(!data||!data.length)return;
+  const total=data.reduce((s,d)=>s+(+d.count),0);
+  const cx=c.height/2,cy=c.height/2,r=c.height/2-40;
+  let angle=-Math.PI/2;
+  data.forEach((d,i)=>{
+    const slice=2*Math.PI*(+d.count/total);
+    ctx.beginPath();ctx.moveTo(cx,cy);ctx.arc(cx,cy,r,angle,angle+slice);ctx.closePath();
+    ctx.fillStyle=F.colors[i%F.colors.length];ctx.fill();
+    angle+=slice;
+  });
+  ctx.beginPath();ctx.arc(cx,cy,r*0.5,0,2*Math.PI);ctx.fillStyle='#0a1e3d';ctx.fill();
+  const lx=c.height+20;
+  ctx.font='20px sans-serif';
+  data.slice(0,8).forEach((d,i)=>{
+    ctx.fillStyle=F.colors[i%F.colors.length];
+    ctx.fillRect(lx,30+i*30,16,16);
+    ctx.fillStyle='#ccc';
+    ctx.textAlign='left';
+    ctx.fillText(`${d.referrer} (${F.fmt(+d.count)})`,lx+24,44+i*30);
+  });
+}
+</script>
+</body>
+</html>
