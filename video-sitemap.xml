@@ -63,6 +63,24 @@
   </url>
 
   <url>
+    <loc>https://foorsa.ma/en/media.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/aIcToelxbYE/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>الملف : الخميس 29 يناير 2026 - 2MTV Feature on Foorsa</video:title>
+      <video:description>Foorsa featured on 2MTV (Morocco's national TV channel 2) - a segment about Moroccan students studying in China and the role of Foorsa agency in facilitating university admissions.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/aIcToelxbYE</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/wlHLK9nnWFM/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>صوت الجالية - الرحلة من فرنسا إلى الصين لكن الجذور مغربية - MedRadio</video:title>
+      <video:description>Foorsa featured on MedRadio's "صوت الجالية" (Voice of the Diaspora) program - discussing the journey from France to China with Moroccan roots, highlighting Foorsa's role in Chinese university admissions for Moroccans.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/wlHLK9nnWFM</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+
+  <url>
     <loc>https://foorsa.ma/fr/index.html</loc>
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/E19L-c8oUKE/maxresdefault.jpg</video:thumbnail_loc>
