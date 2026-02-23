@@ -1,0 +1,60 @@
+import type { VercelRequest, VercelResponse } from '@vercel/node';
+import { Pool } from 'pg';
+
+
+
+let pool: Pool | null = null;
+function getPool(): Pool {
+  if (!pool) {
+    pool = new Pool({
+      connectionString: process.env.DATABASE_URL,
+      ssl: { rejectUnauthorized: false },
+      max: 3,
+      idleTimeoutMillis: 30000,
+      connectionTimeoutMillis: 10000,
+    });
+  }
+  return pool;
+}
+
+export default async function handler(req: VercelRequest, res: VercelResponse) {
+  if (req.method !== 'GET') {
+    return res.status(405).json({ error: 'Method not allowed' });
+  }
+
+  try {
+    const pool = getPool();
+    const result = await pool.query(`
+      SELECT 
+        u.id as user_id,
+        u.first_name,
+        u.last_name,
+        u.profile_image_url,
+        COUNT(DISTINCT c.id)::int as total_clicks,
+        COUNT(DISTINCT l.id)::int as total_leads,
+        COUNT(DISTINCT conv.id)::int as total_conversions,
+        ROW_NUMBER() OVER (ORDER BY COUNT(DISTINCT l.id) DESC, COUNT(DISTINCT c.id) DESC)::int as rank
+      FROM ref_users u
+      LEFT JOIN ref_clicks c ON u.id = c.user_id
+      LEFT JOIN ref_leads l ON u.id = l.user_id AND l.deleted_at IS NULL
+      LEFT JOIN ref_conversions conv ON u.id = conv.user_id
+      WHERE u.deleted_at IS NULL
+      GROUP BY u.id, u.first_name, u.last_name, u.profile_image_url
+      ORDER BY total_leads DESC, total_clicks DESC
+      LIMIT 50
+    `);
+    const leaderboard = result.rows.map((r: any) => ({
+      userId: r.user_id,
+      firstName: r.first_name,
+      lastName: r.last_name,
+      profileImageUrl: r.profile_image_url,
+      totalClicks: r.total_clicks,
+      totalLeads: r.total_leads,
+      totalConversions: r.total_conversions,
+      rank: r.rank,
+    }));
+    return res.status(200).json(leaderboard);
+  } catch (error: any) {
+    return res.status(500).json({ error: error.message });
+  }
+}
