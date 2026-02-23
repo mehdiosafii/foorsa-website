@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd referral && npm install && npm run build",
+  "buildCommand": "bash build-referral.sh",
   "functions": {
     "api/submit-form.js": {
       "memory": 256,
@@ -21,11 +21,11 @@
   "rewrites": [
     {
       "source": "/referral",
-      "destination": "/referral/dist/index.html"
+      "destination": "/public/referral/index.html"
     },
     {
       "source": "/referral/:path*",
-      "destination": "/referral/dist/:path*"
+      "destination": "/public/referral/:path*"
     }
   ],
   "headers": [
