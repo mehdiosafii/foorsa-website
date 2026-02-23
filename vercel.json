@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd referral && npm run build",
+  "buildCommand": "cd referral && npm install && npm run build",
   "functions": {
     "api/submit-form.js": {
       "memory": 256,
@@ -24,8 +24,8 @@
       "destination": "/referral/dist/index.html"
     },
     {
-      "source": "/referral/((?!api).*)",
-      "destination": "/referral/dist/$1"
+      "source": "/referral/:path*",
+      "destination": "/referral/dist/:path*"
     }
   ],
   "headers": [
