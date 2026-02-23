@@ -1,5 +1,4 @@
 {
-  "buildCommand": "bash build-referral.sh",
   "functions": {
     "api/submit-form.js": {
       "memory": 256,
