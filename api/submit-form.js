@@ -1,5 +1,6 @@
 const { Pool } = require('pg');
 const Busboy = require('busboy');
+const { verifyCaptcha } = require('./verify-captcha');
 
 const pool = new Pool({ connectionString: process.env.DATABASE_URL, max: 3 });
 
@@ -54,6 +55,24 @@ module.exports = async (req, res) => {
 
     const formType = formData.form_type || 'unknown';
     delete formData.form_type;
+
+    // Verify CAPTCHA
+    const captchaToken = formData['h-captcha-response'] || formData.captcha_token;
+    delete formData['h-captcha-response'];
+    delete formData.captcha_token;
+
+    const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+    const captchaResult = await verifyCaptcha(captchaToken, ip);
+
+    if (!captchaResult.success) {
+      console.warn('[FORM] CAPTCHA verification failed:', captchaResult.error);
+      return res.status(400).json({ 
+        error: 'Please complete the CAPTCHA verification',
+        captcha_failed: true
+      });
+    }
+
+    console.log('[FORM] CAPTCHA verified, processing submission');
 
     // Insert submission
     const result = await pool.query(
