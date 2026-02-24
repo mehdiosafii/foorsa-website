@@ -1,6 +1,6 @@
-// Foorsa Form Handler - routes all forms to /api/submit-form with Cloudflare Turnstile
+// Foorsa Form Handler - routes all forms to /api/submit-form with hCaptcha
 (function() {
-  const TURNSTILE_SITE_KEY = '1x00000000000000000000AA'; // Dummy test key - replace with real key in production
+  const HCAPTCHA_SITE_KEY = '10000000-ffff-ffff-ffff-000000000001'; // Dummy test key - replace with real key in production
   
   function showMsg(form, msg, ok) {
     let el = form.querySelector('.form-status');
@@ -13,12 +13,12 @@
 
   function addCaptchaWidget(form) {
     // Check if already added
-    if (form.querySelector('.cf-turnstile')) return;
+    if (form.querySelector('.h-captcha')) return;
     
-    // Create Turnstile container
+    // Create hCaptcha container
     const captchaDiv = document.createElement('div');
-    captchaDiv.className = 'cf-turnstile';
-    captchaDiv.setAttribute('data-sitekey', TURNSTILE_SITE_KEY);
+    captchaDiv.className = 'h-captcha';
+    captchaDiv.setAttribute('data-sitekey', HCAPTCHA_SITE_KEY);
     captchaDiv.setAttribute('data-theme', 'light');
     captchaDiv.style.cssText = 'margin-bottom:16px;display:flex;justify-content:center;';
     
@@ -33,19 +33,19 @@
     }
   }
 
-  // Load Cloudflare Turnstile script
-  function loadTurnstile() {
-    if (document.querySelector('script[src*="challenges.cloudflare.com"]')) return;
+  // Load hCaptcha script
+  function loadHCaptcha() {
+    if (document.querySelector('script[src*="hcaptcha.com"]')) return;
     const script = document.createElement('script');
-    script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
+    script.src = 'https://js.hcaptcha.com/1/api.js';
     script.async = true;
     script.defer = true;
     document.head.appendChild(script);
   }
 
   document.addEventListener('DOMContentLoaded', function() {
-    // Load Cloudflare Turnstile script
-    loadTurnstile();
+    // Load hCaptcha script
+    loadHCaptcha();
 
     document.querySelectorAll('form').forEach(function(form) {
       const action = form.getAttribute('action') || '';
@@ -60,8 +60,8 @@
       form.addEventListener('submit', async function(e) {
         e.preventDefault();
 
-        // Check Turnstile CAPTCHA
-        const captchaResponse = form.querySelector('[name="cf-turnstile-response"]');
+        // Check hCaptcha CAPTCHA
+        const captchaResponse = form.querySelector('[name="h-captcha-response"]');
         if (!captchaResponse || !captchaResponse.value) {
           showMsg(form, '✕ Please complete the CAPTCHA verification', false);
           return;
@@ -99,24 +99,24 @@
           if (resp.ok) {
             showMsg(form, '✓ Your submission has been received! We will get back to you soon.', true);
             form.reset();
-            // Reset Turnstile
-            if (window.turnstile) {
-              const captchaWidget = form.querySelector('.cf-turnstile');
+            // Reset hCaptcha
+            if (window.hcaptcha) {
+              const captchaWidget = form.querySelector('.h-captcha');
               if (captchaWidget) {
                 const widgetId = captchaWidget.dataset.widgetId;
-                if (widgetId) window.turnstile.reset(widgetId);
+                if (widgetId) window.hcaptcha.reset(widgetId);
               }
             }
           } else {
             const errorData = await resp.json().catch(() => ({}));
             if (errorData.captcha_failed) {
               showMsg(form, '✕ CAPTCHA verification failed. Please try again.', false);
-              // Reset Turnstile
-              if (window.turnstile) {
-                const captchaWidget = form.querySelector('.cf-turnstile');
+              // Reset hCaptcha
+              if (window.hcaptcha) {
+                const captchaWidget = form.querySelector('.h-captcha');
                 if (captchaWidget) {
                   const widgetId = captchaWidget.dataset.widgetId;
-                  if (widgetId) window.turnstile.reset(widgetId);
+                  if (widgetId) window.hcaptcha.reset(widgetId);
                 }
               }
             } else {
