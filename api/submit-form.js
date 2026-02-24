@@ -56,9 +56,9 @@ module.exports = async (req, res) => {
     const formType = formData.form_type || 'unknown';
     delete formData.form_type;
 
-    // Verify CAPTCHA
-    const captchaToken = formData['h-captcha-response'] || formData.captcha_token;
-    delete formData['h-captcha-response'];
+    // Verify Turnstile CAPTCHA
+    const captchaToken = formData['cf-turnstile-response'] || formData.captcha_token;
+    delete formData['cf-turnstile-response'];
     delete formData.captcha_token;
 
     const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;

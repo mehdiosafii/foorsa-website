@@ -1,20 +1,20 @@
 /**
- * hCaptcha Verification Middleware
+ * Cloudflare Turnstile Verification
  * Verifies CAPTCHA tokens from foorsa.ma forms
  */
 
-const HCAPTCHA_SECRET = process.env.HCAPTCHA_SECRET || '';
-const HCAPTCHA_VERIFY_URL = 'https://hcaptcha.com/siteverify';
+const TURNSTILE_SECRET = process.env.TURNSTILE_SECRET || '';
+const TURNSTILE_VERIFY_URL = 'https://challenges.cloudflare.com/turnstile/v0/siteverify';
 
 /**
- * Verify hCaptcha token
- * @param {string} token - hCaptcha response token
+ * Verify Cloudflare Turnstile token
+ * @param {string} token - Turnstile response token
  * @param {string} remoteip - User's IP address (optional)
  * @returns {Promise<{success: boolean, error?: string}>}
  */
 async function verifyCaptcha(token, remoteip = null) {
-  if (!HCAPTCHA_SECRET) {
-    console.error('[CAPTCHA] HCAPTCHA_SECRET not configured');
+  if (!TURNSTILE_SECRET) {
+    console.error('[CAPTCHA] TURNSTILE_SECRET not configured');
     return { success: false, error: 'CAPTCHA not configured' };
   }
 
@@ -24,12 +24,12 @@ async function verifyCaptcha(token, remoteip = null) {
 
   try {
     const params = new URLSearchParams({
-      secret: HCAPTCHA_SECRET,
+      secret: TURNSTILE_SECRET,
       response: token,
       ...(remoteip && { remoteip })
     });
 
-    const response = await fetch(HCAPTCHA_VERIFY_URL, {
+    const response = await fetch(TURNSTILE_VERIFY_URL, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
@@ -40,10 +40,10 @@ async function verifyCaptcha(token, remoteip = null) {
     const data = await response.json();
 
     if (data.success) {
-      console.log('[CAPTCHA] Verification successful');
+      console.log('[CAPTCHA] Turnstile verification successful');
       return { success: true };
     } else {
-      console.warn('[CAPTCHA] Verification failed:', data['error-codes']);
+      console.warn('[CAPTCHA] Turnstile verification failed:', data['error-codes']);
       return { 
         success: false, 
         error: 'CAPTCHA verification failed' 

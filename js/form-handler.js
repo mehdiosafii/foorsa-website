@@ -1,6 +1,6 @@
-// Foorsa Form Handler - routes all forms to /api/submit-form with CAPTCHA verification
+// Foorsa Form Handler - routes all forms to /api/submit-form with Cloudflare Turnstile
 (function() {
-  const HCAPTCHA_SITE_KEY = '10000000-ffff-ffff-ffff-000000000001'; // Test key - replace with real key in production
+  const TURNSTILE_SITE_KEY = '1x00000000000000000000AA'; // Dummy test key - replace with real key in production
   
   function showMsg(form, msg, ok) {
     let el = form.querySelector('.form-status');
@@ -13,12 +13,13 @@
 
   function addCaptchaWidget(form) {
     // Check if already added
-    if (form.querySelector('.h-captcha')) return;
+    if (form.querySelector('.cf-turnstile')) return;
     
-    // Create CAPTCHA container
+    // Create Turnstile container
     const captchaDiv = document.createElement('div');
-    captchaDiv.className = 'h-captcha';
-    captchaDiv.setAttribute('data-sitekey', HCAPTCHA_SITE_KEY);
+    captchaDiv.className = 'cf-turnstile';
+    captchaDiv.setAttribute('data-sitekey', TURNSTILE_SITE_KEY);
+    captchaDiv.setAttribute('data-theme', 'light');
     captchaDiv.style.cssText = 'margin-bottom:16px;display:flex;justify-content:center;';
     
     // Insert before submit button
@@ -32,19 +33,19 @@
     }
   }
 
-  // Load hCaptcha script
-  function loadHcaptcha() {
-    if (document.querySelector('script[src*="hcaptcha.com"]')) return;
+  // Load Cloudflare Turnstile script
+  function loadTurnstile() {
+    if (document.querySelector('script[src*="challenges.cloudflare.com"]')) return;
     const script = document.createElement('script');
-    script.src = 'https://js.hcaptcha.com/1/api.js';
+    script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
     script.async = true;
     script.defer = true;
     document.head.appendChild(script);
   }
 
   document.addEventListener('DOMContentLoaded', function() {
-    // Load hCaptcha script
-    loadHcaptcha();
+    // Load Cloudflare Turnstile script
+    loadTurnstile();
 
     document.querySelectorAll('form').forEach(function(form) {
       const action = form.getAttribute('action') || '';
@@ -59,8 +60,8 @@
       form.addEventListener('submit', async function(e) {
         e.preventDefault();
 
-        // Check CAPTCHA
-        const captchaResponse = form.querySelector('[name="h-captcha-response"]');
+        // Check Turnstile CAPTCHA
+        const captchaResponse = form.querySelector('[name="cf-turnstile-response"]');
         if (!captchaResponse || !captchaResponse.value) {
           showMsg(form, '✕ Please complete the CAPTCHA verification', false);
           return;
@@ -98,24 +99,24 @@
           if (resp.ok) {
             showMsg(form, '✓ Your submission has been received! We will get back to you soon.', true);
             form.reset();
-            // Reset CAPTCHA
-            if (window.hcaptcha) {
-              const captchaWidget = form.querySelector('.h-captcha');
+            // Reset Turnstile
+            if (window.turnstile) {
+              const captchaWidget = form.querySelector('.cf-turnstile');
               if (captchaWidget) {
-                const widgetId = captchaWidget.dataset.hcaptchaWidgetId;
-                if (widgetId) window.hcaptcha.reset(widgetId);
+                const widgetId = captchaWidget.dataset.widgetId;
+                if (widgetId) window.turnstile.reset(widgetId);
               }
             }
           } else {
             const errorData = await resp.json().catch(() => ({}));
             if (errorData.captcha_failed) {
               showMsg(form, '✕ CAPTCHA verification failed. Please try again.', false);
-              // Reset CAPTCHA
-              if (window.hcaptcha) {
-                const captchaWidget = form.querySelector('.h-captcha');
+              // Reset Turnstile
+              if (window.turnstile) {
+                const captchaWidget = form.querySelector('.cf-turnstile');
                 if (captchaWidget) {
-                  const widgetId = captchaWidget.dataset.hcaptchaWidgetId;
-                  if (widgetId) window.hcaptcha.reset(widgetId);
+                  const widgetId = captchaWidget.dataset.widgetId;
+                  if (widgetId) window.turnstile.reset(widgetId);
                 }
               }
             } else {
