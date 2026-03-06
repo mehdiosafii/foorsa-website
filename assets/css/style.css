@@ -6918,7 +6918,7 @@ section.review {
 .btn-apply-navbar{
     background-color: #EACA91;
     font-size: 18px;
-    color: #5c4a2a;
+    color: #3d2e15;
     text-decoration: none;
     padding: 8px 16px;
     border-radius: 50px;
@@ -7353,7 +7353,7 @@ section.review {
 #sectionReview .blockHeader .subtitle {
     font-family: 'Marcher';
     font-size: 16px;
-    color: #7C828E;
+    color: #C0C6D0;
     margin-top: 10px;
 }
 
@@ -7448,7 +7448,7 @@ section.review {
     font-family: 'Marcher';
     font-size: 24px;
     font-weight: 700;
-    color: #041228;
+    color: #FFFFFF;
 }
 
 .ratingStats {
@@ -7461,7 +7461,7 @@ section.review {
     font-family: 'Marcher';
     font-size: 48px;
     font-weight: 700;
-    color: #041228;
+    color: #FFFFFF;
 }
 
 .starsAndCount .starsLarge {
@@ -7473,7 +7473,7 @@ section.review {
 .starsAndCount .reviewCount {
     font-family: 'Marcher';
     font-size: 14px;
-    color: #7C828E;
+    color: #C0C6D0;
     margin-top: 4px;
 }
 

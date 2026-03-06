@@ -419,13 +419,12 @@ setTimeout(load,3500);})();
 </svg>
 </div>
 <section class="section" id="sectionHero">
-<video autoplay="" class="hero-video-bg hero-video-desktop" loop="" muted="" playsinline="" poster="../assets/img/video-poster.webp" preload="none">
+<video autoplay="" class="hero-video-bg hero-video-desktop" loop="" muted="" playsinline="" poster="../assets/img/video-poster.webp" preload="metadata">
+<source src="../assets/video/hero-video.mp4" type="video/mp4"/>
 </video>
-<video autoplay="" class="hero-video-bg hero-video-mobile" loop="" muted="" playsinline="" poster="../assets/img/video-poster.webp" preload="none">
+<video autoplay="" class="hero-video-bg hero-video-mobile" loop="" muted="" playsinline="" poster="../assets/img/video-poster.webp" preload="metadata">
+<source src="../assets/video/hero-video-mobile.mp4" type="video/mp4"/>
 </video>
-<script>
-(function(){var m=window.matchMedia('(max-width:768px)');var c=m.matches?'mobile':'desktop';var v=document.querySelector('.hero-video-'+c);if(v){var s=document.createElement('source');s.src=v.dataset.src||'../assets/video/hero-video'+(c==='mobile'?'-mobile':'')+'.mp4';s.type='video/mp4';v.appendChild(s);v.preload='metadata';v.load();}})();
-</script>
 <div class="hero-video-overlay" id="heroOverlay">
 <div class="hero-mobile-headline">
 <h1>
