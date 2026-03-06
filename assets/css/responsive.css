@@ -1036,6 +1036,64 @@ body.scroll .header {
         font-size: 15px
     }
 
+    /* Ensure text visibility on mobile - prevent invisible text issues */
+    .blockHeader .title {
+        color: #000000 !important;
+    }
+
+    .blockHeader .description {
+        color: #000000 !important;
+    }
+
+    button.btnBack {
+        color: #041228 !important;
+        background: #FFF !important;
+        border: 2px solid #041228 !important;
+    }
+
+    button.btnBack.active {
+        color: #041228 !important;
+        background-color: #D6AE70 !important;
+        border-color: #D6AE70 !important;
+    }
+
+    .detailQuestion .number {
+        color: #7C828E !important;
+    }
+
+    .detailQuestion .questionTitle {
+        color: #7C828E !important;
+    }
+
+    .detailQuestion .tag {
+        color: #727272 !important;
+    }
+
+    #sectionJoinUs .blockHeader .title {
+        color: #000000 !important;
+    }
+
+    #sectionJoinUs .description {
+        color: #000000 !important;
+    }
+
+    .cardSubCat .front .numberFront {
+        color: #7C828EB2 !important;
+    }
+
+    .cardSubCat .front .titleFront {
+        color: #000000 !important;
+    }
+
+    .reviewCard .reviewText {
+        color: #4a5568 !important;
+    }
+
+    .reviewCard .reviewerName,
+    .reviewCard .reviewerInfo .reviewerName {
+        color: #041228 !important;
+    }
+
     #sectionEducation .card .cardNumber {
         font-size: 113px;
         line-height: 128px;
