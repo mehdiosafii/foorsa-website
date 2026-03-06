@@ -120,6 +120,51 @@
       "source": "/:lang(en|fr|ar)/home.html",
       "destination": "/:lang",
       "statusCode": 301
+    },
+    {
+      "source": "/thank-you-for-choosing-foorsa/:path*",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/frais/:path*",
+      "destination": "/fr/fees",
+      "statusCode": 301
+    },
+    {
+      "source": "/etude-categorie/:path*",
+      "destination": "/fr/majors",
+      "statusCode": 301
+    },
+    {
+      "source": "/faq/:path*",
+      "destination": "/fr/frequently-asked-questions",
+      "statusCode": 301
+    },
+    {
+      "source": "/city/:path*",
+      "destination": "/fr/cities/beijing",
+      "statusCode": 301
+    },
+    {
+      "source": "/author/:path*",
+      "destination": "/fr/blog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/terms-of-sale",
+      "destination": "/en/terms-of-sale",
+      "statusCode": 301
+    },
+    {
+      "source": "/quiz_question/:path*",
+      "destination": "/fr/quiz",
+      "statusCode": 301
+    },
+    {
+      "source": "/faq/finnance/:path*",
+      "destination": "/fr/fees",
+      "statusCode": 301
     }
   ],
   "cleanUrls": true,
