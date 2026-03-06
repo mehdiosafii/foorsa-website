@@ -4371,4 +4371,140 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/universities/china-agricultural-university.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/universities/china-agricultural-university.html"/>
   </url>
+
+  <!-- New FR Blog Articles -->
+  <url>
+    <loc>https://foorsa.ma/fr/blog/bourse-csc-2026-guide.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/bourse-csc-2026-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/csc-scholarship-2026-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/csc-scholarship-2026-guide.html"/>
+  </url>
+  <url>
+    <loc>https://foorsa.ma/fr/blog/cout-de-vie-chine-etudiants-marocains.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/cout-de-vie-chine-etudiants-marocains.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/cost-of-living-china-moroccan-students.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/cost-of-living-china-moroccan-students.html"/>
+  </url>
+  <url>
+    <loc>https://foorsa.ma/fr/blog/rentree-chine-septembre-mars-guide.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/rentree-chine-septembre-mars-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/china-intake-september-march-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/china-intake-september-march-guide.html"/>
+  </url>
+  <url>
+    <loc>https://foorsa.ma/fr/blog/vie-etudiante-chine-maroc.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/vie-etudiante-chine-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/student-life-china-morocco.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/student-life-china-morocco.html"/>
+  </url>
+  <url>
+    <loc>https://foorsa.ma/fr/blog/etudier-medecine-en-chine.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/etudier-medecine-en-chine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/study-medicine-in-china.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/study-medicine-in-china.html"/>
+  </url>
+  <url>
+    <loc>https://foorsa.ma/fr/blog/meilleures-universites-chinoises-2026.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/meilleures-universites-chinoises-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/top-chinese-universities-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/top-chinese-universities-2026.html"/>
+  </url>
+
+  <!-- New AR Blog Articles -->
+  <url>
+    <loc>https://foorsa.ma/ar/blog/csc-scholarship-2026-guide.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/csc-scholarship-2026-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/csc-scholarship-2026-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/bourse-csc-2026-guide.html"/>
+  </url>
+  <url>
+    <loc>https://foorsa.ma/ar/blog/cost-of-living-china-moroccan-students.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/cost-of-living-china-moroccan-students.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/cost-of-living-china-moroccan-students.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/cout-de-vie-chine-etudiants-marocains.html"/>
+  </url>
+  <url>
+    <loc>https://foorsa.ma/ar/blog/china-intake-september-march-guide.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/china-intake-september-march-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/china-intake-september-march-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/rentree-chine-septembre-mars-guide.html"/>
+  </url>
+  <url>
+    <loc>https://foorsa.ma/ar/blog/student-life-china-morocco.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/student-life-china-morocco.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/student-life-china-morocco.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/vie-etudiante-chine-maroc.html"/>
+  </url>
+  <url>
+    <loc>https://foorsa.ma/ar/blog/study-medicine-in-china.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/study-medicine-in-china.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/study-medicine-in-china.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/etudier-medecine-en-chine.html"/>
+  </url>
+  <url>
+    <loc>https://foorsa.ma/ar/blog/top-chinese-universities-2026.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/top-chinese-universities-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/top-chinese-universities-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/meilleures-universites-chinoises-2026.html"/>
+  </url>
+  <url>
+    <loc>https://foorsa.ma/ar/blog/best-universities-china-moroccan-students.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/best-universities-china-moroccan-students.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/best-universities-china-moroccan-students.html"/>
+  </url>
+  <url>
+    <loc>https://foorsa.ma/ar/blog/cost-of-studying-in-china.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/cost-of-studying-in-china.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/cost-of-studying-in-china.html"/>
+  </url>
+  <url>
+    <loc>https://foorsa.ma/ar/blog/csca-test-guide.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/csca-test-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/csca-test-guide.html"/>
+  </url>
 </urlset>
