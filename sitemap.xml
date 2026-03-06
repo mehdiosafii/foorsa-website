@@ -689,6 +689,244 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- University Pages -->
+  <url>
+    <loc>https://foorsa.ma/en/universities/peking-university.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/universities/peking-university.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/universities/peking-university.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/universities/peking-university.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/universities/tsinghua-university.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/universities/tsinghua-university.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/universities/tsinghua-university.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/universities/tsinghua-university.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/universities/zhejiang-university.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/universities/zhejiang-university.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/universities/zhejiang-university.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/universities/zhejiang-university.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/universities/fudan-university.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/universities/fudan-university.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/universities/fudan-university.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/universities/fudan-university.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/universities/shanghai-jiao-tong-university.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/universities/shanghai-jiao-tong-university.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/universities/shanghai-jiao-tong-university.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/universities/shanghai-jiao-tong-university.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/universities/wuhan-university.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/universities/wuhan-university.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/universities/wuhan-university.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/universities/wuhan-university.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/universities/nanjing-university.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/universities/nanjing-university.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/universities/nanjing-university.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/universities/nanjing-university.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/universities/university-of-science-and-technology-of-china.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/universities/university-of-science-and-technology-of-china.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/universities/university-of-science-and-technology-of-china.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/universities/university-of-science-and-technology-of-china.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/universities/huazhong-university-of-science-and-technology.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/universities/huazhong-university-of-science-and-technology.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/universities/huazhong-university-of-science-and-technology.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/universities/huazhong-university-of-science-and-technology.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/universities/sun-yat-sen-university.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/universities/sun-yat-sen-university.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/universities/sun-yat-sen-university.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/universities/sun-yat-sen-university.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/universities/harbin-institute-of-technology.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/universities/harbin-institute-of-technology.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/universities/harbin-institute-of-technology.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/universities/harbin-institute-of-technology.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/universities/xian-jiaotong-university.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/universities/xian-jiaotong-university.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/universities/xian-jiaotong-university.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/universities/xian-jiaotong-university.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/universities/tongji-university.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/universities/tongji-university.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/universities/tongji-university.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/universities/tongji-university.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/universities/beihang-university.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/universities/beihang-university.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/universities/beihang-university.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/universities/beihang-university.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/universities/sichuan-university.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/universities/sichuan-university.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/universities/sichuan-university.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/universities/sichuan-university.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/universities/central-south-university.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/universities/central-south-university.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/universities/central-south-university.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/universities/central-south-university.html" />
+  </url>
+
+  <!-- City Guide Pages -->
+  <url>
+    <loc>https://foorsa.ma/en/cities/beijing.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/cities/beijing.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/cities/beijing.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/cities/beijing.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/cities/shanghai.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/cities/shanghai.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/cities/shanghai.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/cities/shanghai.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/cities/wuhan.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/cities/wuhan.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/cities/wuhan.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/cities/wuhan.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/cities/guangzhou.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/cities/guangzhou.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/cities/guangzhou.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/cities/guangzhou.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/cities/hangzhou.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/cities/hangzhou.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/cities/hangzhou.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/cities/hangzhou.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/cities/nanjing.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/cities/nanjing.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/cities/nanjing.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/cities/nanjing.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/cities/chengdu.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/cities/chengdu.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/cities/chengdu.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/cities/chengdu.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/cities/xian.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/cities/xian.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/cities/xian.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/cities/xian.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/cities/changsha.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/cities/changsha.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/cities/changsha.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/cities/changsha.html" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/cities/hefei.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/cities/hefei.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/cities/hefei.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/cities/hefei.html" />
+  </url>
+
   <!-- Blog Articles - Arabic -->
   <url>
     <loc>https://foorsa.ma/ar/blog/guide-application-chinese-universities.html</loc>
