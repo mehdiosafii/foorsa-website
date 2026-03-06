@@ -2359,6 +2359,7 @@ body.home-page .secondFooter {
 
 .logo img {
     width: 40px;
+    height: auto;
 }
 
 .textEnter {
