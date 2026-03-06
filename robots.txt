@@ -3,17 +3,21 @@ User-agent: *
 Allow: /
 
 # Admin and API
-Disallow: /admin.html
+Disallow: /admin
 Disallow: /api/
 
 # Transactional/utility pages (no SEO value)
-Disallow: /*/cart.html
-Disallow: /*/checkout.html
-Disallow: /*/payment-confirmation.html
-Disallow: /*/payment-failed.html
-Disallow: /*/newsletter.html
-Disallow: /*/engagement.html
-Disallow: /*/recruitment.html
+Disallow: /*/cart
+Disallow: /*/checkout
+Disallow: /*/payment-confirmation
+Disallow: /*/payment-failed
+Disallow: /*/newsletter
+Disallow: /*/engagement
+Disallow: /*/recruitment
+
+# Duplicate pages (redirected)
+Disallow: /*/home
+Disallow: /*/blog2
 
 # Legacy junk directories (mirrored asset paths)
 Disallow: /scholarships/
@@ -24,8 +28,9 @@ Disallow: /referral/
 Disallow: /*.py$
 Disallow: /*.sh$
 
-# Backup files
+# Backup and upload files
 Disallow: /.backups/
+Disallow: /uploads/
 
 # Sitemaps
 Sitemap: https://foorsa.ma/sitemap.xml

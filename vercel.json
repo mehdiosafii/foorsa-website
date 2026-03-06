@@ -103,14 +103,25 @@
   "redirects": [
     {
       "source": "/universities-in-china/:path*",
-      "destination": "/en/universities/index.html",
+      "destination": "/en/universities",
       "statusCode": 301
     },
     {
       "source": "/scholarships/:path*",
-      "destination": "/en/scholarship.html",
+      "destination": "/en/scholarship",
+      "statusCode": 301
+    },
+    {
+      "source": "/:lang(en|fr|ar)/home",
+      "destination": "/:lang",
+      "statusCode": 301
+    },
+    {
+      "source": "/:lang(en|fr|ar)/home.html",
+      "destination": "/:lang",
       "statusCode": 301
     }
   ],
+  "cleanUrls": true,
   "trailingSlash": false
 }

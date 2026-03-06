@@ -3,7 +3,7 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 
   <url>
-    <loc>https://foorsa.ma/en/index.html</loc>
+    <loc>https://foorsa.ma/en/</loc>
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/E19L-c8oUKE/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Study in China for Moroccan Students - Foorsa Student Experience</video:title>
@@ -63,7 +63,7 @@
   </url>
 
   <url>
-    <loc>https://foorsa.ma/en/media.html</loc>
+    <loc>https://foorsa.ma/en/media</loc>
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/aIcToelxbYE/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>الملف : الخميس 29 يناير 2026 - 2MTV Feature on Foorsa</video:title>
@@ -81,7 +81,7 @@
   </url>
 
   <url>
-    <loc>https://foorsa.ma/fr/index.html</loc>
+    <loc>https://foorsa.ma/fr/</loc>
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/E19L-c8oUKE/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Étudier en Chine pour les Marocains - Témoignage Étudiant Foorsa</video:title>
