@@ -15,6 +15,10 @@ Disallow: /*/newsletter.html
 Disallow: /*/engagement.html
 Disallow: /*/recruitment.html
 
+# Legacy junk directories (mirrored asset paths)
+Disallow: /scholarships/
+Disallow: /universities-in-china/
+
 # Internal tools and scripts
 Disallow: /referral/
 Disallow: /*.py$
