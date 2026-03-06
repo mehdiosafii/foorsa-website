@@ -1,0 +1,423 @@
+[
+  {
+    "id": "morocco",
+    "name": { "en": "Morocco", "fr": "Maroc", "ar": "المغرب" },
+    "demonym": { "en": "Moroccan", "fr": "marocain", "ar": "مغربي" },
+    "flag_emoji": "🇲🇦",
+    "iso": "MA",
+    "primary_market": true,
+    "stats": {
+      "students_in_china": "3,000+",
+      "scholarship_rate": "75%",
+      "avg_visa_time_days": 30,
+      "direct_flights": false,
+      "time_difference": "+7h",
+      "popular_cities": ["beijing", "wuhan", "shanghai", "guangzhou", "nanjing"],
+      "top_majors": ["medicine", "engineering", "business", "computer-science", "architecture"],
+      "embassy_city": "Rabat",
+      "currency": "MAD",
+      "avg_flight_cost_usd": 650
+    },
+    "requirements": {
+      "visa_type": "X1/X2 Student Visa",
+      "passport_validity": "6 months",
+      "documents": ["passport", "admission_letter", "jw201_jw202", "medical_exam", "photos", "bank_statement"],
+      "language_tests": ["HSK", "IELTS", "TOEFL"],
+      "legalization": "Ministry of Foreign Affairs apostille required"
+    },
+    "scholarships": [
+      { "name": "CSC Scholarship", "coverage": "Full tuition + stipend + accommodation", "deadline": "January-April" },
+      { "name": "Provincial Government Scholarship", "coverage": "Partial tuition waiver", "deadline": "March-May" },
+      { "name": "University Scholarship", "coverage": "Tuition reduction 25-100%", "deadline": "Year-round" },
+      { "name": "Confucius Institute Scholarship", "coverage": "Full coverage for Chinese language programs", "deadline": "January-May" }
+    ],
+    "testimonial": {
+      "name": "Yassine",
+      "university": "Wuhan University",
+      "major": "Computer Science",
+      "quote": { "en": "Foorsa made the entire process seamless. From application to arrival, I always had support.", "fr": "Foorsa a rendu tout le processus simple. De la candidature à l'arrivée, j'ai toujours eu du soutien.", "ar": "فورصة جعلت العملية بأكملها سلسة. من التقديم إلى الوصول، كان لدي دائماً دعم." }
+    },
+    "description": {
+      "en": "Morocco is Foorsa's home market and the largest source of North African students in China. With over 3,000 Moroccan students currently studying in Chinese universities, the community is well-established with active student associations, halal restaurants, and cultural events. Morocco's strategic partnership with China through the Belt and Road Initiative has opened more scholarship opportunities for Moroccan students.",
+      "fr": "Le Maroc est le marché principal de Foorsa et la plus grande source d'étudiants nord-africains en Chine. Avec plus de 3 000 étudiants marocains actuellement dans les universités chinoises, la communauté est bien établie avec des associations étudiantes actives, des restaurants halal et des événements culturels. Le partenariat stratégique du Maroc avec la Chine dans le cadre de l'Initiative Ceinture et Route a ouvert davantage d'opportunités de bourses pour les étudiants marocains.",
+      "ar": "المغرب هو السوق الرئيسي لفورصة وأكبر مصدر للطلاب من شمال أفريقيا في الصين. مع أكثر من 3000 طالب مغربي يدرسون حالياً في الجامعات الصينية، المجتمع راسخ مع جمعيات طلابية نشطة ومطاعم حلال وفعاليات ثقافية. الشراكة الاستراتيجية بين المغرب والصين في إطار مبادرة الحزام والطريق فتحت المزيد من فرص المنح الدراسية للطلاب المغاربة."
+    },
+    "faq": [
+      {
+        "q": { "en": "Do I need a visa to study in China from Morocco?", "fr": "Ai-je besoin d'un visa pour étudier en Chine depuis le Maroc ?", "ar": "هل أحتاج تأشيرة للدراسة في الصين من المغرب؟" },
+        "a": { "en": "Yes, Moroccan students need an X1 visa (for programs over 180 days) or X2 visa (under 180 days). Foorsa guides you through the entire visa process.", "fr": "Oui, les étudiants marocains ont besoin d'un visa X1 (pour les programmes de plus de 180 jours) ou X2 (moins de 180 jours). Foorsa vous accompagne dans tout le processus de visa.", "ar": "نعم، يحتاج الطلاب المغاربة إلى تأشيرة X1 (للبرامج التي تزيد عن 180 يوماً) أو X2 (أقل من 180 يوماً). فورصة ترشدك خلال عملية التأشيرة بالكامل." }
+      },
+      {
+        "q": { "en": "What scholarships are available for Moroccan students?", "fr": "Quelles bourses sont disponibles pour les étudiants marocains ?", "ar": "ما هي المنح المتاحة للطلاب المغاربة؟" },
+        "a": { "en": "Moroccan students can apply for CSC (Chinese Government Scholarship), provincial scholarships, and university-specific scholarships. About 75% of our Moroccan students receive some form of financial aid.", "fr": "Les étudiants marocains peuvent postuler pour la bourse CSC (Bourse du Gouvernement Chinois), les bourses provinciales et les bourses universitaires. Environ 75% de nos étudiants marocains reçoivent une aide financière.", "ar": "يمكن للطلاب المغاربة التقدم لمنحة CSC (منحة الحكومة الصينية)، والمنح الإقليمية، ومنح الجامعات. حوالي 75% من طلابنا المغاربة يحصلون على شكل من أشكال الدعم المالي." }
+      },
+      {
+        "q": { "en": "Is halal food available in Chinese universities?", "fr": "La nourriture halal est-elle disponible dans les universités chinoises ?", "ar": "هل الطعام الحلال متوفر في الجامعات الصينية؟" },
+        "a": { "en": "Yes, most major Chinese universities have halal canteens (清真食堂). Cities like Beijing, Shanghai, Wuhan, and Guangzhou also have many halal restaurants near campuses.", "fr": "Oui, la plupart des grandes universités chinoises ont des cantines halal (清真食堂). Des villes comme Pékin, Shanghai, Wuhan et Guangzhou ont également de nombreux restaurants halal près des campus.", "ar": "نعم، معظم الجامعات الصينية الكبرى لديها مطاعم حلال (清真食堂). المدن مثل بكين وشنغهاي ووهان وقوانغتشو لديها أيضاً العديد من المطاعم الحلال بالقرب من الحرم الجامعي." }
+      },
+      {
+        "q": { "en": "How much does it cost to study in China for Moroccan students?", "fr": "Combien coûte les études en Chine pour les étudiants marocains ?", "ar": "كم تكلفة الدراسة في الصين للطلاب المغاربة؟" },
+        "a": { "en": "Tuition ranges from $2,000-$8,000/year for most programs. Living costs are $300-$600/month. With scholarships, many students pay little to nothing for tuition.", "fr": "Les frais de scolarité varient de 2 000 à 8 000 $/an pour la plupart des programmes. Le coût de la vie est de 300 à 600 $/mois. Avec les bourses, beaucoup d'étudiants ne paient que peu ou pas de frais.", "ar": "تتراوح الرسوم الدراسية من 2,000 إلى 8,000 دولار/سنة لمعظم البرامج. تكاليف المعيشة 300-600 دولار/شهر. مع المنح، كثير من الطلاب لا يدفعون شيئاً أو القليل جداً." }
+      }
+    ],
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "algeria",
+    "name": { "en": "Algeria", "fr": "Algérie", "ar": "الجزائر" },
+    "demonym": { "en": "Algerian", "fr": "algérien", "ar": "جزائري" },
+    "flag_emoji": "🇩🇿",
+    "iso": "DZ",
+    "primary_market": false,
+    "stats": {
+      "students_in_china": "2,500+",
+      "scholarship_rate": "70%",
+      "avg_visa_time_days": 30,
+      "direct_flights": false,
+      "time_difference": "+7h",
+      "popular_cities": ["beijing", "wuhan", "shanghai", "hangzhou"],
+      "top_majors": ["medicine", "engineering", "computer-science", "economics-global"],
+      "embassy_city": "Algiers",
+      "currency": "DZD",
+      "avg_flight_cost_usd": 700
+    },
+    "requirements": {
+      "visa_type": "X1/X2 Student Visa",
+      "passport_validity": "6 months",
+      "documents": ["passport", "admission_letter", "jw201_jw202", "medical_exam", "photos", "bank_statement"],
+      "language_tests": ["HSK", "IELTS", "TOEFL"],
+      "legalization": "Ministry of Foreign Affairs legalization required"
+    },
+    "scholarships": [
+      { "name": "CSC Scholarship", "coverage": "Full tuition + stipend + accommodation", "deadline": "January-April" },
+      { "name": "University Scholarship", "coverage": "Tuition reduction 25-100%", "deadline": "Year-round" }
+    ],
+    "description": {
+      "en": "Algeria has a growing community of students in China, with over 2,500 currently enrolled. The strong French-Arabic bilingual education system in Algeria prepares students well for Chinese university programs. Foorsa helps Algerian students navigate the application process and find the best scholarships.",
+      "fr": "L'Algérie a une communauté croissante d'étudiants en Chine, avec plus de 2 500 actuellement inscrits. Le système éducatif bilingue français-arabe en Algérie prépare bien les étudiants aux programmes universitaires chinois. Foorsa aide les étudiants algériens à naviguer le processus de candidature et trouver les meilleures bourses.",
+      "ar": "الجزائر لديها مجتمع متنامٍ من الطلاب في الصين، مع أكثر من 2500 مسجلين حالياً. النظام التعليمي ثنائي اللغة الفرنسي-العربي في الجزائر يُعد الطلاب جيداً لبرامج الجامعات الصينية. فورصة تساعد الطلاب الجزائريين في التنقل عبر عملية التقديم وإيجاد أفضل المنح."
+    },
+    "faq": [
+      {
+        "q": { "en": "Can Algerian students get scholarships in China?", "fr": "Les étudiants algériens peuvent-ils obtenir des bourses en Chine ?", "ar": "هل يمكن للطلاب الجزائريين الحصول على منح في الصين؟" },
+        "a": { "en": "Yes, Algerian students are eligible for CSC scholarships and university-specific financial aid. About 70% of Algerian students we help receive scholarship support.", "fr": "Oui, les étudiants algériens sont éligibles aux bourses CSC et aux aides financières universitaires. Environ 70% des étudiants algériens que nous aidons reçoivent un soutien financier.", "ar": "نعم، الطلاب الجزائريون مؤهلون لمنح CSC والمساعدات المالية الجامعية. حوالي 70% من الطلاب الجزائريين الذين نساعدهم يحصلون على دعم منح." }
+      }
+    ],
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "tunisia",
+    "name": { "en": "Tunisia", "fr": "Tunisie", "ar": "تونس" },
+    "demonym": { "en": "Tunisian", "fr": "tunisien", "ar": "تونسي" },
+    "flag_emoji": "🇹🇳",
+    "iso": "TN",
+    "primary_market": false,
+    "stats": {
+      "students_in_china": "1,800+",
+      "scholarship_rate": "70%",
+      "avg_visa_time_days": 30,
+      "direct_flights": false,
+      "time_difference": "+7h",
+      "popular_cities": ["beijing", "wuhan", "shanghai", "changsha"],
+      "top_majors": ["medicine", "engineering", "business-general", "computer-science"],
+      "embassy_city": "Tunis",
+      "currency": "TND",
+      "avg_flight_cost_usd": 680
+    },
+    "requirements": {
+      "visa_type": "X1/X2 Student Visa",
+      "passport_validity": "6 months",
+      "documents": ["passport", "admission_letter", "jw201_jw202", "medical_exam", "photos", "bank_statement"],
+      "language_tests": ["HSK", "IELTS", "TOEFL"],
+      "legalization": "Ministry of Foreign Affairs legalization required"
+    },
+    "scholarships": [
+      { "name": "CSC Scholarship", "coverage": "Full tuition + stipend + accommodation", "deadline": "January-April" },
+      { "name": "University Scholarship", "coverage": "Tuition reduction 25-100%", "deadline": "Year-round" }
+    ],
+    "description": {
+      "en": "Tunisia sends a significant number of students to China each year, with over 1,800 currently studying. Tunisian students benefit from strong academic backgrounds and multilingual abilities. Foorsa provides tailored guidance for Tunisian students seeking Chinese university admissions.",
+      "fr": "La Tunisie envoie un nombre significatif d'étudiants en Chine chaque année, avec plus de 1 800 actuellement inscrits. Les étudiants tunisiens bénéficient de solides bases académiques et de compétences multilingues. Foorsa fournit un accompagnement personnalisé pour les étudiants tunisiens cherchant une admission dans les universités chinoises.",
+      "ar": "تونس ترسل عدداً كبيراً من الطلاب إلى الصين سنوياً، مع أكثر من 1800 يدرسون حالياً. يستفيد الطلاب التونسيون من خلفيات أكاديمية قوية ومهارات متعددة اللغات. فورصة تقدم توجيهاً مخصصاً للطلاب التونسيين الباحثين عن القبول في الجامعات الصينية."
+    },
+    "faq": [
+      {
+        "q": { "en": "How can Tunisian students apply to Chinese universities?", "fr": "Comment les étudiants tunisiens peuvent-ils postuler aux universités chinoises ?", "ar": "كيف يمكن للطلاب التونسيين التقدم للجامعات الصينية؟" },
+        "a": { "en": "Tunisian students can apply through Foorsa for a guided process including university selection, document preparation, and scholarship applications. The process typically takes 2-3 months.", "fr": "Les étudiants tunisiens peuvent postuler via Foorsa pour un processus guidé incluant la sélection universitaire, la préparation des documents et les candidatures aux bourses. Le processus prend généralement 2-3 mois.", "ar": "يمكن للطلاب التونسيين التقدم عبر فورصة للحصول على عملية موجهة تشمل اختيار الجامعة وإعداد المستندات والتقدم للمنح. تستغرق العملية عادة 2-3 أشهر." }
+      }
+    ],
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "senegal",
+    "name": { "en": "Senegal", "fr": "Sénégal", "ar": "السنغال" },
+    "demonym": { "en": "Senegalese", "fr": "sénégalais", "ar": "سنغالي" },
+    "flag_emoji": "🇸🇳",
+    "iso": "SN",
+    "primary_market": false,
+    "stats": {
+      "students_in_china": "2,000+",
+      "scholarship_rate": "65%",
+      "avg_visa_time_days": 30,
+      "direct_flights": false,
+      "time_difference": "+8h",
+      "popular_cities": ["beijing", "wuhan", "hangzhou", "chengdu"],
+      "top_majors": ["medicine", "civil-engineering", "economics-global", "computer-science"],
+      "embassy_city": "Dakar",
+      "currency": "XOF",
+      "avg_flight_cost_usd": 800
+    },
+    "requirements": {
+      "visa_type": "X1/X2 Student Visa",
+      "passport_validity": "6 months",
+      "documents": ["passport", "admission_letter", "jw201_jw202", "medical_exam", "photos", "bank_statement"],
+      "language_tests": ["HSK", "IELTS", "TOEFL"],
+      "legalization": "Ministry of Foreign Affairs legalization required"
+    },
+    "scholarships": [
+      { "name": "CSC Scholarship", "coverage": "Full tuition + stipend + accommodation", "deadline": "January-April" },
+      { "name": "University Scholarship", "coverage": "Tuition reduction 25-100%", "deadline": "Year-round" }
+    ],
+    "description": {
+      "en": "Senegal has one of the largest African student communities in China. Senegalese students are drawn to China's affordable, high-quality education and strong scholarship programs. Foorsa assists Senegalese students with the complete application journey.",
+      "fr": "Le Sénégal a l'une des plus grandes communautés étudiantes africaines en Chine. Les étudiants sénégalais sont attirés par l'éducation abordable et de haute qualité de la Chine et ses programmes de bourses solides. Foorsa accompagne les étudiants sénégalais dans tout leur parcours de candidature.",
+      "ar": "السنغال لديها واحدة من أكبر المجتمعات الطلابية الأفريقية في الصين. ينجذب الطلاب السنغاليون إلى التعليم الصيني عالي الجودة وبأسعار معقولة وبرامج المنح القوية. فورصة تساعد الطلاب السنغاليين في رحلة التقديم الكاملة."
+    },
+    "faq": [
+      {
+        "q": { "en": "Is China a good option for Senegalese students?", "fr": "La Chine est-elle une bonne option pour les étudiants sénégalais ?", "ar": "هل الصين خيار جيد للطلاب السنغاليين؟" },
+        "a": { "en": "Absolutely. China offers world-class education at a fraction of European or American costs. Senegalese students thrive in China's international campuses with strong scholarship support.", "fr": "Absolument. La Chine offre une éducation de classe mondiale à une fraction des coûts européens ou américains. Les étudiants sénégalais s'épanouissent dans les campus internationaux chinois avec un fort soutien de bourses.", "ar": "بالتأكيد. تقدم الصين تعليماً عالمياً بجزء من التكاليف الأوروبية أو الأمريكية. يزدهر الطلاب السنغاليون في الحرم الجامعي الدولي في الصين مع دعم قوي للمنح." }
+      }
+    ],
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "ivory-coast",
+    "name": { "en": "Ivory Coast", "fr": "Côte d'Ivoire", "ar": "ساحل العاج" },
+    "demonym": { "en": "Ivorian", "fr": "ivoirien", "ar": "إيفواري" },
+    "flag_emoji": "🇨🇮",
+    "iso": "CI",
+    "primary_market": false,
+    "stats": {
+      "students_in_china": "1,500+",
+      "scholarship_rate": "60%",
+      "avg_visa_time_days": 30,
+      "direct_flights": false,
+      "time_difference": "+8h",
+      "popular_cities": ["beijing", "wuhan", "guangzhou", "chengdu"],
+      "top_majors": ["medicine", "civil-engineering", "business-general", "computer-science"],
+      "embassy_city": "Abidjan",
+      "currency": "XOF",
+      "avg_flight_cost_usd": 850
+    },
+    "requirements": {
+      "visa_type": "X1/X2 Student Visa",
+      "passport_validity": "6 months",
+      "documents": ["passport", "admission_letter", "jw201_jw202", "medical_exam", "photos", "bank_statement"],
+      "language_tests": ["HSK", "IELTS", "TOEFL"],
+      "legalization": "Ministry of Foreign Affairs legalization required"
+    },
+    "scholarships": [
+      { "name": "CSC Scholarship", "coverage": "Full tuition + stipend + accommodation", "deadline": "January-April" },
+      { "name": "University Scholarship", "coverage": "Tuition reduction 25-100%", "deadline": "Year-round" }
+    ],
+    "description": {
+      "en": "Ivory Coast has a growing student population in China. Ivorian students benefit from China's investments in West Africa and the expanding educational partnerships between the two countries. Foorsa provides comprehensive support for Ivorian students.",
+      "fr": "La Côte d'Ivoire a une population étudiante croissante en Chine. Les étudiants ivoiriens bénéficient des investissements de la Chine en Afrique de l'Ouest et des partenariats éducatifs en expansion entre les deux pays. Foorsa fournit un accompagnement complet pour les étudiants ivoiriens.",
+      "ar": "ساحل العاج لديها عدد متزايد من الطلاب في الصين. يستفيد الطلاب الإيفواريون من استثمارات الصين في غرب أفريقيا والشراكات التعليمية المتوسعة بين البلدين. فورصة تقدم دعماً شاملاً للطلاب الإيفواريين."
+    },
+    "faq": [],
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "egypt",
+    "name": { "en": "Egypt", "fr": "Égypte", "ar": "مصر" },
+    "demonym": { "en": "Egyptian", "fr": "égyptien", "ar": "مصري" },
+    "flag_emoji": "🇪🇬",
+    "iso": "EG",
+    "primary_market": false,
+    "stats": {
+      "students_in_china": "3,500+",
+      "scholarship_rate": "65%",
+      "avg_visa_time_days": 25,
+      "direct_flights": true,
+      "time_difference": "+6h",
+      "popular_cities": ["beijing", "shanghai", "wuhan", "guangzhou", "hangzhou"],
+      "top_majors": ["medicine", "engineering", "computer-science", "economics-global", "architecture"],
+      "embassy_city": "Cairo",
+      "currency": "EGP",
+      "avg_flight_cost_usd": 550
+    },
+    "requirements": {
+      "visa_type": "X1/X2 Student Visa",
+      "passport_validity": "6 months",
+      "documents": ["passport", "admission_letter", "jw201_jw202", "medical_exam", "photos", "bank_statement"],
+      "language_tests": ["HSK", "IELTS", "TOEFL"],
+      "legalization": "Ministry of Foreign Affairs attestation required"
+    },
+    "scholarships": [
+      { "name": "CSC Scholarship", "coverage": "Full tuition + stipend + accommodation", "deadline": "January-April" },
+      { "name": "University Scholarship", "coverage": "Tuition reduction 25-100%", "deadline": "Year-round" },
+      { "name": "Belt and Road Scholarship", "coverage": "Full or partial coverage", "deadline": "February-April" }
+    ],
+    "description": {
+      "en": "Egypt has one of the largest Arab student communities in China, with over 3,500 students enrolled. The strong Egypt-China diplomatic relationship facilitates educational exchanges and scholarship opportunities. Foorsa helps Egyptian students find the best programs and funding.",
+      "fr": "L'Égypte a l'une des plus grandes communautés étudiantes arabes en Chine, avec plus de 3 500 étudiants inscrits. La forte relation diplomatique Égypte-Chine facilite les échanges éducatifs et les opportunités de bourses. Foorsa aide les étudiants égyptiens à trouver les meilleurs programmes et financements.",
+      "ar": "مصر لديها واحدة من أكبر المجتمعات الطلابية العربية في الصين، مع أكثر من 3500 طالب مسجل. العلاقة الدبلوماسية القوية بين مصر والصين تسهل التبادلات التعليمية وفرص المنح. فورصة تساعد الطلاب المصريين في إيجاد أفضل البرامج والتمويل."
+    },
+    "faq": [],
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "mauritania",
+    "name": { "en": "Mauritania", "fr": "Mauritanie", "ar": "موريتانيا" },
+    "demonym": { "en": "Mauritanian", "fr": "mauritanien", "ar": "موريتاني" },
+    "flag_emoji": "🇲🇷",
+    "iso": "MR",
+    "primary_market": false,
+    "stats": {
+      "students_in_china": "800+",
+      "scholarship_rate": "70%",
+      "avg_visa_time_days": 30,
+      "direct_flights": false,
+      "time_difference": "+8h",
+      "popular_cities": ["beijing", "wuhan", "nanjing"],
+      "top_majors": ["medicine", "engineering", "economics-global"],
+      "embassy_city": "Nouakchott",
+      "currency": "MRU",
+      "avg_flight_cost_usd": 750
+    },
+    "requirements": {
+      "visa_type": "X1/X2 Student Visa",
+      "passport_validity": "6 months",
+      "documents": ["passport", "admission_letter", "jw201_jw202", "medical_exam", "photos", "bank_statement"],
+      "language_tests": ["HSK", "IELTS", "TOEFL"],
+      "legalization": "Ministry of Foreign Affairs legalization required"
+    },
+    "scholarships": [
+      { "name": "CSC Scholarship", "coverage": "Full tuition + stipend + accommodation", "deadline": "January-April" },
+      { "name": "University Scholarship", "coverage": "Tuition reduction 25-100%", "deadline": "Year-round" }
+    ],
+    "description": {
+      "en": "Mauritania's student community in China is growing steadily. Mauritanian students benefit from Arabic language skills that help in navigating Chinese universities with Islamic studies and Arabic programs. Foorsa provides dedicated support for Mauritanian students.",
+      "fr": "La communauté étudiante mauritanienne en Chine est en croissance constante. Les étudiants mauritaniens bénéficient de compétences en arabe qui les aident dans les universités chinoises avec des programmes d'études islamiques et arabes. Foorsa fournit un soutien dédié aux étudiants mauritaniens.",
+      "ar": "مجتمع الطلاب الموريتانيين في الصين ينمو بشكل مطرد. يستفيد الطلاب الموريتانيون من مهاراتهم في اللغة العربية التي تساعدهم في التنقل في الجامعات الصينية مع برامج الدراسات الإسلامية والعربية. فورصة تقدم دعماً مخصصاً للطلاب الموريتانيين."
+    },
+    "faq": [],
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "libya",
+    "name": { "en": "Libya", "fr": "Libye", "ar": "ليبيا" },
+    "demonym": { "en": "Libyan", "fr": "libyen", "ar": "ليبي" },
+    "flag_emoji": "🇱🇾",
+    "iso": "LY",
+    "primary_market": false,
+    "stats": {
+      "students_in_china": "600+",
+      "scholarship_rate": "65%",
+      "avg_visa_time_days": 35,
+      "direct_flights": false,
+      "time_difference": "+6h",
+      "popular_cities": ["beijing", "wuhan", "shanghai"],
+      "top_majors": ["medicine", "engineering", "computer-science"],
+      "embassy_city": "Tripoli",
+      "currency": "LYD",
+      "avg_flight_cost_usd": 700
+    },
+    "requirements": {
+      "visa_type": "X1/X2 Student Visa",
+      "passport_validity": "6 months",
+      "documents": ["passport", "admission_letter", "jw201_jw202", "medical_exam", "photos", "bank_statement"],
+      "language_tests": ["HSK", "IELTS", "TOEFL"],
+      "legalization": "Ministry of Foreign Affairs legalization required"
+    },
+    "scholarships": [
+      { "name": "CSC Scholarship", "coverage": "Full tuition + stipend + accommodation", "deadline": "January-April" },
+      { "name": "University Scholarship", "coverage": "Tuition reduction 25-100%", "deadline": "Year-round" }
+    ],
+    "description": {
+      "en": "Libya has a growing number of students choosing China for higher education. Chinese universities offer Libyan students quality programs at affordable prices with scholarship opportunities. Foorsa helps Libyan students throughout the application process.",
+      "fr": "La Libye a un nombre croissant d'étudiants qui choisissent la Chine pour l'enseignement supérieur. Les universités chinoises offrent aux étudiants libyens des programmes de qualité à des prix abordables avec des opportunités de bourses. Foorsa aide les étudiants libyens tout au long du processus de candidature.",
+      "ar": "ليبيا لديها عدد متزايد من الطلاب الذين يختارون الصين للتعليم العالي. تقدم الجامعات الصينية للطلاب الليبيين برامج عالية الجودة بأسعار معقولة مع فرص المنح. فورصة تساعد الطلاب الليبيين طوال عملية التقديم."
+    },
+    "faq": [],
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "cameroon",
+    "name": { "en": "Cameroon", "fr": "Cameroun", "ar": "الكاميرون" },
+    "demonym": { "en": "Cameroonian", "fr": "camerounais", "ar": "كاميروني" },
+    "flag_emoji": "🇨🇲",
+    "iso": "CM",
+    "primary_market": false,
+    "stats": {
+      "students_in_china": "2,200+",
+      "scholarship_rate": "60%",
+      "avg_visa_time_days": 30,
+      "direct_flights": false,
+      "time_difference": "+7h",
+      "popular_cities": ["beijing", "wuhan", "guangzhou", "chengdu"],
+      "top_majors": ["medicine", "civil-engineering", "computer-science", "business-general"],
+      "embassy_city": "Yaoundé",
+      "currency": "XAF",
+      "avg_flight_cost_usd": 900
+    },
+    "requirements": {
+      "visa_type": "X1/X2 Student Visa",
+      "passport_validity": "6 months",
+      "documents": ["passport", "admission_letter", "jw201_jw202", "medical_exam", "photos", "bank_statement"],
+      "language_tests": ["HSK", "IELTS", "TOEFL"],
+      "legalization": "Ministry of Foreign Affairs legalization required"
+    },
+    "scholarships": [
+      { "name": "CSC Scholarship", "coverage": "Full tuition + stipend + accommodation", "deadline": "January-April" },
+      { "name": "University Scholarship", "coverage": "Tuition reduction 25-100%", "deadline": "Year-round" }
+    ],
+    "description": {
+      "en": "Cameroon is among the top African countries sending students to China. Cameroon's bilingual French-English education system gives students a unique advantage. Foorsa provides comprehensive support for Cameroonian students seeking admission to Chinese universities.",
+      "fr": "Le Cameroun est parmi les premiers pays africains envoyant des étudiants en Chine. Le système éducatif bilingue français-anglais du Cameroun donne aux étudiants un avantage unique. Foorsa fournit un accompagnement complet pour les étudiants camerounais cherchant une admission dans les universités chinoises.",
+      "ar": "الكاميرون من بين أكثر الدول الأفريقية إرسالاً للطلاب إلى الصين. النظام التعليمي ثنائي اللغة الفرنسي-الإنجليزي في الكاميرون يمنح الطلاب ميزة فريدة. فورصة تقدم دعماً شاملاً للطلاب الكاميرونيين الباحثين عن القبول في الجامعات الصينية."
+    },
+    "faq": [],
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "jordan",
+    "name": { "en": "Jordan", "fr": "Jordanie", "ar": "الأردن" },
+    "demonym": { "en": "Jordanian", "fr": "jordanien", "ar": "أردني" },
+    "flag_emoji": "🇯🇴",
+    "iso": "JO",
+    "primary_market": false,
+    "stats": {
+      "students_in_china": "1,200+",
+      "scholarship_rate": "65%",
+      "avg_visa_time_days": 25,
+      "direct_flights": false,
+      "time_difference": "+5h",
+      "popular_cities": ["beijing", "shanghai", "wuhan", "hangzhou"],
+      "top_majors": ["medicine", "engineering", "computer-science", "economics-global"],
+      "embassy_city": "Amman",
+      "currency": "JOD",
+      "avg_flight_cost_usd": 500
+    },
+    "requirements": {
+      "visa_type": "X1/X2 Student Visa",
+      "passport_validity": "6 months",
+      "documents": ["passport", "admission_letter", "jw201_jw202", "medical_exam", "photos", "bank_statement"],
+      "language_tests": ["HSK", "IELTS", "TOEFL"],
+      "legalization": "Ministry of Foreign Affairs attestation required"
+    },
+    "scholarships": [
+      { "name": "CSC Scholarship", "coverage": "Full tuition + stipend + accommodation", "deadline": "January-April" },
+      { "name": "University Scholarship", "coverage": "Tuition reduction 25-100%", "deadline": "Year-round" }
+    ],
+    "description": {
+      "en": "Jordan has a well-established student community in China with over 1,200 students. Strong Jordan-China diplomatic ties and educational agreements make it easier for Jordanian students to access scholarships and admissions. Foorsa guides Jordanian students through every step.",
+      "fr": "La Jordanie a une communauté étudiante bien établie en Chine avec plus de 1 200 étudiants. Les liens diplomatiques et les accords éducatifs solides entre la Jordanie et la Chine facilitent l'accès des étudiants jordaniens aux bourses et admissions. Foorsa guide les étudiants jordaniens à chaque étape.",
+      "ar": "الأردن لديها مجتمع طلابي راسخ في الصين مع أكثر من 1200 طالب. العلاقات الدبلوماسية القوية والاتفاقيات التعليمية بين الأردن والصين تسهل وصول الطلاب الأردنيين إلى المنح والقبول. فورصة ترشد الطلاب الأردنيين في كل خطوة."
+    },
+    "faq": [],
+    "last_updated": "2026-03-06"
+  }
+]

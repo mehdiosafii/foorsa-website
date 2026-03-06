@@ -3,7 +3,7 @@
  * Foorsa pSEO Page Generator
  * Generates static HTML pages for universities and cities from JSON data.
  *
- * Usage: node scripts/generate-pages.js [--type universities|cities|majors] [--lang en|fr|ar|all]
+ * Usage: node scripts/generate-pages.js [--type universities|cities|majors|countries] [--lang en|fr|ar|all]
  */
 
 const fs = require('fs');
@@ -132,7 +132,31 @@ const i18n = {
     watchVideo: 'Watch Video',
     relatedMajors: 'Related Programs',
     categoryLabel: 'Category',
-    viewAllMajors: 'View All Programs'
+    viewAllMajors: 'View All Programs',
+    seoTitleCountry: 'Study in China from {country} | Scholarships & Admissions | Foorsa',
+    seoDescCountry: 'Complete guide for {demonym} students to study in China. Scholarships, visa requirements, top universities, and how to apply through Foorsa.',
+    studyFromCountry: 'Study in China from {country}',
+    studentsInChina: '{demonym} Students in China',
+    scholarshipRate: 'Scholarship Rate',
+    avgFlightCost: 'Avg. Flight Cost',
+    timeDifference: 'Time Difference',
+    visaRequirements: 'Visa & Document Requirements',
+    visaType: 'Visa Type',
+    passportValidity: 'Passport Validity',
+    requiredDocuments: 'Required Documents',
+    acceptedTests: 'Accepted Language Tests',
+    legalizationNote: 'Document Legalization',
+    availableScholarships: 'Scholarships for {demonym} Students',
+    scholarshipName: 'Scholarship',
+    coverage: 'Coverage',
+    deadline: 'Deadline',
+    popularCities: 'Popular Cities',
+    popularMajors: 'Popular Majors',
+    studentTestimonial: 'Student Testimonial',
+    applyNow: 'Apply Now',
+    directFlights: 'Direct Flights',
+    available: 'Available',
+    notAvailable: 'Not Available'
   },
   fr: {
     home: 'Accueil',
@@ -244,7 +268,31 @@ const i18n = {
     watchVideo: 'Regarder la vidéo',
     relatedMajors: 'Programmes similaires',
     categoryLabel: 'Catégorie',
-    viewAllMajors: 'Voir tous les programmes'
+    viewAllMajors: 'Voir tous les programmes',
+    seoTitleCountry: "Étudier en Chine depuis {country} | Bourses & Admissions | Foorsa",
+    seoDescCountry: "Guide complet pour les étudiants {demonym}s pour étudier en Chine. Bourses, visa, meilleures universités et comment postuler via Foorsa.",
+    studyFromCountry: 'Étudier en Chine depuis {country}',
+    studentsInChina: 'Étudiants {demonym}s en Chine',
+    scholarshipRate: 'Taux de bourses',
+    avgFlightCost: 'Coût moyen du vol',
+    timeDifference: 'Décalage horaire',
+    visaRequirements: 'Visa & Documents requis',
+    visaType: 'Type de visa',
+    passportValidity: 'Validité du passeport',
+    requiredDocuments: 'Documents requis',
+    acceptedTests: 'Tests de langue acceptés',
+    legalizationNote: 'Légalisation des documents',
+    availableScholarships: 'Bourses pour les étudiants {demonym}s',
+    scholarshipName: 'Bourse',
+    coverage: 'Couverture',
+    deadline: 'Date limite',
+    popularCities: 'Villes populaires',
+    popularMajors: 'Filières populaires',
+    studentTestimonial: 'Témoignage étudiant',
+    applyNow: 'Postuler maintenant',
+    directFlights: 'Vols directs',
+    available: 'Disponible',
+    notAvailable: 'Non disponible'
   },
   ar: {
     home: 'الرئيسية',
@@ -356,7 +404,31 @@ const i18n = {
     watchVideo: 'شاهد الفيديو',
     relatedMajors: 'تخصصات مشابهة',
     categoryLabel: 'التصنيف',
-    viewAllMajors: 'عرض جميع التخصصات'
+    viewAllMajors: 'عرض جميع التخصصات',
+    seoTitleCountry: 'الدراسة في الصين من {country} | المنح والقبول | فورصة',
+    seoDescCountry: 'دليل شامل للطلاب من {country} للدراسة في الصين. المنح، التأشيرة، أفضل الجامعات وطريقة التقديم عبر فورصة.',
+    studyFromCountry: 'الدراسة في الصين من {country}',
+    studentsInChina: 'طلاب من {country} في الصين',
+    scholarshipRate: 'نسبة المنح',
+    avgFlightCost: 'متوسط تكلفة الرحلة',
+    timeDifference: 'فارق التوقيت',
+    visaRequirements: 'متطلبات التأشيرة والمستندات',
+    visaType: 'نوع التأشيرة',
+    passportValidity: 'صلاحية جواز السفر',
+    requiredDocuments: 'المستندات المطلوبة',
+    acceptedTests: 'اختبارات اللغة المقبولة',
+    legalizationNote: 'توثيق المستندات',
+    availableScholarships: 'المنح المتاحة للطلاب من {country}',
+    scholarshipName: 'المنحة',
+    coverage: 'التغطية',
+    deadline: 'الموعد النهائي',
+    popularCities: 'المدن الشائعة',
+    popularMajors: 'التخصصات الشائعة',
+    studentTestimonial: 'شهادة طالب',
+    applyNow: 'قدم الآن',
+    directFlights: 'رحلات مباشرة',
+    available: 'متوفر',
+    notAvailable: 'غير متوفر'
   }
 };
 
@@ -656,7 +728,7 @@ function generateUniversityPage(uni, lang, allUniversities, allCities) {
   <section style="background:linear-gradient(135deg,#1a237e,#0d47a1);border-radius:16px;padding:48px 32px;text-align:center;color:white;margin-bottom:40px;">
     <h2 style="font-size:1.8rem;font-weight:700;margin-bottom:12px;">${t(lang,'readyToApply')}</h2>
     <p style="font-size:1.1rem;opacity:0.9;margin-bottom:24px;">${t(lang,'applyWith')}</p>
-    <a href="${prefix}/shop.html" class="cartoon-btn" style="display:inline-block;background:white;color:#1a237e;padding:14px 32px;border-radius:30px;font-weight:600;text-decoration:none;margin:8px;">${t(lang,'startApplication')}</a>
+    <a href="https://apply.foorsa.ma" class="cartoon-btn" target="_blank" rel="noopener" style="display:inline-block;background:white;color:#1a237e;padding:14px 32px;border-radius:30px;font-weight:600;text-decoration:none;margin:8px;">${t(lang,'startApplication')}</a>
     <a href="${prefix}/contact.html" class="cartoon-btn" style="display:inline-block;background:transparent;color:white;border:2px solid white;padding:14px 32px;border-radius:30px;font-weight:600;text-decoration:none;margin:8px;">${t(lang,'freeConsultation')}</a>
   </section>
 
@@ -821,7 +893,7 @@ function generateCityPage(city, lang, allUniversities, allCities) {
   <section style="background:linear-gradient(135deg,#1a237e,#0d47a1);border-radius:16px;padding:48px 32px;text-align:center;color:white;margin-bottom:40px;">
     <h2 style="font-size:1.8rem;font-weight:700;margin-bottom:12px;">${t(lang,'readyToApply')}</h2>
     <p style="font-size:1.1rem;opacity:0.9;margin-bottom:24px;">${t(lang,'applyWith')}</p>
-    <a href="${prefix}/shop.html" class="cartoon-btn" style="display:inline-block;background:white;color:#1a237e;padding:14px 32px;border-radius:30px;font-weight:600;text-decoration:none;margin:8px;">${t(lang,'startApplication')}</a>
+    <a href="https://apply.foorsa.ma" class="cartoon-btn" target="_blank" rel="noopener" style="display:inline-block;background:white;color:#1a237e;padding:14px 32px;border-radius:30px;font-weight:600;text-decoration:none;margin:8px;">${t(lang,'startApplication')}</a>
     <a href="${prefix}/contact.html" class="cartoon-btn" style="display:inline-block;background:transparent;color:white;border:2px solid white;padding:14px 32px;border-radius:30px;font-weight:600;text-decoration:none;margin:8px;">${t(lang,'freeConsultation')}</a>
   </section>
 
@@ -979,9 +1051,205 @@ function generateMajorPage(major, lang, allMajors) {
   <section style="background:linear-gradient(135deg,#1a237e,#0d47a1);border-radius:16px;padding:48px 32px;text-align:center;color:white;margin-bottom:40px;">
     <h2 style="font-size:1.8rem;font-weight:700;margin-bottom:12px;">${t(lang,'readyToApply')}</h2>
     <p style="font-size:1.1rem;opacity:0.9;margin-bottom:24px;">${t(lang,'applyWith')}</p>
-    <a href="${prefix}/shop.html" class="cartoon-btn" style="display:inline-block;background:white;color:#1a237e;padding:14px 32px;border-radius:30px;font-weight:600;text-decoration:none;margin:8px;">${t(lang,'startApplication')}</a>
+    <a href="https://apply.foorsa.ma" class="cartoon-btn" target="_blank" rel="noopener" style="display:inline-block;background:white;color:#1a237e;padding:14px 32px;border-radius:30px;font-weight:600;text-decoration:none;margin:8px;">${t(lang,'startApplication')}</a>
     <a href="${prefix}/contact.html" class="cartoon-btn" style="display:inline-block;background:transparent;color:white;border:2px solid white;padding:14px 32px;border-radius:30px;font-weight:600;text-decoration:none;margin:8px;">${t(lang,'freeConsultation')}</a>
   </section>
+</main>`;
+
+  return head + '\n' + nav + '\n' + body + '\n' + renderFooter(lang);
+}
+
+// ============================================================================
+// COUNTRY LANDING PAGE GENERATOR
+// ============================================================================
+function generateCountryPage(country, lang, allCities) {
+  const name = country.name[lang] || country.name.en;
+  const demonym = country.demonym[lang] || country.demonym.en;
+  const slug = country.id;
+  const canonical = `https://foorsa.ma/${lang}/study-from/${slug}.html`;
+  const prefix = lang === 'ar' ? '../../ar' : lang === 'fr' ? '../../fr' : '../../en';
+  const desc = country.description[lang] || country.description.en;
+  const stats = country.stats;
+  const reqs = country.requirements;
+
+  const seoTitle = t(lang, 'seoTitleCountry').replace('{country}', name).replace('{demonym}', demonym);
+  const seoDesc = t(lang, 'seoDescCountry').replace('{country}', name).replace('{demonym}', demonym);
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": t(lang, 'home'), "item": `https://foorsa.ma/${lang}/index.html` },
+      { "@type": "ListItem", "position": 2, "name": t(lang, 'studyFromCountry').replace('{country}', name), "item": canonical }
+    ]
+  };
+
+  // FAQPage schema
+  const faqItems = (country.faq || []).map((f, i) => ({
+    "@type": "Question",
+    "name": f.q[lang] || f.q.en,
+    "acceptedAnswer": { "@type": "Answer", "text": f.a[lang] || f.a.en }
+  }));
+  const mainSchema = faqItems.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems
+  } : {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": seoTitle,
+    "description": seoDesc
+  };
+
+  const hreflangLinks = ['en', 'fr', 'ar'].map(l =>
+    `<link rel="alternate" hreflang="${l}" href="https://foorsa.ma/${l}/study-from/${slug}.html"/>`
+  ).join('\n');
+
+  const head = renderHead(lang, {
+    title: seoTitle,
+    description: seoDesc,
+    canonical,
+    mainSchema,
+    breadcrumbSchema
+  }).replace('</head>', hreflangLinks + '\n</head>');
+
+  const nav = renderNav(lang);
+
+  // Document names map
+  const docNames = {
+    passport: { en: 'Valid Passport', fr: 'Passeport valide', ar: 'جواز سفر صالح' },
+    admission_letter: { en: 'University Admission Letter', fr: "Lettre d'admission universitaire", ar: 'خطاب القبول الجامعي' },
+    jw201_jw202: { en: 'JW201/JW202 Form', fr: 'Formulaire JW201/JW202', ar: 'نموذج JW201/JW202' },
+    medical_exam: { en: 'Physical Examination Record', fr: "Rapport d'examen médical", ar: 'تقرير الفحص الطبي' },
+    photos: { en: 'Passport Photos', fr: "Photos d'identité", ar: 'صور شخصية' },
+    bank_statement: { en: 'Bank Statement', fr: 'Relevé bancaire', ar: 'كشف حساب بنكي' }
+  };
+
+  const docList = reqs.documents.map(d => {
+    const docName = docNames[d] ? (docNames[d][lang] || docNames[d].en) : d;
+    return `<li>${escHtml(docName)}</li>`;
+  }).join('');
+
+  // Popular cities links
+  const cityLinks = stats.popular_cities.map(cid => {
+    const city = allCities.find(c => c.id === cid);
+    if (!city) return '';
+    const cName = city.name[lang] || city.name.en;
+    return `<a href="${prefix}/cities/${cid}.html" style="display:inline-block;background:#e3f2fd;color:#1565c0;padding:6px 16px;border-radius:20px;font-size:14px;font-weight:600;text-decoration:none;margin:4px;">${cName}</a>`;
+  }).join('');
+
+  // Popular majors links
+  const majorLinks = stats.top_majors.map(mid => {
+    const majorName = formatProgram(mid);
+    return `<a href="${prefix}/majors/${mid}.html" style="display:inline-block;background:#f3e5f5;color:#7b1fa2;padding:6px 16px;border-radius:20px;font-size:14px;font-weight:600;text-decoration:none;margin:4px;">${majorName}</a>`;
+  }).join('');
+
+  // Scholarship table
+  const scholarshipRows = country.scholarships.map(s => `
+          <tr>
+            <td style="font-weight:600;">${escHtml(s.name)}</td>
+            <td>${escHtml(s.coverage)}</td>
+            <td>${escHtml(s.deadline)}</td>
+          </tr>`).join('');
+
+  // FAQ section
+  const faqHtml = (country.faq || []).length > 0 ? `
+  <section class="mb-5">
+    <h2 style="font-size:1.6rem;font-weight:600;margin-bottom:16px;">${t(lang,'faq')}</h2>
+    ${country.faq.map(f => {
+      const q = f.q[lang] || f.q.en;
+      const a = f.a[lang] || f.a.en;
+      return `<div style="border:1px solid #e9ecef;border-radius:12px;padding:20px;margin-bottom:12px;">
+        <h3 style="font-size:1.05rem;font-weight:600;margin-bottom:8px;">${escHtml(q)}</h3>
+        <p style="font-size:0.95rem;line-height:1.7;color:#555;margin:0;">${escHtml(a)}</p>
+      </div>`;
+    }).join('')}
+  </section>` : '';
+
+  // Testimonial section
+  const testimonialHtml = country.testimonial ? `
+  <section class="mb-5">
+    <h2 style="font-size:1.6rem;font-weight:600;margin-bottom:16px;">${t(lang,'studentTestimonial')}</h2>
+    <div style="background:#f8f9fa;border-radius:12px;padding:24px;border-left:4px solid #1565c0;">
+      <p style="font-size:1.05rem;line-height:1.7;font-style:italic;margin-bottom:12px;">"${escHtml(country.testimonial.quote[lang] || country.testimonial.quote.en)}"</p>
+      <p style="font-weight:600;margin:0;">— ${escHtml(country.testimonial.name)}, ${escHtml(country.testimonial.university)} (${escHtml(country.testimonial.major)})</p>
+    </div>
+  </section>` : '';
+
+  const applyUrl = `https://apply.foorsa.ma/?ref=${slug}`;
+
+  const body = `
+<main class="container" style="max-width:900px;margin:40px auto;padding:0 16px;">
+  <nav aria-label="breadcrumb" style="margin-bottom:24px;">
+    <ol class="breadcrumb" style="font-size:14px;">
+      <li class="breadcrumb-item"><a href="${prefix}/index.html">${t(lang,'home')}</a></li>
+      <li class="breadcrumb-item active" aria-current="page">${t(lang,'studyFromCountry').replace('{country}', name)}</li>
+    </ol>
+  </nav>
+
+  <h1 style="font-size:2.5rem;font-weight:700;margin-bottom:24px;">${t(lang,'studyFromCountry').replace('{country}', name)}</h1>
+  <p style="font-size:1.15rem;line-height:1.8;color:#444;margin-bottom:32px;">${escHtml(desc)}</p>
+
+  <!-- Quick Stats -->
+  <div class="row mb-5">
+    <div class="col-md-3 col-6 mb-3"><div style="background:#f0f7ff;border-radius:12px;padding:20px;text-align:center;"><div style="font-size:24px;font-weight:700;">${stats.students_in_china}</div><div style="color:#777;font-size:14px;">${t(lang,'studentsInChina').replace('{demonym}', demonym).replace('{country}', name)}</div></div></div>
+    <div class="col-md-3 col-6 mb-3"><div style="background:#f0faf0;border-radius:12px;padding:20px;text-align:center;"><div style="font-size:24px;font-weight:700;">${stats.scholarship_rate}</div><div style="color:#777;font-size:14px;">${t(lang,'scholarshipRate')}</div></div></div>
+    <div class="col-md-3 col-6 mb-3"><div style="background:#fff8e1;border-radius:12px;padding:20px;text-align:center;"><div style="font-size:24px;font-weight:700;">$${stats.avg_flight_cost_usd}</div><div style="color:#777;font-size:14px;">${t(lang,'avgFlightCost')}</div></div></div>
+    <div class="col-md-3 col-6 mb-3"><div style="background:#fce4ec;border-radius:12px;padding:20px;text-align:center;"><div style="font-size:24px;font-weight:700;">${stats.time_difference}</div><div style="color:#777;font-size:14px;">${t(lang,'timeDifference')}</div></div></div>
+  </div>
+
+  <!-- Scholarships -->
+  <section class="mb-5">
+    <h2 style="font-size:1.6rem;font-weight:600;margin-bottom:16px;">${t(lang,'availableScholarships').replace('{demonym}', demonym).replace('{country}', name)}</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered" style="font-size:14px;">
+        <thead style="background:#f8f9fa;">
+          <tr><th>${t(lang,'scholarshipName')}</th><th>${t(lang,'coverage')}</th><th>${t(lang,'deadline')}</th></tr>
+        </thead>
+        <tbody>${scholarshipRows}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Visa & Documents -->
+  <section class="mb-5">
+    <h2 style="font-size:1.6rem;font-weight:600;margin-bottom:16px;">${t(lang,'visaRequirements')}</h2>
+    <div class="row mb-3">
+      <div class="col-md-4 mb-3"><div style="border:1px solid #e9ecef;border-radius:12px;padding:20px;text-align:center;"><h3 style="font-size:0.9rem;color:#777;">${t(lang,'visaType')}</h3><p style="font-size:1.1rem;font-weight:700;margin:0;">${reqs.visa_type}</p></div></div>
+      <div class="col-md-4 mb-3"><div style="border:1px solid #e9ecef;border-radius:12px;padding:20px;text-align:center;"><h3 style="font-size:0.9rem;color:#777;">${t(lang,'passportValidity')}</h3><p style="font-size:1.1rem;font-weight:700;margin:0;">${reqs.passport_validity}</p></div></div>
+      <div class="col-md-4 mb-3"><div style="border:1px solid #e9ecef;border-radius:12px;padding:20px;text-align:center;"><h3 style="font-size:0.9rem;color:#777;">${t(lang,'directFlights')}</h3><p style="font-size:1.1rem;font-weight:700;margin:0;">${stats.direct_flights ? t(lang,'available') : t(lang,'notAvailable')}</p></div></div>
+    </div>
+    <h3 style="font-size:1.1rem;font-weight:600;margin-bottom:12px;">${t(lang,'requiredDocuments')}</h3>
+    <ul style="font-size:0.95rem;line-height:2;">${docList}</ul>
+    <p style="font-size:0.9rem;color:#777;margin-top:8px;"><strong>${t(lang,'legalizationNote')}:</strong> ${escHtml(reqs.legalization)}</p>
+    <p style="font-size:0.9rem;color:#777;"><strong>${t(lang,'acceptedTests')}:</strong> ${reqs.language_tests.join(', ')}</p>
+  </section>
+
+  <!-- Popular Cities -->
+  <section class="mb-5">
+    <h2 style="font-size:1.6rem;font-weight:600;margin-bottom:16px;">${t(lang,'popularCities')}</h2>
+    <div>${cityLinks}</div>
+  </section>
+
+  <!-- Popular Majors -->
+  <section class="mb-5">
+    <h2 style="font-size:1.6rem;font-weight:600;margin-bottom:16px;">${t(lang,'popularMajors')}</h2>
+    <div>${majorLinks}</div>
+  </section>
+
+  ${testimonialHtml}
+  ${faqHtml}
+
+  <!-- CTA -->
+  <section style="background:linear-gradient(135deg,#1a237e,#0d47a1);border-radius:16px;padding:48px 32px;text-align:center;color:white;margin-bottom:40px;">
+    <h2 style="font-size:1.8rem;font-weight:700;margin-bottom:12px;">${t(lang,'readyToApply')}</h2>
+    <p style="font-size:1.1rem;opacity:0.9;margin-bottom:24px;">${t(lang,'applyWith')}</p>
+    <a href="${applyUrl}" class="cartoon-btn" target="_blank" rel="noopener" style="display:inline-block;background:white;color:#1a237e;padding:14px 32px;border-radius:30px;font-weight:600;text-decoration:none;margin:8px;">${t(lang,'applyNow')}</a>
+    <a href="${prefix}/contact.html" class="cartoon-btn" style="display:inline-block;background:transparent;color:white;border:2px solid white;padding:14px 32px;border-radius:30px;font-weight:600;text-decoration:none;margin:8px;">${t(lang,'freeConsultation')}</a>
+  </section>
+
+  <p style="font-size:12px;color:#999;text-align:center;">${t(lang,'lastUpdated')}: ${country.last_updated}</p>
 </main>`;
 
   return head + '\n' + nav + '\n' + body + '\n' + renderFooter(lang);
@@ -994,8 +1262,9 @@ function main() {
   const universities = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'universities.json'), 'utf8'));
   const cities = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'cities.json'), 'utf8'));
   const majors = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'majors.json'), 'utf8'));
+  const countries = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'countries.json'), 'utf8'));
 
-  let uniCount = 0, cityCount = 0, majorCount = 0;
+  let uniCount = 0, cityCount = 0, majorCount = 0, countryCount = 0;
 
   for (const lang of languages) {
     // Generate university pages
@@ -1036,12 +1305,26 @@ function main() {
         majorCount++;
       }
     }
+
+    // Generate country landing pages
+    if (typeArg === 'all' || typeArg === 'countries') {
+      const countryDir = path.join(ROOT, lang, 'study-from');
+      fs.mkdirSync(countryDir, { recursive: true });
+
+      for (const country of countries) {
+        const html = generateCountryPage(country, lang, cities);
+        const filePath = path.join(countryDir, `${country.id}.html`);
+        fs.writeFileSync(filePath, html, 'utf8');
+        countryCount++;
+      }
+    }
   }
 
   const parts = [];
   if (uniCount) parts.push(`${uniCount} university pages`);
   if (cityCount) parts.push(`${cityCount} city pages`);
   if (majorCount) parts.push(`${majorCount} major pages`);
+  if (countryCount) parts.push(`${countryCount} country pages`);
   console.log(`Generated ${parts.join(', ')} across ${languages.length} language(s).`);
 }
 
