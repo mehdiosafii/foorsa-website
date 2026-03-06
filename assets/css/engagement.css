@@ -84,7 +84,7 @@
 
 
 .card-context .description {
-    color: #FFFF;
+    color: #FFFFFF;
     font-family: 'Inter';
     font-weight: 500;
     font-size: 16px;
@@ -114,7 +114,7 @@
     font-family: 'Marcher';
     font-size: 30px;
     font-weight: 700;
-    color: #FFFF;
+    color: #FFFFFF;
     margin-bottom: 25px;
     text-transform: uppercase;
 }
@@ -143,7 +143,7 @@
 }
 
 .card-context .btn-details:hover{
-    background-color: #FFFF;
+    background-color: #FFFFFF;
     color: #041228;
     border: 1px solid #041228;
     -webkit-transition: .4s;
