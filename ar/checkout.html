@@ -302,7 +302,9 @@
 </div>
 </div></footer>
 <script id="foorsa-navigation-js" src="../assets/js/navigation.js?v=20260123" defer></script>
-<script id="bootstrap-bundle-js" src="../assets/bootstrap/js/bootstrap.bundle.min.js?v=20260123" defer></script>
+<script>
+(function(){var loaded=false;function loadBS(){if(loaded)return;loaded=true;var s=document.createElement('script');s.src='../assets/bootstrap/js/bootstrap.bundle.min.js?v=20260123';document.head.appendChild(s);};document.addEventListener('click',function(e){if(e.target.closest('[data-bs-toggle]')){loadBS();}});document.addEventListener('DOMContentLoaded',function(){if(document.querySelector('[data-bs-toggle]'))setTimeout(loadBS,3000);});})();
+</script>
 <script id="swiper-js" src="../assets/libs/swiper-bundle.min.js?v=20260123" defer></script>
 <script id="global-js-js" src="../assets/js/global.js?v=20260124b" defer></script>
 <script id="gsap-js" src="../assets/libs/gsap.min.js?v=20260123" defer></script>

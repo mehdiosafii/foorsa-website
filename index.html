@@ -3525,7 +3525,8 @@
 </footer>
 <script defer="" id="foorsa-navigation-js" src="./assets/js/navigation.js">
 </script>
-<script id="bootstrap-bundle-js" src="./assets/bootstrap/js/bootstrap.bundle.min.js" defer>
+<script>
+(function(){var loaded=false;function loadBS(){if(loaded)return;loaded=true;var s=document.createElement('script');s.src='./assets/bootstrap/js/bootstrap.bundle.min.js';document.head.appendChild(s);};document.addEventListener('click',function(e){if(e.target.closest('[data-bs-toggle]')){loadBS();}});document.addEventListener('DOMContentLoaded',function(){if(document.querySelector('[data-bs-toggle]'))setTimeout(loadBS,3000);});})();
 </script>
 <script defer="" id="swiper-js" src="./assets/libs/swiper-bundle.min.js">
 </script>
@@ -3592,7 +3593,7 @@
 <script defer="" id="main-js-js" src="./assets/js/main.js">
 </script>
 <script id="fancybox-js-after">
-(function(){var loaded=false;function init(){if(loaded)return;loaded=true;var s=document.createElement('script');s.src='./assets/libs/fancybox.umd.js';s.onload=function(){Fancybox.bind('[data-fancybox]',{});Fancybox.bind('[data-fancybox^="video-"]',{Thumbs:false,Toolbar:{display:["close"]}});};document.head.appendChild(s);};document.addEventListener('scroll',init,{once:true});setTimeout(init,5000);})();
+(function(){var loaded=false;function init(){if(loaded)return;loaded=true;var s=document.createElement('script');s.src='./assets/libs/fancybox.umd.js';s.onload=function(){Fancybox.bind('[data-fancybox]',{});Fancybox.bind('[data-fancybox^="video-"]',{Thumbs:false,Toolbar:{display:["close"]}});};document.head.appendChild(s);};document.addEventListener('click',function(e){if(e.target.closest('[data-fancybox]')){e.preventDefault();e.stopPropagation();var t=e.target.closest('[data-fancybox]');init();var c=setInterval(function(){if(typeof Fancybox!=='undefined'){clearInterval(c);t.click();}},50);}},{once:true});})();
 </script>
 <script defer="" src="/js/tracker.js"></script>
 <script defer src="/js/ga4-events.js">
