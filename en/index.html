@@ -22,11 +22,12 @@
 <link as="style" href="../assets/css/style.min.css?v=20260124d" rel="preload"/>
 <link as="font" crossorigin="" href="../assets/fonts/Marcher-Bold.woff2" rel="preload" type="font/woff2"/>
 <link as="font" crossorigin="" href="../assets/fonts/Marcher-Light.woff2" rel="preload" type="font/woff2"/>
+<link as="image" href="../assets/img/video-poster.webp" rel="preload" type="image/webp" fetchpriority="high"/>
 <link href="../assets/bootstrap/css/bootstrap.min.css?v=20260123" id="bootstrap-css-css" media="all" rel="stylesheet"/>
 <link href="../assets/css/style.min.css?v=20260124d" id="style-css-css" media="all" rel="stylesheet"/>
 <link href="../assets/css/responsive.min.css?v=20260124b" id="responsive-css-css" media="all" rel="stylesheet">
-<link href="../assets/libs/swiper-bundle.min.css?v=20260123" id="swiper-css-css" media="all" rel="stylesheet"/>
-<link href="../assets/libs/fancybox.css?v=20260123" id="fancybox-css-css" media="all" rel="stylesheet"/>
+<link href="../assets/libs/swiper-bundle.min.css?v=20260123" id="swiper-css-css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="../assets/libs/fancybox.css?v=20260123" id="fancybox-css-css" media="print" onload="this.media='all'" rel="stylesheet"/>
 <script defer="" id="jquery-core-js" src="../assets/vendor/jquery.min.js?v=20260123">
 </script>
 <script defer="" src="/js/language-handler.js?v=20260123">
@@ -2607,10 +2608,10 @@
 </svg>
 </div>
 <section class="section" id="sectionHero">
-<video autoplay="" class="hero-video-bg hero-video-desktop" loop="" muted="" playsinline="" poster="../assets/img/video-poster.jpg" preload="metadata">
+<video autoplay="" class="hero-video-bg hero-video-desktop" loop="" muted="" playsinline="" poster="../assets/img/video-poster.webp" preload="metadata">
 <source src="../assets/video/hero-video.mp4" type="video/mp4"/>
 </video>
-<video autoplay="" class="hero-video-bg hero-video-mobile" loop="" muted="" playsinline="" poster="../assets/img/video-poster.jpg" preload="metadata">
+<video autoplay="" class="hero-video-bg hero-video-mobile" loop="" muted="" playsinline="" poster="../assets/img/video-poster.webp" preload="metadata">
 <source src="../assets/video/hero-video-mobile.mp4" type="video/mp4"/>
 </video>
 <div class="hero-video-overlay" id="heroOverlay">
