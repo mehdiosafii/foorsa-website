@@ -1651,7 +1651,7 @@ button.btnBack.active{
     font-weight: 700;
     line-height: 26.04px;
     text-align: center;
-    color: #fff;
+    color: #041228;
     -webkit-box-shadow: 0px 9px 12px 0px #FFFFFF80 inset, 0px -6px 12px 0px #00000040 inset;
     box-shadow: 0px 9px 12px 0px #FFFFFF80 inset, 0px -6px 12px 0px #00000040 inset;
     border-radius: 36px;
@@ -1661,6 +1661,13 @@ button.btnBack.active{
     z-index: 1;
     width: 80%;
     margin: 0 auto 84px;
+    -webkit-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+}
+
+#sectionJoinUs .signup.moved {
+    color: #fff;
 }
 
 #sectionJoinUs .signup::before {
