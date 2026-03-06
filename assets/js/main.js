@@ -707,6 +707,8 @@ $(document).ready(function(){
             slidesPerView: 1,
             spaceBetween: 20,
             loop: true,
+            observer: true,
+            observeParents: true,
             speed: 800,
             autoplay: {
                 delay: 2000,
