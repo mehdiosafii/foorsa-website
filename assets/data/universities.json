@@ -686,5 +686,746 @@
       "ar": ["الطب (شيانغيا)", "هندسة التعدين", "هندسة المناجم", "علوم المواد", "النقل بالسكك الحديدية"]
     },
     "last_updated": "2026-03-06"
+  },
+  {
+    "id": "tianjin-university",
+    "name": { "en": "Tianjin University", "fr": "Université de Tianjin", "ar": "جامعة تيانجين" },
+    "city": "beijing",
+    "province": "Tianjin",
+    "ranking_qs": 443,
+    "ranking_times": 501,
+    "founded": 1895,
+    "type": "public",
+    "c9_league": false,
+    "double_first_class": true,
+    "programs": ["engineering", "architecture", "sciences", "business", "medicine"],
+    "tuition_range_usd": { "min": 2200, "max": 5500 },
+    "scholarship_types": ["CSC", "university"],
+    "language_of_instruction": ["Chinese", "English"],
+    "english_taught_programs": true,
+    "moroccan_students": true,
+    "halal_food": true,
+    "campus_size": "large",
+    "student_count": 37000,
+    "international_students": 2800,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "70%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "80%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "http://www.tju.edu.cn/english",
+    "description": {
+      "en": "Tianjin University is China's first modern university, founded in 1895. It excels in engineering, architecture, and chemical engineering, and is a key member of China's Double First Class initiative.",
+      "fr": "L'Université de Tianjin est la première université moderne de Chine, fondée en 1895. Elle excelle en ingénierie, architecture et génie chimique, et est membre clé de l'initiative Double First Class.",
+      "ar": "جامعة تيانجين هي أول جامعة حديثة في الصين، تأسست عام 1895. تتفوق في الهندسة والعمارة والهندسة الكيميائية، وهي عضو رئيسي في مبادرة الفئة الأولى المزدوجة."
+    },
+    "strengths": {
+      "en": ["Chemical Engineering", "Architecture", "Civil Engineering", "Management", "Optical Engineering"],
+      "fr": ["Génie chimique", "Architecture", "Génie civil", "Management", "Génie optique"],
+      "ar": ["الهندسة الكيميائية", "العمارة", "الهندسة المدنية", "الإدارة", "الهندسة البصرية"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "nankai-university",
+    "name": { "en": "Nankai University", "fr": "Université Nankai", "ar": "جامعة نانكاي" },
+    "city": "beijing",
+    "province": "Tianjin",
+    "ranking_qs": 364,
+    "ranking_times": 401,
+    "founded": 1919,
+    "type": "public",
+    "c9_league": false,
+    "double_first_class": true,
+    "programs": ["economics", "chemistry", "mathematics", "business", "law", "philosophy"],
+    "tuition_range_usd": { "min": 2200, "max": 5000 },
+    "scholarship_types": ["CSC", "university", "provincial"],
+    "language_of_instruction": ["Chinese", "English"],
+    "english_taught_programs": true,
+    "moroccan_students": true,
+    "halal_food": true,
+    "campus_size": "large",
+    "student_count": 28000,
+    "international_students": 2200,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "70%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "80%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "https://en.nankai.edu.cn",
+    "description": {
+      "en": "Nankai University is a prestigious comprehensive university in Tianjin, renowned for its economics, chemistry, and mathematics programs. It was founded by educators Zhang Boling and Yan Xiu in 1919.",
+      "fr": "L'Université Nankai est une université prestigieuse à Tianjin, réputée pour ses programmes d'économie, chimie et mathématiques. Elle a été fondée par les éducateurs Zhang Boling et Yan Xiu en 1919.",
+      "ar": "جامعة نانكاي هي جامعة شاملة مرموقة في تيانجين، تشتهر ببرامجها في الاقتصاد والكيمياء والرياضيات. تأسست على يد المربيين تشانغ بولينغ ويان شيو عام 1919."
+    },
+    "strengths": {
+      "en": ["Economics", "Chemistry", "Mathematics", "History", "Philosophy"],
+      "fr": ["Économie", "Chimie", "Mathématiques", "Histoire", "Philosophie"],
+      "ar": ["الاقتصاد", "الكيمياء", "الرياضيات", "التاريخ", "الفلسفة"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "southeast-university",
+    "name": { "en": "Southeast University", "fr": "Université du Sud-Est", "ar": "جامعة جنوب شرق" },
+    "city": "nanjing",
+    "province": "Jiangsu",
+    "ranking_qs": 491,
+    "ranking_times": 401,
+    "founded": 1902,
+    "type": "public",
+    "c9_league": false,
+    "double_first_class": true,
+    "programs": ["architecture", "engineering", "electronics", "medicine", "arts"],
+    "tuition_range_usd": { "min": 2200, "max": 5500 },
+    "scholarship_types": ["CSC", "university", "provincial"],
+    "language_of_instruction": ["Chinese", "English"],
+    "english_taught_programs": true,
+    "moroccan_students": true,
+    "halal_food": true,
+    "campus_size": "large",
+    "student_count": 35000,
+    "international_students": 2500,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "70%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "80%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "https://www.seu.edu.cn/english",
+    "description": {
+      "en": "Southeast University is one of China's oldest and most prestigious universities, particularly renowned for architecture, biomedical engineering, and electronic engineering. Located in Nanjing, it has a rich 120+ year history.",
+      "fr": "L'Université du Sud-Est est l'une des universités les plus anciennes et prestigieuses de Chine, particulièrement réputée pour l'architecture, l'ingénierie biomédicale et l'ingénierie électronique. Située à Nanjing, elle a une riche histoire de plus de 120 ans.",
+      "ar": "جامعة جنوب شرق هي واحدة من أقدم وأعرق الجامعات في الصين، تشتهر بالعمارة والهندسة الطبية الحيوية والهندسة الإلكترونية. تقع في نانجينغ ولها تاريخ غني يمتد لأكثر من 120 عاماً."
+    },
+    "strengths": {
+      "en": ["Architecture", "Biomedical Engineering", "Electronic Engineering", "Transportation", "Computer Science"],
+      "fr": ["Architecture", "Ingénierie biomédicale", "Ingénierie électronique", "Transport", "Informatique"],
+      "ar": ["العمارة", "الهندسة الطبية الحيوية", "الهندسة الإلكترونية", "النقل", "علوم الحاسب"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "jilin-university",
+    "name": { "en": "Jilin University", "fr": "Université de Jilin", "ar": "جامعة جيلين" },
+    "city": "changsha",
+    "province": "Jilin",
+    "ranking_qs": 501,
+    "ranking_times": 601,
+    "founded": 1946,
+    "type": "public",
+    "c9_league": false,
+    "double_first_class": true,
+    "programs": ["chemistry", "law", "medicine", "engineering", "sciences", "agriculture"],
+    "tuition_range_usd": { "min": 1800, "max": 4500 },
+    "scholarship_types": ["CSC", "university", "provincial"],
+    "language_of_instruction": ["Chinese", "English"],
+    "english_taught_programs": true,
+    "moroccan_students": true,
+    "halal_food": true,
+    "campus_size": "very-large",
+    "student_count": 72000,
+    "international_students": 2000,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "65%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "https://global.jlu.edu.cn",
+    "description": {
+      "en": "Jilin University is one of China's largest universities with the most academic programs. It is particularly strong in chemistry, automotive engineering, and geosciences. The university merged with several institutions to become a comprehensive mega-university.",
+      "fr": "L'Université de Jilin est l'une des plus grandes universités de Chine avec le plus de programmes académiques. Elle est particulièrement forte en chimie, ingénierie automobile et géosciences.",
+      "ar": "جامعة جيلين هي واحدة من أكبر الجامعات في الصين مع أكبر عدد من البرامج الأكاديمية. تتميز بشكل خاص في الكيمياء وهندسة السيارات وعلوم الأرض."
+    },
+    "strengths": {
+      "en": ["Chemistry", "Automotive Engineering", "Geosciences", "Law", "Medicine"],
+      "fr": ["Chimie", "Ingénierie automobile", "Géosciences", "Droit", "Médecine"],
+      "ar": ["الكيمياء", "هندسة السيارات", "علوم الأرض", "القانون", "الطب"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "dalian-university-of-technology",
+    "name": { "en": "Dalian University of Technology", "fr": "Université de Technologie de Dalian", "ar": "جامعة داليان للتكنولوجيا" },
+    "city": "beijing",
+    "province": "Liaoning",
+    "ranking_qs": 571,
+    "ranking_times": 501,
+    "founded": 1949,
+    "type": "public",
+    "c9_league": false,
+    "double_first_class": true,
+    "programs": ["engineering", "chemical-engineering", "management", "sciences"],
+    "tuition_range_usd": { "min": 2000, "max": 5000 },
+    "scholarship_types": ["CSC", "university"],
+    "language_of_instruction": ["Chinese", "English"],
+    "english_taught_programs": true,
+    "moroccan_students": true,
+    "halal_food": true,
+    "campus_size": "large",
+    "student_count": 42000,
+    "international_students": 1800,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "65%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "https://en.dlut.edu.cn",
+    "description": {
+      "en": "Dalian University of Technology is a leading engineering university on China's beautiful northeast coast. Known for its chemical engineering, mechanical engineering, and coastal city location in Dalian.",
+      "fr": "L'Université de Technologie de Dalian est une université d'ingénierie de premier plan sur la belle côte nord-est de la Chine. Connue pour son génie chimique, génie mécanique et sa situation côtière à Dalian.",
+      "ar": "جامعة داليان للتكنولوجيا هي جامعة هندسية رائدة على الساحل الشمالي الشرقي الجميل للصين. تشتهر بالهندسة الكيميائية والهندسة الميكانيكية وموقعها الساحلي في داليان."
+    },
+    "strengths": {
+      "en": ["Chemical Engineering", "Mechanical Engineering", "Civil Engineering", "Management", "Computing"],
+      "fr": ["Génie chimique", "Génie mécanique", "Génie civil", "Management", "Informatique"],
+      "ar": ["الهندسة الكيميائية", "الهندسة الميكانيكية", "الهندسة المدنية", "الإدارة", "الحوسبة"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "hunan-university",
+    "name": { "en": "Hunan University", "fr": "Université du Hunan", "ar": "جامعة هونان" },
+    "city": "changsha",
+    "province": "Hunan",
+    "ranking_qs": 571,
+    "ranking_times": 401,
+    "founded": 976,
+    "type": "public",
+    "c9_league": false,
+    "double_first_class": true,
+    "programs": ["engineering", "architecture", "economics", "chemistry", "business"],
+    "tuition_range_usd": { "min": 1800, "max": 4500 },
+    "scholarship_types": ["CSC", "university", "provincial"],
+    "language_of_instruction": ["Chinese", "English"],
+    "english_taught_programs": true,
+    "moroccan_students": true,
+    "halal_food": true,
+    "campus_size": "large",
+    "student_count": 36000,
+    "international_students": 2000,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "65%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "https://www-en.hnu.edu.cn",
+    "description": {
+      "en": "Hunan University traces its origins to the Yuelu Academy founded in 976 AD, making it one of the world's oldest educational institutions. Located at the foot of Mount Yuelu in Changsha, it excels in engineering and economics.",
+      "fr": "L'Université du Hunan trouve ses origines dans l'Académie Yuelu fondée en 976 après J.-C., ce qui en fait l'une des plus anciennes institutions éducatives au monde. Située au pied du mont Yuelu à Changsha.",
+      "ar": "تعود أصول جامعة هونان إلى أكاديمية يويلو التي تأسست عام 976 ميلادي، مما يجعلها واحدة من أقدم المؤسسات التعليمية في العالم. تقع عند سفح جبل يويلو في تشانغشا."
+    },
+    "strengths": {
+      "en": ["Automotive Engineering", "Architecture", "Chemistry", "Economics", "Electrical Engineering"],
+      "fr": ["Ingénierie automobile", "Architecture", "Chimie", "Économie", "Génie électrique"],
+      "ar": ["هندسة السيارات", "العمارة", "الكيمياء", "الاقتصاد", "الهندسة الكهربائية"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "south-china-university-of-technology",
+    "name": { "en": "South China University of Technology", "fr": "Université de Technologie de Chine du Sud", "ar": "جامعة جنوب الصين للتكنولوجيا" },
+    "city": "guangzhou",
+    "province": "Guangdong",
+    "ranking_qs": 521,
+    "ranking_times": 401,
+    "founded": 1952,
+    "type": "public",
+    "c9_league": false,
+    "double_first_class": true,
+    "programs": ["engineering", "architecture", "business", "sciences", "food-science"],
+    "tuition_range_usd": { "min": 2200, "max": 5500 },
+    "scholarship_types": ["CSC", "university", "provincial"],
+    "language_of_instruction": ["Chinese", "English"],
+    "english_taught_programs": true,
+    "moroccan_students": true,
+    "halal_food": true,
+    "campus_size": "large",
+    "student_count": 40000,
+    "international_students": 2200,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "65%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "https://www.scut.edu.cn/en",
+    "description": {
+      "en": "South China University of Technology is a prestigious engineering university in Guangzhou. Known as the 'cradle of engineers', it is particularly strong in materials science, food science, and chemical engineering.",
+      "fr": "L'Université de Technologie de Chine du Sud est une université d'ingénierie prestigieuse à Guangzhou. Connue comme le 'berceau des ingénieurs', elle excelle en science des matériaux, sciences alimentaires et génie chimique.",
+      "ar": "جامعة جنوب الصين للتكنولوجيا هي جامعة هندسية مرموقة في قوانغتشو. تُعرف بـ'مهد المهندسين' وتتميز في علوم المواد والعلوم الغذائية والهندسة الكيميائية."
+    },
+    "strengths": {
+      "en": ["Materials Science", "Food Science", "Chemical Engineering", "Architecture", "Polymer Science"],
+      "fr": ["Science des matériaux", "Sciences alimentaires", "Génie chimique", "Architecture", "Science des polymères"],
+      "ar": ["علوم المواد", "علوم الغذاء", "الهندسة الكيميائية", "العمارة", "علوم البوليمرات"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "chongqing-university",
+    "name": { "en": "Chongqing University", "fr": "Université de Chongqing", "ar": "جامعة تشونغتشينغ" },
+    "city": "chengdu",
+    "province": "Chongqing",
+    "ranking_qs": 571,
+    "ranking_times": 601,
+    "founded": 1929,
+    "type": "public",
+    "c9_league": false,
+    "double_first_class": true,
+    "programs": ["engineering", "architecture", "economics", "law", "sciences"],
+    "tuition_range_usd": { "min": 1800, "max": 4500 },
+    "scholarship_types": ["CSC", "university", "provincial"],
+    "language_of_instruction": ["Chinese", "English"],
+    "english_taught_programs": true,
+    "moroccan_students": true,
+    "halal_food": true,
+    "campus_size": "very-large",
+    "student_count": 48000,
+    "international_students": 1800,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "65%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "https://english.cqu.edu.cn",
+    "description": {
+      "en": "Chongqing University is a comprehensive national key university located in the mountainous city of Chongqing. It excels in engineering, architecture, and has a beautiful campus along the Yangtze River.",
+      "fr": "L'Université de Chongqing est une université nationale clé située dans la ville montagneuse de Chongqing. Elle excelle en ingénierie et architecture, avec un magnifique campus le long du fleuve Yangtze.",
+      "ar": "جامعة تشونغتشينغ هي جامعة وطنية رئيسية شاملة تقع في مدينة تشونغتشينغ الجبلية. تتفوق في الهندسة والعمارة ولها حرم جامعي جميل على طول نهر اليانغتسي."
+    },
+    "strengths": {
+      "en": ["Electrical Engineering", "Architecture", "Mechanical Engineering", "Mining", "Economics"],
+      "fr": ["Génie électrique", "Architecture", "Génie mécanique", "Mines", "Économie"],
+      "ar": ["الهندسة الكهربائية", "العمارة", "الهندسة الميكانيكية", "التعدين", "الاقتصاد"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "beijing-normal-university",
+    "name": { "en": "Beijing Normal University", "fr": "Université Normale de Pékin", "ar": "جامعة بكين للمعلمين" },
+    "city": "beijing",
+    "province": "Beijing",
+    "ranking_qs": 256,
+    "ranking_times": 301,
+    "founded": 1902,
+    "type": "public",
+    "c9_league": false,
+    "double_first_class": true,
+    "programs": ["education", "psychology", "sciences", "arts", "philosophy", "history"],
+    "tuition_range_usd": { "min": 2200, "max": 5500 },
+    "scholarship_types": ["CSC", "university", "confucius-institute"],
+    "language_of_instruction": ["Chinese", "English"],
+    "english_taught_programs": true,
+    "moroccan_students": true,
+    "halal_food": true,
+    "campus_size": "medium",
+    "student_count": 23000,
+    "international_students": 2800,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "70%", "language": "HSK 4 or IELTS 6.0", "entrance_exam": false },
+      "masters": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "80%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "https://english.bnu.edu.cn",
+    "description": {
+      "en": "Beijing Normal University is China's top teacher-training university and a leading research institution. It is especially strong in education, psychology, Chinese language, and environmental sciences.",
+      "fr": "L'Université Normale de Pékin est la première université de formation des enseignants en Chine et un établissement de recherche de premier plan. Elle excelle en éducation, psychologie et sciences de l'environnement.",
+      "ar": "جامعة بكين للمعلمين هي أفضل جامعة لتدريب المعلمين في الصين ومؤسسة بحثية رائدة. تتميز في التعليم وعلم النفس واللغة الصينية وعلوم البيئة."
+    },
+    "strengths": {
+      "en": ["Education", "Psychology", "Environmental Science", "Chinese Language", "Mathematics"],
+      "fr": ["Éducation", "Psychologie", "Sciences de l'environnement", "Langue chinoise", "Mathématiques"],
+      "ar": ["التعليم", "علم النفس", "علوم البيئة", "اللغة الصينية", "الرياضيات"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "renmin-university",
+    "name": { "en": "Renmin University of China", "fr": "Université Renmin de Chine", "ar": "جامعة رنمين الصينية" },
+    "city": "beijing",
+    "province": "Beijing",
+    "ranking_qs": 487,
+    "ranking_times": 601,
+    "founded": 1937,
+    "type": "public",
+    "c9_league": false,
+    "double_first_class": true,
+    "programs": ["law", "economics", "journalism", "philosophy", "business", "sociology"],
+    "tuition_range_usd": { "min": 2600, "max": 6000 },
+    "scholarship_types": ["CSC", "university"],
+    "language_of_instruction": ["Chinese", "English"],
+    "english_taught_programs": true,
+    "moroccan_students": true,
+    "halal_food": true,
+    "campus_size": "medium",
+    "student_count": 28000,
+    "international_students": 2500,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "70%", "language": "HSK 4 or IELTS 6.0", "entrance_exam": false },
+      "masters": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false },
+      "phd": { "min_gpa": "80%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "https://www.ruc.edu.cn/en",
+    "description": {
+      "en": "Renmin University of China is the country's leading university for humanities and social sciences. It is especially renowned for its law, economics, journalism, and public administration programs.",
+      "fr": "L'Université Renmin de Chine est la première université du pays en sciences humaines et sociales. Elle est particulièrement réputée pour ses programmes de droit, économie, journalisme et administration publique.",
+      "ar": "جامعة رنمين الصينية هي الجامعة الرائدة في البلاد في العلوم الإنسانية والاجتماعية. تشتهر بشكل خاص ببرامجها في القانون والاقتصاد والصحافة والإدارة العامة."
+    },
+    "strengths": {
+      "en": ["Law", "Economics", "Journalism", "Public Administration", "Philosophy"],
+      "fr": ["Droit", "Économie", "Journalisme", "Administration publique", "Philosophie"],
+      "ar": ["القانون", "الاقتصاد", "الصحافة", "الإدارة العامة", "الفلسفة"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "east-china-normal-university",
+    "name": { "en": "East China Normal University", "fr": "Université Normale de Chine de l'Est", "ar": "جامعة شرق الصين للمعلمين" },
+    "city": "shanghai",
+    "province": "Shanghai",
+    "ranking_qs": 529,
+    "ranking_times": 401,
+    "founded": 1951,
+    "type": "public",
+    "c9_league": false,
+    "double_first_class": true,
+    "programs": ["education", "psychology", "sciences", "geography", "business"],
+    "tuition_range_usd": { "min": 2200, "max": 5500 },
+    "scholarship_types": ["CSC", "university", "confucius-institute"],
+    "language_of_instruction": ["Chinese", "English"],
+    "english_taught_programs": true,
+    "moroccan_students": true,
+    "halal_food": true,
+    "campus_size": "large",
+    "student_count": 35000,
+    "international_students": 4500,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "65%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "https://english.ecnu.edu.cn",
+    "description": {
+      "en": "East China Normal University is a leading comprehensive university in Shanghai, particularly strong in education, psychology, and geography. It offers an excellent international student program with many English-taught courses.",
+      "fr": "L'Université Normale de Chine de l'Est est une université polyvalente de premier plan à Shanghai, particulièrement forte en éducation, psychologie et géographie. Elle offre un excellent programme pour étudiants internationaux.",
+      "ar": "جامعة شرق الصين للمعلمين هي جامعة شاملة رائدة في شنغهاي، قوية بشكل خاص في التعليم وعلم النفس والجغرافيا. تقدم برنامجاً ممتازاً للطلاب الدوليين."
+    },
+    "strengths": {
+      "en": ["Education", "Psychology", "Geography", "Software Engineering", "Statistics"],
+      "fr": ["Éducation", "Psychologie", "Géographie", "Génie logiciel", "Statistiques"],
+      "ar": ["التعليم", "علم النفس", "الجغرافيا", "هندسة البرمجيات", "الإحصاء"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "china-pharmaceutical-university",
+    "name": { "en": "China Pharmaceutical University", "fr": "Université Pharmaceutique de Chine", "ar": "جامعة الصين للصيدلة" },
+    "city": "nanjing",
+    "province": "Jiangsu",
+    "ranking_qs": 801,
+    "ranking_times": 801,
+    "founded": 1936,
+    "type": "public",
+    "c9_league": false,
+    "double_first_class": true,
+    "programs": ["pharmacy", "medicine", "chemistry", "biology", "business"],
+    "tuition_range_usd": { "min": 2000, "max": 4500 },
+    "scholarship_types": ["CSC", "university"],
+    "language_of_instruction": ["Chinese", "English"],
+    "english_taught_programs": true,
+    "moroccan_students": true,
+    "halal_food": true,
+    "campus_size": "medium",
+    "student_count": 16000,
+    "international_students": 800,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "65%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "https://eng.cpu.edu.cn",
+    "description": {
+      "en": "China Pharmaceutical University is the top pharmacy school in China and one of the best in Asia. It specializes in pharmaceutical sciences, traditional Chinese medicine, and clinical pharmacy.",
+      "fr": "L'Université Pharmaceutique de Chine est la meilleure école de pharmacie en Chine et l'une des meilleures en Asie. Elle se spécialise en sciences pharmaceutiques et médecine traditionnelle chinoise.",
+      "ar": "جامعة الصين للصيدلة هي أفضل كلية صيدلة في الصين وواحدة من الأفضل في آسيا. تتخصص في العلوم الصيدلانية والطب الصيني التقليدي والصيدلة السريرية."
+    },
+    "strengths": {
+      "en": ["Pharmacy", "Pharmaceutical Sciences", "Clinical Pharmacy", "Traditional Chinese Medicine", "Biochemistry"],
+      "fr": ["Pharmacie", "Sciences pharmaceutiques", "Pharmacie clinique", "Médecine traditionnelle chinoise", "Biochimie"],
+      "ar": ["الصيدلة", "العلوم الصيدلانية", "الصيدلة السريرية", "الطب الصيني التقليدي", "الكيمياء الحيوية"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "beijing-institute-of-technology",
+    "name": { "en": "Beijing Institute of Technology", "fr": "Institut de Technologie de Pékin", "ar": "معهد بكين للتكنولوجيا" },
+    "city": "beijing",
+    "province": "Beijing",
+    "ranking_qs": 401,
+    "ranking_times": 501,
+    "founded": 1940,
+    "type": "public",
+    "c9_league": false,
+    "double_first_class": true,
+    "programs": ["engineering", "aerospace", "defense", "sciences", "business"],
+    "tuition_range_usd": { "min": 2200, "max": 6000 },
+    "scholarship_types": ["CSC", "university"],
+    "language_of_instruction": ["Chinese", "English"],
+    "english_taught_programs": true,
+    "moroccan_students": true,
+    "halal_food": true,
+    "campus_size": "large",
+    "student_count": 30000,
+    "international_students": 2000,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "70%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "80%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "https://english.bit.edu.cn",
+    "description": {
+      "en": "Beijing Institute of Technology is one of China's top science and technology universities, with strengths in defense technology, aerospace, and vehicle engineering. It is the first Chinese university to receive ABET accreditation.",
+      "fr": "L'Institut de Technologie de Pékin est l'une des meilleures universités de science et technologie de Chine, avec des forces en technologie de défense, aérospatiale et ingénierie des véhicules.",
+      "ar": "معهد بكين للتكنولوجيا هو واحد من أفضل جامعات العلوم والتكنولوجيا في الصين، مع نقاط قوة في تكنولوجيا الدفاع والفضاء وهندسة المركبات."
+    },
+    "strengths": {
+      "en": ["Aerospace Engineering", "Vehicle Engineering", "Weapons Science", "Information Technology", "Materials Science"],
+      "fr": ["Ingénierie aérospatiale", "Ingénierie des véhicules", "Science des armes", "Technologies de l'information", "Science des matériaux"],
+      "ar": ["هندسة الفضاء", "هندسة المركبات", "علوم الأسلحة", "تكنولوجيا المعلومات", "علوم المواد"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "northwestern-polytechnical-university",
+    "name": { "en": "Northwestern Polytechnical University", "fr": "Université Polytechnique du Nord-Ouest", "ar": "جامعة الشمال الغربي للفنون التطبيقية" },
+    "city": "xian",
+    "province": "Shaanxi",
+    "ranking_qs": 543,
+    "ranking_times": 501,
+    "founded": 1938,
+    "type": "public",
+    "c9_league": false,
+    "double_first_class": true,
+    "programs": ["aerospace", "marine-engineering", "materials-science", "engineering", "sciences"],
+    "tuition_range_usd": { "min": 2000, "max": 5000 },
+    "scholarship_types": ["CSC", "university", "provincial"],
+    "language_of_instruction": ["Chinese", "English"],
+    "english_taught_programs": true,
+    "moroccan_students": true,
+    "halal_food": true,
+    "campus_size": "large",
+    "student_count": 36000,
+    "international_students": 1800,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "65%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "https://en.nwpu.edu.cn",
+    "description": {
+      "en": "Northwestern Polytechnical University in Xi'an is one of China's top universities for aerospace, marine engineering, and materials science. It is the only university in China developing aerospace, aviation, and marine technologies simultaneously.",
+      "fr": "L'Université Polytechnique du Nord-Ouest à Xi'an est l'une des meilleures universités de Chine pour l'aérospatiale, l'ingénierie marine et la science des matériaux. C'est la seule université en Chine développant simultanément les technologies aérospatiales, aéronautiques et marines.",
+      "ar": "جامعة الشمال الغربي للفنون التطبيقية في شيان هي واحدة من أفضل الجامعات في الصين للفضاء والهندسة البحرية وعلوم المواد. هي الجامعة الوحيدة في الصين التي تطور تقنيات الفضاء والطيران والبحرية في آن واحد."
+    },
+    "strengths": {
+      "en": ["Aerospace Engineering", "Marine Engineering", "Materials Science", "Computer Science", "Mechanical Engineering"],
+      "fr": ["Ingénierie aérospatiale", "Ingénierie marine", "Science des matériaux", "Informatique", "Génie mécanique"],
+      "ar": ["هندسة الفضاء", "الهندسة البحرية", "علوم المواد", "علوم الحاسب", "الهندسة الميكانيكية"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "china-university-of-geosciences",
+    "name": { "en": "China University of Geosciences", "fr": "Université de Géosciences de Chine", "ar": "جامعة الصين لعلوم الأرض" },
+    "city": "wuhan",
+    "province": "Hubei",
+    "ranking_qs": 601,
+    "ranking_times": 501,
+    "founded": 1952,
+    "type": "public",
+    "c9_league": false,
+    "double_first_class": true,
+    "programs": ["geosciences", "environmental-science", "engineering", "economics"],
+    "tuition_range_usd": { "min": 1800, "max": 4000 },
+    "scholarship_types": ["CSC", "university"],
+    "language_of_instruction": ["Chinese", "English"],
+    "english_taught_programs": true,
+    "moroccan_students": true,
+    "halal_food": true,
+    "campus_size": "large",
+    "student_count": 30000,
+    "international_students": 1500,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "65%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "https://en.cug.edu.cn",
+    "description": {
+      "en": "China University of Geosciences in Wuhan is China's leading university for earth sciences. It offers world-class programs in geology, gemology, environmental engineering, and petroleum engineering.",
+      "fr": "L'Université de Géosciences de Chine à Wuhan est la première université de Chine pour les sciences de la terre. Elle offre des programmes de classe mondiale en géologie, gemmologie et ingénierie pétrolière.",
+      "ar": "جامعة الصين لعلوم الأرض في ووهان هي الجامعة الرائدة في الصين لعلوم الأرض. تقدم برامج عالمية المستوى في الجيولوجيا والأحجار الكريمة وهندسة البيئة وهندسة البترول."
+    },
+    "strengths": {
+      "en": ["Geology", "Gemology", "Environmental Engineering", "Petroleum Engineering", "Geophysics"],
+      "fr": ["Géologie", "Gemmologie", "Ingénierie environnementale", "Ingénierie pétrolière", "Géophysique"],
+      "ar": ["الجيولوجيا", "علم الأحجار الكريمة", "الهندسة البيئية", "هندسة البترول", "الجيوفيزياء"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "wuhan-university-of-technology",
+    "name": { "en": "Wuhan University of Technology", "fr": "Université de Technologie de Wuhan", "ar": "جامعة ووهان للتكنولوجيا" },
+    "city": "wuhan",
+    "province": "Hubei",
+    "ranking_qs": 801,
+    "ranking_times": 601,
+    "founded": 1898,
+    "type": "public",
+    "c9_league": false,
+    "double_first_class": true,
+    "programs": ["materials-science", "engineering", "automotive", "shipping", "business"],
+    "tuition_range_usd": { "min": 1800, "max": 4000 },
+    "scholarship_types": ["CSC", "university", "provincial"],
+    "language_of_instruction": ["Chinese", "English"],
+    "english_taught_programs": true,
+    "moroccan_students": true,
+    "halal_food": true,
+    "campus_size": "large",
+    "student_count": 55000,
+    "international_students": 2500,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "60%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "http://english.whut.edu.cn",
+    "description": {
+      "en": "Wuhan University of Technology is one of China's top universities for materials science, automotive engineering, and shipping. It has a very large international student community and is popular with African and Middle Eastern students.",
+      "fr": "L'Université de Technologie de Wuhan est l'une des meilleures universités de Chine pour la science des matériaux, l'ingénierie automobile et le transport maritime. Elle a une très grande communauté d'étudiants internationaux.",
+      "ar": "جامعة ووهان للتكنولوجيا هي واحدة من أفضل الجامعات في الصين لعلوم المواد وهندسة السيارات والنقل البحري. لديها مجتمع كبير جداً من الطلاب الدوليين."
+    },
+    "strengths": {
+      "en": ["Materials Science", "Automotive Engineering", "Shipping", "Civil Engineering", "Information Technology"],
+      "fr": ["Science des matériaux", "Ingénierie automobile", "Transport maritime", "Génie civil", "Technologies de l'information"],
+      "ar": ["علوم المواد", "هندسة السيارات", "النقل البحري", "الهندسة المدنية", "تكنولوجيا المعلومات"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "xiamen-university",
+    "name": { "en": "Xiamen University", "fr": "Université de Xiamen", "ar": "جامعة شيامن" },
+    "city": "guangzhou",
+    "province": "Fujian",
+    "ranking_qs": 392,
+    "ranking_times": 401,
+    "founded": 1921,
+    "type": "public",
+    "c9_league": false,
+    "double_first_class": true,
+    "programs": ["economics", "chemistry", "marine-science", "business", "law", "education"],
+    "tuition_range_usd": { "min": 2200, "max": 5500 },
+    "scholarship_types": ["CSC", "university", "provincial"],
+    "language_of_instruction": ["Chinese", "English"],
+    "english_taught_programs": true,
+    "moroccan_students": true,
+    "halal_food": true,
+    "campus_size": "large",
+    "student_count": 41000,
+    "international_students": 3500,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "65%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "https://en.xmu.edu.cn",
+    "description": {
+      "en": "Xiamen University is known as China's most beautiful campus, located on the coast of Fujian province. Founded by Tan Kah Kee in 1921, it excels in economics, chemistry, and marine science.",
+      "fr": "L'Université de Xiamen est connue comme le plus beau campus de Chine, situé sur la côte de la province du Fujian. Fondée par Tan Kah Kee en 1921, elle excelle en économie, chimie et sciences marines.",
+      "ar": "تُعرف جامعة شيامن بأنها أجمل حرم جامعي في الصين، تقع على ساحل مقاطعة فوجيان. تأسست على يد تان كاه كي عام 1921، وتتفوق في الاقتصاد والكيمياء وعلوم البحار."
+    },
+    "strengths": {
+      "en": ["Economics", "Chemistry", "Marine Science", "Accounting", "Southeast Asian Studies"],
+      "fr": ["Économie", "Chimie", "Sciences marines", "Comptabilité", "Études de l'Asie du Sud-Est"],
+      "ar": ["الاقتصاد", "الكيمياء", "علوم البحار", "المحاسبة", "دراسات جنوب شرق آسيا"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "ocean-university-of-china",
+    "name": { "en": "Ocean University of China", "fr": "Université Océanique de Chine", "ar": "جامعة الصين للمحيطات" },
+    "city": "beijing",
+    "province": "Shandong",
+    "ranking_qs": 751,
+    "ranking_times": 601,
+    "founded": 1924,
+    "type": "public",
+    "c9_league": false,
+    "double_first_class": true,
+    "programs": ["marine-science", "fisheries", "environmental-science", "engineering", "economics"],
+    "tuition_range_usd": { "min": 1800, "max": 4500 },
+    "scholarship_types": ["CSC", "university"],
+    "language_of_instruction": ["Chinese", "English"],
+    "english_taught_programs": true,
+    "moroccan_students": true,
+    "halal_food": true,
+    "campus_size": "large",
+    "student_count": 32000,
+    "international_students": 1200,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "60%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "http://eweb.ouc.edu.cn",
+    "description": {
+      "en": "Ocean University of China in Qingdao is the country's top university for marine and fisheries sciences. Located in the beautiful coastal city of Qingdao, it offers unique programs in oceanography and aquaculture.",
+      "fr": "L'Université Océanique de Chine à Qingdao est la meilleure université du pays pour les sciences marines et halieutiques. Située dans la belle ville côtière de Qingdao, elle offre des programmes uniques en océanographie.",
+      "ar": "جامعة الصين للمحيطات في تشينغداو هي أفضل جامعة في البلاد لعلوم البحار والثروة السمكية. تقع في مدينة تشينغداو الساحلية الجميلة وتقدم برامج فريدة في علم المحيطات."
+    },
+    "strengths": {
+      "en": ["Marine Science", "Fisheries", "Oceanography", "Environmental Science", "Food Science"],
+      "fr": ["Sciences marines", "Pêche", "Océanographie", "Sciences de l'environnement", "Sciences alimentaires"],
+      "ar": ["علوم البحار", "الثروة السمكية", "علم المحيطات", "علوم البيئة", "علوم الغذاء"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "shandong-university",
+    "name": { "en": "Shandong University", "fr": "Université du Shandong", "ar": "جامعة شاندونغ" },
+    "city": "beijing",
+    "province": "Shandong",
+    "ranking_qs": 436,
+    "ranking_times": 401,
+    "founded": 1901,
+    "type": "public",
+    "c9_league": false,
+    "double_first_class": true,
+    "programs": ["mathematics", "medicine", "chemistry", "engineering", "philosophy"],
+    "tuition_range_usd": { "min": 2000, "max": 5000 },
+    "scholarship_types": ["CSC", "university", "provincial"],
+    "language_of_instruction": ["Chinese", "English"],
+    "english_taught_programs": true,
+    "moroccan_students": true,
+    "halal_food": true,
+    "campus_size": "very-large",
+    "student_count": 62000,
+    "international_students": 2800,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "65%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "https://www.en.sdu.edu.cn",
+    "description": {
+      "en": "Shandong University is one of China's oldest and largest universities, with campuses in Jinan, Qingdao, and Weihai. It is particularly strong in mathematics, medicine, and crystallography.",
+      "fr": "L'Université du Shandong est l'une des plus anciennes et plus grandes universités de Chine, avec des campus à Jinan, Qingdao et Weihai. Elle excelle en mathématiques, médecine et cristallographie.",
+      "ar": "جامعة شاندونغ هي واحدة من أقدم وأكبر الجامعات في الصين، مع حرم في جينان وتشينغداو ووايهاي. تتميز في الرياضيات والطب وعلم البلورات."
+    },
+    "strengths": {
+      "en": ["Mathematics", "Medicine", "Chemistry", "Crystallography", "Philosophy"],
+      "fr": ["Mathématiques", "Médecine", "Chimie", "Cristallographie", "Philosophie"],
+      "ar": ["الرياضيات", "الطب", "الكيمياء", "علم البلورات", "الفلسفة"]
+    },
+    "last_updated": "2026-03-06"
   }
 ]
