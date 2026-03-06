@@ -6916,19 +6916,30 @@ section.review {
     border-radius: 50px;
     font-weight: bold;
     text-transform: uppercase;
-     animation: blurr 2s;
-  animation-iteration-count: infinite;
+    position: relative;
+    box-shadow: 0 0 10px #ffffff;
 }
 
+.btn-apply-navbar::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    box-shadow: 0 0 30px #ffffff;
+    opacity: 0;
+    animation: blurr 2s infinite;
+    will-change: opacity;
+    pointer-events: none;
+}
 
 @keyframes blurr {
   0%,
   100% {
-    box-shadow: 0 0 10px #ffffff;
+    opacity: 0;
   }
 
   50% {
-    box-shadow: 0 0 30px #ffffff;
+    opacity: 1;
   }
 }
 

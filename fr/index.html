@@ -2571,12 +2571,13 @@
 </svg>
 </div>
 <section class="section" id="sectionHero">
-<video autoplay="" class="hero-video-bg hero-video-desktop" loop="" muted="" playsinline="" poster="../assets/img/video-poster.webp" preload="metadata">
-<source src="../assets/video/hero-video.mp4" type="video/mp4"/>
+<video autoplay="" class="hero-video-bg hero-video-desktop" loop="" muted="" playsinline="" poster="../assets/img/video-poster.webp" preload="none" data-src="../assets/video/hero-video.mp4">
 </video>
-<video autoplay="" class="hero-video-bg hero-video-mobile" loop="" muted="" playsinline="" poster="../assets/img/video-poster.webp" preload="metadata">
-<source src="../assets/video/hero-video-mobile.mp4" type="video/mp4"/>
+<video autoplay="" class="hero-video-bg hero-video-mobile" loop="" muted="" playsinline="" poster="../assets/img/video-poster.webp" preload="none" data-src="../assets/video/hero-video-mobile.mp4">
 </video>
+<script>
+(function(){var v=window.innerWidth<=768?document.querySelector('.hero-video-mobile'):document.querySelector('.hero-video-desktop');if(v){var s=document.createElement('source');s.src=v.getAttribute('data-src');s.type='video/mp4';v.appendChild(s);v.preload='metadata';}})();
+</script>
 <div class="hero-video-overlay" id="heroOverlay">
 <div class="hero-mobile-headline">
 <h1>
@@ -2942,28 +2943,28 @@
 <div class="container">
 <div class="universities">
 <div class="image">
-<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/beijing-1.webp"/>
+<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/beijing-1.webp" width="250" height="250"/>
 </div>
 <div class="image">
-<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/ch-1.webp"/>
+<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/ch-1.webp" width="250" height="250"/>
 </div>
 <div class="image">
-<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/linyi-1.webp"/>
+<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/linyi-1.webp" width="250" height="250"/>
 </div>
 <div class="image">
-<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/nanjing-1.webp"/>
+<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/nanjing-1.webp" width="250" height="250"/>
 </div>
 <div class="image">
-<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/ningbo-1.webp"/>
+<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/ningbo-1.webp" width="250" height="250"/>
 </div>
 <div class="image">
-<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/perto-1.webp"/>
+<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/perto-1.webp" width="250" height="250"/>
 </div>
 <div class="image">
-<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/sand-1.webp"/>
+<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/sand-1.webp" width="250" height="250"/>
 </div>
 <div class="image">
-<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/shandong-1.webp"/>
+<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/shandong-1.webp" width="250" height="250"/>
 </div>
 </div>
 </div>
@@ -3255,7 +3256,7 @@
 <div class="swiper-slide">
 <div class="cardEdudiant">
 <div class="contentCard" data-fancybox="video-LqFaTbwb22k" data-src="https://www.youtube.com/embed/LqFaTbwb22k" data-type="iframe" style="cursor: pointer;">
-<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/Copie-de-fahd.webp"/>
+<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/Copie-de-fahd.webp" width="900" height="1591"/>
 </div>
 <div class="buttonPlay" data-fancybox="video-LqFaTbwb22k" data-src="https://www.youtube.com/embed/LqFaTbwb22k" data-type="iframe" style="cursor: pointer;">
 <!-- <div class="buttonPlay" role="button" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/LqFaTbwb22k" data-caption="Review"> -->
@@ -3273,7 +3274,7 @@
 <div class="swiper-slide">
 <div class="cardEdudiant">
 <div class="contentCard" data-fancybox="video-qqiHkEnSnuY" data-src="https://www.youtube.com/embed/qqiHkEnSnuY" data-type="iframe" style="cursor: pointer;">
-<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/Copie-de-lina-min.webp"/>
+<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/Copie-de-lina-min.webp" width="900" height="1591"/>
 </div>
 <div class="buttonPlay" data-fancybox="video-qqiHkEnSnuY" data-src="https://www.youtube.com/embed/qqiHkEnSnuY" data-type="iframe" style="cursor: pointer;">
 <!-- <div class="buttonPlay" role="button" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/qqiHkEnSnuY" data-caption="Review"> -->
@@ -3291,7 +3292,7 @@
 <div class="swiper-slide">
 <div class="cardEdudiant">
 <div class="contentCard" data-fancybox="video-qx6t1deJIhk" data-src="https://www.youtube.com/embed/qx6t1deJIhk" data-type="iframe" style="cursor: pointer;">
-<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/Copie-de-walid-min.webp"/>
+<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/Copie-de-walid-min.webp" width="900" height="1591"/>
 </div>
 <div class="buttonPlay" data-fancybox="video-qx6t1deJIhk" data-src="https://www.youtube.com/embed/qx6t1deJIhk" data-type="iframe" style="cursor: pointer;">
 <!-- <div class="buttonPlay" role="button" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/qx6t1deJIhk" data-caption="Review"> -->
@@ -3309,7 +3310,7 @@
 <div class="swiper-slide">
 <div class="cardEdudiant">
 <div class="contentCard" data-fancybox="video-ZAX4Aw_oOOI" data-src="https://www.youtube.com/embed/ZAX4Aw_oOOI" data-type="iframe" style="cursor: pointer;">
-<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/Copie-de-salma-min.webp"/>
+<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/06/Copie-de-salma-min.webp" width="900" height="1591"/>
 </div>
 <div class="buttonPlay" data-fancybox="video-ZAX4Aw_oOOI" data-src="https://www.youtube.com/embed/ZAX4Aw_oOOI" data-type="iframe" style="cursor: pointer;">
 <!-- <div class="buttonPlay" role="button" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/ZAX4Aw_oOOI" data-caption="Review"> -->
@@ -3327,7 +3328,7 @@
 <div class="swiper-slide">
 <div class="cardEdudiant">
 <div class="contentCard" data-fancybox="video-Xi7RW40eX_0" data-src="https://www.youtube.com/embed/Xi7RW40eX_0" data-type="iframe" style="cursor: pointer;">
-<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/07/Copie-de-fahd-thumbnails-1.webp"/>
+<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/07/Copie-de-fahd-thumbnails-1.webp" width="900" height="1591"/>
 </div>
 <div class="buttonPlay" data-fancybox="video-Xi7RW40eX_0" data-src="https://www.youtube.com/embed/Xi7RW40eX_0" data-type="iframe" style="cursor: pointer;">
 <!-- <div class="buttonPlay" role="button" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/Xi7RW40eX_0" data-caption="Review"> -->
@@ -3345,7 +3346,7 @@
 <div class="swiper-slide">
 <div class="cardEdudiant">
 <div class="contentCard" data-fancybox="video-_vNcPCv1h9o" data-src="https://www.youtube.com/embed/_vNcPCv1h9o" data-type="iframe" style="cursor: pointer;">
-<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/07/website-oumaima.webp"/>
+<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/07/website-oumaima.webp" width="900" height="1591"/>
 </div>
 <div class="buttonPlay" data-fancybox="video-_vNcPCv1h9o" data-src="https://www.youtube.com/embed/_vNcPCv1h9o" data-type="iframe" style="cursor: pointer;">
 <!-- <div class="buttonPlay" role="button" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/_vNcPCv1h9o" data-caption="Review"> -->
@@ -3363,7 +3364,7 @@
 <div class="swiper-slide">
 <div class="cardEdudiant">
 <div class="contentCard" data-fancybox="video-JUv1f7PUy7Y" data-src="https://www.youtube.com/embed/JUv1f7PUy7Y" data-type="iframe" style="cursor: pointer;">
-<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/07/website-nzha.webp"/>
+<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/07/website-nzha.webp" width="900" height="1591"/>
 </div>
 <div class="buttonPlay" data-fancybox="video-JUv1f7PUy7Y" data-src="https://www.youtube.com/embed/JUv1f7PUy7Y" data-type="iframe" style="cursor: pointer;">
 <!-- <div class="buttonPlay" role="button" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/JUv1f7PUy7Y" data-caption="Review"> -->
@@ -3381,7 +3382,7 @@
 <div class="swiper-slide">
 <div class="cardEdudiant">
 <div class="contentCard" data-fancybox="video-E19L-c8oUKE" data-src="https://www.youtube.com/embed/E19L-c8oUKE" data-type="iframe" style="cursor: pointer;">
-<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/07/website-yasser.webp"/>
+<img alt="Foorsa - Study in China services" loading="lazy" src="../uploads/2024/07/website-yasser.webp" width="900" height="1591"/>
 </div>
 <div class="buttonPlay" data-fancybox="video-E19L-c8oUKE" data-src="https://www.youtube.com/embed/E19L-c8oUKE" data-type="iframe" style="cursor: pointer;">
 <!-- <div class="buttonPlay" role="button" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/E19L-c8oUKE" data-caption="Review"> -->
