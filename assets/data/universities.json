@@ -1427,5 +1427,425 @@
       "ar": ["الرياضيات", "الطب", "الكيمياء", "علم البلورات", "الفلسفة"]
     },
     "last_updated": "2026-03-06"
+  },
+  {
+    "id": "zhengzhou-university",
+    "name": { "en": "Zhengzhou University", "fr": "Université de Zhengzhou", "ar": "جامعة تشنغتشو" },
+    "city": "beijing", "province": "Henan",
+    "ranking_qs": 601, "ranking_times": 601, "founded": 1956, "type": "public",
+    "c9_league": false, "double_first_class": true,
+    "programs": ["medicine", "engineering", "chemistry", "law", "business"],
+    "tuition_range_usd": { "min": 1600, "max": 4000 },
+    "scholarship_types": ["CSC", "university", "provincial"],
+    "language_of_instruction": ["Chinese", "English"], "english_taught_programs": true,
+    "moroccan_students": true, "halal_food": true, "campus_size": "very-large",
+    "student_count": 73000, "international_students": 2200,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "60%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "http://english.zzu.edu.cn",
+    "description": {
+      "en": "Zhengzhou University is the largest university in Henan province and one of China's biggest by enrollment. It is a popular choice for international students due to affordable tuition and strong medical programs.",
+      "fr": "L'Université de Zhengzhou est la plus grande université de la province du Henan. C'est un choix populaire pour les étudiants internationaux grâce à des frais abordables et de solides programmes médicaux.",
+      "ar": "جامعة تشنغتشو هي أكبر جامعة في مقاطعة خنان. تعد خياراً شائعاً للطلاب الدوليين بفضل الرسوم المعقولة والبرامج الطبية القوية."
+    },
+    "strengths": {
+      "en": ["Medicine", "Chemistry", "Materials Science", "Engineering", "Law"],
+      "fr": ["Médecine", "Chimie", "Science des matériaux", "Ingénierie", "Droit"],
+      "ar": ["الطب", "الكيمياء", "علوم المواد", "الهندسة", "القانون"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "nanjing-medical-university",
+    "name": { "en": "Nanjing Medical University", "fr": "Université Médicale de Nanjing", "ar": "جامعة نانجينغ الطبية" },
+    "city": "nanjing", "province": "Jiangsu",
+    "ranking_qs": 801, "ranking_times": 601, "founded": 1934, "type": "public",
+    "c9_league": false, "double_first_class": true,
+    "programs": ["medicine", "pharmacy", "nursing", "public-health", "dentistry"],
+    "tuition_range_usd": { "min": 2500, "max": 6000 },
+    "scholarship_types": ["CSC", "university", "provincial"],
+    "language_of_instruction": ["Chinese", "English"], "english_taught_programs": true,
+    "moroccan_students": true, "halal_food": true, "campus_size": "medium",
+    "student_count": 18000, "international_students": 1200,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "70%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "80%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "https://english.njmu.edu.cn",
+    "description": {
+      "en": "Nanjing Medical University is one of China's top medical schools with world-class clinical training. It offers MBBS programs in English and is popular with international medical students.",
+      "fr": "L'Université Médicale de Nanjing est l'une des meilleures écoles de médecine de Chine avec une formation clinique de classe mondiale. Elle propose des programmes MBBS en anglais.",
+      "ar": "جامعة نانجينغ الطبية هي واحدة من أفضل كليات الطب في الصين مع تدريب سريري عالمي المستوى. تقدم برامج MBBS باللغة الإنجليزية."
+    },
+    "strengths": {
+      "en": ["Clinical Medicine", "Public Health", "Pharmacy", "Nursing", "Dentistry"],
+      "fr": ["Médecine clinique", "Santé publique", "Pharmacie", "Sciences infirmières", "Dentisterie"],
+      "ar": ["الطب السريري", "الصحة العامة", "الصيدلة", "التمريض", "طب الأسنان"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "capital-medical-university",
+    "name": { "en": "Capital Medical University", "fr": "Université Médicale de la Capitale", "ar": "جامعة العاصمة الطبية" },
+    "city": "beijing", "province": "Beijing",
+    "ranking_qs": 801, "ranking_times": 501, "founded": 1960, "type": "public",
+    "c9_league": false, "double_first_class": true,
+    "programs": ["medicine", "dentistry", "nursing", "pharmacy", "biomedical-engineering"],
+    "tuition_range_usd": { "min": 3000, "max": 7000 },
+    "scholarship_types": ["CSC", "university", "beijing-government"],
+    "language_of_instruction": ["Chinese", "English"], "english_taught_programs": true,
+    "moroccan_students": true, "halal_food": true, "campus_size": "medium",
+    "student_count": 11000, "international_students": 1500,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "70%", "language": "HSK 4 or IELTS 6.0", "entrance_exam": false },
+      "masters": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "80%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "https://english.ccmu.edu.cn",
+    "description": {
+      "en": "Capital Medical University in Beijing is one of China's top medical universities, affiliated with 21 hospitals. It offers English-taught MBBS and is highly ranked for clinical medicine.",
+      "fr": "L'Université Médicale de la Capitale à Pékin est l'une des meilleures universités médicales de Chine, affiliée à 21 hôpitaux. Elle propose des MBBS en anglais.",
+      "ar": "جامعة العاصمة الطبية في بكين هي واحدة من أفضل الجامعات الطبية في الصين، مرتبطة بـ21 مستشفى. تقدم برامج MBBS باللغة الإنجليزية."
+    },
+    "strengths": {
+      "en": ["Clinical Medicine", "Neuroscience", "Dentistry", "Ophthalmology", "Nursing"],
+      "fr": ["Médecine clinique", "Neurosciences", "Dentisterie", "Ophtalmologie", "Sciences infirmières"],
+      "ar": ["الطب السريري", "علوم الأعصاب", "طب الأسنان", "طب العيون", "التمريض"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "shanghai-university",
+    "name": { "en": "Shanghai University", "fr": "Université de Shanghai", "ar": "جامعة شنغهاي" },
+    "city": "shanghai", "province": "Shanghai",
+    "ranking_qs": 436, "ranking_times": 401, "founded": 1922, "type": "public",
+    "c9_league": false, "double_first_class": true,
+    "programs": ["engineering", "film", "business", "sciences", "sociology"],
+    "tuition_range_usd": { "min": 2200, "max": 5500 },
+    "scholarship_types": ["CSC", "university", "shanghai-government"],
+    "language_of_instruction": ["Chinese", "English"], "english_taught_programs": true,
+    "moroccan_students": true, "halal_food": true, "campus_size": "large",
+    "student_count": 42000, "international_students": 4000,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "65%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "https://en.shu.edu.cn",
+    "description": {
+      "en": "Shanghai University is a rapidly rising comprehensive university in Shanghai. It is known for film studies, sociology, metallurgy, and has a vibrant international student community.",
+      "fr": "L'Université de Shanghai est une université polyvalente en plein essor. Elle est connue pour les études cinématographiques, la sociologie, la métallurgie et sa communauté étudiante internationale dynamique.",
+      "ar": "جامعة شنغهاي هي جامعة شاملة في صعود سريع. تشتهر بدراسات السينما وعلم الاجتماع والتعدين ومجتمعها الطلابي الدولي النابض بالحياة."
+    },
+    "strengths": {
+      "en": ["Film Studies", "Sociology", "Metallurgy", "Mechatronics", "AI & Computing"],
+      "fr": ["Études cinématographiques", "Sociologie", "Métallurgie", "Mécatronique", "IA & Informatique"],
+      "ar": ["دراسات السينما", "علم الاجتماع", "التعدين", "الميكاترونيكس", "الذكاء الاصطناعي"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "jiangsu-university",
+    "name": { "en": "Jiangsu University", "fr": "Université du Jiangsu", "ar": "جامعة جيانغسو" },
+    "city": "nanjing", "province": "Jiangsu",
+    "ranking_qs": 1001, "ranking_times": 801, "founded": 1902, "type": "public",
+    "c9_league": false, "double_first_class": false,
+    "programs": ["medicine", "engineering", "agriculture", "business", "sciences"],
+    "tuition_range_usd": { "min": 1500, "max": 3500 },
+    "scholarship_types": ["CSC", "university", "provincial", "jiangsu-government"],
+    "language_of_instruction": ["Chinese", "English"], "english_taught_programs": true,
+    "moroccan_students": true, "halal_food": true, "campus_size": "large",
+    "student_count": 40000, "international_students": 2000,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "60%", "language": "HSK 4 or IELTS 5.0", "entrance_exam": false },
+      "masters": { "min_gpa": "65%", "language": "HSK 5 or IELTS 5.5", "entrance_exam": false },
+      "phd": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false }
+    },
+    "website": "https://eng.ujs.edu.cn",
+    "description": {
+      "en": "Jiangsu University is a comprehensive university popular with international students for its affordable tuition and English-taught MBBS program. Located in Zhenjiang, near Nanjing and Shanghai.",
+      "fr": "L'Université du Jiangsu est une université polyvalente populaire auprès des étudiants internationaux pour ses frais abordables et son programme MBBS en anglais. Située à Zhenjiang, près de Nanjing et Shanghai.",
+      "ar": "جامعة جيانغسو هي جامعة شاملة شائعة بين الطلاب الدوليين لرسومها المعقولة وبرنامج MBBS باللغة الإنجليزية. تقع في تشنجيانغ، بالقرب من نانجينغ وشنغهاي."
+    },
+    "strengths": {
+      "en": ["Automotive Engineering", "Food Science", "Medicine (MBBS)", "Agricultural Engineering", "Energy"],
+      "fr": ["Ingénierie automobile", "Sciences alimentaires", "Médecine (MBBS)", "Génie agricole", "Énergie"],
+      "ar": ["هندسة السيارات", "علوم الغذاء", "الطب (MBBS)", "الهندسة الزراعية", "الطاقة"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "northeast-normal-university",
+    "name": { "en": "Northeast Normal University", "fr": "Université Normale du Nord-Est", "ar": "جامعة الشمال الشرقي للمعلمين" },
+    "city": "changsha", "province": "Jilin",
+    "ranking_qs": 801, "ranking_times": 601, "founded": 1946, "type": "public",
+    "c9_league": false, "double_first_class": true,
+    "programs": ["education", "biology", "chemistry", "geography", "history"],
+    "tuition_range_usd": { "min": 1600, "max": 4000 },
+    "scholarship_types": ["CSC", "university", "confucius-institute"],
+    "language_of_instruction": ["Chinese", "English"], "english_taught_programs": true,
+    "moroccan_students": true, "halal_food": true, "campus_size": "large",
+    "student_count": 28000, "international_students": 1500,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "60%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "http://en.nenu.edu.cn",
+    "description": {
+      "en": "Northeast Normal University is one of China's top six normal (teacher-training) universities. It excels in education, biology, and ecology, and offers excellent Chinese language programs for international students.",
+      "fr": "L'Université Normale du Nord-Est est l'une des six meilleures universités normales (formation des enseignants) de Chine. Elle excelle en éducation, biologie et écologie.",
+      "ar": "جامعة الشمال الشرقي للمعلمين هي واحدة من أفضل ست جامعات تربوية في الصين. تتميز في التعليم والأحياء والبيئة وتقدم برامج ممتازة للغة الصينية."
+    },
+    "strengths": {
+      "en": ["Education", "Biology", "Ecology", "Chinese Language", "Geography"],
+      "fr": ["Éducation", "Biologie", "Écologie", "Langue chinoise", "Géographie"],
+      "ar": ["التعليم", "الأحياء", "البيئة", "اللغة الصينية", "الجغرافيا"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "china-university-of-mining-and-technology",
+    "name": { "en": "China University of Mining and Technology", "fr": "Université Minière et Technologique de Chine", "ar": "جامعة الصين للتعدين والتكنولوجيا" },
+    "city": "nanjing", "province": "Jiangsu",
+    "ranking_qs": 751, "ranking_times": 601, "founded": 1909, "type": "public",
+    "c9_league": false, "double_first_class": true,
+    "programs": ["mining", "engineering", "environmental-science", "economics", "sciences"],
+    "tuition_range_usd": { "min": 1800, "max": 4500 },
+    "scholarship_types": ["CSC", "university"],
+    "language_of_instruction": ["Chinese", "English"], "english_taught_programs": true,
+    "moroccan_students": true, "halal_food": true, "campus_size": "large",
+    "student_count": 35000, "international_students": 1200,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "60%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "http://global.cumt.edu.cn",
+    "description": {
+      "en": "China University of Mining and Technology is China's leading university for mining engineering and safety science. Located in Xuzhou, Jiangsu, it offers affordable programs with strong scholarship support.",
+      "fr": "L'Université Minière et Technologique de Chine est la première université du pays pour l'ingénierie minière et la science de la sécurité. Située à Xuzhou, Jiangsu.",
+      "ar": "جامعة الصين للتعدين والتكنولوجيا هي الجامعة الرائدة في البلاد لهندسة التعدين وعلوم السلامة. تقع في شوتشو، جيانغسو."
+    },
+    "strengths": {
+      "en": ["Mining Engineering", "Safety Science", "Geology", "Surveying", "Environmental Engineering"],
+      "fr": ["Ingénierie minière", "Science de la sécurité", "Géologie", "Topographie", "Ingénierie environnementale"],
+      "ar": ["هندسة التعدين", "علوم السلامة", "الجيولوجيا", "المساحة", "الهندسة البيئية"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "hohai-university",
+    "name": { "en": "Hohai University", "fr": "Université Hohai", "ar": "جامعة هوهاي" },
+    "city": "nanjing", "province": "Jiangsu",
+    "ranking_qs": 801, "ranking_times": 601, "founded": 1915, "type": "public",
+    "c9_league": false, "double_first_class": true,
+    "programs": ["water-resources", "engineering", "environmental-science", "business", "sciences"],
+    "tuition_range_usd": { "min": 1800, "max": 4500 },
+    "scholarship_types": ["CSC", "university", "provincial"],
+    "language_of_instruction": ["Chinese", "English"], "english_taught_programs": true,
+    "moroccan_students": true, "halal_food": true, "campus_size": "large",
+    "student_count": 30000, "international_students": 1500,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "60%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "https://en.hhu.edu.cn",
+    "description": {
+      "en": "Hohai University is China's leading university for water resources and hydraulic engineering. Located in Nanjing, it is highly regarded for civil engineering and environmental science.",
+      "fr": "L'Université Hohai est la première université de Chine pour les ressources en eau et l'ingénierie hydraulique. Située à Nanjing, elle est très réputée pour le génie civil et les sciences de l'environnement.",
+      "ar": "جامعة هوهاي هي الجامعة الرائدة في الصين لموارد المياه والهندسة الهيدروليكية. تقع في نانجينغ وتحظى بتقدير كبير في الهندسة المدنية وعلوم البيئة."
+    },
+    "strengths": {
+      "en": ["Water Resources", "Hydraulic Engineering", "Civil Engineering", "Environmental Science", "Geology"],
+      "fr": ["Ressources en eau", "Ingénierie hydraulique", "Génie civil", "Sciences de l'environnement", "Géologie"],
+      "ar": ["موارد المياه", "الهندسة الهيدروليكية", "الهندسة المدنية", "علوم البيئة", "الجيولوجيا"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "beijing-university-of-chinese-medicine",
+    "name": { "en": "Beijing University of Chinese Medicine", "fr": "Université de Médecine Chinoise de Pékin", "ar": "جامعة بكين للطب الصيني" },
+    "city": "beijing", "province": "Beijing",
+    "ranking_qs": 1001, "ranking_times": 801, "founded": 1956, "type": "public",
+    "c9_league": false, "double_first_class": true,
+    "programs": ["traditional-chinese-medicine", "acupuncture", "pharmacy", "nursing"],
+    "tuition_range_usd": { "min": 2500, "max": 5500 },
+    "scholarship_types": ["CSC", "university", "confucius-institute"],
+    "language_of_instruction": ["Chinese", "English"], "english_taught_programs": true,
+    "moroccan_students": true, "halal_food": true, "campus_size": "medium",
+    "student_count": 12000, "international_students": 2000,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "65%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "https://english.bucm.edu.cn",
+    "description": {
+      "en": "Beijing University of Chinese Medicine is the top university for Traditional Chinese Medicine (TCM). It attracts students worldwide interested in acupuncture, herbal medicine, and integrative healthcare.",
+      "fr": "L'Université de Médecine Chinoise de Pékin est la meilleure université pour la médecine traditionnelle chinoise (MTC). Elle attire des étudiants du monde entier intéressés par l'acupuncture et la phytothérapie.",
+      "ar": "جامعة بكين للطب الصيني هي أفضل جامعة للطب الصيني التقليدي. تجذب طلاباً من جميع أنحاء العالم المهتمين بالوخز بالإبر والطب العشبي."
+    },
+    "strengths": {
+      "en": ["Traditional Chinese Medicine", "Acupuncture", "Herbal Medicine", "Integrative Medicine", "Pharmacy"],
+      "fr": ["Médecine traditionnelle chinoise", "Acupuncture", "Phytothérapie", "Médecine intégrative", "Pharmacie"],
+      "ar": ["الطب الصيني التقليدي", "الوخز بالإبر", "الطب العشبي", "الطب التكاملي", "الصيدلة"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "guangxi-university",
+    "name": { "en": "Guangxi University", "fr": "Université du Guangxi", "ar": "جامعة قوانغشي" },
+    "city": "guangzhou", "province": "Guangxi",
+    "ranking_qs": 1001, "ranking_times": 801, "founded": 1928, "type": "public",
+    "c9_league": false, "double_first_class": true,
+    "programs": ["engineering", "agriculture", "economics", "sciences", "law"],
+    "tuition_range_usd": { "min": 1400, "max": 3500 },
+    "scholarship_types": ["CSC", "university", "guangxi-government"],
+    "language_of_instruction": ["Chinese", "English"], "english_taught_programs": true,
+    "moroccan_students": true, "halal_food": true, "campus_size": "large",
+    "student_count": 35000, "international_students": 1800,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "60%", "language": "HSK 4 or IELTS 5.0", "entrance_exam": false },
+      "masters": { "min_gpa": "65%", "language": "HSK 5 or IELTS 5.5", "entrance_exam": false },
+      "phd": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false }
+    },
+    "website": "https://english.gxu.edu.cn",
+    "description": {
+      "en": "Guangxi University is the largest university in the Guangxi region, near Southeast Asia. It offers some of the most affordable tuition in China with strong ASEAN exchange programs.",
+      "fr": "L'Université du Guangxi est la plus grande université de la région du Guangxi, près de l'Asie du Sud-Est. Elle offre des frais parmi les plus abordables de Chine.",
+      "ar": "جامعة قوانغشي هي أكبر جامعة في منطقة قوانغشي، بالقرب من جنوب شرق آسيا. تقدم بعض أكثر الرسوم الدراسية معقولة في الصين."
+    },
+    "strengths": {
+      "en": ["Civil Engineering", "Agriculture", "Marine Science", "ASEAN Studies", "Sugar Industry"],
+      "fr": ["Génie civil", "Agriculture", "Sciences marines", "Études de l'ASEAN", "Industrie sucrière"],
+      "ar": ["الهندسة المدنية", "الزراعة", "علوم البحار", "دراسات الآسيان", "صناعة السكر"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "kunming-medical-university",
+    "name": { "en": "Kunming Medical University", "fr": "Université Médicale de Kunming", "ar": "جامعة كونمينغ الطبية" },
+    "city": "chengdu", "province": "Yunnan",
+    "ranking_qs": 1201, "ranking_times": 1001, "founded": 1933, "type": "public",
+    "c9_league": false, "double_first_class": false,
+    "programs": ["medicine", "dentistry", "pharmacy", "nursing", "public-health"],
+    "tuition_range_usd": { "min": 2000, "max": 5000 },
+    "scholarship_types": ["CSC", "university", "yunnan-government"],
+    "language_of_instruction": ["Chinese", "English"], "english_taught_programs": true,
+    "moroccan_students": true, "halal_food": true, "campus_size": "medium",
+    "student_count": 18000, "international_students": 1500,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "60%", "language": "HSK 4 or IELTS 5.0", "entrance_exam": false },
+      "masters": { "min_gpa": "65%", "language": "HSK 5 or IELTS 5.5", "entrance_exam": false },
+      "phd": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false }
+    },
+    "website": "http://english.kmmu.edu.cn",
+    "description": {
+      "en": "Kunming Medical University in Yunnan province is a popular destination for international medical students. Located in the 'Spring City' Kunming with year-round mild weather, it offers affordable MBBS programs.",
+      "fr": "L'Université Médicale de Kunming dans la province du Yunnan est une destination populaire pour les étudiants internationaux en médecine. Située dans la 'Ville du Printemps' avec un climat doux toute l'année.",
+      "ar": "جامعة كونمينغ الطبية في مقاطعة يونان هي وجهة شائعة لطلاب الطب الدوليين. تقع في 'مدينة الربيع' كونمينغ بطقس معتدل على مدار السنة."
+    },
+    "strengths": {
+      "en": ["Clinical Medicine (MBBS)", "Dentistry", "Pharmacy", "Traditional Medicine", "Tropical Medicine"],
+      "fr": ["Médecine clinique (MBBS)", "Dentisterie", "Pharmacie", "Médecine traditionnelle", "Médecine tropicale"],
+      "ar": ["الطب السريري (MBBS)", "طب الأسنان", "الصيدلة", "الطب التقليدي", "الطب الاستوائي"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "beijing-language-and-culture-university",
+    "name": { "en": "Beijing Language and Culture University", "fr": "Université des Langues et Cultures de Pékin", "ar": "جامعة بكين للغات والثقافة" },
+    "city": "beijing", "province": "Beijing",
+    "ranking_qs": 1001, "ranking_times": 801, "founded": 1962, "type": "public",
+    "c9_league": false, "double_first_class": false,
+    "programs": ["chinese-language", "linguistics", "international-relations", "business", "computer-science"],
+    "tuition_range_usd": { "min": 2200, "max": 5000 },
+    "scholarship_types": ["CSC", "university", "confucius-institute"],
+    "language_of_instruction": ["Chinese", "English"], "english_taught_programs": true,
+    "moroccan_students": true, "halal_food": true, "campus_size": "small",
+    "student_count": 9000, "international_students": 5000,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "60%", "language": "HSK 3 or IELTS 5.0", "entrance_exam": false },
+      "masters": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "http://english.blcu.edu.cn",
+    "description": {
+      "en": "Beijing Language and Culture University (BLCU) is China's premier university for Chinese language education. Known as the 'mini United Nations', over half its students are international. It's the best choice for learning Mandarin.",
+      "fr": "L'Université des Langues et Cultures de Pékin (BLCU) est la première université de Chine pour l'enseignement du chinois. Connue comme la 'mini ONU', plus de la moitié de ses étudiants sont internationaux.",
+      "ar": "جامعة بكين للغات والثقافة هي الجامعة الأولى في الصين لتعليم اللغة الصينية. تُعرف بـ'الأمم المتحدة المصغرة' حيث أكثر من نصف طلابها دوليون. أفضل خيار لتعلم الماندرين."
+    },
+    "strengths": {
+      "en": ["Chinese Language (HSK)", "Linguistics", "International Chinese Education", "Translation", "Cross-Cultural Studies"],
+      "fr": ["Langue chinoise (HSK)", "Linguistique", "Enseignement international du chinois", "Traduction", "Études interculturelles"],
+      "ar": ["اللغة الصينية (HSK)", "اللسانيات", "التعليم الدولي للصينية", "الترجمة", "الدراسات بين الثقافات"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "nanjing-university-of-aeronautics-and-astronautics",
+    "name": { "en": "Nanjing University of Aeronautics and Astronautics", "fr": "Université d'Aéronautique et d'Astronautique de Nanjing", "ar": "جامعة نانجينغ للملاحة الجوية والفضائية" },
+    "city": "nanjing", "province": "Jiangsu",
+    "ranking_qs": 601, "ranking_times": 501, "founded": 1952, "type": "public",
+    "c9_league": false, "double_first_class": true,
+    "programs": ["aerospace", "engineering", "computer-science", "business", "sciences"],
+    "tuition_range_usd": { "min": 2000, "max": 5000 },
+    "scholarship_types": ["CSC", "university", "provincial"],
+    "language_of_instruction": ["Chinese", "English"], "english_taught_programs": true,
+    "moroccan_students": true, "halal_food": true, "campus_size": "large",
+    "student_count": 32000, "international_students": 1500,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "65%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "http://iao.nuaa.edu.cn",
+    "description": {
+      "en": "Nanjing University of Aeronautics and Astronautics (NUAA) is one of China's top aerospace universities. It has strong connections with China's aviation and space industries.",
+      "fr": "L'Université d'Aéronautique et d'Astronautique de Nanjing est l'une des meilleures universités aérospatiales de Chine avec de fortes connexions avec l'industrie aéronautique et spatiale.",
+      "ar": "جامعة نانجينغ للملاحة الجوية والفضائية هي واحدة من أفضل الجامعات الفضائية في الصين مع روابط قوية مع صناعات الطيران والفضاء الصينية."
+    },
+    "strengths": {
+      "en": ["Aerospace Engineering", "Aircraft Design", "Computer Science", "Mechanical Engineering", "Electrical Engineering"],
+      "fr": ["Ingénierie aérospatiale", "Conception aéronautique", "Informatique", "Génie mécanique", "Génie électrique"],
+      "ar": ["هندسة الفضاء", "تصميم الطائرات", "علوم الحاسب", "الهندسة الميكانيكية", "الهندسة الكهربائية"]
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "china-agricultural-university",
+    "name": { "en": "China Agricultural University", "fr": "Université Agricole de Chine", "ar": "جامعة الصين الزراعية" },
+    "city": "beijing", "province": "Beijing",
+    "ranking_qs": 436, "ranking_times": 401, "founded": 1905, "type": "public",
+    "c9_league": false, "double_first_class": true,
+    "programs": ["agriculture", "food-science", "biology", "engineering", "veterinary-science"],
+    "tuition_range_usd": { "min": 2000, "max": 5000 },
+    "scholarship_types": ["CSC", "university"],
+    "language_of_instruction": ["Chinese", "English"], "english_taught_programs": true,
+    "moroccan_students": true, "halal_food": true, "campus_size": "large",
+    "student_count": 25000, "international_students": 1200,
+    "admission_requirements": {
+      "bachelors": { "min_gpa": "65%", "language": "HSK 4 or IELTS 5.5", "entrance_exam": false },
+      "masters": { "min_gpa": "70%", "language": "HSK 5 or IELTS 6.0", "entrance_exam": false },
+      "phd": { "min_gpa": "75%", "language": "HSK 5 or IELTS 6.5", "entrance_exam": false }
+    },
+    "website": "https://en.cau.edu.cn",
+    "description": {
+      "en": "China Agricultural University is the top agricultural university in China and among the best in the world. It leads in food science, agricultural engineering, and biological sciences.",
+      "fr": "L'Université Agricole de Chine est la première université agricole du pays et parmi les meilleures au monde. Elle mène en sciences alimentaires, génie agricole et sciences biologiques.",
+      "ar": "جامعة الصين الزراعية هي أفضل جامعة زراعية في الصين ومن بين الأفضل في العالم. تتصدر في علوم الغذاء والهندسة الزراعية والعلوم البيولوجية."
+    },
+    "strengths": {
+      "en": ["Agriculture", "Food Science", "Biological Sciences", "Veterinary Medicine", "Agricultural Engineering"],
+      "fr": ["Agriculture", "Sciences alimentaires", "Sciences biologiques", "Médecine vétérinaire", "Génie agricole"],
+      "ar": ["الزراعة", "علوم الغذاء", "العلوم البيولوجية", "الطب البيطري", "الهندسة الزراعية"]
+    },
+    "last_updated": "2026-03-06"
   }
 ]
