@@ -3,7 +3,7 @@
  * Foorsa pSEO Page Generator
  * Generates static HTML pages for universities and cities from JSON data.
  *
- * Usage: node scripts/generate-pages.js [--type universities|cities] [--lang en|fr|ar|all]
+ * Usage: node scripts/generate-pages.js [--type universities|cities|majors] [--lang en|fr|ar|all]
  */
 
 const fs = require('fs');
@@ -118,7 +118,21 @@ const i18n = {
     seoTitleUni: '{name} - Admission, Fees & Scholarships | Foorsa',
     seoDescUni: 'Study at {name} in {city}, China. Tuition from ${minTuition}/year. QS Ranking: #{ranking}. Scholarships available. Apply through Foorsa.',
     seoTitleCity: 'Student Life in {name}, China | Cost, Universities & Guide | Foorsa',
-    seoDescCity: 'Complete student guide to {name}, China. Cost of living from ${minCost}/month. {uniCount} universities. Halal food: {halal}. Apply with Foorsa.'
+    seoDescCity: 'Complete student guide to {name}, China. Cost of living from ${minCost}/month. {uniCount} universities. Halal food: {halal}. Apply with Foorsa.',
+    seoTitleMajor: 'Study {name} in China | Careers, Salaries & Universities | Foorsa',
+    seoDescMajor: 'Study {name} in China. Career paths with salary data for Morocco & worldwide. Top universities, scholarships, and how to apply through Foorsa.',
+    studyInChina: 'Study {name} in China',
+    programOverview: 'Program Overview',
+    whyStudyInChina: 'Why Study {name} in China?',
+    careerPaths: 'Career Paths & Salaries',
+    careerTitle: 'Job Title',
+    salaryMorocco: 'Salary (Morocco)',
+    salaryWorld: 'Salary (Global)',
+    careerDescription: 'Description',
+    watchVideo: 'Watch Video',
+    relatedMajors: 'Related Programs',
+    categoryLabel: 'Category',
+    viewAllMajors: 'View All Programs'
   },
   fr: {
     home: 'Accueil',
@@ -216,7 +230,21 @@ const i18n = {
     seoTitleUni: '{name} - Admission, Frais et Bourses | Foorsa',
     seoDescUni: "Étudiez à {name} à {city}, Chine. Frais dès {minTuition}$/an. Classement QS : #{ranking}. Bourses disponibles. Postulez via Foorsa.",
     seoTitleCity: 'Vie étudiante à {name}, Chine | Coût, Universités & Guide | Foorsa',
-    seoDescCity: "Guide complet pour les étudiants à {name}, Chine. Coût de la vie dès {minCost}$/mois. {uniCount} universités. Halal : {halal}. Postulez avec Foorsa."
+    seoDescCity: "Guide complet pour les étudiants à {name}, Chine. Coût de la vie dès {minCost}$/mois. {uniCount} universités. Halal : {halal}. Postulez avec Foorsa.",
+    seoTitleMajor: "Étudier {name} en Chine | Carrières, Salaires & Universités | Foorsa",
+    seoDescMajor: "Étudiez {name} en Chine. Parcours professionnels avec données salariales pour le Maroc et le monde. Meilleures universités, bourses et comment postuler via Foorsa.",
+    studyInChina: 'Étudier {name} en Chine',
+    programOverview: "Vue d'ensemble du programme",
+    whyStudyInChina: 'Pourquoi étudier {name} en Chine ?',
+    careerPaths: 'Parcours professionnels & Salaires',
+    careerTitle: 'Poste',
+    salaryMorocco: 'Salaire (Maroc)',
+    salaryWorld: 'Salaire (Monde)',
+    careerDescription: 'Description',
+    watchVideo: 'Regarder la vidéo',
+    relatedMajors: 'Programmes similaires',
+    categoryLabel: 'Catégorie',
+    viewAllMajors: 'Voir tous les programmes'
   },
   ar: {
     home: 'الرئيسية',
@@ -314,7 +342,21 @@ const i18n = {
     seoTitleUni: '{name} - القبول والرسوم والمنح | فورصة',
     seoDescUni: 'ادرس في {name} في {city}، الصين. الرسوم تبدأ من {minTuition}$/سنة. تصنيف QS: #{ranking}. منح متاحة. قدم عبر فورصة.',
     seoTitleCity: 'الحياة الطلابية في {name}، الصين | التكلفة والجامعات والدليل | فورصة',
-    seoDescCity: 'دليل شامل للطلاب في {name}، الصين. تكلفة المعيشة من {minCost}$/شهر. {uniCount} جامعة. حلال: {halal}. قدم مع فورصة.'
+    seoDescCity: 'دليل شامل للطلاب في {name}، الصين. تكلفة المعيشة من {minCost}$/شهر. {uniCount} جامعة. حلال: {halal}. قدم مع فورصة.',
+    seoTitleMajor: 'دراسة {name} في الصين | الوظائف والرواتب والجامعات | فورصة',
+    seoDescMajor: 'ادرس {name} في الصين. مسارات مهنية مع بيانات الرواتب في المغرب والعالم. أفضل الجامعات والمنح وطريقة التقديم عبر فورصة.',
+    studyInChina: 'دراسة {name} في الصين',
+    programOverview: 'نظرة عامة على البرنامج',
+    whyStudyInChina: 'لماذا تدرس {name} في الصين؟',
+    careerPaths: 'المسارات المهنية والرواتب',
+    careerTitle: 'المسمى الوظيفي',
+    salaryMorocco: 'الراتب (المغرب)',
+    salaryWorld: 'الراتب (عالمياً)',
+    careerDescription: 'الوصف',
+    watchVideo: 'شاهد الفيديو',
+    relatedMajors: 'تخصصات مشابهة',
+    categoryLabel: 'التصنيف',
+    viewAllMajors: 'عرض جميع التخصصات'
   }
 };
 
@@ -790,13 +832,170 @@ function generateCityPage(city, lang, allUniversities, allCities) {
 }
 
 // ============================================================================
+// MAJOR PAGE GENERATOR
+// ============================================================================
+function generateMajorPage(major, lang, allMajors) {
+  const name = major.name; // EN-only data
+  const slug = major.id;
+  const canonical = `https://foorsa.ma/${lang}/majors/${slug}.html`;
+  const prefix = lang === 'ar' ? '../../ar' : lang === 'fr' ? '../../fr' : '../../en';
+
+  const seoTitle = t(lang, 'seoTitleMajor').replace('{name}', name);
+  const seoDesc = t(lang, 'seoDescMajor').replace('{name}', name);
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": t(lang, 'home'), "item": `https://foorsa.ma/${lang}/index.html` },
+      { "@type": "ListItem", "position": 2, "name": t(lang, 'majors'), "item": `https://foorsa.ma/${lang}/majors.html` },
+      { "@type": "ListItem", "position": 3, "name": name, "item": canonical }
+    ]
+  };
+
+  const mainSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": name,
+    "description": major.description,
+    "provider": {
+      "@type": "Organization",
+      "name": "Foorsa",
+      "url": "https://foorsa.ma"
+    },
+    "educationalLevel": "University",
+    "about": {
+      "@type": "Thing",
+      "name": major.category
+    }
+  };
+
+  // Hreflang links
+  const hreflangLinks = ['en', 'fr', 'ar'].map(l =>
+    `<link rel="alternate" hreflang="${l}" href="https://foorsa.ma/${l}/majors/${slug}.html"/>`
+  ).join('\n');
+
+  const head = renderHead(lang, {
+    title: seoTitle,
+    description: seoDesc,
+    canonical,
+    mainSchema,
+    breadcrumbSchema
+  }).replace('</head>', hreflangLinks + '\n</head>');
+
+  const nav = renderNav(lang);
+
+  // Related majors: same category, up to 4
+  const related = allMajors.filter(m => m.category === major.category && m.id !== slug).slice(0, 4);
+
+  // Video embed
+  const videoSection = major.videoUrl ? `
+  <section class="mb-5">
+    <h2 style="font-size:1.6rem;font-weight:600;margin-bottom:16px;">${t(lang,'watchVideo')}</h2>
+    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+      <iframe src="${major.videoUrl}" title="${escHtml(major.videoTitle || name)}" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </section>` : '';
+
+  // Career table
+  const careerRows = major.careers.map(c => `
+          <tr>
+            <td style="font-weight:600;">${escHtml(c.title)}</td>
+            <td>${escHtml(c.salaryMorocco)}</td>
+            <td>${escHtml(c.salaryWorld)}</td>
+            <td>${escHtml(c.description)}</td>
+          </tr>`).join('');
+
+  const body = `
+<main class="container" style="max-width:900px;margin:40px auto;padding:0 16px;">
+  <nav aria-label="breadcrumb" style="margin-bottom:24px;">
+    <ol class="breadcrumb" style="font-size:14px;">
+      <li class="breadcrumb-item"><a href="${prefix}/index.html">${t(lang,'home')}</a></li>
+      <li class="breadcrumb-item"><a href="${prefix}/majors.html">${t(lang,'majors')}</a></li>
+      <li class="breadcrumb-item active" aria-current="page">${name}</li>
+    </ol>
+  </nav>
+
+  <h1 style="font-size:2.5rem;font-weight:700;margin-bottom:8px;">${t(lang,'studyInChina').replace('{name}', name)}</h1>
+  <p style="display:inline-block;background:#e3f2fd;color:#1565c0;padding:4px 12px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:24px;">${t(lang,'categoryLabel')}: ${escHtml(major.category)}</p>
+
+  <p style="font-size:1.15rem;line-height:1.8;color:#444;margin-bottom:32px;">${escHtml(major.description)}</p>
+
+  <!-- Program Overview -->
+  <section class="mb-5">
+    <h2 style="font-size:1.6rem;font-weight:600;margin-bottom:16px;">${t(lang,'programOverview')}</h2>
+    <p style="font-size:1rem;line-height:1.8;color:#555;">${escHtml(major.overview)}</p>
+  </section>
+
+  <!-- Why China -->
+  ${major.whyChina ? `
+  <section class="mb-5">
+    <h2 style="font-size:1.6rem;font-weight:600;margin-bottom:16px;">${t(lang,'whyStudyInChina').replace('{name}', name)}</h2>
+    <div style="background:#f0f7ff;border-left:4px solid #1565c0;border-radius:8px;padding:20px;">
+      <p style="font-size:1rem;line-height:1.8;margin:0;">${escHtml(major.whyChina)}</p>
+    </div>
+  </section>` : ''}
+
+  ${videoSection}
+
+  <!-- Career Paths -->
+  ${major.careers.length > 0 ? `
+  <section class="mb-5">
+    <h2 style="font-size:1.6rem;font-weight:600;margin-bottom:16px;">${t(lang,'careerPaths')}</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered" style="font-size:14px;">
+        <thead style="background:#f8f9fa;">
+          <tr>
+            <th>${t(lang,'careerTitle')}</th>
+            <th>${t(lang,'salaryMorocco')}</th>
+            <th>${t(lang,'salaryWorld')}</th>
+            <th>${t(lang,'careerDescription')}</th>
+          </tr>
+        </thead>
+        <tbody>${careerRows}
+        </tbody>
+      </table>
+    </div>
+  </section>` : ''}
+
+  <!-- Related Majors -->
+  ${related.length > 0 ? `
+  <section class="mb-5">
+    <h2 style="font-size:1.6rem;font-weight:600;margin-bottom:16px;">${t(lang,'relatedMajors')}</h2>
+    <div class="row">
+      ${related.map(r => `<div class="col-md-3 col-6 mb-3">
+        <a href="${r.id}.html" style="text-decoration:none;color:inherit;">
+          <div style="border:1px solid #e9ecef;border-radius:12px;padding:20px;text-align:center;">
+            <h3 style="font-size:1rem;font-weight:600;margin-bottom:4px;">${escHtml(r.name)}</h3>
+            <p style="color:#777;font-size:13px;margin:0;">${escHtml(r.category)}</p>
+          </div>
+        </a>
+      </div>`).join('')}
+    </div>
+    <p style="text-align:center;margin-top:16px;"><a href="${prefix}/majors.html" style="color:#1565c0;font-weight:600;">${t(lang,'viewAllMajors')} &rarr;</a></p>
+  </section>` : ''}
+
+  <!-- CTA -->
+  <section style="background:linear-gradient(135deg,#1a237e,#0d47a1);border-radius:16px;padding:48px 32px;text-align:center;color:white;margin-bottom:40px;">
+    <h2 style="font-size:1.8rem;font-weight:700;margin-bottom:12px;">${t(lang,'readyToApply')}</h2>
+    <p style="font-size:1.1rem;opacity:0.9;margin-bottom:24px;">${t(lang,'applyWith')}</p>
+    <a href="${prefix}/shop.html" class="cartoon-btn" style="display:inline-block;background:white;color:#1a237e;padding:14px 32px;border-radius:30px;font-weight:600;text-decoration:none;margin:8px;">${t(lang,'startApplication')}</a>
+    <a href="${prefix}/contact.html" class="cartoon-btn" style="display:inline-block;background:transparent;color:white;border:2px solid white;padding:14px 32px;border-radius:30px;font-weight:600;text-decoration:none;margin:8px;">${t(lang,'freeConsultation')}</a>
+  </section>
+</main>`;
+
+  return head + '\n' + nav + '\n' + body + '\n' + renderFooter(lang);
+}
+
+// ============================================================================
 // MAIN
 // ============================================================================
 function main() {
   const universities = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'universities.json'), 'utf8'));
   const cities = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'cities.json'), 'utf8'));
+  const majors = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'majors.json'), 'utf8'));
 
-  let uniCount = 0, cityCount = 0;
+  let uniCount = 0, cityCount = 0, majorCount = 0;
 
   for (const lang of languages) {
     // Generate university pages
@@ -824,9 +1023,26 @@ function main() {
         cityCount++;
       }
     }
+
+    // Generate major pages
+    if (typeArg === 'all' || typeArg === 'majors') {
+      const majorDir = path.join(ROOT, lang, 'majors');
+      fs.mkdirSync(majorDir, { recursive: true });
+
+      for (const major of majors) {
+        const html = generateMajorPage(major, lang, majors);
+        const filePath = path.join(majorDir, `${major.id}.html`);
+        fs.writeFileSync(filePath, html, 'utf8');
+        majorCount++;
+      }
+    }
   }
 
-  console.log(`Generated ${uniCount} university pages and ${cityCount} city pages across ${languages.length} language(s).`);
+  const parts = [];
+  if (uniCount) parts.push(`${uniCount} university pages`);
+  if (cityCount) parts.push(`${cityCount} city pages`);
+  if (majorCount) parts.push(`${majorCount} major pages`);
+  console.log(`Generated ${parts.join(', ')} across ${languages.length} language(s).`);
 }
 
 main();
