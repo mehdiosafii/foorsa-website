@@ -44,9 +44,7 @@
   }
 
   document.addEventListener('DOMContentLoaded', function() {
-    // Load hCaptcha script
-    loadHCaptcha();
-
+    var hasForms = false;
     document.querySelectorAll('form').forEach(function(form) {
       const action = form.getAttribute('action') || '';
       // Skip forms that already use our API or are search/quiz forms
@@ -55,6 +53,7 @@
       if (!action.includes('formspree') && action !== '' && !action.includes('javascript')) return;
 
       // Add CAPTCHA widget
+      hasForms = true;
       addCaptchaWidget(form);
 
       form.addEventListener('submit', async function(e) {
@@ -129,5 +128,7 @@
         if (btn) { btn.disabled = false; btn.textContent = origText; }
       });
     });
+    // Only load hCaptcha if there are eligible forms on the page
+    if (hasForms) loadHCaptcha();
   });
 })();
