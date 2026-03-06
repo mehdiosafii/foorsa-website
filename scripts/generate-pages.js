@@ -133,6 +133,20 @@ const i18n = {
     relatedMajors: 'Related Programs',
     categoryLabel: 'Category',
     viewAllMajors: 'View All Programs',
+    seoTitleUniIndex: 'Top Chinese Universities for International Students | Foorsa',
+    seoDescUniIndex: 'Explore {count} top Chinese universities. Compare rankings, tuition fees, and scholarships. Apply through Foorsa.',
+    seoTitleCityIndex: 'Student City Guides in China | Cost of Living & Universities | Foorsa',
+    seoDescCityIndex: 'Explore {count} student-friendly cities in China. Compare cost of living, universities, and halal food availability.',
+    seoTitleCountryIndex: 'Study in China from Your Country | Scholarships & Visa Guide | Foorsa',
+    seoDescCountryIndex: 'Study in China from Morocco, Algeria, Tunisia, Egypt, and more. Country-specific scholarships, visa guides, and application support.',
+    exploreUniversities: 'Explore Chinese Universities',
+    exploreCities: 'Explore Student Cities in China',
+    exploreCountries: 'Study in China from Your Country',
+    browseByCountry: 'Choose your country for personalized scholarship and visa information.',
+    tuitionFrom: 'Tuition from',
+    perYear: '/year',
+    monthlyFrom: 'From',
+    perMonth: '/month',
     seoTitleCountry: 'Study in China from {country} | Scholarships & Admissions | Foorsa',
     seoDescCountry: 'Complete guide for {demonym} students to study in China. Scholarships, visa requirements, top universities, and how to apply through Foorsa.',
     studyFromCountry: 'Study in China from {country}',
@@ -269,6 +283,20 @@ const i18n = {
     relatedMajors: 'Programmes similaires',
     categoryLabel: 'Catégorie',
     viewAllMajors: 'Voir tous les programmes',
+    seoTitleUniIndex: 'Meilleures universités chinoises pour étudiants internationaux | Foorsa',
+    seoDescUniIndex: "Explorez {count} meilleures universités chinoises. Comparez classements, frais et bourses. Postulez via Foorsa.",
+    seoTitleCityIndex: "Guides des villes étudiantes en Chine | Coût de la vie & Universités | Foorsa",
+    seoDescCityIndex: "Explorez {count} villes étudiantes en Chine. Comparez le coût de la vie, les universités et la disponibilité du halal.",
+    seoTitleCountryIndex: "Étudier en Chine depuis votre pays | Bourses & Guide Visa | Foorsa",
+    seoDescCountryIndex: "Étudiez en Chine depuis le Maroc, l'Algérie, la Tunisie, l'Égypte et plus. Bourses, visas et accompagnement par pays.",
+    exploreUniversities: 'Explorer les universités chinoises',
+    exploreCities: 'Explorer les villes étudiantes en Chine',
+    exploreCountries: 'Étudier en Chine depuis votre pays',
+    browseByCountry: 'Choisissez votre pays pour des informations personnalisées sur les bourses et les visas.',
+    tuitionFrom: 'Frais dès',
+    perYear: '/an',
+    monthlyFrom: 'À partir de',
+    perMonth: '/mois',
     seoTitleCountry: "Étudier en Chine depuis {country} | Bourses & Admissions | Foorsa",
     seoDescCountry: "Guide complet pour les étudiants {demonym}s pour étudier en Chine. Bourses, visa, meilleures universités et comment postuler via Foorsa.",
     studyFromCountry: 'Étudier en Chine depuis {country}',
@@ -405,6 +433,20 @@ const i18n = {
     relatedMajors: 'تخصصات مشابهة',
     categoryLabel: 'التصنيف',
     viewAllMajors: 'عرض جميع التخصصات',
+    seoTitleUniIndex: 'أفضل الجامعات الصينية للطلاب الدوليين | فورصة',
+    seoDescUniIndex: 'استكشف {count} من أفضل الجامعات الصينية. قارن التصنيفات والرسوم والمنح. قدم عبر فورصة.',
+    seoTitleCityIndex: 'أدلة المدن الطلابية في الصين | تكلفة المعيشة والجامعات | فورصة',
+    seoDescCityIndex: 'استكشف {count} مدينة طلابية في الصين. قارن تكلفة المعيشة والجامعات وتوفر الطعام الحلال.',
+    seoTitleCountryIndex: 'ادرس في الصين من بلدك | المنح ودليل التأشيرة | فورصة',
+    seoDescCountryIndex: 'ادرس في الصين من المغرب والجزائر وتونس ومصر والمزيد. منح ومعلومات تأشيرة ودعم تقديم حسب البلد.',
+    exploreUniversities: 'استكشف الجامعات الصينية',
+    exploreCities: 'استكشف المدن الطلابية في الصين',
+    exploreCountries: 'ادرس في الصين من بلدك',
+    browseByCountry: 'اختر بلدك للحصول على معلومات مخصصة عن المنح والتأشيرات.',
+    tuitionFrom: 'الرسوم من',
+    perYear: '/سنة',
+    monthlyFrom: 'من',
+    perMonth: '/شهر',
     seoTitleCountry: 'الدراسة في الصين من {country} | المنح والقبول | فورصة',
     seoDescCountry: 'دليل شامل للطلاب من {country} للدراسة في الصين. المنح، التأشيرة، أفضل الجامعات وطريقة التقديم عبر فورصة.',
     studyFromCountry: 'الدراسة في الصين من {country}',
@@ -521,6 +563,8 @@ function renderNav(lang) {
 </ul></li>
 <li class="menu-item menu-item-has-children"><a href="#">${t(lang,'china')}<span class="dropdown-arrow"> ▼</span></a>
 <ul class="sub-menu">
+<li><a href="${prefix}/universities/index.html">${t(lang,'universities')}</a></li>
+<li><a href="${prefix}/cities/index.html">${t(lang,'cities')}</a></li>
 <li><a href="${prefix}/majors.html">${t(lang,'majors')}</a></li>
 <li><a href="${prefix}/scholarship.html">${t(lang,'scholarship')}</a></li>
 <li><a href="${prefix}/fees.html">${t(lang,'fees')}</a></li>
@@ -548,8 +592,11 @@ function renderFooter(lang) {
 </div></div></div>
 <div class="secondFooter"><div class="container"><div class="menuFooter"><div class="items-menu">
 <div class="item-menu"><label>${t(lang,'china')}</label><div class="menu"><ul class="menu">
+<li class="menu-item"><a href="${prefix}/universities/index.html">${t(lang,'universities')}</a></li>
+<li class="menu-item"><a href="${prefix}/cities/index.html">${t(lang,'cities')}</a></li>
 <li class="menu-item"><a href="${prefix}/majors.html">${t(lang,'majors')}</a></li>
 <li class="menu-item"><a href="${prefix}/scholarship.html">${t(lang,'scholarship')}</a></li>
+<li class="menu-item"><a href="${prefix}/study-from/index.html">${t(lang,'exploreCountries')}</a></li>
 </ul></div></div>
 <div class="item-menu"><label>${t(lang,'foorsa')}</label><div class="menu"><ul class="menu">
 <li class="menu-item"><a href="${prefix}/about-us.html">${t(lang,'aboutUs')}</a></li>
@@ -1060,6 +1107,193 @@ function generateMajorPage(major, lang, allMajors) {
 }
 
 // ============================================================================
+// INDEX / LISTING PAGE GENERATORS
+// ============================================================================
+function generateUniversityIndexPage(lang, universities, cities) {
+  const canonical = `https://foorsa.ma/${lang}/universities/index.html`;
+  const prefix = lang === 'ar' ? '../../ar' : lang === 'fr' ? '../../fr' : '../../en';
+  const seoTitle = t(lang, 'seoTitleUniIndex');
+  const seoDesc = t(lang, 'seoDescUniIndex').replace('{count}', universities.length);
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": t(lang, 'home'), "item": `https://foorsa.ma/${lang}/index.html` },
+      { "@type": "ListItem", "position": 2, "name": t(lang, 'universities'), "item": canonical }
+    ]
+  };
+  const mainSchema = { "@context": "https://schema.org", "@type": "CollectionPage", "name": seoTitle, "description": seoDesc };
+
+  const hreflangLinks = ['en', 'fr', 'ar'].map(l =>
+    `<link rel="alternate" hreflang="${l}" href="https://foorsa.ma/${l}/universities/index.html"/>`
+  ).join('\n');
+
+  const head = renderHead(lang, { title: seoTitle, description: seoDesc, canonical, mainSchema, breadcrumbSchema })
+    .replace('</head>', hreflangLinks + '\n</head>');
+  const nav = renderNav(lang);
+
+  // Sort by QS ranking
+  const sorted = [...universities].sort((a, b) => a.ranking_qs - b.ranking_qs);
+
+  const cards = sorted.map(uni => {
+    const name = uni.name[lang] || uni.name.en;
+    const cityName = getCityName(uni.city, lang, cities);
+    return `<div class="col-md-4 mb-4">
+      <a href="${uni.id}.html" style="text-decoration:none;color:inherit;">
+        <div style="border:1px solid #e9ecef;border-radius:12px;padding:24px;height:100%;transition:box-shadow .2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'">
+          <h2 style="font-size:1.1rem;font-weight:700;margin-bottom:8px;">${escHtml(name)}</h2>
+          <p style="color:#1565c0;font-size:13px;margin-bottom:8px;">QS #${uni.ranking_qs} · ${cityName}</p>
+          ${uni.c9_league ? '<span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">C9 League</span> ' : ''}
+          ${uni.double_first_class ? '<span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Double First Class</span>' : ''}
+          <p style="color:#777;font-size:13px;margin-top:8px;margin-bottom:0;">${t(lang,'tuitionFrom')} $${uni.tuition_range_usd.min}${t(lang,'perYear')}</p>
+        </div>
+      </a>
+    </div>`;
+  }).join('');
+
+  const body = `
+<main class="container" style="max-width:1100px;margin:40px auto;padding:0 16px;">
+  <nav aria-label="breadcrumb" style="margin-bottom:24px;">
+    <ol class="breadcrumb" style="font-size:14px;">
+      <li class="breadcrumb-item"><a href="${prefix}/index.html">${t(lang,'home')}</a></li>
+      <li class="breadcrumb-item active" aria-current="page">${t(lang,'universities')}</li>
+    </ol>
+  </nav>
+  <h1 style="font-size:2.2rem;font-weight:700;margin-bottom:8px;">${t(lang,'exploreUniversities')}</h1>
+  <p style="font-size:1.05rem;color:#555;margin-bottom:32px;">${universities.length} ${t(lang,'universities').toLowerCase()}</p>
+  <div class="row">${cards}</div>
+
+  <section style="background:linear-gradient(135deg,#1a237e,#0d47a1);border-radius:16px;padding:48px 32px;text-align:center;color:white;margin:40px 0;">
+    <h2 style="font-size:1.8rem;font-weight:700;margin-bottom:12px;">${t(lang,'readyToApply')}</h2>
+    <p style="font-size:1.1rem;opacity:0.9;margin-bottom:24px;">${t(lang,'applyWith')}</p>
+    <a href="https://apply.foorsa.ma" class="cartoon-btn" target="_blank" rel="noopener" style="display:inline-block;background:white;color:#1a237e;padding:14px 32px;border-radius:30px;font-weight:600;text-decoration:none;margin:8px;">${t(lang,'startApplication')}</a>
+  </section>
+</main>`;
+
+  return head + '\n' + nav + '\n' + body + '\n' + renderFooter(lang);
+}
+
+function generateCityIndexPage(lang, cities) {
+  const canonical = `https://foorsa.ma/${lang}/cities/index.html`;
+  const prefix = lang === 'ar' ? '../../ar' : lang === 'fr' ? '../../fr' : '../../en';
+  const seoTitle = t(lang, 'seoTitleCityIndex');
+  const seoDesc = t(lang, 'seoDescCityIndex').replace('{count}', cities.length);
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": t(lang, 'home'), "item": `https://foorsa.ma/${lang}/index.html` },
+      { "@type": "ListItem", "position": 2, "name": t(lang, 'cities'), "item": canonical }
+    ]
+  };
+  const mainSchema = { "@context": "https://schema.org", "@type": "CollectionPage", "name": seoTitle, "description": seoDesc };
+
+  const hreflangLinks = ['en', 'fr', 'ar'].map(l =>
+    `<link rel="alternate" hreflang="${l}" href="https://foorsa.ma/${l}/cities/index.html"/>`
+  ).join('\n');
+
+  const head = renderHead(lang, { title: seoTitle, description: seoDesc, canonical, mainSchema, breadcrumbSchema })
+    .replace('</head>', hreflangLinks + '\n</head>');
+  const nav = renderNav(lang);
+
+  const cards = cities.map(city => {
+    const name = city.name[lang] || city.name.en;
+    const col = city.cost_of_living;
+    return `<div class="col-md-4 mb-4">
+      <a href="${city.id}.html" style="text-decoration:none;color:inherit;">
+        <div style="border:1px solid #e9ecef;border-radius:12px;padding:24px;height:100%;transition:box-shadow .2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'">
+          <h2 style="font-size:1.2rem;font-weight:700;margin-bottom:8px;">${escHtml(name)}</h2>
+          <p style="color:#777;font-size:13px;margin-bottom:4px;">${city.universities_count} ${t(lang,'uniCount').toLowerCase()} · ${city.population}</p>
+          <p style="color:#1565c0;font-size:13px;margin-bottom:4px;">${t(lang,'monthlyFrom')} $${col.total_monthly_usd.min}${t(lang,'perMonth')}</p>
+          <p style="color:#777;font-size:13px;margin:0;">${t(lang,'halalAvailability')}: ${t(lang, city.halal_food_availability)}</p>
+        </div>
+      </a>
+    </div>`;
+  }).join('');
+
+  const body = `
+<main class="container" style="max-width:1100px;margin:40px auto;padding:0 16px;">
+  <nav aria-label="breadcrumb" style="margin-bottom:24px;">
+    <ol class="breadcrumb" style="font-size:14px;">
+      <li class="breadcrumb-item"><a href="${prefix}/index.html">${t(lang,'home')}</a></li>
+      <li class="breadcrumb-item active" aria-current="page">${t(lang,'cities')}</li>
+    </ol>
+  </nav>
+  <h1 style="font-size:2.2rem;font-weight:700;margin-bottom:8px;">${t(lang,'exploreCities')}</h1>
+  <p style="font-size:1.05rem;color:#555;margin-bottom:32px;">${cities.length} ${t(lang,'cities').toLowerCase()}</p>
+  <div class="row">${cards}</div>
+</main>`;
+
+  return head + '\n' + nav + '\n' + body + '\n' + renderFooter(lang);
+}
+
+function generateCountryIndexPage(lang, countries) {
+  const canonical = `https://foorsa.ma/${lang}/study-from/index.html`;
+  const prefix = lang === 'ar' ? '../../ar' : lang === 'fr' ? '../../fr' : '../../en';
+  const seoTitle = t(lang, 'seoTitleCountryIndex');
+  const seoDesc = t(lang, 'seoDescCountryIndex');
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": t(lang, 'home'), "item": `https://foorsa.ma/${lang}/index.html` },
+      { "@type": "ListItem", "position": 2, "name": t(lang, 'exploreCountries'), "item": canonical }
+    ]
+  };
+  const mainSchema = { "@context": "https://schema.org", "@type": "CollectionPage", "name": seoTitle, "description": seoDesc };
+
+  const hreflangLinks = ['en', 'fr', 'ar'].map(l =>
+    `<link rel="alternate" hreflang="${l}" href="https://foorsa.ma/${l}/study-from/index.html"/>`
+  ).join('\n');
+
+  const head = renderHead(lang, { title: seoTitle, description: seoDesc, canonical, mainSchema, breadcrumbSchema })
+    .replace('</head>', hreflangLinks + '\n</head>');
+  const nav = renderNav(lang);
+
+  // Primary market first
+  const sorted = [...countries].sort((a, b) => (b.primary_market ? 1 : 0) - (a.primary_market ? 1 : 0));
+
+  const cards = sorted.map(c => {
+    const name = c.name[lang] || c.name.en;
+    const demonym = c.demonym[lang] || c.demonym.en;
+    return `<div class="col-md-4 mb-4">
+      <a href="${c.id}.html" style="text-decoration:none;color:inherit;">
+        <div style="border:1px solid #e9ecef;border-radius:12px;padding:24px;height:100%;transition:box-shadow .2s;${c.primary_market ? 'border-color:#1565c0;border-width:2px;' : ''}" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'">
+          <div style="font-size:2rem;margin-bottom:8px;">${c.flag_emoji}</div>
+          <h2 style="font-size:1.2rem;font-weight:700;margin-bottom:8px;">${escHtml(name)}</h2>
+          <p style="color:#1565c0;font-size:13px;margin-bottom:4px;">${c.stats.students_in_china} ${t(lang,'studentsInChina').replace('{demonym}', demonym).replace('{country}', name).toLowerCase()}</p>
+          <p style="color:#777;font-size:13px;margin:0;">${t(lang,'scholarshipRate')}: ${c.stats.scholarship_rate}</p>
+        </div>
+      </a>
+    </div>`;
+  }).join('');
+
+  const body = `
+<main class="container" style="max-width:1100px;margin:40px auto;padding:0 16px;">
+  <nav aria-label="breadcrumb" style="margin-bottom:24px;">
+    <ol class="breadcrumb" style="font-size:14px;">
+      <li class="breadcrumb-item"><a href="${prefix}/index.html">${t(lang,'home')}</a></li>
+      <li class="breadcrumb-item active" aria-current="page">${t(lang,'exploreCountries')}</li>
+    </ol>
+  </nav>
+  <h1 style="font-size:2.2rem;font-weight:700;margin-bottom:8px;">${t(lang,'exploreCountries')}</h1>
+  <p style="font-size:1.05rem;color:#555;margin-bottom:32px;">${t(lang,'browseByCountry')}</p>
+  <div class="row">${cards}</div>
+
+  <section style="background:linear-gradient(135deg,#1a237e,#0d47a1);border-radius:16px;padding:48px 32px;text-align:center;color:white;margin:40px 0;">
+    <h2 style="font-size:1.8rem;font-weight:700;margin-bottom:12px;">${t(lang,'readyToApply')}</h2>
+    <p style="font-size:1.1rem;opacity:0.9;margin-bottom:24px;">${t(lang,'applyWith')}</p>
+    <a href="https://apply.foorsa.ma" class="cartoon-btn" target="_blank" rel="noopener" style="display:inline-block;background:white;color:#1a237e;padding:14px 32px;border-radius:30px;font-weight:600;text-decoration:none;margin:8px;">${t(lang,'startApplication')}</a>
+  </section>
+</main>`;
+
+  return head + '\n' + nav + '\n' + body + '\n' + renderFooter(lang);
+}
+
+// ============================================================================
 // COUNTRY LANDING PAGE GENERATOR
 // ============================================================================
 function generateCountryPage(country, lang, allCities) {
@@ -1278,6 +1512,8 @@ function main() {
         fs.writeFileSync(filePath, html, 'utf8');
         uniCount++;
       }
+      // University index page
+      fs.writeFileSync(path.join(uniDir, 'index.html'), generateUniversityIndexPage(lang, universities, cities), 'utf8');
     }
 
     // Generate city pages
@@ -1291,6 +1527,8 @@ function main() {
         fs.writeFileSync(filePath, html, 'utf8');
         cityCount++;
       }
+      // City index page
+      fs.writeFileSync(path.join(cityDir, 'index.html'), generateCityIndexPage(lang, cities), 'utf8');
     }
 
     // Generate major pages
@@ -1317,6 +1555,8 @@ function main() {
         fs.writeFileSync(filePath, html, 'utf8');
         countryCount++;
       }
+      // Country index page
+      fs.writeFileSync(path.join(countryDir, 'index.html'), generateCountryIndexPage(lang, countries), 'utf8');
     }
   }
 

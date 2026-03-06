@@ -103,12 +103,12 @@
   "redirects": [
     {
       "source": "/universities-in-china/:path*",
-      "destination": "/en/:path*",
+      "destination": "/en/universities/index.html",
       "statusCode": 301
     },
     {
       "source": "/scholarships/:path*",
-      "destination": "/en/:path*",
+      "destination": "/en/scholarship.html",
       "statusCode": 301
     }
   ],
