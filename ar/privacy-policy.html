@@ -338,7 +338,9 @@
 </div>
 </div></footer>
 <script id="foorsa-navigation-js" src="../assets/js/navigation.js?v=20260123" defer></script>
-<script id="bootstrap-bundle-js" src="../assets/bootstrap/js/bootstrap.bundle.min.js?v=20260123" defer></script>
+<script>
+(function(){var loaded=false;function loadBS(){if(loaded)return;loaded=true;var s=document.createElement('script');s.src='../assets/bootstrap/js/bootstrap.bundle.min.js?v=20260123';document.head.appendChild(s);};document.addEventListener('click',function(e){if(e.target.closest('[data-bs-toggle]')){loadBS();}});document.addEventListener('DOMContentLoaded',function(){if(document.querySelector('[data-bs-toggle]'))setTimeout(loadBS,3000);});})();
+</script>
 <script id="swiper-js" src="../assets/libs/swiper-bundle.min.js?v=20260123" defer></script>
 <script id="global-js-js-extra">
 var theme_images = {"logo_white":"http:\/\/6513975b-73be-4c21-9514-ea2c64c621ad-00-32e3jxk42tjpt.janeway.replit.dev\/wp-content\/themes\/foorsa\/assets\/img\/logowt.png","logo_black":"http:\/\/6513975b-73be-4c21-9514-ea2c64c621ad-00-32e3jxk42tjpt.janeway.replit.dev\/wp-content\/themes\/foorsa\/assets\/img\/logobk.png"};
@@ -349,7 +351,7 @@ var theme_images = {"logo_white":"http:\/\/6513975b-73be-4c21-9514-ea2c64c621ad-
 <script id="scrolltrigger-js" src="../assets/libs/ScrollTrigger.min.js?v=20260123" defer></script>
 <script id="main-js-js" src="../assets/js/main.js?v=20260124b" defer></script>
 <script id="fancybox-js-after">
-(function(){var loaded=false;function init(){if(loaded)return;loaded=true;var s=document.createElement('script');s.src='../assets/libs/fancybox.umd.js';s.onload=function(){Fancybox.bind('[data-fancybox]',{});Fancybox.bind('[data-fancybox^="video-"]',{Thumbs:false,Toolbar:{display:["close"]}});};document.head.appendChild(s);};document.addEventListener('scroll',init,{once:true});setTimeout(init,5000);})();
+(function(){var loaded=false;function init(){if(loaded)return;loaded=true;var s=document.createElement('script');s.src='../assets/libs/fancybox.umd.js';s.onload=function(){Fancybox.bind('[data-fancybox]',{});Fancybox.bind('[data-fancybox^="video-"]',{Thumbs:false,Toolbar:{display:["close"]}});};document.head.appendChild(s);};document.addEventListener('click',function(e){if(e.target.closest('[data-fancybox]')){e.preventDefault();e.stopPropagation();var t=e.target.closest('[data-fancybox]');init();var c=setInterval(function(){if(typeof Fancybox!=='undefined'){clearInterval(c);t.click();}},50);}},{once:true});})();
 </script>
 <script defer="" src="/js/tracker.js"></script>
 <script defer src="/js/ga4-events.js"></script>
