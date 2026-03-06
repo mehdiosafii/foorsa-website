@@ -39,6 +39,8 @@ jQuery(document).ready(function ($) {
     const swiper = new Swiper('.mediaSlider', {
         direction: "horizontal",
         loop: true,
+        observer: true,
+        observeParents: true,
 
         breakpoints: {
             320: {
@@ -66,7 +68,7 @@ jQuery(document).ready(function ($) {
         },
         speed: 5000,
         freeModeMomentum: false,
-        
+
     });
 
     // Show all hero content immediately (no click-to-enter)
@@ -81,6 +83,8 @@ jQuery(document).ready(function ($) {
     const swiperCat = new Swiper('.swiperCategory', {
         direction: "horizontal",
         loop: true,
+        observer: true,
+        observeParents: true,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -103,6 +107,8 @@ jQuery(document).ready(function ($) {
 
     const swiperEtudiant = new Swiper('.swiperEtudiant', {
         direction: "horizontal",
+        observer: true,
+        observeParents: true,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -701,6 +707,8 @@ $(document).ready(function(){
             slidesPerView: 1,
             spaceBetween: 20,
             loop: true,
+            observer: true,
+            observeParents: true,
             speed: 800,
             autoplay: {
                 delay: 2000,

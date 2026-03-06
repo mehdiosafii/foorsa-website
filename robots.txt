@@ -1,8 +1,12 @@
 # Robots.txt for foorsa.ma
 User-agent: *
 Allow: /
+
+# Admin and API
 Disallow: /admin.html
 Disallow: /api/
+
+# Transactional/utility pages (no SEO value)
 Disallow: /*/cart.html
 Disallow: /*/checkout.html
 Disallow: /*/payment-confirmation.html
@@ -11,9 +15,14 @@ Disallow: /*/newsletter.html
 Disallow: /*/engagement.html
 Disallow: /*/recruitment.html
 
-# Sitemap location
+# Internal tools and scripts
+Disallow: /referral/
+Disallow: /*.py$
+Disallow: /*.sh$
+
+# Backup files
+Disallow: /.backups/
+
+# Sitemaps
 Sitemap: https://foorsa.ma/sitemap.xml
 Sitemap: https://foorsa.ma/video-sitemap.xml
-
-# Crawl delay (optional)
-Crawl-delay: 1

@@ -1,0 +1,342 @@
+[
+  {
+    "id": "beijing",
+    "name": { "en": "Beijing", "fr": "Pékin", "ar": "بكين" },
+    "province": "Beijing",
+    "population": "21.5M",
+    "universities_count": 92,
+    "cost_of_living": {
+      "rent_monthly_usd": { "min": 350, "max": 900, "average": 550 },
+      "food_monthly_usd": { "min": 150, "max": 350, "average": 220 },
+      "transport_monthly_usd": { "min": 15, "max": 50, "average": 30 },
+      "total_monthly_usd": { "min": 600, "max": 1400, "average": 900 }
+    },
+    "climate": {
+      "en": "Continental: cold winters (-5°C to -15°C), hot summers (30°C+). Four distinct seasons with dry, clear autumns.",
+      "fr": "Continental : hivers froids (-5°C à -15°C), étés chauds (30°C+). Quatre saisons distinctes avec des automnes secs et clairs.",
+      "ar": "قاري: شتاء بارد (-5 إلى -15 درجة)، صيف حار (+30 درجة). أربعة فصول متميزة مع خريف جاف وصاف."
+    },
+    "halal_food_availability": "excellent",
+    "moroccan_community": "large",
+    "muslim_community": "large",
+    "airport": "PEK (Capital) / PKX (Daxing)",
+    "key_universities": ["peking-university", "tsinghua-university", "beihang-university"],
+    "highlights": {
+      "en": ["Capital city with rich cultural heritage", "Niujie (Muslim quarter) with mosques and halal restaurants", "Excellent public transport (subway covers entire city)", "Many English-speaking services"],
+      "fr": ["Capitale avec un riche patrimoine culturel", "Niujie (quartier musulman) avec mosquées et restaurants halal", "Excellent transport en commun", "Nombreux services anglophones"],
+      "ar": ["العاصمة بتراث ثقافي غني", "نيوجيه (الحي الإسلامي) بمساجد ومطاعم حلال", "مواصلات عامة ممتازة", "خدمات متعددة باللغة الإنجليزية"]
+    },
+    "description": {
+      "en": "Beijing, China's capital, offers the richest cultural experience and is home to the country's top universities. While more expensive than other cities, it provides unmatched career opportunities and a large Muslim community centered around the historic Niujie district.",
+      "fr": "Pékin, la capitale chinoise, offre l'expérience culturelle la plus riche et abrite les meilleures universités du pays. Bien que plus chère que d'autres villes, elle offre des opportunités de carrière inégalées et une grande communauté musulmane centrée autour du quartier historique de Niujie.",
+      "ar": "بكين، عاصمة الصين، تقدم أغنى تجربة ثقافية وتضم أفضل جامعات البلاد. رغم كونها أغلى من مدن أخرى، إلا أنها توفر فرصاً مهنية لا مثيل لها ومجتمعاً مسلماً كبيراً يتمركز حول حي نيوجيه التاريخي."
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "shanghai",
+    "name": { "en": "Shanghai", "fr": "Shanghai", "ar": "شنغهاي" },
+    "province": "Shanghai",
+    "population": "24.9M",
+    "universities_count": 64,
+    "cost_of_living": {
+      "rent_monthly_usd": { "min": 400, "max": 1000, "average": 600 },
+      "food_monthly_usd": { "min": 180, "max": 400, "average": 250 },
+      "transport_monthly_usd": { "min": 15, "max": 50, "average": 30 },
+      "total_monthly_usd": { "min": 700, "max": 1500, "average": 1000 }
+    },
+    "climate": {
+      "en": "Subtropical: mild winters (2-8°C), hot humid summers (30-38°C). Rainy season in June-July (plum rain).",
+      "fr": "Subtropical : hivers doux (2-8°C), étés chauds et humides (30-38°C). Saison des pluies en juin-juillet.",
+      "ar": "شبه استوائي: شتاء معتدل (2-8 درجات)، صيف حار ورطب (30-38 درجة). موسم الأمطار في يونيو-يوليو."
+    },
+    "halal_food_availability": "good",
+    "moroccan_community": "medium",
+    "muslim_community": "medium",
+    "airport": "PVG (Pudong) / SHA (Hongqiao)",
+    "key_universities": ["fudan-university", "shanghai-jiao-tong-university", "tongji-university"],
+    "highlights": {
+      "en": ["China's most international city", "Strong job market for graduates (finance, tech, trade)", "Vibrant nightlife and cultural scene", "Many international restaurants and services"],
+      "fr": ["Ville la plus internationale de Chine", "Marché de l'emploi solide (finance, tech, commerce)", "Vie nocturne et scène culturelle dynamiques", "Nombreux restaurants et services internationaux"],
+      "ar": ["أكثر مدن الصين عالمية", "سوق عمل قوي للخريجين (المالية، التقنية، التجارة)", "حياة ليلية ومشهد ثقافي نابض", "مطاعم وخدمات دولية متعددة"]
+    },
+    "description": {
+      "en": "Shanghai is China's most cosmopolitan city and financial center, offering the best career prospects for international graduates. It's the most expensive city for students but provides an unmatched international lifestyle and networking opportunities.",
+      "fr": "Shanghai est la ville la plus cosmopolite de Chine et son centre financier, offrant les meilleures perspectives de carrière pour les diplômés internationaux. C'est la ville la plus chère pour les étudiants mais elle offre un style de vie international et des opportunités de réseautage inégalés.",
+      "ar": "شنغهاي هي أكثر مدن الصين عالمية ومركزها المالي، وتقدم أفضل الآفاق المهنية للخريجين الدوليين. وهي أغلى مدينة للطلاب لكنها توفر نمط حياة دولي وفرص تواصل لا مثيل لها."
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "wuhan",
+    "name": { "en": "Wuhan", "fr": "Wuhan", "ar": "ووهان" },
+    "province": "Hubei",
+    "population": "12.3M",
+    "universities_count": 89,
+    "cost_of_living": {
+      "rent_monthly_usd": { "min": 150, "max": 500, "average": 280 },
+      "food_monthly_usd": { "min": 100, "max": 250, "average": 150 },
+      "transport_monthly_usd": { "min": 10, "max": 35, "average": 20 },
+      "total_monthly_usd": { "min": 350, "max": 850, "average": 500 }
+    },
+    "climate": {
+      "en": "Subtropical: cold winters (0-5°C), very hot humid summers (35-40°C). Known as one of China's 'furnace cities'.",
+      "fr": "Subtropical : hivers froids (0-5°C), étés très chauds et humides (35-40°C). Connue comme l'une des 'villes fournaises' de Chine.",
+      "ar": "شبه استوائي: شتاء بارد (0-5 درجات)، صيف حار ورطب جداً (35-40 درجة). معروفة كواحدة من 'مدن الفرن' في الصين."
+    },
+    "halal_food_availability": "good",
+    "moroccan_community": "large",
+    "muslim_community": "medium",
+    "airport": "WUH (Tianhe)",
+    "key_universities": ["wuhan-university", "huazhong-university-of-science-and-technology"],
+    "highlights": {
+      "en": ["Most popular city for Moroccan students in China", "89 universities — most of any Chinese city", "Very affordable cost of living", "Beautiful cherry blossom season at Wuhan University"],
+      "fr": ["Ville la plus populaire pour les étudiants marocains en Chine", "89 universités — le plus grand nombre de toutes les villes chinoises", "Coût de la vie très abordable", "Belle saison des cerisiers en fleurs à l'Université de Wuhan"],
+      "ar": ["المدينة الأكثر شعبية للطلاب المغاربة في الصين", "89 جامعة — أكبر عدد من أي مدينة صينية", "تكلفة معيشة منخفضة جداً", "موسم أزهار الكرز الجميل في جامعة ووهان"]
+    },
+    "description": {
+      "en": "Wuhan is the most popular destination for Moroccan students studying in China, thanks to its affordable cost of living, large number of universities (89), and welcoming Moroccan community. Located in central China, it offers excellent value for money.",
+      "fr": "Wuhan est la destination la plus populaire pour les étudiants marocains en Chine, grâce à son coût de la vie abordable, son grand nombre d'universités (89) et sa communauté marocaine accueillante. Située au centre de la Chine, elle offre un excellent rapport qualité-prix.",
+      "ar": "ووهان هي الوجهة الأكثر شعبية للطلاب المغاربة الدارسين في الصين، بفضل تكلفة معيشتها المعقولة وعدد جامعاتها الكبير (89) ومجتمعها المغربي الترحيبي. تقع في وسط الصين وتوفر قيمة ممتازة مقابل المال."
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "guangzhou",
+    "name": { "en": "Guangzhou", "fr": "Canton", "ar": "قوانغتشو" },
+    "province": "Guangdong",
+    "population": "18.7M",
+    "universities_count": 83,
+    "cost_of_living": {
+      "rent_monthly_usd": { "min": 250, "max": 700, "average": 400 },
+      "food_monthly_usd": { "min": 130, "max": 300, "average": 200 },
+      "transport_monthly_usd": { "min": 12, "max": 40, "average": 25 },
+      "total_monthly_usd": { "min": 450, "max": 1100, "average": 700 }
+    },
+    "climate": {
+      "en": "Subtropical: mild winters (10-15°C), hot humid summers (30-35°C). Very green and tropical feel. Typhoon season in summer.",
+      "fr": "Subtropical : hivers doux (10-15°C), étés chauds et humides (30-35°C). Ambiance très verte et tropicale. Saison des typhons en été.",
+      "ar": "شبه استوائي: شتاء معتدل (10-15 درجة)، صيف حار ورطب (30-35 درجة). طابع أخضر واستوائي. موسم الأعاصير في الصيف."
+    },
+    "halal_food_availability": "excellent",
+    "moroccan_community": "large",
+    "muslim_community": "very-large",
+    "airport": "CAN (Baiyun)",
+    "key_universities": ["sun-yat-sen-university"],
+    "highlights": {
+      "en": ["Largest African and Arab trading community in China", "Excellent halal food scene (Xiaobei area)", "Warm climate year-round", "Major trade and business hub — great for entrepreneurship"],
+      "fr": ["Plus grande communauté commerciale africaine et arabe de Chine", "Excellente scène culinaire halal (quartier Xiaobei)", "Climat chaud toute l'année", "Grand centre commercial — idéal pour l'entrepreneuriat"],
+      "ar": ["أكبر مجتمع تجاري أفريقي وعربي في الصين", "مشهد طعام حلال ممتاز (منطقة شياوبي)", "مناخ دافئ طوال العام", "مركز تجاري كبير — ممتاز لريادة الأعمال"]
+    },
+    "description": {
+      "en": "Guangzhou is home to the largest African and Arab community in China, centered around the Xiaobei area. It offers excellent halal food options, warm weather year-round, and strong opportunities for trade and business. A top choice for Moroccan students who want a familiar cultural environment.",
+      "fr": "Canton abrite la plus grande communauté africaine et arabe de Chine, centrée autour du quartier Xiaobei. Elle offre d'excellentes options de nourriture halal, un temps chaud toute l'année et de fortes opportunités commerciales.",
+      "ar": "قوانغتشو تضم أكبر مجتمع أفريقي وعربي في الصين، يتمركز حول منطقة شياوبي. توفر خيارات طعام حلال ممتازة وطقساً دافئاً طوال العام وفرصاً تجارية قوية."
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "hangzhou",
+    "name": { "en": "Hangzhou", "fr": "Hangzhou", "ar": "هانغتشو" },
+    "province": "Zhejiang",
+    "population": "12.2M",
+    "universities_count": 39,
+    "cost_of_living": {
+      "rent_monthly_usd": { "min": 250, "max": 700, "average": 420 },
+      "food_monthly_usd": { "min": 130, "max": 300, "average": 200 },
+      "transport_monthly_usd": { "min": 12, "max": 40, "average": 22 },
+      "total_monthly_usd": { "min": 450, "max": 1100, "average": 700 }
+    },
+    "climate": {
+      "en": "Subtropical: cool winters (2-8°C), warm humid summers (28-35°C). Beautiful scenery around West Lake. Rainy spring season.",
+      "fr": "Subtropical : hivers frais (2-8°C), étés chauds et humides (28-35°C). Beaux paysages autour du Lac de l'Ouest. Printemps pluvieux.",
+      "ar": "شبه استوائي: شتاء بارد (2-8 درجات)، صيف دافئ ورطب (28-35 درجة). مناظر طبيعية جميلة حول البحيرة الغربية."
+    },
+    "halal_food_availability": "good",
+    "moroccan_community": "medium",
+    "muslim_community": "medium",
+    "airport": "HGH (Xiaoshan)",
+    "key_universities": ["zhejiang-university"],
+    "highlights": {
+      "en": ["Home to Alibaba/tech hub — excellent internship opportunities", "One of China's most beautiful cities (West Lake UNESCO site)", "30 minutes from Shanghai by high-speed rail", "Growing tech startup ecosystem"],
+      "fr": ["Siège d'Alibaba/hub technologique — excellentes opportunités de stage", "L'une des plus belles villes de Chine (Lac de l'Ouest, site UNESCO)", "30 minutes de Shanghai en TGV", "Écosystème de startups tech en croissance"],
+      "ar": ["مقر علي بابا/مركز تقني — فرص تدريب ممتازة", "واحدة من أجمل مدن الصين (البحيرة الغربية، موقع يونسكو)", "30 دقيقة من شنغهاي بالقطار السريع", "نظام بيئي متنامٍ للشركات الناشئة"]
+    },
+    "description": {
+      "en": "Hangzhou, home to Alibaba and Zhejiang University, combines natural beauty (West Lake) with a booming tech economy. It's one of China's most livable cities and offers excellent internship opportunities in tech and e-commerce.",
+      "fr": "Hangzhou, berceau d'Alibaba et de l'Université du Zhejiang, combine beauté naturelle (Lac de l'Ouest) et économie technologique en plein essor. C'est l'une des villes les plus agréables de Chine avec d'excellentes opportunités de stage en tech.",
+      "ar": "هانغتشو، موطن علي بابا وجامعة تشجيانغ، تجمع بين الجمال الطبيعي (البحيرة الغربية) واقتصاد تقني مزدهر. واحدة من أكثر مدن الصين ملاءمة للعيش مع فرص تدريب ممتازة في التقنية."
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "nanjing",
+    "name": { "en": "Nanjing", "fr": "Nankin", "ar": "نانجينغ" },
+    "province": "Jiangsu",
+    "population": "9.3M",
+    "universities_count": 51,
+    "cost_of_living": {
+      "rent_monthly_usd": { "min": 200, "max": 600, "average": 350 },
+      "food_monthly_usd": { "min": 120, "max": 280, "average": 180 },
+      "transport_monthly_usd": { "min": 10, "max": 35, "average": 20 },
+      "total_monthly_usd": { "min": 400, "max": 1000, "average": 600 }
+    },
+    "climate": {
+      "en": "Subtropical: cold winters (0-5°C), hot summers (30-38°C). Known as another 'furnace city'. Beautiful autumn foliage.",
+      "fr": "Subtropical : hivers froids (0-5°C), étés chauds (30-38°C). Connue comme une autre 'ville fournaise'. Beau feuillage d'automne.",
+      "ar": "شبه استوائي: شتاء بارد (0-5 درجات)، صيف حار (30-38 درجة). معروفة كمدينة فرن أخرى. أوراق خريف جميلة."
+    },
+    "halal_food_availability": "good",
+    "moroccan_community": "medium",
+    "muslim_community": "medium",
+    "airport": "NKG (Lukou)",
+    "key_universities": ["nanjing-university"],
+    "highlights": {
+      "en": ["Former capital of China — rich historical heritage", "51 universities — strong academic city", "More affordable than Shanghai (1 hour by train)", "Beautiful city parks and historical sites"],
+      "fr": ["Ancienne capitale de la Chine — riche patrimoine historique", "51 universités — ville académique forte", "Plus abordable que Shanghai (1h en train)", "Beaux parcs et sites historiques"],
+      "ar": ["عاصمة سابقة للصين — تراث تاريخي غني", "51 جامعة — مدينة أكاديمية قوية", "أقل تكلفة من شنغهاي (ساعة بالقطار)", "حدائق ومواقع تاريخية جميلة"]
+    },
+    "description": {
+      "en": "Nanjing, China's former capital, is a major academic hub with 51 universities. It offers a great balance between quality education, rich cultural experiences, and affordable living. Just one hour from Shanghai by high-speed rail.",
+      "fr": "Nankin, ancienne capitale de la Chine, est un important centre académique avec 51 universités. Elle offre un excellent équilibre entre éducation de qualité, expériences culturelles riches et vie abordable. À seulement une heure de Shanghai en TGV.",
+      "ar": "نانجينغ، عاصمة الصين السابقة، مركز أكاديمي رئيسي مع 51 جامعة. توفر توازناً ممتازاً بين التعليم الجيد والتجارب الثقافية الغنية والمعيشة المعقولة. ساعة واحدة من شنغهاي بالقطار السريع."
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "chengdu",
+    "name": { "en": "Chengdu", "fr": "Chengdu", "ar": "تشنغدو" },
+    "province": "Sichuan",
+    "population": "21.0M",
+    "universities_count": 56,
+    "cost_of_living": {
+      "rent_monthly_usd": { "min": 150, "max": 500, "average": 280 },
+      "food_monthly_usd": { "min": 100, "max": 250, "average": 160 },
+      "transport_monthly_usd": { "min": 10, "max": 30, "average": 18 },
+      "total_monthly_usd": { "min": 350, "max": 850, "average": 500 }
+    },
+    "climate": {
+      "en": "Subtropical humid: mild winters (3-10°C), warm summers (25-32°C). Often overcast. More moderate than most Chinese cities.",
+      "fr": "Subtropical humide : hivers doux (3-10°C), étés chauds (25-32°C). Souvent couvert. Plus modéré que la plupart des villes chinoises.",
+      "ar": "شبه استوائي رطب: شتاء معتدل (3-10 درجات)، صيف دافئ (25-32 درجة). غالباً ملبد بالغيوم. أكثر اعتدالاً من معظم المدن الصينية."
+    },
+    "halal_food_availability": "good",
+    "moroccan_community": "small",
+    "muslim_community": "medium",
+    "airport": "CTU (Shuangliu) / TFU (Tianfu)",
+    "key_universities": ["sichuan-university"],
+    "highlights": {
+      "en": ["Known as China's most livable city", "Famous food culture (Sichuan cuisine)", "Very affordable cost of living", "Giant panda research base — unique cultural experience"],
+      "fr": ["Connue comme la ville la plus agréable de Chine", "Culture culinaire célèbre (cuisine du Sichuan)", "Coût de la vie très abordable", "Base de recherche sur les pandas géants"],
+      "ar": ["معروفة كأكثر مدن الصين ملاءمة للعيش", "ثقافة طعام شهيرة (مطبخ سيتشوان)", "تكلفة معيشة منخفضة جداً", "قاعدة أبحاث الباندا العملاقة"]
+    },
+    "description": {
+      "en": "Chengdu is consistently rated as China's most livable city, known for its relaxed lifestyle, amazing food, and affordable cost of living. Home to Sichuan University and the giant pandas, it's increasingly popular among international students.",
+      "fr": "Chengdu est régulièrement classée comme la ville la plus agréable de Chine, connue pour son style de vie détendu, sa cuisine incroyable et son coût de la vie abordable. Berceau de l'Université du Sichuan et des pandas géants.",
+      "ar": "تشنغدو تُصنف باستمرار كأكثر مدن الصين ملاءمة للعيش، معروفة بنمط حياتها المريح وطعامها المذهل وتكلفة معيشتها المعقولة. موطن جامعة سيتشوان والباندا العملاقة."
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "xian",
+    "name": { "en": "Xi'an", "fr": "Xi'an", "ar": "شيآن" },
+    "province": "Shaanxi",
+    "population": "13.0M",
+    "universities_count": 63,
+    "cost_of_living": {
+      "rent_monthly_usd": { "min": 130, "max": 450, "average": 250 },
+      "food_monthly_usd": { "min": 100, "max": 220, "average": 140 },
+      "transport_monthly_usd": { "min": 10, "max": 30, "average": 18 },
+      "total_monthly_usd": { "min": 300, "max": 800, "average": 450 }
+    },
+    "climate": {
+      "en": "Semi-arid continental: cold winters (-3 to 5°C), hot dry summers (30-38°C). Dry climate, clear skies in autumn.",
+      "fr": "Continental semi-aride : hivers froids (-3 à 5°C), étés chauds et secs (30-38°C). Climat sec, ciel clair en automne.",
+      "ar": "قاري شبه جاف: شتاء بارد (-3 إلى 5 درجات)، صيف حار وجاف (30-38 درجة). مناخ جاف، سماء صافية في الخريف."
+    },
+    "halal_food_availability": "excellent",
+    "moroccan_community": "medium",
+    "muslim_community": "very-large",
+    "airport": "XIY (Xianyang)",
+    "key_universities": ["xian-jiaotong-university"],
+    "highlights": {
+      "en": ["Largest Muslim community in China (Hui people)", "Famous Muslim Quarter with halal street food", "Ancient capital — Terracotta Warriors, city walls", "Most affordable major city for students"],
+      "fr": ["Plus grande communauté musulmane de Chine (peuple Hui)", "Célèbre Quartier Musulman avec street food halal", "Ancienne capitale — Guerriers en terre cuite, remparts", "Ville majeure la plus abordable pour les étudiants"],
+      "ar": ["أكبر مجتمع مسلم في الصين (شعب الهوي)", "الحي الإسلامي الشهير بأطعمة الشارع الحلال", "عاصمة قديمة — جنود التيراكوتا، أسوار المدينة", "أكثر المدن الرئيسية تكلفة معقولة للطلاب"]
+    },
+    "description": {
+      "en": "Xi'an is the ideal city for Muslim students in China. Home to the largest Hui (Chinese Muslim) community, its famous Muslim Quarter offers authentic halal food everywhere. It's also one of China's most affordable major cities and has 63 universities including the prestigious Xi'an Jiaotong University.",
+      "fr": "Xi'an est la ville idéale pour les étudiants musulmans en Chine. Foyer de la plus grande communauté Hui (musulmane chinoise), son célèbre Quartier Musulman offre de la nourriture halal authentique partout. C'est aussi l'une des grandes villes les plus abordables de Chine.",
+      "ar": "شيآن هي المدينة المثالية للطلاب المسلمين في الصين. موطن أكبر مجتمع هوي (مسلم صيني)، ويقدم حيها الإسلامي الشهير طعاماً حلالاً أصيلاً في كل مكان. وهي أيضاً واحدة من أكثر المدن الرئيسية في الصين تكلفة معقولة مع 63 جامعة."
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "changsha",
+    "name": { "en": "Changsha", "fr": "Changsha", "ar": "تشانغشا" },
+    "province": "Hunan",
+    "population": "10.5M",
+    "universities_count": 57,
+    "cost_of_living": {
+      "rent_monthly_usd": { "min": 120, "max": 400, "average": 230 },
+      "food_monthly_usd": { "min": 90, "max": 200, "average": 130 },
+      "transport_monthly_usd": { "min": 8, "max": 25, "average": 15 },
+      "total_monthly_usd": { "min": 280, "max": 700, "average": 420 }
+    },
+    "climate": {
+      "en": "Subtropical: cool winters (2-7°C), hot humid summers (30-38°C). Rainy spring, beautiful autumn.",
+      "fr": "Subtropical : hivers frais (2-7°C), étés chauds et humides (30-38°C). Printemps pluvieux, bel automne.",
+      "ar": "شبه استوائي: شتاء بارد (2-7 درجات)، صيف حار ورطب (30-38 درجة). ربيع ماطر، خريف جميل."
+    },
+    "halal_food_availability": "moderate",
+    "moroccan_community": "small",
+    "muslim_community": "small",
+    "airport": "CSX (Huanghua)",
+    "key_universities": ["central-south-university"],
+    "highlights": {
+      "en": ["Home to Xiangya Medical School — one of China's best", "Very affordable cost of living", "Famous food culture (Hunan spicy cuisine)", "Fast-growing tech and entertainment hub"],
+      "fr": ["Siège de l'École de médecine Xiangya — l'une des meilleures de Chine", "Coût de la vie très abordable", "Culture culinaire célèbre (cuisine épicée du Hunan)", "Hub tech et divertissement en croissance rapide"],
+      "ar": ["موطن كلية شيانغيا الطبية — من أفضل كليات الطب في الصين", "تكلفة معيشة منخفضة جداً", "ثقافة طعام شهيرة (مطبخ هونان الحار)", "مركز تقني وترفيهي سريع النمو"]
+    },
+    "description": {
+      "en": "Changsha is an excellent choice for medical students, home to the prestigious Xiangya School of Medicine at Central South University. It offers some of China's lowest costs of living while providing quality education and a vibrant youth culture.",
+      "fr": "Changsha est un excellent choix pour les étudiants en médecine, abritant la prestigieuse École de Médecine Xiangya de l'Université du Centre-Sud. Elle offre certains des coûts de la vie les plus bas de Chine tout en fournissant une éducation de qualité.",
+      "ar": "تشانغشا خيار ممتاز لطلاب الطب، موطن كلية شيانغيا الطبية المرموقة في جامعة وسط الجنوب. توفر بعض أدنى تكاليف المعيشة في الصين مع تعليم عالي الجودة."
+    },
+    "last_updated": "2026-03-06"
+  },
+  {
+    "id": "hefei",
+    "name": { "en": "Hefei", "fr": "Hefei", "ar": "خفي" },
+    "province": "Anhui",
+    "population": "9.4M",
+    "universities_count": 54,
+    "cost_of_living": {
+      "rent_monthly_usd": { "min": 120, "max": 400, "average": 220 },
+      "food_monthly_usd": { "min": 90, "max": 200, "average": 130 },
+      "transport_monthly_usd": { "min": 8, "max": 25, "average": 15 },
+      "total_monthly_usd": { "min": 280, "max": 700, "average": 400 }
+    },
+    "climate": {
+      "en": "Subtropical monsoon: cool winters (0-5°C), hot humid summers (28-35°C). Four seasons with moderate rainfall.",
+      "fr": "Subtropical de mousson : hivers frais (0-5°C), étés chauds et humides (28-35°C). Quatre saisons avec des précipitations modérées.",
+      "ar": "شبه استوائي موسمي: شتاء بارد (0-5 درجات)، صيف حار ورطب (28-35 درجة). أربعة فصول مع أمطار معتدلة."
+    },
+    "halal_food_availability": "moderate",
+    "moroccan_community": "small",
+    "muslim_community": "small",
+    "airport": "HFE (Xinqiao)",
+    "key_universities": ["university-of-science-and-technology-of-china"],
+    "highlights": {
+      "en": ["Home to USTC — China's premier science university", "Rapidly growing tech hub (quantum computing, AI)", "Very affordable living costs", "2 hours from Shanghai by high-speed rail"],
+      "fr": ["Siège de l'USTC — première université scientifique de Chine", "Hub tech en croissance rapide (quantique, IA)", "Coûts de vie très abordables", "2 heures de Shanghai en TGV"],
+      "ar": ["موطن USTC — أفضل جامعة علمية في الصين", "مركز تقني سريع النمو (الحوسبة الكمومية، الذكاء الاصطناعي)", "تكاليف معيشة منخفضة جداً", "ساعتان من شنغهاي بالقطار السريع"]
+    },
+    "description": {
+      "en": "Hefei is a rising tech hub and home to USTC, China's top science university. Ideal for STEM students, it offers excellent research opportunities, very low cost of living, and is a fast-growing innovation center with strong AI and quantum computing sectors.",
+      "fr": "Hefei est un hub tech en pleine croissance et abrite l'USTC, la meilleure université scientifique de Chine. Idéale pour les étudiants STEM, elle offre d'excellentes opportunités de recherche et un coût de la vie très bas.",
+      "ar": "خفي مركز تقني صاعد وموطن USTC، أفضل جامعة علمية في الصين. مثالية لطلاب العلوم والتكنولوجيا، توفر فرص بحث ممتازة وتكلفة معيشة منخفضة جداً."
+    },
+    "last_updated": "2026-03-06"
+  }
+]
