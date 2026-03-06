@@ -74,8 +74,9 @@
     "https://www.linkedin.com/company/foorsa"
   ]
 }
+</script>
 <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
-</script></head>
+</head>
 <body class="wp-singular page-template page-template-page-aboutUs page-template-page-aboutUs-php page page-id-1109 wp-theme-foorsa about-us-page">
 <div class="header header-desktop sticky">
 <div class="logo-menu active">
@@ -748,8 +749,15 @@
   </script>
 <script id="fancybox-js" src="../assets/libs/fancybox.umd.js?v=20260123">
 </script>
-<script id="main-js" src="../assets/js/main.js?v=20260124b">
+<script id="main-js-js" src="../assets/js/main.js?v=20260124b">
 </script>
+<script id="fancybox-js-after">
+   document.addEventListener("DOMContentLoaded", function() {
+                const fancybox = Fancybox.bind("[data-fancybox=\"gallery\"]", {
+                    // Options FancyBox
+                });
+            });
+  </script>
 <script defer="" src="/js/tracker.js"></script>
 <script defer src="/js/ga4-events.js">
 </script>
