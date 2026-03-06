@@ -2351,12 +2351,13 @@
 </svg>
 </div>
 <section class="section" id="sectionHero">
-<video autoplay="" class="hero-video-bg hero-video-desktop" loop="" muted="" playsinline="" poster="../assets/img/video-poster.webp" preload="metadata">
-<source src="../assets/video/hero-video.mp4" type="video/mp4"/>
+<video autoplay="" class="hero-video-bg hero-video-desktop" loop="" muted="" playsinline="" poster="../assets/img/video-poster.webp" preload="none">
 </video>
-<video autoplay="" class="hero-video-bg hero-video-mobile" loop="" muted="" playsinline="" poster="../assets/img/video-poster.webp" preload="metadata">
-<source src="../assets/video/hero-video-mobile.mp4" type="video/mp4"/>
+<video autoplay="" class="hero-video-bg hero-video-mobile" loop="" muted="" playsinline="" poster="../assets/img/video-poster.webp" preload="none">
 </video>
+<script>
+(function(){var m=window.matchMedia('(max-width:768px)');var c=m.matches?'mobile':'desktop';var v=document.querySelector('.hero-video-'+c);if(v){var s=document.createElement('source');s.src=v.dataset.src||'../assets/video/hero-video'+(c==='mobile'?'-mobile':'')+'.mp4';s.type='video/mp4';v.appendChild(s);v.preload='metadata';v.load();}})();
+</script>
 <div class="hero-video-overlay" id="heroOverlay">
 <div class="hero-mobile-headline">
 <h1>Rêvez plus grand.<br/><span>Étudiez en Chine.</span></h1>
@@ -2986,17 +2987,8 @@ var faqData = {
 };
 </script>
 <script id="main-js-js" src="../assets/js/main.js?v=20260124b" defer></script>
-<script id="fancybox-js" src="../assets/libs/fancybox.umd.js?v=20260123" defer></script>
 <script id="fancybox-js-after">
-document.addEventListener("DOMContentLoaded", function() {
-                Fancybox.bind('[data-fancybox^="video-"]', {
-        Thumbs: false,
-        Toolbar: {
-            display: ["close"]
-        }
-    });
-    Fancybox.bind('[data-fancybox="gallery"]', {});
-            });
+(function(){var loaded=false;function init(){if(loaded)return;loaded=true;var s=document.createElement('script');s.src='../assets/libs/fancybox.umd.js';s.onload=function(){Fancybox.bind('[data-fancybox]',{});Fancybox.bind('[data-fancybox^="video-"]',{Thumbs:false,Toolbar:{display:["close"]}});};document.head.appendChild(s);};document.addEventListener('scroll',init,{once:true});setTimeout(init,5000);})();
 </script>
 <script defer="" src="/js/tracker.js"></script>
 <script defer src="/js/ga4-events.js"></script>
