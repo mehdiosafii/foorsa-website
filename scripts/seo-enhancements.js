@@ -19,7 +19,7 @@ const localBusinessSchema = {
   "alternateName": ["FUSAAA", "Fusaaa", "فورصة", "Foorsa Consulting"],
   "description": "Education consultancy helping Moroccan students study in China through scholarships, university admissions, and student support services",
   "url": "https://foorsa.ma",
-  "telephone": "+212-0537-911291",
+  "telephone": "+212-537-911271",
   "email": "info@foorsa.ma",
   "image": "https://foorsa.ma/assets/img/logo.png",
   "address": {

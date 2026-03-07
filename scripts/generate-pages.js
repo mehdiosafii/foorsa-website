@@ -576,7 +576,7 @@ function renderNav(lang) {
 </ul></nav>
 <div class="cta-header">
 <a class="btn-apply-navbar" href="${prefix}/shop.html">${t(lang,'startApplication')}</a>
-<a href="https://wa.me/+2120537911291" target="_blank"><img alt="WhatsApp" loading="lazy" src="../../assets/img/whatsapp-white.webp"/></a>
+<a href="https://wa.me/+212537911271" target="_blank"><img alt="WhatsApp" loading="lazy" src="../../assets/img/whatsapp-white.webp"/></a>
 </div>
 </div></div>`;
 }
@@ -610,7 +610,7 @@ function renderFooter(lang) {
 <a href="https://www.facebook.com/Foorsaconsulting/" target="_blank"><img alt="facebook" loading="lazy" src="../../assets/img/facebook-white.webp"/></a>
 <a href="http://www.instagram.com/foorsa.ma/" target="_blank"><img alt="instagram" loading="lazy" src="../../assets/img/instagram-white.webp"/></a>
 <a href="https://www.linkedin.com/company/fooorsa-consulting" target="_blank"><img alt="linkedin" loading="lazy" src="../../assets/img/linkedin-white.webp"/></a>
-<a href="https://wa.me/+2120537911291" target="_blank"><img alt="whatsapp" loading="lazy" src="../../assets/img/whatsapp-white.webp"/></a>
+<a href="https://wa.me/+212537911271" target="_blank"><img alt="whatsapp" loading="lazy" src="../../assets/img/whatsapp-white.webp"/></a>
 </div></div>
 <hr/>
 <div class="copyRight"><p>${t(lang,'copyright')}</p>

@@ -206,7 +206,7 @@ ${hreflangs}
   "name": "Foorsa",
   "url": "https://foorsa.ma",
   "logo": { "@type": "ImageObject", "url": "https://foorsa.ma/assets/img/logo.png" },
-  "contactPoint": { "@type": "ContactPoint", "telephone": "+212-0537-911291", "contactType": "Customer Service", "availableLanguage": ["en", "fr", "ar"] }
+  "contactPoint": { "@type": "ContactPoint", "telephone": "+212-537-911271", "contactType": "Customer Service", "availableLanguage": ["en", "fr", "ar"] }
 }
 </script>
 </head>
