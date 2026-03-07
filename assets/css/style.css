@@ -1240,15 +1240,14 @@ img.bgIconPad {
 button.btnBack {
     background: #FFF;
     color: #041228 !important;
-    border: 2px solid #041228 !important;
     font-family: 'Marcher';
     font-size: 14px;
     font-weight: 200;
     line-height: 11.76px;
     text-align: left;
+    border: 2px solid #041228 !important;
     border-radius: 4px;
     padding: 15px 30px;
-    border: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
