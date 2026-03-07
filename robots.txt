@@ -32,6 +32,23 @@ Disallow: /*.sh$
 Disallow: /.backups/
 Disallow: /uploads/
 
+# AI Search Bots - Allow for AI search visibility
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
 # Sitemaps
 Sitemap: https://foorsa.ma/sitemap.xml
 Sitemap: https://foorsa.ma/video-sitemap.xml
+Sitemap: https://foorsa.ma/geo-sitemap.xml
