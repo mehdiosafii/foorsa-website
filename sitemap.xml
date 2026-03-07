@@ -5140,4 +5140,33 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/universities/zhejiang-university" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/universities/zhejiang-university" />
   </url>
+
+  <!-- Degree Recognition Articles -->
+  <url>
+    <loc>https://foorsa.ma/en/blog/degree-recognition-china-morocco</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/degree-recognition-china-morocco" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/reconnaissance-diplomes-chine-maroc" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/itiraf-shahadat-sin-maghrib" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/fr/blog/reconnaissance-diplomes-chine-maroc</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/degree-recognition-china-morocco" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/reconnaissance-diplomes-chine-maroc" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/itiraf-shahadat-sin-maghrib" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/ar/blog/itiraf-shahadat-sin-maghrib</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/degree-recognition-china-morocco" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/reconnaissance-diplomes-chine-maroc" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/itiraf-shahadat-sin-maghrib" />
+  </url>
 </urlset>
