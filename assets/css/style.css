@@ -2013,6 +2013,46 @@ main > section:not([class*="section-hero"]):not(.section-tickets):not(.section-c
     color: #fff !important;
 }
 
+/* Ensure all elements on dark blue backgrounds have white text */
+.firstFooter,
+.firstFooter *,
+.secondFooter,
+.secondFooter *,
+#sectionReview,
+#sectionReview *,
+.section-faq,
+.section-faq *,
+.section-ready,
+.section-ready *,
+.section-newsletter,
+.section-newsletter *,
+.section-document .card-document,
+.section-document .card-document *,
+.contact-page main,
+.contact-page main *,
+.card-payment,
+.card-payment *,
+.frais-foorsa .list-options,
+.frais-foorsa .list-options *,
+.cardStudy .cardHeader,
+.cardStudy .cardHeader *,
+.card-review,
+.card-review *,
+.cartoon-btn.dark,
+.cartoon-btn.dark * {
+    color: #fff;
+}
+
+.firstFooter a,
+.secondFooter a,
+#sectionReview a,
+.section-faq a,
+.section-ready a,
+.section-newsletter a,
+.contact-page main a {
+    color: #fff;
+}
+
 .firstFooter {
     border-radius: 23px 23px 0px 0px;
     padding: 50px 40px;
