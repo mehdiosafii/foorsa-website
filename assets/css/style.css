@@ -1909,6 +1909,7 @@ button.btnBack.active{
     position: relative;
     z-index: 5;
     background: #fff;
+    color: #041228;
 }
 
 main {
@@ -7343,6 +7344,7 @@ section.review {
 #sectionReview {
     padding: 40px 0;
     background: #041228;
+    color: #FFFFFF;
 }
 
 #sectionReview .blockHeader {
