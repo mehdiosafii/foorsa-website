@@ -7342,7 +7342,7 @@ section.review {
 /* Native Google Reviews Section */
 #sectionReview {
     padding: 40px 0;
-    background: rgba(0,0,0,0.35);
+    background: #041228;
 }
 
 #sectionReview .blockHeader {
