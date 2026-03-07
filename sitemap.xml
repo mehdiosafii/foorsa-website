@@ -4507,6 +4507,171 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/csca-test-guide"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/csca-test-guide"/>
   </url>
+
+  <!-- Blog Category Pages -->
+  <url>
+    <loc>https://foorsa.ma/en/blog/category-scholarships</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/category-scholarships" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/category-scholarships" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/category-scholarships" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/fr/blog/category-scholarships</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/category-scholarships" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/category-scholarships" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/category-scholarships" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/ar/blog/category-scholarships</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/category-scholarships" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/category-scholarships" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/category-scholarships" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/blog/category-universities</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/category-universities" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/category-universities" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/category-universities" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/fr/blog/category-universities</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/category-universities" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/category-universities" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/category-universities" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/ar/blog/category-universities</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/category-universities" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/category-universities" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/category-universities" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/blog/category-costs</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/category-costs" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/category-costs" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/category-costs" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/fr/blog/category-costs</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/category-costs" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/category-costs" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/category-costs" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/ar/blog/category-costs</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/category-costs" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/category-costs" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/category-costs" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/blog/category-student-life</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/category-student-life" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/category-student-life" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/category-student-life" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/fr/blog/category-student-life</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/category-student-life" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/category-student-life" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/category-student-life" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/ar/blog/category-student-life</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/category-student-life" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/category-student-life" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/category-student-life" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/blog/category-admissions</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/category-admissions" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/category-admissions" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/category-admissions" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/fr/blog/category-admissions</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/category-admissions" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/category-admissions" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/category-admissions" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/ar/blog/category-admissions</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/category-admissions" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/category-admissions" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/category-admissions" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/en/blog/category-medicine</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/category-medicine" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/category-medicine" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/category-medicine" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/fr/blog/category-medicine</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/category-medicine" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/category-medicine" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/category-medicine" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/ar/blog/category-medicine</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/blog/category-medicine" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/blog/category-medicine" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/blog/category-medicine" />
+  </url>
+
   <url>
     <loc>https://foorsa.ma/ar/cities/beijing</loc>
     <lastmod>2026-03-06</lastmod>
