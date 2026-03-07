@@ -2012,7 +2012,7 @@ main > section:not([class*="section-hero"]):not(.section-tickets):not(.section-c
 .firstFooter {
     border-radius: 23px 23px 0px 0px;
     padding: 50px 40px;
-    background: linear-gradient(135deg, #0a2540 0%, #1a3a5c 50%, #0d2d4d 100%);
+    background: #041228;
     position: relative;
     overflow: hidden;
 }
