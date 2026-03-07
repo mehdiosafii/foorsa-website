@@ -7433,7 +7433,7 @@ section.review {
 
 .reviewCard .stars {
     font-size: 24px;
-    color: #FFD700;
+    color: #FFD700 !important;
     margin-bottom: 15px;
     letter-spacing: 2px;
 }
@@ -7443,7 +7443,7 @@ section.review {
     font-size: 15px;
     font-weight: 300;
     line-height: 1.7;
-    color: #4a5568;
+    color: #4a5568 !important;
     flex-grow: 1;
     margin-bottom: 20px;
 }
@@ -7452,7 +7452,7 @@ section.review {
     font-family: 'Marcher';
     font-size: 14px;
     font-weight: 700;
-    color: #041228;
+    color: #041228 !important;
 }
 
 .swiperReviews .swiper-buttons {
@@ -7550,7 +7550,7 @@ section.review {
     font-family: 'Marcher';
     font-size: 15px;
     font-weight: 700;
-    color: #041228;
+    color: #041228 !important;
 }
 
 #sectionReview .reviewCard .reviewerInfo .reviewMeta {
@@ -7562,13 +7562,13 @@ section.review {
 
 #sectionReview .reviewCard .reviewerInfo .reviewMeta .stars {
     font-size: 14px;
-    color: #FFD700;
+    color: #FFD700 !important;
 }
 
 #sectionReview .reviewCard .reviewerInfo .reviewMeta .reviewDate {
     font-family: 'Marcher';
     font-size: 12px;
-    color: #7C828E;
+    color: #7C828E !important;
 }
 
 #sectionReview .reviewCard .googleIcon {
@@ -7580,7 +7580,7 @@ section.review {
     font-size: 14px;
     font-weight: 300;
     line-height: 1.6;
-    color: #4a5568;
+    color: #4a5568 !important;
     margin: 0;
 }
 
