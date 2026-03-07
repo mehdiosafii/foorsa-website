@@ -1007,7 +1007,7 @@ nav ul li a {
 /* section two */
 #sectionEducation {
     padding: 80px 0 0 0;
-    /* overflow-x: hidden; */
+    overflow: hidden;
     z-index: 2;
     position: relative;
 }
@@ -1660,10 +1660,14 @@ button.btnBack.active{
     background: #fff;
     z-index: 1;
     width: 80%;
-    margin: 0 auto 84px;
+    margin: 0 auto 40px;
     -webkit-transition: color 0.5s ease;
     -o-transition: color 0.5s ease;
     transition: color 0.5s ease;
+}
+
+#sectionJoinUs .signup:empty {
+    display: none;
 }
 
 #sectionJoinUs .signup.moved {
@@ -1714,7 +1718,7 @@ button.btnBack.active{
 
 #sectionJoinUs .content .cartoon-btn {
     display: block;
-    margin: 50px auto 40px;
+    margin: 30px auto 20px;
 }
 
 #sectionJoinUs .description {
