@@ -21,6 +21,62 @@
     {
       "source": "/referral/:path*",
       "destination": "/referral/dist/:path*"
+    },
+    {
+      "source": "/shop",
+      "destination": "/en/shop"
+    },
+    {
+      "source": "/about-us",
+      "destination": "/en/about-us"
+    },
+    {
+      "source": "/contact",
+      "destination": "/en/contact"
+    },
+    {
+      "source": "/fees",
+      "destination": "/en/fees"
+    },
+    {
+      "source": "/majors",
+      "destination": "/en/majors"
+    },
+    {
+      "source": "/scholarship",
+      "destination": "/en/scholarship"
+    },
+    {
+      "source": "/step-by-step",
+      "destination": "/en/step-by-step"
+    },
+    {
+      "source": "/documents",
+      "destination": "/en/documents"
+    },
+    {
+      "source": "/frequently-asked-questions",
+      "destination": "/en/frequently-asked-questions"
+    },
+    {
+      "source": "/quiz",
+      "destination": "/en/quiz"
+    },
+    {
+      "source": "/blog",
+      "destination": "/en/blog"
+    },
+    {
+      "source": "/partner-with-us",
+      "destination": "/en/partner-with-us"
+    },
+    {
+      "source": "/privacy-policy",
+      "destination": "/en/privacy-policy"
+    },
+    {
+      "source": "/terms-of-service",
+      "destination": "/en/terms-of-service"
     }
   ],
   "headers": [
@@ -168,5 +224,5 @@
     }
   ],
   "cleanUrls": true,
-  "trailingSlash": true
+  "trailingSlash": false
 }
