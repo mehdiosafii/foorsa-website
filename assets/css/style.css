@@ -1239,7 +1239,7 @@ img.bgIconPad {
 
 button.btnBack {
     background: #FFF;
-    color: #041228;
+    color: #041228 !important;
     border: 2px solid #041228 !important;
     font-family: 'Marcher';
     font-size: 14px;
@@ -1776,6 +1776,9 @@ button.btnBack.active{
     overflow: hidden;
     border-radius: 10px;
     height: 100%;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
 }
 
 #sectionEtudiant .cardDetail {
@@ -1851,6 +1854,7 @@ button.btnBack.active{
     right: 8px;
     bottom: 8px;
     cursor: pointer;
+    z-index: 10;
 }
 
 

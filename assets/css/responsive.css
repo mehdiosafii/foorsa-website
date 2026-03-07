@@ -33,36 +33,6 @@ body.scroll .header {
     display: none;
 }
 
-/* Ensure GSAP-animated elements are always visible (prevents opacity:0 inline styles from hiding content) */
-.section .blockHeader,
-.section .blockHeader *,
-.section .blockSlider,
-.section .blockSlider *,
-.section .categories,
-.section .categories *,
-.section .subCategory,
-.section .subCategory *,
-.section .letsGo,
-#sectionEducation,
-#sectionEducation .detailQuestion,
-#sectionEducation .swiper-slide,
-#sectionEducation .bgIconPad,
-#sectionEducation .bgIconPen,
-#sectionEducation .bgIconCalculator,
-#sectionUniversities,
-#sectionJoinUs,
-#sectionJoinUs .cartoon-btn,
-#sectionEtudiant,
-#sectionReview,
-#sectionReview *,
-#sectionHero .firstBlock,
-#sectionHero .firstBlock .content,
-#sectionHero .firstBlock .title,
-#sectionHero .firstBlock .subTitle {
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-
 /* Hide/show at 768px breakpoint to match main mobile styles */
 @media screen and (max-width: 768px) {
     .hidden-mobile {
@@ -266,8 +236,9 @@ body.scroll .header {
     #sectionEducation .bgIconCalculator,
     #sectionUniversities,
     #sectionJoinUs,
-    #sectionJoinUs .cartoon-btn,
+    #sectionJoinUs *,
     #sectionEtudiant,
+    #sectionEtudiant *,
     #sectionReview,
     #sectionReview *,
     #sectionHero .firstBlock,
@@ -1115,6 +1086,16 @@ body.scroll .header {
         color: #000000 !important;
     }
 
+    .cardSubCat-wrap {
+        height: auto;
+        min-height: 300px;
+    }
+
+    .cardSubCat {
+        height: auto;
+        min-height: 300px;
+    }
+
     .reviewCard .reviewText {
         color: #4a5568 !important;
     }
@@ -1214,6 +1195,7 @@ body.scroll .header {
 
     #sectionJoinUs .blockHeader {
         width: 100%;
+        margin-bottom: 30px;
     }
 
     #sectionJoinUs .blockHeader .title {
@@ -1276,7 +1258,7 @@ body.scroll .header {
     }
 
     #sectionEtudiant {
-        padding: 144px 0;
+        padding: 40px 0;
     }
 
     #sectionEtudiant .blockSlider {
