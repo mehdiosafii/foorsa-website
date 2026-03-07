@@ -7344,6 +7344,9 @@ section.review {
 #sectionReview {
     padding: 40px 0;
     background: #041228;
+}
+
+#sectionReview .reviewsHeader {
     color: #FFFFFF;
 }
 
@@ -7376,6 +7379,7 @@ section.review {
 
 .reviewCard {
     background: #ffffff;
+    color: #041228;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
