@@ -3,7 +3,7 @@ const pool = new Pool({ connectionString: process.env.DATABASE_URL, ssl: { rejec
 
 module.exports = async (req, res) => {
   const p = (req.query || {}).password || '';
-  if (p !== (process.env.ADMIN_PASSWORD || 'FoorsaMA2026!')) return res.status(401).json({ error: 'Unauthorized' });
+  if (p !== (process.env.ADMIN_PASSWORD || 'Foorsa2026!Reset')) return res.status(401).json({ error: 'Unauthorized' });
   let w = "created_at >= NOW() - INTERVAL '7 days'";
   if (req.query.period === 'today') w = "created_at >= CURRENT_DATE";
   else if (req.query.period === '30d') w = "created_at >= NOW() - INTERVAL '30 days'";

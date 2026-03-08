@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'FoorsaRef2026!';
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'Foorsa2026!Reset';
 
 export function requireAdmin(req: VercelRequest, res: VercelResponse): boolean {
   const password = (req.headers['x-admin-password'] as string) || '';

@@ -3,7 +3,7 @@ const pool = new Pool({ connectionString: process.env.DATABASE_URL, max: 3 });
 
 module.exports = async (req, res) => {
   const { id, password } = req.query;
-  if (password !== (process.env.ADMIN_PASSWORD || 'FoorsaMA2026!')) {
+  if (password !== (process.env.ADMIN_PASSWORD || 'Foorsa2026!Reset')) {
     return res.status(401).json({ error: 'Unauthorized' });
   }
   if (!id) return res.status(400).json({ error: 'Missing attachment id' });

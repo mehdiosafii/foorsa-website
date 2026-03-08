@@ -7,7 +7,7 @@ function getPool() {
 
 module.exports = async (req, res) => {
   const p = (req.query || {}).password || '';
-  if (p !== (process.env.ADMIN_PASSWORD || 'FoorsaMA2026!')) return res.status(401).json({ error: 'Unauthorized' });
+  if (p !== (process.env.ADMIN_PASSWORD || 'Foorsa2026!Reset')) return res.status(401).json({ error: 'Unauthorized' });
   const limit = Math.min(parseInt(req.query.limit) || 50, 200);
   const offset = parseInt(req.query.offset) || 0;
   try {
