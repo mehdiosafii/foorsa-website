@@ -131,14 +131,19 @@ module.exports = async (req, res) => {
 
     console.log('[FORM] CAPTCHA verified, processing submission');
 
-    // Insert submission
+    // Careers & partner go to admins; everything else goes to sales
+    const adminOnlyForms = ['careers', 'partner'];
+    const targetTeam = adminOnlyForms.includes(formType) ? 'admin' : 'sales';
+
+    // Insert submission with target_team
     const result = await pool.query(
-      'INSERT INTO website_submissions (submission_id, form_type, data, status, created_at) VALUES ($1, $2, $3, $4, NOW()) RETURNING id',
+      'INSERT INTO website_submissions (submission_id, form_type, data, status, target_team, created_at) VALUES ($1, $2, $3, $4, $5, NOW()) RETURNING id',
       [
         'WEB-' + Date.now(),
         formType,
         JSON.stringify(formData),
-        'new'
+        'new',
+        targetTeam
       ]
     );
     const submissionId = result.rows[0].id;
@@ -151,8 +156,10 @@ module.exports = async (req, res) => {
       );
     }
 
-    // Create website lead if phone is complete (fire-and-forget)
-    createWebsiteLead(submissionId, formData).catch(() => {});
+    // Only create leads for sales-targeted submissions
+    if (targetTeam === 'sales') {
+      createWebsiteLead(submissionId, formData).catch(() => {});
+    }
 
     res.status(200).json({ success: true, id: submissionId });
   } catch (err) {
