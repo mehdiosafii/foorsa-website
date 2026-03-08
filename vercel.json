@@ -77,6 +77,10 @@
     {
       "source": "/terms-of-service",
       "destination": "/en/terms-of-service"
+    },
+    {
+      "source": "/admission-calculator",
+      "destination": "/en/admission-calculator"
     }
   ],
   "headers": [

@@ -6,11 +6,11 @@
   
   // List of pages available in each language
   const availablePages = {
-    en: ['index.html', 'about-us.html', 'contact.html', 'fees.html', 'majors.html', 'scholarship.html', 'step-by-step.html', 'documents.html', 'frequently-asked-questions.html', 'mission-values.html', 'recruitment.html', 'partner-with-us.html', 'shop.html', 'home.html', 'reviews.html', 'blog2.html', 'careers.html', 'engagement.html', 'newsletter.html', 'checkout.html', 'cart.html', 'payment-confirmation.html', 'payment-failed.html', 'terms-of-service.html', 'privacy-policy.html', 'refund-policy.html', 'terms-of-sale.html', 'quiz.html'],
-    
-    fr: ['index.html', 'shop.html', 'about-us.html', 'scholarship.html', 'fees.html', 'step-by-step.html', 'contact.html', 'frequently-asked-questions.html', 'majors.html', 'documents.html', 'mission-values.html', 'recruitment.html', 'partner-with-us.html', 'home.html', 'reviews.html', 'blog2.html', 'careers.html', 'engagement.html', 'newsletter.html', 'quiz.html', 'checkout.html', 'cart.html'],
-    
-    ar: ['index.html', 'shop.html', 'about-us.html', 'scholarship.html', 'fees.html', 'step-by-step.html', 'contact.html', 'frequently-asked-questions.html', 'majors.html', 'documents.html', 'mission-values.html', 'recruitment.html']
+    en: ['index.html', 'about-us.html', 'contact.html', 'fees.html', 'majors.html', 'scholarship.html', 'step-by-step.html', 'documents.html', 'frequently-asked-questions.html', 'mission-values.html', 'recruitment.html', 'partner-with-us.html', 'shop.html', 'home.html', 'reviews.html', 'blog2.html', 'careers.html', 'engagement.html', 'newsletter.html', 'checkout.html', 'cart.html', 'payment-confirmation.html', 'payment-failed.html', 'terms-of-service.html', 'privacy-policy.html', 'refund-policy.html', 'terms-of-sale.html', 'quiz.html', 'csca-test.html', 'admission-calculator.html'],
+
+    fr: ['index.html', 'shop.html', 'about-us.html', 'scholarship.html', 'fees.html', 'step-by-step.html', 'contact.html', 'frequently-asked-questions.html', 'majors.html', 'documents.html', 'mission-values.html', 'recruitment.html', 'partner-with-us.html', 'home.html', 'reviews.html', 'blog2.html', 'careers.html', 'engagement.html', 'newsletter.html', 'quiz.html', 'checkout.html', 'cart.html', 'csca-test.html', 'admission-calculator.html'],
+
+    ar: ['index.html', 'shop.html', 'about-us.html', 'scholarship.html', 'fees.html', 'step-by-step.html', 'contact.html', 'frequently-asked-questions.html', 'majors.html', 'documents.html', 'mission-values.html', 'recruitment.html', 'csca-test.html', 'admission-calculator.html']
   };
   
   // Detect current language from URL path

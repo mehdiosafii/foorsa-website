@@ -370,6 +370,64 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/quiz" />
   </url>
 
+  <!-- CSCA Test Simulator -->
+  <url>
+    <loc>https://foorsa.ma/en/csca-test</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/csca-test" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/csca-test" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/csca-test" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/fr/csca-test</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/csca-test" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/csca-test" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/csca-test" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/ar/csca-test</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/csca-test" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/csca-test" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/csca-test" />
+  </url>
+
+  <!-- Admission Calculator -->
+  <url>
+    <loc>https://foorsa.ma/en/admission-calculator</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/admission-calculator" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/admission-calculator" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/admission-calculator" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/fr/admission-calculator</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/admission-calculator" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/admission-calculator" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/admission-calculator" />
+  </url>
+  <url>
+    <loc>https://foorsa.ma/ar/admission-calculator</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://foorsa.ma/en/admission-calculator" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://foorsa.ma/fr/admission-calculator" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://foorsa.ma/ar/admission-calculator" />
+  </url>
+
   <!-- Shop -->
   <url>
     <loc>https://foorsa.ma/en/shop</loc>
