@@ -10,7 +10,7 @@
 <link href="https://foorsa.ma/en/" hreflang="en" rel="alternate"/>
 <link href="https://foorsa.ma/fr/" hreflang="fr" rel="alternate"/>
 <link href="https://foorsa.ma/ar/" hreflang="ar" rel="alternate"/>
-<link href="https://foorsa.ma/en/" hreflang="x-default" rel="alternate"/>
+<link href="https://foorsa.ma/fr/" hreflang="x-default" rel="alternate"/>
 <meta content="Study in China for Moroccan Students | Scholarships & Admissions - Foorsa" property="og:title"/>
 <meta content="Transform your future with Foorsa. We help Moroccan students access the best Chinese universities and scholarships." property="og:description"/>
 <meta content="https://foorsa.ma/" property="og:url"/>
@@ -31,18 +31,21 @@
     "https://www.instagram.com/foorsa.ma/"
   ]
 }</script>
-<meta http-equiv="refresh" content="0;url=/en/">
+<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+<meta http-equiv="refresh" content="0;url=/fr/">
 <script>
 (function() {
   var STORAGE_KEY = 'foorsa_preferred_lang';
   var savedLang = localStorage.getItem(STORAGE_KEY);
-  var lang = 'en';
+  var lang = 'fr';
   if (savedLang && ['en', 'fr', 'ar'].indexOf(savedLang) !== -1) {
     lang = savedLang;
   } else {
     var browserLang = navigator.language || navigator.userLanguage || '';
     if (browserLang.indexOf('ar') === 0) lang = 'ar';
-    else if (browserLang.indexOf('fr') === 0) lang = 'fr';
+    else if (browserLang.indexOf('en') === 0) lang = 'en';
     localStorage.setItem(STORAGE_KEY, lang);
   }
   window.location.replace('/' + lang + '/');
@@ -50,6 +53,6 @@
 </script>
 </head>
 <body>
-<p>Redirecting to <a href="/en/">Foorsa</a>...</p>
+<p>Redirecting to <a href="/fr/">Foorsa</a>...</p>
 </body>
 </html>
