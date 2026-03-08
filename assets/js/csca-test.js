@@ -462,6 +462,7 @@
       '<div style="display:grid;gap:12px;max-width:500px;margin:0 auto 24px;">' +
         '<button id="btnReview" style="padding:14px;background:#fff;color:#1a237e;border:2px solid #1a237e;border-radius:12px;font-weight:600;cursor:pointer;">' + t.reviewAnswers + '</button>' +
         '<button id="btnRetake" style="padding:14px;background:#1a237e;color:#fff;border:none;border-radius:12px;font-weight:600;cursor:pointer;">' + t.retake + '</button>' +
+        '<a href="https://csca.help" target="_blank" rel="noopener" style="display:block;padding:14px;background:linear-gradient(135deg,#e3f2fd,#f3e5f5);color:#1a237e;border:2px solid #c5cae9;border-radius:12px;font-weight:600;text-decoration:none;text-align:center;">📚 ' + (lang === 'fr' ? 'Plus d\'entraînement sur CSCA.help' : lang === 'ar' ? 'المزيد من التدريب على CSCA.help' : 'More practice on CSCA.help') + ' &rarr;</a>' +
       '</div>' +
       '<div style="background:linear-gradient(135deg,#1a237e,#0d47a1);border-radius:16px;padding:40px 24px;text-align:center;color:white;">' +
         '<h3 style="font-size:1.3rem;font-weight:700;margin-bottom:16px;">' + (passed ? '🎓' : '📚') + ' ' + (passed ? t.applyNow : t.getFreeConsultation) + '</h3>' +
