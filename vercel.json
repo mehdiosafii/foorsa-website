@@ -47,6 +47,10 @@
       "destination": "/en/scholarship"
     },
     {
+      "source": "/scholarship-finder",
+      "destination": "/en/scholarship-finder"
+    },
+    {
       "source": "/step-by-step",
       "destination": "/en/step-by-step"
     },
