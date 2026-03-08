@@ -3,7 +3,7 @@ const pool = new Pool({ connectionString: process.env.DATABASE_URL, ssl: { rejec
 
 function auth(req) {
   const p = (req.query || {}).password || '';
-  return p === (process.env.ADMIN_PASSWORD || 'FoorsaMA2026!');
+  return p === (process.env.ADMIN_PASSWORD || 'Foorsa2026!Reset');
 }
 
 function periodWhere(period) {
