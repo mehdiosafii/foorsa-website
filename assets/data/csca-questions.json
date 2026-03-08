@@ -1,0 +1,349 @@
+{
+  "meta": {
+    "title": "CSC Scholarship Assessment Simulator",
+    "totalTime": 5400,
+    "passScore": 60
+  },
+  "subjects": [
+    {
+      "id": "math",
+      "name": { "en": "Mathematics", "fr": "Mathématiques", "ar": "الرياضيات" },
+      "icon": "&#x1D4DC;",
+      "timePerQuestion": 120,
+      "questions": [
+        {
+          "q": { "en": "If f(x) = 2x² + 3x - 5, what is f(2)?", "fr": "Si f(x) = 2x² + 3x - 5, combien vaut f(2) ?", "ar": "إذا كان f(x) = 2x² + 3x - 5، ما قيمة f(2)؟" },
+          "options": { "en": ["9", "7", "5", "11"], "fr": ["9", "7", "5", "11"], "ar": ["9", "7", "5", "11"] },
+          "answer": 0,
+          "explanation": { "en": "f(2) = 2(4) + 3(2) - 5 = 8 + 6 - 5 = 9", "fr": "f(2) = 2(4) + 3(2) - 5 = 8 + 6 - 5 = 9", "ar": "f(2) = 2(4) + 3(2) - 5 = 8 + 6 - 5 = 9" }
+        },
+        {
+          "q": { "en": "What is the derivative of x³ + 4x² - 7x + 2?", "fr": "Quelle est la dérivée de x³ + 4x² - 7x + 2 ?", "ar": "ما مشتقة x³ + 4x² - 7x + 2؟" },
+          "options": { "en": ["3x² + 8x - 7", "3x² + 4x - 7", "x² + 8x - 7", "3x² + 8x + 2"], "fr": ["3x² + 8x - 7", "3x² + 4x - 7", "x² + 8x - 7", "3x² + 8x + 2"], "ar": ["3x² + 8x - 7", "3x² + 4x - 7", "x² + 8x - 7", "3x² + 8x + 2"] },
+          "answer": 0,
+          "explanation": { "en": "Using power rule: d/dx(x³) = 3x², d/dx(4x²) = 8x, d/dx(-7x) = -7, d/dx(2) = 0", "fr": "Règle de puissance : d/dx(x³) = 3x², d/dx(4x²) = 8x, d/dx(-7x) = -7, d/dx(2) = 0", "ar": "باستخدام قاعدة الأس: d/dx(x³) = 3x², d/dx(4x²) = 8x, d/dx(-7x) = -7, d/dx(2) = 0" }
+        },
+        {
+          "q": { "en": "A circle has a radius of 7 cm. What is its area? (Use π ≈ 3.14)", "fr": "Un cercle a un rayon de 7 cm. Quelle est son aire ? (π ≈ 3,14)", "ar": "دائرة نصف قطرها 7 سم. ما مساحتها؟ (π ≈ 3.14)" },
+          "options": { "en": ["153.86 cm²", "43.96 cm²", "49 cm²", "147.14 cm²"], "fr": ["153,86 cm²", "43,96 cm²", "49 cm²", "147,14 cm²"], "ar": ["153.86 سم²", "43.96 سم²", "49 سم²", "147.14 سم²"] },
+          "answer": 0,
+          "explanation": { "en": "Area = πr² = 3.14 × 7² = 3.14 × 49 = 153.86 cm²", "fr": "Aire = πr² = 3,14 × 7² = 3,14 × 49 = 153,86 cm²", "ar": "المساحة = πr² = 3.14 × 7² = 3.14 × 49 = 153.86 سم²" }
+        },
+        {
+          "q": { "en": "Solve: log₂(32) = ?", "fr": "Résoudre : log₂(32) = ?", "ar": "حل: log₂(32) = ؟" },
+          "options": { "en": ["5", "4", "6", "3"], "fr": ["5", "4", "6", "3"], "ar": ["5", "4", "6", "3"] },
+          "answer": 0,
+          "explanation": { "en": "2⁵ = 32, so log₂(32) = 5", "fr": "2⁵ = 32, donc log₂(32) = 5", "ar": "2⁵ = 32، إذن log₂(32) = 5" }
+        },
+        {
+          "q": { "en": "What is the sum of the interior angles of a hexagon?", "fr": "Quelle est la somme des angles intérieurs d'un hexagone ?", "ar": "ما مجموع الزوايا الداخلية للشكل السداسي؟" },
+          "options": { "en": ["720°", "540°", "1080°", "360°"], "fr": ["720°", "540°", "1080°", "360°"], "ar": ["720°", "540°", "1080°", "360°"] },
+          "answer": 0,
+          "explanation": { "en": "Sum = (n-2) × 180° = (6-2) × 180° = 4 × 180° = 720°", "fr": "Somme = (n-2) × 180° = (6-2) × 180° = 4 × 180° = 720°", "ar": "المجموع = (n-2) × 180° = (6-2) × 180° = 4 × 180° = 720°" }
+        },
+        {
+          "q": { "en": "If 3x + 7 = 22, what is the value of x?", "fr": "Si 3x + 7 = 22, quelle est la valeur de x ?", "ar": "إذا كان 3x + 7 = 22، ما قيمة x؟" },
+          "options": { "en": ["5", "7", "3", "15"], "fr": ["5", "7", "3", "15"], "ar": ["5", "7", "3", "15"] },
+          "answer": 0,
+          "explanation": { "en": "3x + 7 = 22 → 3x = 15 → x = 5", "fr": "3x + 7 = 22 → 3x = 15 → x = 5", "ar": "3x + 7 = 22 → 3x = 15 → x = 5" }
+        },
+        {
+          "q": { "en": "What is the probability of getting heads twice when flipping a fair coin 2 times?", "fr": "Quelle est la probabilité d'obtenir face deux fois en lançant une pièce 2 fois ?", "ar": "ما احتمال الحصول على وجه مرتين عند رمي عملة عادلة مرتين؟" },
+          "options": { "en": ["1/4", "1/2", "1/3", "3/4"], "fr": ["1/4", "1/2", "1/3", "3/4"], "ar": ["1/4", "1/2", "1/3", "3/4"] },
+          "answer": 0,
+          "explanation": { "en": "P(HH) = 1/2 × 1/2 = 1/4", "fr": "P(FF) = 1/2 × 1/2 = 1/4", "ar": "P(وو) = 1/2 × 1/2 = 1/4" }
+        },
+        {
+          "q": { "en": "What is the value of sin(30°)?", "fr": "Quelle est la valeur de sin(30°) ?", "ar": "ما قيمة sin(30°)؟" },
+          "options": { "en": ["0.5", "1", "√3/2", "√2/2"], "fr": ["0,5", "1", "√3/2", "√2/2"], "ar": ["0.5", "1", "√3/2", "√2/2"] },
+          "answer": 0,
+          "explanation": { "en": "sin(30°) = 1/2 = 0.5 — a standard trigonometric value", "fr": "sin(30°) = 1/2 = 0,5 — valeur trigonométrique standard", "ar": "sin(30°) = 1/2 = 0.5 — قيمة مثلثية أساسية" }
+        },
+        {
+          "q": { "en": "What is the determinant of the matrix [[3, 1], [5, 2]]?", "fr": "Quel est le déterminant de la matrice [[3, 1], [5, 2]] ?", "ar": "ما محدد المصفوفة [[3, 1], [5, 2]]؟" },
+          "options": { "en": ["1", "11", "-1", "6"], "fr": ["1", "11", "-1", "6"], "ar": ["1", "11", "-1", "6"] },
+          "answer": 0,
+          "explanation": { "en": "det = (3)(2) - (1)(5) = 6 - 5 = 1", "fr": "dét = (3)(2) - (1)(5) = 6 - 5 = 1", "ar": "المحدد = (3)(2) - (1)(5) = 6 - 5 = 1" }
+        },
+        {
+          "q": { "en": "The sequence 2, 6, 18, 54, ... is geometric. What is the 6th term?", "fr": "La suite 2, 6, 18, 54, ... est géométrique. Quel est le 6e terme ?", "ar": "المتتالية 2, 6, 18, 54, ... هندسية. ما الحد السادس؟" },
+          "options": { "en": ["486", "162", "324", "729"], "fr": ["486", "162", "324", "729"], "ar": ["486", "162", "324", "729"] },
+          "answer": 0,
+          "explanation": { "en": "Common ratio r = 3. a₆ = 2 × 3⁵ = 2 × 243 = 486", "fr": "Raison r = 3. a₆ = 2 × 3⁵ = 2 × 243 = 486", "ar": "النسبة r = 3. a₆ = 2 × 3⁵ = 2 × 243 = 486" }
+        }
+      ]
+    },
+    {
+      "id": "physics",
+      "name": { "en": "Physics", "fr": "Physique", "ar": "الفيزياء" },
+      "icon": "&#9883;",
+      "timePerQuestion": 120,
+      "questions": [
+        {
+          "q": { "en": "What is Newton's second law of motion?", "fr": "Quelle est la deuxième loi de Newton ?", "ar": "ما هو قانون نيوتن الثاني للحركة؟" },
+          "options": { "en": ["F = ma", "F = mv", "E = mc²", "P = mv"], "fr": ["F = ma", "F = mv", "E = mc²", "P = mv"], "ar": ["F = ma", "F = mv", "E = mc²", "P = mv"] },
+          "answer": 0,
+          "explanation": { "en": "Newton's second law states that Force = mass × acceleration (F = ma)", "fr": "La deuxième loi de Newton : Force = masse × accélération (F = ma)", "ar": "ينص قانون نيوتن الثاني: القوة = الكتلة × التسارع (F = ma)" }
+        },
+        {
+          "q": { "en": "A ball is dropped from a height of 45 m. How long does it take to hit the ground? (g = 10 m/s²)", "fr": "Une balle est lâchée de 45 m de hauteur. Combien de temps met-elle pour toucher le sol ? (g = 10 m/s²)", "ar": "سقطت كرة من ارتفاع 45 م. كم تستغرق لتصل الأرض؟ (g = 10 م/ث²)" },
+          "options": { "en": ["3 seconds", "2 seconds", "4 seconds", "4.5 seconds"], "fr": ["3 secondes", "2 secondes", "4 secondes", "4,5 secondes"], "ar": ["3 ثوان", "ثانيتان", "4 ثوان", "4.5 ثوان"] },
+          "answer": 0,
+          "explanation": { "en": "h = ½gt² → 45 = ½(10)t² → t² = 9 → t = 3 seconds", "fr": "h = ½gt² → 45 = ½(10)t² → t² = 9 → t = 3 secondes", "ar": "h = ½gt² → 45 = ½(10)t² → t² = 9 → t = 3 ثوان" }
+        },
+        {
+          "q": { "en": "What is the SI unit of electric current?", "fr": "Quelle est l'unité SI du courant électrique ?", "ar": "ما وحدة SI للتيار الكهربائي؟" },
+          "options": { "en": ["Ampere", "Volt", "Ohm", "Watt"], "fr": ["Ampère", "Volt", "Ohm", "Watt"], "ar": ["أمبير", "فولت", "أوم", "واط"] },
+          "answer": 0,
+          "explanation": { "en": "The ampere (A) is the SI base unit of electric current", "fr": "L'ampère (A) est l'unité de base SI du courant électrique", "ar": "الأمبير (A) هو وحدة SI الأساسية للتيار الكهربائي" }
+        },
+        {
+          "q": { "en": "What happens to the resistance of a conductor when its temperature increases?", "fr": "Que se passe-t-il avec la résistance d'un conducteur quand sa température augmente ?", "ar": "ماذا يحدث لمقاومة الموصل عندما ترتفع حرارته؟" },
+          "options": { "en": ["It increases", "It decreases", "It stays the same", "It becomes zero"], "fr": ["Elle augmente", "Elle diminue", "Elle reste la même", "Elle devient nulle"], "ar": ["تزداد", "تنقص", "تبقى ثابتة", "تصبح صفراً"] },
+          "answer": 0,
+          "explanation": { "en": "For most conductors, resistance increases with temperature due to increased atomic vibrations", "fr": "Pour la plupart des conducteurs, la résistance augmente avec la température", "ar": "لمعظم الموصلات، تزداد المقاومة مع الحرارة بسبب زيادة اهتزازات الذرات" }
+        },
+        {
+          "q": { "en": "Which type of lens is used to correct myopia (nearsightedness)?", "fr": "Quel type de lentille corrige la myopie ?", "ar": "أي نوع من العدسات يُستخدم لتصحيح قصر النظر؟" },
+          "options": { "en": ["Concave (diverging) lens", "Convex (converging) lens", "Cylindrical lens", "Bifocal lens"], "fr": ["Lentille concave (divergente)", "Lentille convexe (convergente)", "Lentille cylindrique", "Lentille bifocale"], "ar": ["عدسة مقعرة (مفرقة)", "عدسة محدبة (مجمعة)", "عدسة أسطوانية", "عدسة ثنائية البؤرة"] },
+          "answer": 0,
+          "explanation": { "en": "Concave lenses diverge light rays, moving the focal point onto the retina for myopic eyes", "fr": "Les lentilles concaves divergent les rayons lumineux pour corriger la myopie", "ar": "العدسات المقعرة تفرق الأشعة الضوئية لتصحيح قصر النظر" }
+        },
+        {
+          "q": { "en": "What is the speed of light in a vacuum?", "fr": "Quelle est la vitesse de la lumière dans le vide ?", "ar": "ما سرعة الضوء في الفراغ؟" },
+          "options": { "en": ["3 × 10⁸ m/s", "3 × 10⁶ m/s", "3 × 10¹⁰ m/s", "3 × 10⁵ m/s"], "fr": ["3 × 10⁸ m/s", "3 × 10⁶ m/s", "3 × 10¹⁰ m/s", "3 × 10⁵ m/s"], "ar": ["3 × 10⁸ م/ث", "3 × 10⁶ م/ث", "3 × 10¹⁰ م/ث", "3 × 10⁵ م/ث"] },
+          "answer": 0,
+          "explanation": { "en": "The speed of light in a vacuum is approximately 3 × 10⁸ m/s (299,792,458 m/s)", "fr": "La vitesse de la lumière dans le vide est environ 3 × 10⁸ m/s", "ar": "سرعة الضوء في الفراغ تقريباً 3 × 10⁸ م/ث" }
+        },
+        {
+          "q": { "en": "A 5 kg object is lifted 10 m vertically. What is the work done against gravity? (g = 10 m/s²)", "fr": "Un objet de 5 kg est soulevé de 10 m verticalement. Quel travail est effectué contre la gravité ? (g = 10 m/s²)", "ar": "رُفع جسم كتلته 5 كغ لارتفاع 10 م عمودياً. ما الشغل المبذول ضد الجاذبية؟ (g = 10 م/ث²)" },
+          "options": { "en": ["500 J", "50 J", "100 J", "250 J"], "fr": ["500 J", "50 J", "100 J", "250 J"], "ar": ["500 ج", "50 ج", "100 ج", "250 ج"] },
+          "answer": 0,
+          "explanation": { "en": "W = mgh = 5 × 10 × 10 = 500 J", "fr": "W = mgh = 5 × 10 × 10 = 500 J", "ar": "W = mgh = 5 × 10 × 10 = 500 ج" }
+        },
+        {
+          "q": { "en": "Which law states that the total energy of an isolated system remains constant?", "fr": "Quelle loi stipule que l'énergie totale d'un système isolé reste constante ?", "ar": "أي قانون ينص على أن الطاقة الكلية لنظام معزول تبقى ثابتة؟" },
+          "options": { "en": ["Conservation of Energy", "Newton's Third Law", "Ohm's Law", "Kepler's Law"], "fr": ["Conservation de l'énergie", "Troisième loi de Newton", "Loi d'Ohm", "Loi de Kepler"], "ar": ["حفظ الطاقة", "قانون نيوتن الثالث", "قانون أوم", "قانون كبلر"] },
+          "answer": 0,
+          "explanation": { "en": "The law of conservation of energy states energy cannot be created or destroyed, only transformed", "fr": "La loi de conservation de l'énergie : l'énergie ne peut être créée ni détruite", "ar": "قانون حفظ الطاقة: الطاقة لا تفنى ولا تُستحدث بل تتحول" }
+        },
+        {
+          "q": { "en": "What is the frequency of a wave with a period of 0.02 seconds?", "fr": "Quelle est la fréquence d'une onde de période 0,02 secondes ?", "ar": "ما تردد موجة دورتها 0.02 ثانية؟" },
+          "options": { "en": ["50 Hz", "20 Hz", "500 Hz", "0.02 Hz"], "fr": ["50 Hz", "20 Hz", "500 Hz", "0,02 Hz"], "ar": ["50 هرتز", "20 هرتز", "500 هرتز", "0.02 هرتز"] },
+          "answer": 0,
+          "explanation": { "en": "f = 1/T = 1/0.02 = 50 Hz", "fr": "f = 1/T = 1/0,02 = 50 Hz", "ar": "f = 1/T = 1/0.02 = 50 هرتز" }
+        },
+        {
+          "q": { "en": "Two charges of +2 μC and -3 μC are placed 1 m apart. Is the force between them attractive or repulsive?", "fr": "Deux charges de +2 μC et -3 μC sont placées à 1 m. La force est-elle attractive ou répulsive ?", "ar": "شحنتان +2 μC و -3 μC على بعد 1 م. هل القوة بينهما تجاذب أم تنافر؟" },
+          "options": { "en": ["Attractive", "Repulsive", "Zero", "Cannot be determined"], "fr": ["Attractive", "Répulsive", "Nulle", "Indéterminable"], "ar": ["تجاذب", "تنافر", "صفر", "لا يمكن تحديدها"] },
+          "answer": 0,
+          "explanation": { "en": "Opposite charges attract each other according to Coulomb's law", "fr": "Les charges opposées s'attirent selon la loi de Coulomb", "ar": "الشحنات المتعاكسة تتجاذب حسب قانون كولوم" }
+        }
+      ]
+    },
+    {
+      "id": "chemistry",
+      "name": { "en": "Chemistry", "fr": "Chimie", "ar": "الكيمياء" },
+      "icon": "&#9883;",
+      "timePerQuestion": 90,
+      "questions": [
+        {
+          "q": { "en": "What is the chemical formula of sulfuric acid?", "fr": "Quelle est la formule chimique de l'acide sulfurique ?", "ar": "ما الصيغة الكيميائية لحمض الكبريتيك؟" },
+          "options": { "en": ["H₂SO₄", "HCl", "HNO₃", "H₃PO₄"], "fr": ["H₂SO₄", "HCl", "HNO₃", "H₃PO₄"], "ar": ["H₂SO₄", "HCl", "HNO₃", "H₃PO₄"] },
+          "answer": 0,
+          "explanation": { "en": "Sulfuric acid is H₂SO₄ — a strong diprotic acid", "fr": "L'acide sulfurique est H₂SO₄ — un acide diprotique fort", "ar": "حمض الكبريتيك هو H₂SO₄ — حمض ثنائي البروتون قوي" }
+        },
+        {
+          "q": { "en": "How many electrons does a neutral carbon atom have?", "fr": "Combien d'électrons possède un atome de carbone neutre ?", "ar": "كم إلكتروناً في ذرة كربون متعادلة؟" },
+          "options": { "en": ["6", "12", "4", "8"], "fr": ["6", "12", "4", "8"], "ar": ["6", "12", "4", "8"] },
+          "answer": 0,
+          "explanation": { "en": "Carbon has atomic number 6, so a neutral atom has 6 electrons", "fr": "Le carbone a le numéro atomique 6, donc 6 électrons", "ar": "الكربون رقمه الذري 6، لذا الذرة المتعادلة لديها 6 إلكترونات" }
+        },
+        {
+          "q": { "en": "What type of bond is formed between sodium (Na) and chlorine (Cl)?", "fr": "Quel type de liaison se forme entre le sodium (Na) et le chlore (Cl) ?", "ar": "ما نوع الرابطة بين الصوديوم (Na) والكلور (Cl)؟" },
+          "options": { "en": ["Ionic bond", "Covalent bond", "Metallic bond", "Hydrogen bond"], "fr": ["Liaison ionique", "Liaison covalente", "Liaison métallique", "Liaison hydrogène"], "ar": ["رابطة أيونية", "رابطة تساهمية", "رابطة فلزية", "رابطة هيدروجينية"] },
+          "answer": 0,
+          "explanation": { "en": "Na (metal) transfers an electron to Cl (non-metal), forming an ionic bond in NaCl", "fr": "Na (métal) transfère un électron au Cl (non-métal), formant une liaison ionique", "ar": "Na (فلز) ينقل إلكتروناً إلى Cl (لافلز)، مكوناً رابطة أيونية" }
+        },
+        {
+          "q": { "en": "What is the pH of a neutral solution at 25°C?", "fr": "Quel est le pH d'une solution neutre à 25°C ?", "ar": "ما pH محلول متعادل عند 25°C؟" },
+          "options": { "en": ["7", "0", "14", "1"], "fr": ["7", "0", "14", "1"], "ar": ["7", "0", "14", "1"] },
+          "answer": 0,
+          "explanation": { "en": "At 25°C, pure water has a pH of 7, which is considered neutral", "fr": "À 25°C, l'eau pure a un pH de 7, considéré comme neutre", "ar": "عند 25°C، الماء النقي له pH = 7 وهو متعادل" }
+        },
+        {
+          "q": { "en": "Which gas is produced when zinc reacts with hydrochloric acid?", "fr": "Quel gaz est produit quand le zinc réagit avec l'acide chlorhydrique ?", "ar": "أي غاز ينتج عند تفاعل الزنك مع حمض الهيدروكلوريك؟" },
+          "options": { "en": ["Hydrogen (H₂)", "Oxygen (O₂)", "Carbon dioxide (CO₂)", "Chlorine (Cl₂)"], "fr": ["Hydrogène (H₂)", "Oxygène (O₂)", "Dioxyde de carbone (CO₂)", "Chlore (Cl₂)"], "ar": ["هيدروجين (H₂)", "أكسجين (O₂)", "ثاني أكسيد الكربون (CO₂)", "كلور (Cl₂)"] },
+          "answer": 0,
+          "explanation": { "en": "Zn + 2HCl → ZnCl₂ + H₂ — hydrogen gas is released", "fr": "Zn + 2HCl → ZnCl₂ + H₂ — de l'hydrogène est libéré", "ar": "Zn + 2HCl → ZnCl₂ + H₂ — يتحرر غاز الهيدروجين" }
+        },
+        {
+          "q": { "en": "What is Avogadro's number?", "fr": "Quel est le nombre d'Avogadro ?", "ar": "ما عدد أفوغادرو؟" },
+          "options": { "en": ["6.022 × 10²³", "6.022 × 10²⁰", "3.14 × 10²³", "6.022 × 10²⁶"], "fr": ["6,022 × 10²³", "6,022 × 10²⁰", "3,14 × 10²³", "6,022 × 10²⁶"], "ar": ["6.022 × 10²³", "6.022 × 10²⁰", "3.14 × 10²³", "6.022 × 10²⁶"] },
+          "answer": 0,
+          "explanation": { "en": "Avogadro's number is 6.022 × 10²³ particles per mole", "fr": "Le nombre d'Avogadro est 6,022 × 10²³ particules par mole", "ar": "عدد أفوغادرو هو 6.022 × 10²³ جسيم لكل مول" }
+        },
+        {
+          "q": { "en": "In the periodic table, elements in the same group have:", "fr": "Dans le tableau périodique, les éléments du même groupe ont :", "ar": "في الجدول الدوري، عناصر نفس المجموعة لديها:" },
+          "options": { "en": ["Same number of valence electrons", "Same number of neutrons", "Same atomic mass", "Same number of energy levels"], "fr": ["Même nombre d'électrons de valence", "Même nombre de neutrons", "Même masse atomique", "Même nombre de niveaux d'énergie"], "ar": ["نفس عدد إلكترونات التكافؤ", "نفس عدد النيوترونات", "نفس الكتلة الذرية", "نفس عدد مستويات الطاقة"] },
+          "answer": 0,
+          "explanation": { "en": "Elements in the same group share the same number of valence electrons, giving them similar chemical properties", "fr": "Les éléments du même groupe partagent le même nombre d'électrons de valence", "ar": "عناصر نفس المجموعة تتشارك عدد إلكترونات التكافؤ" }
+        },
+        {
+          "q": { "en": "What is the molar mass of water (H₂O)?", "fr": "Quelle est la masse molaire de l'eau (H₂O) ?", "ar": "ما الكتلة المولية للماء (H₂O)؟" },
+          "options": { "en": ["18 g/mol", "16 g/mol", "20 g/mol", "2 g/mol"], "fr": ["18 g/mol", "16 g/mol", "20 g/mol", "2 g/mol"], "ar": ["18 غ/مول", "16 غ/مول", "20 غ/مول", "2 غ/مول"] },
+          "answer": 0,
+          "explanation": { "en": "H₂O: 2(1) + 16 = 18 g/mol", "fr": "H₂O : 2(1) + 16 = 18 g/mol", "ar": "H₂O: 2(1) + 16 = 18 غ/مول" }
+        },
+        {
+          "q": { "en": "Which of the following is an exothermic reaction?", "fr": "Laquelle des réactions suivantes est exothermique ?", "ar": "أي من التفاعلات التالية طاردة للحرارة؟" },
+          "options": { "en": ["Combustion of methane", "Photosynthesis", "Melting ice", "Evaporation of water"], "fr": ["Combustion du méthane", "Photosynthèse", "Fonte de la glace", "Évaporation de l'eau"], "ar": ["احتراق الميثان", "التمثيل الضوئي", "ذوبان الجليد", "تبخر الماء"] },
+          "answer": 0,
+          "explanation": { "en": "Combustion releases heat energy, making it exothermic (ΔH < 0)", "fr": "La combustion libère de l'énergie thermique, donc elle est exothermique (ΔH < 0)", "ar": "الاحتراق يطلق طاقة حرارية، لذلك هو طارد للحرارة (ΔH < 0)" }
+        },
+        {
+          "q": { "en": "What is the electron configuration of oxygen (Z=8)?", "fr": "Quelle est la configuration électronique de l'oxygène (Z=8) ?", "ar": "ما التوزيع الإلكتروني للأكسجين (Z=8)؟" },
+          "options": { "en": ["1s² 2s² 2p⁴", "1s² 2s² 2p⁶", "1s² 2s² 2p²", "1s² 2s¹ 2p⁵"], "fr": ["1s² 2s² 2p⁴", "1s² 2s² 2p⁶", "1s² 2s² 2p²", "1s² 2s¹ 2p⁵"], "ar": ["1s² 2s² 2p⁴", "1s² 2s² 2p⁶", "1s² 2s² 2p²", "1s² 2s¹ 2p⁵"] },
+          "answer": 0,
+          "explanation": { "en": "Oxygen has 8 electrons: 1s²(2) + 2s²(2) + 2p⁴(4) = 8 total", "fr": "L'oxygène a 8 électrons : 1s²(2) + 2s²(2) + 2p⁴(4) = 8 au total", "ar": "الأكسجين لديه 8 إلكترونات: 1s²(2) + 2s²(2) + 2p⁴(4) = 8 إجمالاً" }
+        }
+      ]
+    },
+    {
+      "id": "english",
+      "name": { "en": "English Proficiency", "fr": "Compétence en Anglais", "ar": "إتقان اللغة الإنجليزية" },
+      "icon": "&#127468;&#127463;",
+      "timePerQuestion": 60,
+      "questions": [
+        {
+          "q": { "en": "Choose the correct sentence:", "fr": "Choisissez la phrase correcte :", "ar": "اختر الجملة الصحيحة:" },
+          "options": { "en": ["She has been studying for three hours.", "She have been studying for three hours.", "She has been study for three hours.", "She has being studying for three hours."], "fr": ["She has been studying for three hours.", "She have been studying for three hours.", "She has been study for three hours.", "She has being studying for three hours."], "ar": ["She has been studying for three hours.", "She have been studying for three hours.", "She has been study for three hours.", "She has being studying for three hours."] },
+          "answer": 0,
+          "explanation": { "en": "Present perfect continuous: subject + has/have + been + verb-ing", "fr": "Present perfect continuous : sujet + has/have + been + verbe-ing", "ar": "المضارع التام المستمر: subject + has/have + been + verb-ing" }
+        },
+        {
+          "q": { "en": "What is the meaning of 'ubiquitous'?", "fr": "Que signifie 'ubiquitous' ?", "ar": "ما معنى 'ubiquitous'؟" },
+          "options": { "en": ["Found everywhere", "Very rare", "Extremely large", "Highly intelligent"], "fr": ["Trouvé partout", "Très rare", "Extrêmement grand", "Très intelligent"], "ar": ["موجود في كل مكان", "نادر جداً", "كبير للغاية", "ذكي للغاية"] },
+          "answer": 0,
+          "explanation": { "en": "'Ubiquitous' means present, appearing, or found everywhere", "fr": "'Ubiquitous' signifie présent ou trouvé partout", "ar": "'Ubiquitous' تعني موجود في كل مكان" }
+        },
+        {
+          "q": { "en": "Fill in the blank: 'If I ___ you, I would apply for the scholarship.'", "fr": "Complétez : 'If I ___ you, I would apply for the scholarship.'", "ar": "أكمل الفراغ: 'If I ___ you, I would apply for the scholarship.'" },
+          "options": { "en": ["were", "was", "am", "be"], "fr": ["were", "was", "am", "be"], "ar": ["were", "was", "am", "be"] },
+          "answer": 0,
+          "explanation": { "en": "Second conditional uses 'were' for all subjects (subjunctive mood): If I were...", "fr": "Le conditionnel 2 utilise 'were' pour tous les sujets : If I were...", "ar": "الشرطية الثانية تستخدم 'were' لجميع الضمائر: If I were..." }
+        },
+        {
+          "q": { "en": "Which word is a synonym of 'diligent'?", "fr": "Quel mot est synonyme de 'diligent' ?", "ar": "ما المرادف لكلمة 'diligent'؟" },
+          "options": { "en": ["Hardworking", "Lazy", "Careless", "Foolish"], "fr": ["Travailleur", "Paresseux", "Négligent", "Insensé"], "ar": ["مجتهد", "كسول", "مهمل", "أحمق"] },
+          "answer": 0,
+          "explanation": { "en": "'Diligent' means showing careful and persistent effort; hardworking", "fr": "'Diligent' signifie travailleur, assidu", "ar": "'Diligent' تعني مجتهد ودؤوب في العمل" }
+        },
+        {
+          "q": { "en": "Choose the correct passive form: 'The students ___ the exam results yesterday.'", "fr": "Choisissez la forme passive correcte : 'The students ___ the exam results yesterday.'", "ar": "اختر صيغة المبني للمجهول الصحيحة: 'The students ___ the exam results yesterday.'" },
+          "options": { "en": ["were given", "was given", "are given", "gave"], "fr": ["were given", "was given", "are given", "gave"], "ar": ["were given", "was given", "are given", "gave"] },
+          "answer": 0,
+          "explanation": { "en": "Passive voice past tense with plural subject: 'were + past participle'", "fr": "Voix passive passé avec sujet pluriel : 'were + participe passé'", "ar": "المبني للمجهول في الماضي مع فاعل جمع: 'were + التصريف الثالث'" }
+        },
+        {
+          "q": { "en": "Read the passage: 'Despite the heavy rain, the marathon continued as scheduled.' What does this imply?", "fr": "Lisez : 'Despite the heavy rain, the marathon continued as scheduled.' Que cela implique-t-il ?", "ar": "اقرأ: 'Despite the heavy rain, the marathon continued as scheduled.' ماذا يعني هذا؟" },
+          "options": { "en": ["The rain did not stop the marathon", "The marathon was cancelled", "It rained after the marathon", "The marathon was postponed"], "fr": ["La pluie n'a pas arrêté le marathon", "Le marathon a été annulé", "Il a plu après le marathon", "Le marathon a été reporté"], "ar": ["المطر لم يوقف الماراثون", "تم إلغاء الماراثون", "هطل المطر بعد الماراثون", "تم تأجيل الماراثون"] },
+          "answer": 0,
+          "explanation": { "en": "'Despite' indicates contrast — the rain happened but the marathon still went ahead", "fr": "'Despite' indique un contraste — la pluie n'a pas empêché le marathon", "ar": "'Despite' تدل على التناقض — رغم المطر استمر الماراثون" }
+        },
+        {
+          "q": { "en": "Which sentence uses the correct word?", "fr": "Quelle phrase utilise le mot correct ?", "ar": "أي جملة تستخدم الكلمة الصحيحة؟" },
+          "options": { "en": ["Their house is bigger than ours.", "There house is bigger than ours.", "They're house is bigger than ours.", "Theyre house is bigger than ours."], "fr": ["Their house is bigger than ours.", "There house is bigger than ours.", "They're house is bigger than ours.", "Theyre house is bigger than ours."], "ar": ["Their house is bigger than ours.", "There house is bigger than ours.", "They're house is bigger than ours.", "Theyre house is bigger than ours."] },
+          "answer": 0,
+          "explanation": { "en": "'Their' is the possessive form. 'There' = location. 'They're' = they are.", "fr": "'Their' est la forme possessive. 'There' = lieu. 'They're' = they are.", "ar": "'Their' صيغة الملكية. 'There' = مكان. 'They're' = they are." }
+        },
+        {
+          "q": { "en": "What is the correct order of adjectives?", "fr": "Quel est l'ordre correct des adjectifs ?", "ar": "ما الترتيب الصحيح للصفات؟" },
+          "options": { "en": ["A beautiful small red Chinese vase", "A red small beautiful Chinese vase", "A Chinese beautiful small red vase", "A small red beautiful Chinese vase"], "fr": ["A beautiful small red Chinese vase", "A red small beautiful Chinese vase", "A Chinese beautiful small red vase", "A small red beautiful Chinese vase"], "ar": ["A beautiful small red Chinese vase", "A red small beautiful Chinese vase", "A Chinese beautiful small red vase", "A small red beautiful Chinese vase"] },
+          "answer": 0,
+          "explanation": { "en": "English adjective order: opinion → size → color → origin → noun", "fr": "Ordre des adjectifs en anglais : opinion → taille → couleur → origine → nom", "ar": "ترتيب الصفات بالإنجليزية: رأي → حجم → لون → أصل → اسم" }
+        },
+        {
+          "q": { "en": "Choose the word that best completes: 'The professor asked the students to ___ the research paper by Friday.'", "fr": "Choisissez le mot qui complète le mieux : 'The professor asked the students to ___ the research paper by Friday.'", "ar": "اختر الكلمة المناسبة: 'The professor asked the students to ___ the research paper by Friday.'" },
+          "options": { "en": ["submit", "admit", "permit", "commit"], "fr": ["submit", "admit", "permit", "commit"], "ar": ["submit", "admit", "permit", "commit"] },
+          "answer": 0,
+          "explanation": { "en": "'Submit' means to hand in or present for consideration — the correct verb for turning in assignments", "fr": "'Submit' signifie soumettre ou remettre — le verbe correct pour rendre un travail", "ar": "'Submit' تعني تقديم أو إرسال — الفعل المناسب لتسليم الواجبات" }
+        },
+        {
+          "q": { "en": "Which literary device is used in: 'The wind whispered through the trees'?", "fr": "Quelle figure de style est utilisée dans : 'The wind whispered through the trees' ?", "ar": "ما الأداة الأدبية المستخدمة في: 'The wind whispered through the trees'؟" },
+          "options": { "en": ["Personification", "Simile", "Hyperbole", "Alliteration"], "fr": ["Personnification", "Comparaison", "Hyperbole", "Allitération"], "ar": ["تشخيص", "تشبيه", "مبالغة", "جناس"] },
+          "answer": 0,
+          "explanation": { "en": "Personification gives human qualities (whispering) to non-human things (wind)", "fr": "La personnification attribue des qualités humaines (chuchoter) à des choses non-humaines (vent)", "ar": "التشخيص يعطي صفات إنسانية (الهمس) لأشياء غير بشرية (الرياح)" }
+        }
+      ]
+    },
+    {
+      "id": "general",
+      "name": { "en": "General Knowledge & Chinese Culture", "fr": "Culture Générale & Culture Chinoise", "ar": "ثقافة عامة وثقافة صينية" },
+      "icon": "&#127970;",
+      "timePerQuestion": 60,
+      "questions": [
+        {
+          "q": { "en": "What is the capital of China?", "fr": "Quelle est la capitale de la Chine ?", "ar": "ما عاصمة الصين؟" },
+          "options": { "en": ["Beijing", "Shanghai", "Guangzhou", "Shenzhen"], "fr": ["Pékin", "Shanghai", "Guangzhou", "Shenzhen"], "ar": ["بكين", "شنغهاي", "قوانغتشو", "شنجن"] },
+          "answer": 0,
+          "explanation": { "en": "Beijing (北京) is the capital of the People's Republic of China", "fr": "Pékin (北京) est la capitale de la République populaire de Chine", "ar": "بكين (北京) هي عاصمة جمهورية الصين الشعبية" }
+        },
+        {
+          "q": { "en": "The Great Wall of China was primarily built to:", "fr": "La Grande Muraille de Chine a été principalement construite pour :", "ar": "بُني سور الصين العظيم أساساً من أجل:" },
+          "options": { "en": ["Defend against northern invasions", "Mark the border with India", "Create a trade route", "Display architectural prowess"], "fr": ["Se défendre contre les invasions du nord", "Marquer la frontière avec l'Inde", "Créer une route commerciale", "Montrer la prouesse architecturale"], "ar": ["الدفاع ضد الغزوات الشمالية", "تحديد الحدود مع الهند", "إنشاء طريق تجاري", "إظهار البراعة المعمارية"] },
+          "answer": 0,
+          "explanation": { "en": "The Great Wall was built primarily to protect China from nomadic invasions from the north", "fr": "La Grande Muraille a été construite pour protéger la Chine des invasions nomades du nord", "ar": "بُني السور العظيم لحماية الصين من غزوات البدو من الشمال" }
+        },
+        {
+          "q": { "en": "What is the CSC scholarship?", "fr": "Qu'est-ce que la bourse CSC ?", "ar": "ما هي منحة CSC؟" },
+          "options": { "en": ["Chinese Government Scholarship managed by China Scholarship Council", "Canadian Student Certification", "Chinese Science Competition", "Central State College funding"], "fr": ["Bourse du gouvernement chinois gérée par le China Scholarship Council", "Certification étudiante canadienne", "Compétition scientifique chinoise", "Financement du Central State College"], "ar": ["منحة الحكومة الصينية يديرها مجلس المنح الدراسية الصيني", "شهادة طالب كندية", "مسابقة علمية صينية", "تمويل كلية الولاية المركزية"] },
+          "answer": 0,
+          "explanation": { "en": "CSC stands for China Scholarship Council — it manages the Chinese Government Scholarship for international students", "fr": "CSC signifie China Scholarship Council — il gère la bourse du gouvernement chinois", "ar": "CSC هو مجلس المنح الدراسية الصيني — يدير منحة الحكومة الصينية للطلاب الدوليين" }
+        },
+        {
+          "q": { "en": "Which Chinese dynasty invented paper?", "fr": "Quelle dynastie chinoise a inventé le papier ?", "ar": "أي سلالة صينية اخترعت الورق؟" },
+          "options": { "en": ["Han Dynasty", "Tang Dynasty", "Ming Dynasty", "Qin Dynasty"], "fr": ["Dynastie Han", "Dynastie Tang", "Dynastie Ming", "Dynastie Qin"], "ar": ["سلالة هان", "سلالة تانغ", "سلالة مينغ", "سلالة تشين"] },
+          "answer": 0,
+          "explanation": { "en": "Papermaking was invented during the Han Dynasty (around 105 AD) by Cai Lun", "fr": "La fabrication du papier a été inventée sous la dynastie Han (vers 105 ap. J.-C.) par Cai Lun", "ar": "اخترعت صناعة الورق في عهد سلالة هان (حوالي 105 م) على يد تساي لون" }
+        },
+        {
+          "q": { "en": "What language proficiency test is required for Chinese-taught programs?", "fr": "Quel test de compétence linguistique est requis pour les programmes enseignés en chinois ?", "ar": "ما اختبار الكفاءة اللغوية المطلوب للبرامج المُدرَّسة بالصينية؟" },
+          "options": { "en": ["HSK (Hanyu Shuiping Kaoshi)", "IELTS", "TOEFL", "DELF"], "fr": ["HSK (Hanyu Shuiping Kaoshi)", "IELTS", "TOEFL", "DELF"], "ar": ["HSK (اختبار هانيو شويبينغ كاوشي)", "IELTS", "TOEFL", "DELF"] },
+          "answer": 0,
+          "explanation": { "en": "HSK is the standardized Chinese proficiency test required for Chinese-taught university programs", "fr": "Le HSK est le test standardisé de chinois requis pour les programmes universitaires en chinois", "ar": "HSK هو اختبار الكفاءة في اللغة الصينية المعياري المطلوب للبرامج الجامعية بالصينية" }
+        },
+        {
+          "q": { "en": "What is the official currency of China?", "fr": "Quelle est la monnaie officielle de la Chine ?", "ar": "ما العملة الرسمية للصين؟" },
+          "options": { "en": ["Renminbi (Yuan/CNY)", "Yen (JPY)", "Won (KRW)", "Rupee (INR)"], "fr": ["Renminbi (Yuan/CNY)", "Yen (JPY)", "Won (KRW)", "Roupie (INR)"], "ar": ["رنمينبي (يوان/CNY)", "ين (JPY)", "وون (KRW)", "روبية (INR)"] },
+          "answer": 0,
+          "explanation": { "en": "China's official currency is the Renminbi (RMB), with the basic unit being the Yuan (¥)", "fr": "La monnaie officielle de la Chine est le Renminbi (RMB), l'unité de base étant le Yuan (¥)", "ar": "العملة الرسمية للصين هي الرنمينبي (RMB)، ووحدتها الأساسية اليوان (¥)" }
+        },
+        {
+          "q": { "en": "What type of student visa do you need to study in China for more than 6 months?", "fr": "Quel type de visa étudiant faut-il pour étudier en Chine plus de 6 mois ?", "ar": "ما نوع تأشيرة الطالب للدراسة في الصين لأكثر من 6 أشهر؟" },
+          "options": { "en": ["X1 visa", "X2 visa", "Z visa", "L visa"], "fr": ["Visa X1", "Visa X2", "Visa Z", "Visa L"], "ar": ["تأشيرة X1", "تأشيرة X2", "تأشيرة Z", "تأشيرة L"] },
+          "answer": 0,
+          "explanation": { "en": "X1 visa is for long-term study (over 180 days). X2 is for short-term study (under 180 days).", "fr": "Le visa X1 est pour les études longue durée (plus de 180 jours). X2 pour courte durée.", "ar": "تأشيرة X1 للدراسة طويلة المدى (أكثر من 180 يوم). X2 للدراسة قصيرة المدى." }
+        },
+        {
+          "q": { "en": "Which Chinese university consistently ranks #1 in China?", "fr": "Quelle université chinoise est systématiquement classée n°1 en Chine ?", "ar": "أي جامعة صينية تُصنف باستمرار رقم 1 في الصين؟" },
+          "options": { "en": ["Tsinghua University", "Peking University", "Fudan University", "Zhejiang University"], "fr": ["Université Tsinghua", "Université de Pékin", "Université Fudan", "Université du Zhejiang"], "ar": ["جامعة تسينغهوا", "جامعة بكين", "جامعة فودان", "جامعة تشجيانغ"] },
+          "answer": 0,
+          "explanation": { "en": "Tsinghua University is consistently ranked as the top university in China and among the top globally", "fr": "L'Université Tsinghua est systématiquement classée première en Chine", "ar": "جامعة تسينغهوا تُصنف باستمرار كأفضل جامعة في الصين" }
+        },
+        {
+          "q": { "en": "The Silk Road connected China primarily with:", "fr": "La Route de la Soie reliait la Chine principalement avec :", "ar": "ربط طريق الحرير الصين أساساً مع:" },
+          "options": { "en": ["Europe and the Middle East", "Africa and South America", "Australia and Oceania", "North and South America"], "fr": ["L'Europe et le Moyen-Orient", "L'Afrique et l'Amérique du Sud", "L'Australie et l'Océanie", "L'Amérique du Nord et du Sud"], "ar": ["أوروبا والشرق الأوسط", "أفريقيا وأمريكا الجنوبية", "أستراليا وأوقيانوسيا", "أمريكا الشمالية والجنوبية"] },
+          "answer": 0,
+          "explanation": { "en": "The Silk Road was an ancient trade network connecting China with Europe and the Middle East", "fr": "La Route de la Soie était un réseau commercial ancien reliant la Chine à l'Europe et au Moyen-Orient", "ar": "كان طريق الحرير شبكة تجارية قديمة تربط الصين بأوروبا والشرق الأوسط" }
+        },
+        {
+          "q": { "en": "What is the approximate population of China?", "fr": "Quelle est la population approximative de la Chine ?", "ar": "ما عدد سكان الصين التقريبي؟" },
+          "options": { "en": ["1.4 billion", "2 billion", "800 million", "500 million"], "fr": ["1,4 milliard", "2 milliards", "800 millions", "500 millions"], "ar": ["1.4 مليار", "2 مليار", "800 مليون", "500 مليون"] },
+          "answer": 0,
+          "explanation": { "en": "China has approximately 1.4 billion people, making it one of the most populous countries", "fr": "La Chine compte environ 1,4 milliard d'habitants", "ar": "يبلغ عدد سكان الصين حوالي 1.4 مليار نسمة" }
+        }
+      ]
+    }
+  ]
+}
