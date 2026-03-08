@@ -362,40 +362,11 @@ setTimeout(load,3500);})();
       <li class="breadcrumb-item active" aria-current="page" style="color:#b0c4de;">Scholarship Finder</li>
     </ol>
   </nav>
-  <h1>China Scholarship Finder</h1>
-  <p>Find fully funded and partial scholarships to study in China. Search by funding type, city, degree level, and language.</p>
+  <h1>Find Your Perfect Scholarship</h1>
+  <p>Answer a few questions about your profile and we'll match you with the best scholarships in China.</p>
 </div>
 
-<div class="sf-container">
-  <div class="sf-search-wrap">
-    <input type="text" id="sf-search" placeholder="Search scholarships... (e.g. &quot;fully funded&quot;, &quot;CSC&quot;, &quot;Beijing&quot;)" autocomplete="off"/>
-  </div>
-
-  <div class="sf-filters">
-    <select id="sf-filter-type">
-      <option value="all">All Funding Types</option>
-      <option value="full">Fully Funded</option>
-      <option value="partial">Partial Scholarship</option>
-    </select>
-    <select id="sf-filter-english">
-      <option value="all">All Languages</option>
-      <option value="yes">English Programs</option>
-    </select>
-    <select id="sf-filter-city">
-      <option value="all">All Cities</option>
-    </select>
-    <select id="sf-filter-level">
-      <option value="all">All Degree Levels</option>
-      <option value="bachelor">Bachelor</option>
-      <option value="master">Master</option>
-      <option value="phd">PhD</option>
-      <option value="language">Language Year</option>
-    </select>
-  </div>
-
-  <div id="sf-count" class="sf-results-count"></div>
-  <div id="sf-results" class="sf-results"></div>
-</div>
+<div id="sf-app"></div>
 
 <!-- SEO Content Block for LLM/AI Queries -->
 <section style="max-width:900px;margin:0 auto 40px;padding:0 16px;">
@@ -646,5 +617,6 @@ setTimeout(load,3500);})();
 <script defer="" src="/js/tracker.js"></script>
 <script defer src="/js/ga4-events.js"></script>
 <script defer="" src="/js/form-handler.js"></script>
+<script defer="" src="/js/form-autosave.js"></script>
 </body>
 </html>
