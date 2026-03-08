@@ -1,0 +1,530 @@
+[
+  {
+    "id": "csc-full-scholarship",
+    "name": {
+      "en": "Chinese Government Scholarship (CSC) – Full Scholarship",
+      "fr": "Bourse du Gouvernement Chinois (CSC) – Bourse Complète",
+      "ar": "منحة الحكومة الصينية (CSC) – منحة كاملة"
+    },
+    "type": "full",
+    "provider": {
+      "en": "China Scholarship Council (CSC)",
+      "fr": "Conseil des Bourses de Chine (CSC)",
+      "ar": "مجلس المنح الدراسية الصيني (CSC)"
+    },
+    "coverage": {
+      "en": ["Full tuition waiver", "Monthly stipend ($400–$500/month)", "Free accommodation", "Health insurance", "One-time settlement allowance"],
+      "fr": ["Exonération totale des frais de scolarité", "Allocation mensuelle (400–500$/mois)", "Hébergement gratuit", "Assurance maladie", "Allocation d'installation unique"],
+      "ar": ["إعفاء كامل من الرسوم الدراسية", "راتب شهري (400–500 دولار/شهر)", "سكن مجاني", "تأمين صحي", "بدل استقرار لمرة واحدة"]
+    },
+    "degree_levels": ["bachelor", "master", "phd", "language"],
+    "english_programs": true,
+    "cities": ["beijing", "shanghai", "hangzhou", "nanjing", "wuhan", "guangzhou", "chengdu", "changsha", "hefei", "xian"],
+    "tuition_covered": "100%",
+    "stipend_usd": { "bachelor": 400, "master": 450, "phd": 500 },
+    "deadline": {
+      "en": "January – April (varies by embassy)",
+      "fr": "Janvier – Avril (varie selon l'ambassade)",
+      "ar": "يناير – أبريل (يختلف حسب السفارة)"
+    },
+    "eligibility": {
+      "en": "Open to all nationalities. Age limits: Bachelor (under 25), Master (under 35), PhD (under 40). Good health, valid passport.",
+      "fr": "Ouvert à toutes les nationalités. Limites d'âge : Licence (moins de 25 ans), Master (moins de 35 ans), Doctorat (moins de 40 ans). Bonne santé, passeport valide.",
+      "ar": "مفتوح لجميع الجنسيات. حدود العمر: بكالوريوس (أقل من 25)، ماجستير (أقل من 35)، دكتوراه (أقل من 40). صحة جيدة، جواز سفر ساري."
+    },
+    "universities_count": 289,
+    "success_rate": "medium",
+    "tags": ["government", "fully-funded", "popular", "all-levels"],
+    "description": {
+      "en": "The most prestigious scholarship for international students in China. Covers everything: tuition, accommodation, living expenses, and insurance. Highly competitive but transformative.",
+      "fr": "La bourse la plus prestigieuse pour les étudiants internationaux en Chine. Couvre tout : scolarité, hébergement, frais de subsistance et assurance. Très compétitive mais transformatrice.",
+      "ar": "المنحة الأكثر شهرة للطلاب الدوليين في الصين. تغطي كل شيء: الرسوم الدراسية، السكن، نفقات المعيشة، والتأمين. تنافسية للغاية لكنها تحويلية."
+    },
+    "apply_link": "./shop.html",
+    "last_updated": "2026-03-08"
+  },
+  {
+    "id": "csc-bilateral-program",
+    "name": {
+      "en": "CSC Bilateral Program (Morocco–China)",
+      "fr": "Programme Bilatéral CSC (Maroc–Chine)",
+      "ar": "البرنامج الثنائي CSC (المغرب–الصين)"
+    },
+    "type": "full",
+    "provider": {
+      "en": "CSC + Moroccan Ministry of Education",
+      "fr": "CSC + Ministère de l'Éducation Marocain",
+      "ar": "CSC + وزارة التعليم المغربية"
+    },
+    "coverage": {
+      "en": ["Full tuition waiver", "Monthly stipend", "Free accommodation", "Health insurance", "Round-trip airfare"],
+      "fr": ["Exonération totale des frais de scolarité", "Allocation mensuelle", "Hébergement gratuit", "Assurance maladie", "Billet d'avion aller-retour"],
+      "ar": ["إعفاء كامل من الرسوم الدراسية", "راتب شهري", "سكن مجاني", "تأمين صحي", "تذكرة طيران ذهاب وإياب"]
+    },
+    "degree_levels": ["master", "phd"],
+    "english_programs": true,
+    "cities": ["beijing", "shanghai", "hangzhou", "nanjing", "wuhan", "guangzhou"],
+    "tuition_covered": "100%",
+    "stipend_usd": { "master": 450, "phd": 500 },
+    "deadline": {
+      "en": "February – March (through Moroccan Ministry)",
+      "fr": "Février – Mars (via le Ministère marocain)",
+      "ar": "فبراير – مارس (عبر الوزارة المغربية)"
+    },
+    "eligibility": {
+      "en": "Exclusively for Moroccan nationals. Must apply through the Moroccan Ministry of Education. Bachelor's degree required for Master's, Master's for PhD.",
+      "fr": "Exclusivement pour les ressortissants marocains. Candidature via le Ministère de l'Éducation marocain. Licence requise pour le Master, Master pour le Doctorat.",
+      "ar": "حصريًا للمواطنين المغاربة. يجب التقديم عبر وزارة التعليم المغربية. شهادة البكالوريوس مطلوبة للماجستير، والماجستير للدكتوراه."
+    },
+    "universities_count": 50,
+    "success_rate": "high",
+    "tags": ["government", "fully-funded", "morocco-exclusive", "postgraduate"],
+    "description": {
+      "en": "Special bilateral agreement between Morocco and China. Higher acceptance rate for Moroccan students. Includes round-trip airfare — one of the best options for Moroccan postgraduate students.",
+      "fr": "Accord bilatéral spécial entre le Maroc et la Chine. Taux d'acceptation plus élevé pour les étudiants marocains. Inclut le billet d'avion aller-retour — une des meilleures options pour les étudiants marocains en post-graduation.",
+      "ar": "اتفاقية ثنائية خاصة بين المغرب والصين. معدل قبول أعلى للطلاب المغاربة. يشمل تذكرة طيران ذهاب وإياب — واحدة من أفضل الخيارات لطلاب الدراسات العليا المغاربة."
+    },
+    "apply_link": "./shop.html",
+    "last_updated": "2026-03-08"
+  },
+  {
+    "id": "confucius-institute-scholarship",
+    "name": {
+      "en": "Confucius Institute Scholarship (CIS)",
+      "fr": "Bourse de l'Institut Confucius (CIS)",
+      "ar": "منحة معهد كونفوشيوس (CIS)"
+    },
+    "type": "full",
+    "provider": {
+      "en": "Center for Language Education and Cooperation (CLEC)",
+      "fr": "Centre de Coopération Linguistique et Éducative (CLEC)",
+      "ar": "مركز التعاون اللغوي والتعليمي (CLEC)"
+    },
+    "coverage": {
+      "en": ["Full tuition waiver", "Monthly stipend ($400/month)", "Free accommodation", "Health insurance"],
+      "fr": ["Exonération totale des frais de scolarité", "Allocation mensuelle (400$/mois)", "Hébergement gratuit", "Assurance maladie"],
+      "ar": ["إعفاء كامل من الرسوم الدراسية", "راتب شهري (400 دولار/شهر)", "سكن مجاني", "تأمين صحي"]
+    },
+    "degree_levels": ["bachelor", "master", "language"],
+    "english_programs": false,
+    "cities": ["beijing", "shanghai", "hangzhou", "nanjing", "wuhan", "guangzhou", "chengdu", "changsha", "xian"],
+    "tuition_covered": "100%",
+    "stipend_usd": { "bachelor": 400, "master": 400, "language": 400 },
+    "deadline": {
+      "en": "March – May",
+      "fr": "Mars – Mai",
+      "ar": "مارس – مايو"
+    },
+    "eligibility": {
+      "en": "Must have HSK 3+ for language programs, HSK 4+ for degree programs. Must have studied at a Confucius Institute or passed HSK exam. Age 16–35.",
+      "fr": "HSK 3+ requis pour programmes linguistiques, HSK 4+ pour programmes diplômants. Doit avoir étudié dans un Institut Confucius ou réussi l'examen HSK. Âge 16–35.",
+      "ar": "يجب الحصول على HSK 3+ لبرامج اللغة، HSK 4+ للبرامج الأكاديمية. يجب أن يكون قد درس في معهد كونفوشيوس أو اجتاز اختبار HSK. العمر 16–35."
+    },
+    "universities_count": 150,
+    "success_rate": "high",
+    "tags": ["government", "fully-funded", "chinese-language", "popular"],
+    "description": {
+      "en": "Perfect for students passionate about Chinese language and culture. High acceptance rate for HSK holders. Ideal stepping stone to longer degree programs in China.",
+      "fr": "Parfait pour les étudiants passionnés par la langue et la culture chinoises. Taux d'acceptation élevé pour les détenteurs du HSK. Tremplin idéal vers des programmes diplômants plus longs en Chine.",
+      "ar": "مثالية للطلاب المهتمين باللغة والثقافة الصينية. معدل قبول مرتفع لحاملي HSK. نقطة انطلاق مثالية لبرامج أكاديمية أطول في الصين."
+    },
+    "apply_link": "./shop.html",
+    "last_updated": "2026-03-08"
+  },
+  {
+    "id": "belt-and-road-scholarship",
+    "name": {
+      "en": "Belt and Road Scholarship",
+      "fr": "Bourse Belt and Road (Routes de la Soie)",
+      "ar": "منحة الحزام والطريق"
+    },
+    "type": "full",
+    "provider": {
+      "en": "Chinese Government (Ministry of Education)",
+      "fr": "Gouvernement Chinois (Ministère de l'Éducation)",
+      "ar": "الحكومة الصينية (وزارة التعليم)"
+    },
+    "coverage": {
+      "en": ["Full tuition waiver", "Monthly stipend", "Free accommodation", "Health insurance"],
+      "fr": ["Exonération totale des frais de scolarité", "Allocation mensuelle", "Hébergement gratuit", "Assurance maladie"],
+      "ar": ["إعفاء كامل من الرسوم الدراسية", "راتب شهري", "سكن مجاني", "تأمين صحي"]
+    },
+    "degree_levels": ["bachelor", "master", "phd"],
+    "english_programs": true,
+    "cities": ["beijing", "shanghai", "hangzhou", "nanjing", "wuhan", "guangzhou", "chengdu", "xian"],
+    "tuition_covered": "100%",
+    "stipend_usd": { "bachelor": 400, "master": 450, "phd": 500 },
+    "deadline": {
+      "en": "January – April",
+      "fr": "Janvier – Avril",
+      "ar": "يناير – أبريل"
+    },
+    "eligibility": {
+      "en": "For students from Belt and Road countries (including Morocco). Priority for STEM fields. Must have good academic record.",
+      "fr": "Pour les étudiants des pays de la Route de la Soie (dont le Maroc). Priorité aux filières STEM. Doit avoir un bon dossier académique.",
+      "ar": "للطلاب من دول الحزام والطريق (بما فيها المغرب). أولوية لتخصصات العلوم والتكنولوجيا. يجب أن يكون لديك سجل أكاديمي جيد."
+    },
+    "universities_count": 200,
+    "success_rate": "medium",
+    "tags": ["government", "fully-funded", "morocco-eligible", "all-levels"],
+    "description": {
+      "en": "Designed for students from Belt and Road Initiative countries. Morocco qualifies, giving students a competitive advantage. Covers all expenses with priority for engineering and technology programs.",
+      "fr": "Conçue pour les étudiants des pays de l'Initiative Belt and Road. Le Maroc est éligible, donnant aux étudiants un avantage compétitif. Couvre toutes les dépenses avec priorité aux programmes d'ingénierie et technologie.",
+      "ar": "مصممة لطلاب دول مبادرة الحزام والطريق. المغرب مؤهل، مما يمنح الطلاب ميزة تنافسية. تغطي جميع النفقات مع أولوية لبرامج الهندسة والتكنولوجيا."
+    },
+    "apply_link": "./shop.html",
+    "last_updated": "2026-03-08"
+  },
+  {
+    "id": "provincial-government-scholarship",
+    "name": {
+      "en": "Provincial Government Scholarships",
+      "fr": "Bourses du Gouvernement Provincial",
+      "ar": "منح الحكومات الإقليمية"
+    },
+    "type": "full",
+    "provider": {
+      "en": "Provincial Governments (Beijing, Shanghai, Zhejiang, etc.)",
+      "fr": "Gouvernements Provinciaux (Pékin, Shanghai, Zhejiang, etc.)",
+      "ar": "الحكومات الإقليمية (بكين، شانغهاي، تشجيانغ، إلخ)"
+    },
+    "coverage": {
+      "en": ["Full or partial tuition waiver", "Monthly stipend ($200–$400/month)", "Some include accommodation"],
+      "fr": ["Exonération totale ou partielle des frais de scolarité", "Allocation mensuelle (200–400$/mois)", "Certaines incluent l'hébergement"],
+      "ar": ["إعفاء كلي أو جزئي من الرسوم الدراسية", "راتب شهري (200–400 دولار/شهر)", "بعضها يشمل السكن"]
+    },
+    "degree_levels": ["bachelor", "master", "phd", "language"],
+    "english_programs": true,
+    "cities": ["beijing", "shanghai", "hangzhou", "nanjing", "guangzhou", "chengdu"],
+    "tuition_covered": "50-100%",
+    "stipend_usd": { "bachelor": 200, "master": 300, "phd": 400 },
+    "deadline": {
+      "en": "March – June (varies by province)",
+      "fr": "Mars – Juin (varie selon la province)",
+      "ar": "مارس – يونيو (يختلف حسب المقاطعة)"
+    },
+    "eligibility": {
+      "en": "Open to international students enrolling in universities within the province. Requirements vary by province. Generally less competitive than CSC.",
+      "fr": "Ouvert aux étudiants internationaux s'inscrivant dans les universités de la province. Les exigences varient selon la province. Généralement moins compétitif que le CSC.",
+      "ar": "مفتوح للطلاب الدوليين المسجلين في جامعات المقاطعة. المتطلبات تختلف حسب المقاطعة. عمومًا أقل تنافسية من CSC."
+    },
+    "universities_count": 150,
+    "success_rate": "high",
+    "tags": ["government", "fully-funded", "less-competitive", "all-levels"],
+    "description": {
+      "en": "Each Chinese province offers its own scholarships. Less known and less competitive than CSC, making them an excellent alternative. Beijing, Shanghai, and Zhejiang scholarships are particularly generous.",
+      "fr": "Chaque province chinoise offre ses propres bourses. Moins connues et moins compétitives que le CSC, ce qui en fait une excellente alternative. Les bourses de Pékin, Shanghai et Zhejiang sont particulièrement généreuses.",
+      "ar": "تقدم كل مقاطعة صينية منحها الخاصة. أقل شهرة وأقل تنافسية من CSC، مما يجعلها بديلاً ممتازًا. منح بكين وشانغهاي وتشجيانغ سخية بشكل خاص."
+    },
+    "apply_link": "./shop.html",
+    "last_updated": "2026-03-08"
+  },
+  {
+    "id": "university-scholarship-full",
+    "name": {
+      "en": "University Full Scholarships",
+      "fr": "Bourses Universitaires Complètes",
+      "ar": "المنح الجامعية الكاملة"
+    },
+    "type": "full",
+    "provider": {
+      "en": "Individual Chinese Universities",
+      "fr": "Universités Chinoises Individuelles",
+      "ar": "الجامعات الصينية الفردية"
+    },
+    "coverage": {
+      "en": ["Full tuition waiver", "Monthly stipend ($200–$400/month)", "Free or subsidized accommodation"],
+      "fr": ["Exonération totale des frais de scolarité", "Allocation mensuelle (200–400$/mois)", "Hébergement gratuit ou subventionné"],
+      "ar": ["إعفاء كامل من الرسوم الدراسية", "راتب شهري (200–400 دولار/شهر)", "سكن مجاني أو مدعوم"]
+    },
+    "degree_levels": ["bachelor", "master", "phd"],
+    "english_programs": true,
+    "cities": ["beijing", "shanghai", "hangzhou", "nanjing", "wuhan", "guangzhou", "chengdu", "changsha", "hefei", "xian"],
+    "tuition_covered": "100%",
+    "stipend_usd": { "bachelor": 200, "master": 300, "phd": 400 },
+    "deadline": {
+      "en": "Year-round (varies by university)",
+      "fr": "Toute l'année (varie selon l'université)",
+      "ar": "على مدار السنة (يختلف حسب الجامعة)"
+    },
+    "eligibility": {
+      "en": "Varies by university. Generally requires good academic record (GPA 3.0+). Some require HSK certificate, others accept English proficiency.",
+      "fr": "Varie selon l'université. Généralement un bon dossier académique (GPA 3.0+). Certaines exigent le HSK, d'autres acceptent la maîtrise de l'anglais.",
+      "ar": "يختلف حسب الجامعة. عمومًا يتطلب سجل أكاديمي جيد (معدل 3.0+). بعضها يتطلب شهادة HSK، وأخرى تقبل إتقان الإنجليزية."
+    },
+    "universities_count": 49,
+    "success_rate": "high",
+    "tags": ["university", "fully-funded", "flexible-deadline", "all-levels"],
+    "description": {
+      "en": "Many top Chinese universities offer their own full scholarships to attract international talent. Easier to get than CSC and often with rolling admissions. Foorsa partners with 49 universities offering these scholarships.",
+      "fr": "De nombreuses grandes universités chinoises offrent leurs propres bourses complètes pour attirer les talents internationaux. Plus facile à obtenir que le CSC et souvent avec des admissions continues. Foorsa collabore avec 49 universités offrant ces bourses.",
+      "ar": "تقدم العديد من الجامعات الصينية الكبرى منحها الكاملة الخاصة لجذب المواهب الدولية. أسهل في الحصول عليها من CSC وغالبًا مع قبول مستمر. فرصة تتعاون مع 49 جامعة تقدم هذه المنح."
+    },
+    "apply_link": "./shop.html",
+    "last_updated": "2026-03-08"
+  },
+  {
+    "id": "university-scholarship-partial",
+    "name": {
+      "en": "University Partial Scholarships (Tuition Discount)",
+      "fr": "Bourses Universitaires Partielles (Réduction des Frais)",
+      "ar": "المنح الجامعية الجزئية (خصم الرسوم)"
+    },
+    "type": "partial",
+    "provider": {
+      "en": "Individual Chinese Universities",
+      "fr": "Universités Chinoises Individuelles",
+      "ar": "الجامعات الصينية الفردية"
+    },
+    "coverage": {
+      "en": ["25%–75% tuition reduction", "Some include accommodation subsidy"],
+      "fr": ["Réduction de 25%–75% des frais de scolarité", "Certaines incluent une subvention au logement"],
+      "ar": ["تخفيض 25%–75% من الرسوم الدراسية", "بعضها يشمل دعم السكن"]
+    },
+    "degree_levels": ["bachelor", "master", "phd", "language"],
+    "english_programs": true,
+    "cities": ["beijing", "shanghai", "hangzhou", "nanjing", "wuhan", "guangzhou", "chengdu", "changsha", "hefei", "xian"],
+    "tuition_covered": "25-75%",
+    "stipend_usd": { "bachelor": 0, "master": 0, "phd": 0 },
+    "deadline": {
+      "en": "Year-round",
+      "fr": "Toute l'année",
+      "ar": "على مدار السنة"
+    },
+    "eligibility": {
+      "en": "Most accessible scholarship type. Good academic standing required. Available at almost all Chinese universities for international students.",
+      "fr": "Type de bourse le plus accessible. Bon dossier académique requis. Disponible dans presque toutes les universités chinoises pour les étudiants internationaux.",
+      "ar": "أكثر أنواع المنح سهولة في الوصول. يتطلب مستوى أكاديمي جيد. متاح في جميع الجامعات الصينية تقريبًا للطلاب الدوليين."
+    },
+    "universities_count": 49,
+    "success_rate": "very-high",
+    "tags": ["university", "partial", "easy-access", "all-levels"],
+    "description": {
+      "en": "The easiest scholarships to get. Most universities offer 25%–75% tuition discounts to international students with good grades. Perfect if you missed full scholarship deadlines or want guaranteed financial aid.",
+      "fr": "Les bourses les plus faciles à obtenir. La plupart des universités offrent des réductions de 25%–75% sur les frais de scolarité aux étudiants internationaux ayant de bons résultats. Parfait si vous avez manqué les délais des bourses complètes.",
+      "ar": "أسهل المنح للحصول عليها. معظم الجامعات تقدم خصومات 25%–75% على الرسوم للطلاب الدوليين ذوي الدرجات الجيدة. مثالية إذا فاتتك مواعيد المنح الكاملة."
+    },
+    "apply_link": "./shop.html",
+    "last_updated": "2026-03-08"
+  },
+  {
+    "id": "mofcom-scholarship",
+    "name": {
+      "en": "MOFCOM Scholarship (Ministry of Commerce)",
+      "fr": "Bourse MOFCOM (Ministère du Commerce)",
+      "ar": "منحة MOFCOM (وزارة التجارة)"
+    },
+    "type": "full",
+    "provider": {
+      "en": "Chinese Ministry of Commerce",
+      "fr": "Ministère du Commerce Chinois",
+      "ar": "وزارة التجارة الصينية"
+    },
+    "coverage": {
+      "en": ["Full tuition waiver", "Monthly stipend", "Accommodation", "Health insurance", "Teaching materials"],
+      "fr": ["Exonération totale des frais de scolarité", "Allocation mensuelle", "Hébergement", "Assurance maladie", "Matériel pédagogique"],
+      "ar": ["إعفاء كامل من الرسوم الدراسية", "راتب شهري", "سكن", "تأمين صحي", "مواد تعليمية"]
+    },
+    "degree_levels": ["master", "phd"],
+    "english_programs": true,
+    "cities": ["beijing", "shanghai"],
+    "tuition_covered": "100%",
+    "stipend_usd": { "master": 450, "phd": 500 },
+    "deadline": {
+      "en": "April – July",
+      "fr": "Avril – Juillet",
+      "ar": "أبريل – يوليو"
+    },
+    "eligibility": {
+      "en": "For professionals from developing countries (Morocco eligible). Must have 1+ years of work experience. Focus on economics, trade, public administration.",
+      "fr": "Pour les professionnels des pays en développement (Maroc éligible). 1+ an d'expérience professionnelle requis. Axé sur l'économie, le commerce, l'administration publique.",
+      "ar": "للمهنيين من الدول النامية (المغرب مؤهل). يجب أن تكون لديك سنة+ خبرة عمل. التركيز على الاقتصاد والتجارة والإدارة العامة."
+    },
+    "universities_count": 26,
+    "success_rate": "medium",
+    "tags": ["government", "fully-funded", "professionals", "postgraduate"],
+    "description": {
+      "en": "Targeted at working professionals from developing countries who want to pursue graduate studies in trade, economics, and public policy. Excellent networking opportunities with professionals from 100+ countries.",
+      "fr": "Destinée aux professionnels en activité des pays en développement souhaitant poursuivre des études supérieures en commerce, économie et politique publique. Excellentes opportunités de réseautage.",
+      "ar": "موجهة للمهنيين العاملين من الدول النامية الراغبين في متابعة دراسات عليا في التجارة والاقتصاد والسياسة العامة. فرص تواصل ممتازة مع محترفين من أكثر من 100 دولة."
+    },
+    "apply_link": "./shop.html",
+    "last_updated": "2026-03-08"
+  },
+  {
+    "id": "beijing-government-scholarship",
+    "name": {
+      "en": "Beijing Government Scholarship (BGS)",
+      "fr": "Bourse du Gouvernement de Pékin (BGS)",
+      "ar": "منحة حكومة بكين (BGS)"
+    },
+    "type": "full",
+    "provider": {
+      "en": "Beijing Municipal Education Commission",
+      "fr": "Commission de l'Éducation Municipale de Pékin",
+      "ar": "لجنة التعليم البلدية في بكين"
+    },
+    "coverage": {
+      "en": ["Full tuition waiver", "Living allowance", "Accommodation subsidy"],
+      "fr": ["Exonération totale des frais de scolarité", "Allocation de subsistance", "Subvention au logement"],
+      "ar": ["إعفاء كامل من الرسوم الدراسية", "بدل معيشة", "دعم السكن"]
+    },
+    "degree_levels": ["bachelor", "master", "phd", "language"],
+    "english_programs": true,
+    "cities": ["beijing"],
+    "tuition_covered": "100%",
+    "stipend_usd": { "bachelor": 300, "master": 350, "phd": 400 },
+    "deadline": {
+      "en": "March – May",
+      "fr": "Mars – Mai",
+      "ar": "مارس – مايو"
+    },
+    "eligibility": {
+      "en": "Must enroll in a Beijing-based university. Open to all nationalities. Less competitive than CSC with good benefits.",
+      "fr": "Doit s'inscrire dans une université basée à Pékin. Ouvert à toutes les nationalités. Moins compétitif que le CSC avec de bons avantages.",
+      "ar": "يجب التسجيل في جامعة في بكين. مفتوح لجميع الجنسيات. أقل تنافسية من CSC مع مزايا جيدة."
+    },
+    "universities_count": 45,
+    "success_rate": "high",
+    "tags": ["provincial", "fully-funded", "beijing", "all-levels"],
+    "description": {
+      "en": "Beijing's own scholarship program for international students. Covers tuition and living expenses at any Beijing university. Great option for students who specifically want to study in China's capital.",
+      "fr": "Le programme de bourses propre à Pékin pour les étudiants internationaux. Couvre les frais de scolarité et de subsistance dans toute université de Pékin. Excellente option pour étudier dans la capitale chinoise.",
+      "ar": "برنامج منح بكين الخاص للطلاب الدوليين. يغطي الرسوم الدراسية ونفقات المعيشة في أي جامعة في بكين. خيار ممتاز للطلاب الراغبين في الدراسة في العاصمة الصينية."
+    },
+    "apply_link": "./shop.html",
+    "last_updated": "2026-03-08"
+  },
+  {
+    "id": "shanghai-government-scholarship",
+    "name": {
+      "en": "Shanghai Government Scholarship (SGS)",
+      "fr": "Bourse du Gouvernement de Shanghai (SGS)",
+      "ar": "منحة حكومة شانغهاي (SGS)"
+    },
+    "type": "partial",
+    "provider": {
+      "en": "Shanghai Municipal Education Commission",
+      "fr": "Commission de l'Éducation Municipale de Shanghai",
+      "ar": "لجنة التعليم البلدية في شانغهاي"
+    },
+    "coverage": {
+      "en": ["Full or partial tuition waiver", "Living allowance for top students"],
+      "fr": ["Exonération totale ou partielle des frais de scolarité", "Allocation de subsistance pour les meilleurs étudiants"],
+      "ar": ["إعفاء كلي أو جزئي من الرسوم الدراسية", "بدل معيشة للطلاب المتفوقين"]
+    },
+    "degree_levels": ["bachelor", "master", "phd", "language"],
+    "english_programs": true,
+    "cities": ["shanghai"],
+    "tuition_covered": "50-100%",
+    "stipend_usd": { "bachelor": 200, "master": 250, "phd": 350 },
+    "deadline": {
+      "en": "March – June",
+      "fr": "Mars – Juin",
+      "ar": "مارس – يونيو"
+    },
+    "eligibility": {
+      "en": "Must enroll in a Shanghai-based university. Categorized into A (full), B (tuition only), and C (partial) levels based on academic merit.",
+      "fr": "Doit s'inscrire dans une université de Shanghai. Catégorisé en niveaux A (complète), B (scolarité uniquement) et C (partielle) selon le mérite académique.",
+      "ar": "يجب التسجيل في جامعة في شانغهاي. مصنفة إلى مستويات A (كاملة)، B (رسوم فقط)، و C (جزئية) حسب الجدارة الأكاديمية."
+    },
+    "universities_count": 38,
+    "success_rate": "high",
+    "tags": ["provincial", "partial", "shanghai", "tiered", "all-levels"],
+    "description": {
+      "en": "Shanghai's tiered scholarship system (A/B/C) means more students get funded. Even partial awards significantly reduce costs in China's most international city.",
+      "fr": "Le système de bourses à niveaux de Shanghai (A/B/C) signifie que plus d'étudiants sont financés. Même les bourses partielles réduisent considérablement les coûts dans la ville la plus internationale de Chine.",
+      "ar": "نظام المنح المتدرج في شانغهاي (A/B/C) يعني أن المزيد من الطلاب يحصلون على تمويل. حتى المنح الجزئية تقلل التكاليف بشكل كبير في أكثر مدن الصين دولية."
+    },
+    "apply_link": "./shop.html",
+    "last_updated": "2026-03-08"
+  },
+  {
+    "id": "zhejiang-provincial-scholarship",
+    "name": {
+      "en": "Zhejiang Provincial Government Scholarship",
+      "fr": "Bourse du Gouvernement Provincial du Zhejiang",
+      "ar": "منحة حكومة مقاطعة تشجيانغ"
+    },
+    "type": "full",
+    "provider": {
+      "en": "Zhejiang Provincial Government",
+      "fr": "Gouvernement Provincial du Zhejiang",
+      "ar": "حكومة مقاطعة تشجيانغ"
+    },
+    "coverage": {
+      "en": ["Full tuition waiver", "Monthly stipend ($250–$350)", "Accommodation allowance"],
+      "fr": ["Exonération totale des frais de scolarité", "Allocation mensuelle (250–350$)", "Allocation logement"],
+      "ar": ["إعفاء كامل من الرسوم الدراسية", "راتب شهري (250–350 دولار)", "بدل سكن"]
+    },
+    "degree_levels": ["bachelor", "master", "phd"],
+    "english_programs": true,
+    "cities": ["hangzhou"],
+    "tuition_covered": "100%",
+    "stipend_usd": { "bachelor": 250, "master": 300, "phd": 350 },
+    "deadline": {
+      "en": "March – May",
+      "fr": "Mars – Mai",
+      "ar": "مارس – مايو"
+    },
+    "eligibility": {
+      "en": "Must enroll in a Zhejiang province university (Zhejiang University, etc.). Strong academic background required. Open to all nationalities.",
+      "fr": "Doit s'inscrire dans une université du Zhejiang (Université du Zhejiang, etc.). Solide dossier académique requis. Ouvert à toutes les nationalités.",
+      "ar": "يجب التسجيل في جامعة في مقاطعة تشجيانغ (جامعة تشجيانغ، إلخ). يتطلب خلفية أكاديمية قوية. مفتوح لجميع الجنسيات."
+    },
+    "universities_count": 15,
+    "success_rate": "high",
+    "tags": ["provincial", "fully-funded", "hangzhou", "all-levels"],
+    "description": {
+      "en": "Zhejiang province (home to Hangzhou, China's tech hub) offers generous scholarships. Study alongside students at Zhejiang University (QS #44) with full funding in one of China's most livable cities.",
+      "fr": "La province du Zhejiang (qui abrite Hangzhou, le hub tech de la Chine) offre des bourses généreuses. Étudiez à l'Université du Zhejiang (QS #44) avec un financement complet dans l'une des villes les plus agréables de Chine.",
+      "ar": "تقدم مقاطعة تشجيانغ (موطن هانغتشو، مركز التكنولوجيا في الصين) منحًا سخية. ادرس في جامعة تشجيانغ (QS #44) مع تمويل كامل في واحدة من أكثر مدن الصين ملاءمة للعيش."
+    },
+    "apply_link": "./shop.html",
+    "last_updated": "2026-03-08"
+  },
+  {
+    "id": "chinese-language-scholarship",
+    "name": {
+      "en": "Chinese Language Scholarship (Foundation Year)",
+      "fr": "Bourse de Langue Chinoise (Année Préparatoire)",
+      "ar": "منحة اللغة الصينية (السنة التحضيرية)"
+    },
+    "type": "partial",
+    "provider": {
+      "en": "Chinese Universities (via Foorsa)",
+      "fr": "Universités Chinoises (via Foorsa)",
+      "ar": "الجامعات الصينية (عبر فرصة)"
+    },
+    "coverage": {
+      "en": ["50%–100% tuition reduction for language year", "Priority admission to degree programs after completion"],
+      "fr": ["Réduction de 50%–100% des frais pour l'année linguistique", "Admission prioritaire aux programmes diplômants après achèvement"],
+      "ar": ["تخفيض 50%–100% من الرسوم للسنة اللغوية", "قبول ذو أولوية في البرامج الأكاديمية بعد الإكمال"]
+    },
+    "degree_levels": ["language"],
+    "english_programs": false,
+    "cities": ["beijing", "shanghai", "hangzhou", "nanjing", "wuhan", "guangzhou", "chengdu", "changsha", "hefei", "xian"],
+    "tuition_covered": "50-100%",
+    "stipend_usd": { "language": 0 },
+    "deadline": {
+      "en": "March and September intake",
+      "fr": "Rentrées de Mars et Septembre",
+      "ar": "مواعيد القبول في مارس وسبتمبر"
+    },
+    "eligibility": {
+      "en": "Open to all students. No Chinese language requirement. Perfect for beginners who want to learn Chinese before starting a degree program.",
+      "fr": "Ouvert à tous les étudiants. Aucune exigence en langue chinoise. Parfait pour les débutants souhaitant apprendre le chinois avant un programme diplômant.",
+      "ar": "مفتوح لجميع الطلاب. لا يتطلب معرفة باللغة الصينية. مثالي للمبتدئين الراغبين في تعلم الصينية قبل بدء برنامج أكاديمي."
+    },
+    "universities_count": 49,
+    "success_rate": "very-high",
+    "tags": ["university", "partial", "language-year", "beginners", "easy-access"],
+    "description": {
+      "en": "Start your China journey with a language foundation year. Many universities offer significant tuition discounts through Foorsa. Learn Mandarin on campus and transition seamlessly into your degree program.",
+      "fr": "Commencez votre parcours en Chine avec une année préparatoire en langue. De nombreuses universités offrent des réductions significatives via Foorsa. Apprenez le mandarin sur le campus et passez facilement à votre programme diplômant.",
+      "ar": "ابدأ رحلتك في الصين بسنة تحضيرية لغوية. تقدم العديد من الجامعات خصومات كبيرة عبر فرصة. تعلم الماندرين في الحرم الجامعي وانتقل بسلاسة إلى برنامجك الأكاديمي."
+    },
+    "apply_link": "./shop.html",
+    "last_updated": "2026-03-08"
+  }
+]
