@@ -60,10 +60,8 @@
       newPath = '/' + targetLang + '/index.html';
     }
     
-    // Special case: English homepage is at root
-    if (targetLang === 'en' && currentPage === 'index.html') {
-      newPath = '/';
-    }
+    // All languages use their own directory
+    // No special case for English - /en/ is the English homepage
     
     window.location.href = newPath;
   };
