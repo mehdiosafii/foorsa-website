@@ -151,8 +151,12 @@ module.exports = async (req, res) => {
       );
     }
 
-    // Create website lead if phone is complete (fire-and-forget)
-    createWebsiteLead(submissionId, formData).catch(() => {});
+    // Careers & partner submissions go to admins (website_submissions only).
+    // All other forms create a lead for sales round-robin assignment.
+    const adminOnlyForms = ['careers', 'partner'];
+    if (!adminOnlyForms.includes(formType)) {
+      createWebsiteLead(submissionId, formData).catch(() => {});
+    }
 
     res.status(200).json({ success: true, id: submissionId });
   } catch (err) {
