@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "title": {
+      "en": "China University Admission Chance Calculator",
+      "fr": "Calculateur de Chances d'Admission en Chine",
+      "ar": "حاسبة فرص القبول في الجامعات الصينية"
+    },
+    "version": "1.0.0",
+    "lastUpdated": "2026-03-08"
+  },
+  "streams": [
+    { "id": "science", "label": { "en": "Science (Bac Sciences)", "fr": "Sciences (Bac Sciences)", "ar": "علوم (باك علوم)" } },
+    { "id": "economics", "label": { "en": "Economics (Bac Eco)", "fr": "Économie (Bac Éco)", "ar": "اقتصاد (باك اقتصاد)" } },
+    { "id": "literature", "label": { "en": "Literature (Bac Lettres)", "fr": "Lettres (Bac Lettres)", "ar": "آداب (باك آداب)" } }
+  ],
+  "englishLevels": [
+    { "id": "none", "label": { "en": "No English certificate", "fr": "Pas de certificat d'anglais", "ar": "بدون شهادة إنجليزية" }, "score": 0 },
+    { "id": "basic", "label": { "en": "Basic (A1-A2 / IELTS < 4.5)", "fr": "Basique (A1-A2 / IELTS < 4.5)", "ar": "مبتدئ (A1-A2 / آيلتس < 4.5)" }, "score": 1 },
+    { "id": "intermediate", "label": { "en": "Intermediate (B1-B2 / IELTS 4.5-5.5)", "fr": "Intermédiaire (B1-B2 / IELTS 4.5-5.5)", "ar": "متوسط (B1-B2 / آيلتس 4.5-5.5)" }, "score": 2 },
+    { "id": "good", "label": { "en": "Good (B2-C1 / IELTS 6.0-6.5)", "fr": "Bon (B2-C1 / IELTS 6.0-6.5)", "ar": "جيد (B2-C1 / آيلتس 6.0-6.5)" }, "score": 3 },
+    { "id": "excellent", "label": { "en": "Excellent (C1+ / IELTS 7.0+)", "fr": "Excellent (C1+ / IELTS 7.0+)", "ar": "ممتاز (C1+ / آيلتس 7.0+)" }, "score": 4 }
+  ],
+  "budgetRanges": [
+    { "id": "scholarship", "label": { "en": "Scholarship only (0 MAD)", "fr": "Bourse uniquement (0 MAD)", "ar": "منحة فقط (0 درهم)" }, "maxUsd": 0 },
+    { "id": "low", "label": { "en": "Low (< 30,000 MAD/year)", "fr": "Faible (< 30 000 MAD/an)", "ar": "منخفض (أقل من 30,000 درهم/سنة)" }, "maxUsd": 3000 },
+    { "id": "medium", "label": { "en": "Medium (30,000 – 60,000 MAD/year)", "fr": "Moyen (30 000 – 60 000 MAD/an)", "ar": "متوسط (30,000 – 60,000 درهم/سنة)" }, "maxUsd": 6000 },
+    { "id": "high", "label": { "en": "High (60,000 – 100,000 MAD/year)", "fr": "Élevé (60 000 – 100 000 MAD/an)", "ar": "مرتفع (60,000 – 100,000 درهم/سنة)" }, "maxUsd": 10000 },
+    { "id": "flexible", "label": { "en": "Flexible (100,000+ MAD/year)", "fr": "Flexible (100 000+ MAD/an)", "ar": "مرن (أكثر من 100,000 درهم/سنة)" }, "maxUsd": 99999 }
+  ],
+  "scholarships": [
+    {
+      "id": "csc-type-a",
+      "name": { "en": "CSC Type A (Full Scholarship)", "fr": "CSC Type A (Bourse complète)", "ar": "CSC نوع أ (منحة كاملة)" },
+      "coverage": { "en": "Tuition + accommodation + stipend + insurance", "fr": "Frais + logement + allocation + assurance", "ar": "الرسوم + السكن + مصروف + تأمين" },
+      "stipend": "2500 CNY/month",
+      "eligibility": { "minGrade": 14, "streams": ["science", "economics", "literature"], "englishMin": 2 },
+      "competitiveness": "very_high",
+      "deadline": "January–March",
+      "description": {
+        "en": "The most competitive scholarship. Covers everything including a monthly stipend. Requires strong academics, motivation letter, and recommendation letters.",
+        "fr": "La bourse la plus compétitive. Couvre tout, y compris une allocation mensuelle. Exige d'excellents résultats académiques, une lettre de motivation et des lettres de recommandation.",
+        "ar": "أكثر المنح تنافسية. تغطي كل شيء بما في ذلك مصروف شهري. تتطلب نتائج أكاديمية ممتازة ورسالة تحفيز وخطابات توصية."
+      }
+    },
+    {
+      "id": "csc-type-b",
+      "name": { "en": "CSC Type B (Partial Scholarship)", "fr": "CSC Type B (Bourse partielle)", "ar": "CSC نوع ب (منحة جزئية)" },
+      "coverage": { "en": "Tuition waiver only", "fr": "Exonération des frais uniquement", "ar": "إعفاء من الرسوم الدراسية فقط" },
+      "stipend": "None",
+      "eligibility": { "minGrade": 12, "streams": ["science", "economics", "literature"], "englishMin": 1 },
+      "competitiveness": "high",
+      "deadline": "January–April",
+      "description": {
+        "en": "Covers tuition fees only. You pay for accommodation, food, and living expenses. Easier to obtain than Type A.",
+        "fr": "Couvre uniquement les frais de scolarité. Vous payez le logement, la nourriture et les frais de vie. Plus facile à obtenir que le Type A.",
+        "ar": "تغطي الرسوم الدراسية فقط. تدفع تكاليف السكن والطعام والمعيشة. أسهل في الحصول عليها من النوع أ."
+      }
+    },
+    {
+      "id": "university-scholarship",
+      "name": { "en": "University Scholarship", "fr": "Bourse universitaire", "ar": "منحة جامعية" },
+      "coverage": { "en": "Varies by university (partial to full)", "fr": "Variable selon l'université (partielle à complète)", "ar": "تختلف حسب الجامعة (جزئية إلى كاملة)" },
+      "stipend": "Varies",
+      "eligibility": { "minGrade": 12, "streams": ["science", "economics", "literature"], "englishMin": 1 },
+      "competitiveness": "medium",
+      "deadline": "March–June",
+      "description": {
+        "en": "Individual universities offer their own scholarships. Coverage ranges from partial tuition to full ride. Each university has its own criteria and deadlines.",
+        "fr": "Les universités offrent leurs propres bourses. La couverture va de la réduction partielle à la bourse complète. Chaque université a ses propres critères et délais.",
+        "ar": "تقدم الجامعات منحها الخاصة. تتراوح التغطية من تخفيض جزئي إلى منحة كاملة. لكل جامعة معاييرها وتواريخها الخاصة."
+      }
+    },
+    {
+      "id": "provincial-scholarship",
+      "name": { "en": "Provincial Government Scholarship", "fr": "Bourse gouvernementale provinciale", "ar": "منحة حكومة المقاطعة" },
+      "coverage": { "en": "Tuition reduction + possible stipend", "fr": "Réduction des frais + allocation possible", "ar": "تخفيض الرسوم + مصروف محتمل" },
+      "stipend": "Varies by province",
+      "eligibility": { "minGrade": 11, "streams": ["science", "economics", "literature"], "englishMin": 1 },
+      "competitiveness": "medium",
+      "deadline": "March–May",
+      "description": {
+        "en": "Provincial governments (Beijing, Shanghai, Jiangsu, etc.) offer scholarships for international students at local universities. Less competitive than CSC.",
+        "fr": "Les gouvernements provinciaux (Pékin, Shanghai, Jiangsu, etc.) offrent des bourses pour les étudiants internationaux dans les universités locales. Moins compétitif que le CSC.",
+        "ar": "تقدم حكومات المقاطعات (بكين، شنغهاي، جيانغسو، إلخ) منحاً للطلاب الدوليين في الجامعات المحلية. أقل تنافسية من CSC."
+      }
+    },
+    {
+      "id": "belt-and-road",
+      "name": { "en": "Belt and Road Scholarship", "fr": "Bourse Route de la Soie", "ar": "منحة الحزام والطريق" },
+      "coverage": { "en": "Full or partial scholarship", "fr": "Bourse complète ou partielle", "ar": "منحة كاملة أو جزئية" },
+      "stipend": "Varies",
+      "eligibility": { "minGrade": 11, "streams": ["science", "economics", "literature"], "englishMin": 1 },
+      "competitiveness": "medium_low",
+      "deadline": "February–May",
+      "description": {
+        "en": "Available for students from Belt and Road Initiative countries (Morocco qualifies). Offered by select universities with growing availability.",
+        "fr": "Disponible pour les étudiants des pays de l'Initiative Ceinture et Route (le Maroc est éligible). Offerte par certaines universités avec une disponibilité croissante.",
+        "ar": "متاحة لطلاب دول مبادرة الحزام والطريق (المغرب مؤهل). تقدمها جامعات مختارة مع توفر متزايد."
+      }
+    }
+  ],
+  "admissionFactors": {
+    "gradeWeight": 0.35,
+    "streamWeight": 0.15,
+    "englishWeight": 0.15,
+    "budgetWeight": 0.15,
+    "cityMatchWeight": 0.10,
+    "overallBonus": 0.10
+  },
+  "streamProgramMap": {
+    "science": ["engineering", "computer-science", "medicine", "sciences", "architecture", "agriculture", "pharmacy", "environmental-science"],
+    "economics": ["business", "economics", "finance", "international-trade", "law", "management", "international-relations", "public-administration"],
+    "literature": ["arts", "languages", "chinese-language", "journalism", "philosophy", "education", "international-relations", "law", "design"]
+  }
+}
